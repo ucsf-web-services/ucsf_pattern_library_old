@@ -19,6 +19,7 @@ $browser-minimum-versions: (
   "compass",
   "compass/support",
   "toolkit",
+  "font-awesome",
   "breakpoint",
   "singularitygs",
   "global/*",
@@ -27,7 +28,8 @@ $browser-minimum-versions: (
   "global/mixins/**/*",
   "global/extends/**/*",
   "base/*",
-  "layout/**/*";
+  "layout/**/*",
+  "components/**/*";
   //"components/molecules/**/*",
   //"components/organisms/**/*",
   //"components/templates/**/*",

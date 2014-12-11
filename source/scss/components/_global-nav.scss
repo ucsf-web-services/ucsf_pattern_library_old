@@ -1,0 +1,31 @@
+.global-nav {
+  height: 30px;
+  font-size: $typesize--12px;
+  line-height: 30px;
+  padding: 0 $pad;
+  max-width: $site-width;
+  @extend .center;
+}
+
+.global-nav-wrapper {
+  background-color: $color--gray--darker;
+}
+
+.global-nav-title {
+  @extend .left;
+  color: $white;
+}
+
+.global-nav-utility {
+  @extend .right;
+  @extend %links-list;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}

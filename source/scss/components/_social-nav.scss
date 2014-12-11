@@ -1,0 +1,12 @@
+.social-nav {
+  @extend %links-list;
+  
+  li {
+    margin-right: $pad-half;
+  }
+
+  a {
+    font-size: 22px;
+    color: $color--gray--dark;
+  }
+}
