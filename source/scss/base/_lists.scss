@@ -1,0 +1,25 @@
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+ol {
+  margin-left: 2em;
+}
+
+/* Definition Lists */
+dl {
+  overflow: hidden;
+  margin: 0 0 $space;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}

@@ -5,14 +5,30 @@ Here's where the magic happens.
 All styles that are imported here will be compiled into css/style.css
 ******************************************************************/
 
+$browser-minimum-versions: (
+  "ie": null,
+  "android": "4",
+  "chrome": "31",
+  "safari": "5",
+  "firefox": "25",
+  "ios-safari": "6.0-6.1",
+  "android-chrome": "0"
+);
 
 @import
   "compass",
   "compass/support",
   "toolkit",
-
   "breakpoint",
   "singularitygs",
-  "normalize", // from the normalize gem
-
-  "**/*";
+  "global/*",
+  "global/functions/**/*",
+  "global/variables/**/*",
+  "global/mixins/**/*",
+  "global/extends/**/*",
+  "base/*",
+  "layout/**/*";
+  //"components/molecules/**/*",
+  //"components/organisms/**/*",
+  //"components/templates/**/*",
+  //"components/pages/**/*",

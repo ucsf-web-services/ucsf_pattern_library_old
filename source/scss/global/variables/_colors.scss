@@ -1,0 +1,28 @@
+/* Colors
+   ========================================================================== */
+/*
+ * Here's a great tutorial on how to
+ * use color variables properly:
+ * http://sachagreif.com/sass-color-variables/
+ */
+
+$color--white: hsl(0, 0%, 100%);
+//$color--gray--white: hsl(0, 0%, 94.1%);
+$color--gray--lightest: hsl(0, 0%, 85.9%);
+$color--gray--lighter: hsl(0, 0%, 78%);
+$color--gray--light: hsl(0, 0%, 60%);
+$color--gray: hsl(228, 2.3%, 41.8%);
+$color--gray--dark: hsl(0, 0%, 30%);
+$color--gray--darker: hsl(0, 0%, 20%);
+$color--gray--darkest: hsl(0, 0%, 16.1%);
+$color--gray--black: hsl(0, 0%, 10%);
+$color--black: hsl(0, 0%, 0%);
+
+$white: $color--white;
+$black: $color--black;
+
+$error: red;
+$valid: green;
+
+$color--text: $color--gray--black;
+$color--primary-1: #0e47bc;

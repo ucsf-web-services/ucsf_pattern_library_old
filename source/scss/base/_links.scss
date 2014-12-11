@@ -1,0 +1,10 @@
+/* Links */
+a {
+  color: $color--primary-1;
+  text-decoration: none;
+  outline: 0;
+
+  &:hover, &:focus {
+    color: darken($color--primary-1, 5);
+  }
+}

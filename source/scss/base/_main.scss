@@ -1,0 +1,17 @@
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  font-family: $font-body;
+  color: $color--text;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: $font-body;
+  font-size: $root-typesize;
+}

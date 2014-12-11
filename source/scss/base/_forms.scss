@@ -1,0 +1,125 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+form ol, form ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+input, textarea {
+  width: 100%;
+  border: none;
+}
+
+input[type=text], input[type=search], input[type=url], input[type=number], textarea {
+  -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  font-style: italic;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.inline-form {
+  fieldset, .inline-container {
+    position: relative;
+  }
+}
+
+/* Validation */
+.has-error {
+  border-color: $error;
+}
+
+.is-valid {
+  border-color: $valid;
+}
+
+.checkbox {
+  margin-bottom: $pad-half;
+  width: 100%;
+}
+
+.checkbox__input {
+  width: 30px;
+  position: relative;
+  float: left;
+}
+
+.checkbox__input label {
+  cursor: pointer;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+}
+
+.checkbox__input label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  background: transparent;
+  top: 4px;
+  left: 5px;
+  border: 4px solid #fcfff4;
+  border-top: none;
+  border-right: none;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkbox__input label:hover::after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+}
+
+.checkbox__input input[type=checkbox]:checked + label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.checkbox__text {
+  line-height: 100%;
+  margin-left: 45px;
+}
