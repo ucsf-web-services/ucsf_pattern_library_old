@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html class="{{ htmlClass }}">
-	<head>
-		<title>{{ title }}</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width" />
-		
-		<link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
+<head>
+  <title>{{ title }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
 
-		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-		{% pattern-lab-head %}
-		<!-- End Pattern Lab -->
-	
-	</head>
-	<body class="{{ bodyClass }}">	
-		
+  <link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all"/>
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/selectize/dist/css/selectize.css" />
+  <!-- endbower -->
+
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/jquery-bridget/jquery.bridget.js"></script>
+  <script src="/bower_components/sifter/sifter.js"></script>
+  <script src="/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="/bower_components/selectize/dist/js/selectize.js"></script>
+  <script src="/bower_components/eventEmitter/EventEmitter.js"></script>
+  <script src="/bower_components/eventie/eventie.js"></script>
+  <script src="/bower_components/imagesloaded/imagesloaded.js"></script>
+  <script src="/bower_components/get-style-property/get-style-property.js"></script>
+  <script src="/bower_components/get-size/get-size.js"></script>
+  <script src="/bower_components/doc-ready/doc-ready.js"></script>
+  <script src="/bower_components/matches-selector/matches-selector.js"></script>
+  <script src="/bower_components/outlayer/item.js"></script>
+  <script src="/bower_components/outlayer/outlayer.js"></script>
+  <script src="/bower_components/masonry/masonry.js"></script>
+  <script src="/bower_components/scrollReveal.js/dist/scrollReveal.js"></script>
+  <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
+
+  <script src="../../js/script.js"></script>
+  <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+  {% pattern-lab-head %}
+  <!-- End Pattern Lab -->
+
+</head>
+<body class="{{ bodyClass }}">

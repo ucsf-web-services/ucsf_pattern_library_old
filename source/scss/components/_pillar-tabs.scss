@@ -1,0 +1,99 @@
+.pillar-tabs {
+  padding-bottom: $pad-double-half;
+  //border-bottom: $border-thick;
+  margin-bottom: $pad-double-half;
+  @extend .center;
+  @extend %adaptive-container;
+
+  .ui-state-active {
+    position: relative;
+
+    a {
+      background-color: $color--gray--dark;
+      color: $white;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -37px;
+      left: 44%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 12.5px 15px 12.5px;
+      border-color: transparent transparent #000000 transparent;
+
+      @include breakpoint($bp--medium-up) {
+        left: 40%;
+      }
+
+      @include breakpoint($bp--large-up) {
+        left: 43%;
+      }
+
+      @include breakpoint($bp--xlarge-up) {
+        left: 44%;
+      }
+    }
+  }
+}
+
+.pillar-tabs-container {
+}
+
+.pillar-tabs-list-wrapper {
+  padding-bottom: $pad-double-half;
+  border-bottom: $border-med;
+  margin-bottom: $pad-double-half;
+}
+
+.pillar-tabs-list {
+  margin: 0 -12px;
+  @extend .cf;
+}
+
+.pillar-tabs-btn {
+  width: 20%;
+  height: auto;
+  float: left;
+
+  @include breakpoint($bp--medium-up) {
+    height: 130px;
+  }
+
+  @include breakpoint($bp--large-up) {
+    height: 140px;
+  }
+
+  @include breakpoint($bp--xlarge-up) {
+    height: 210px;
+  }
+
+
+  a {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0 12px;
+    background-color: $color--gray--lighter;
+    text-align: center;
+    padding-top: auto;
+    font-family: $font-body-alt;
+    color: $color--gray--darker;
+    font-size: $font-size-xlarge;
+
+    @include breakpoint($bp--medium-up) {
+      padding-top: 40px;
+    }
+
+    @include breakpoint($bp--large-up) {
+      padding-top: 60px;
+    }
+
+    @include breakpoint($bp--xlarge-up) {
+      padding-top: 90px;
+    }
+  }
+}
+

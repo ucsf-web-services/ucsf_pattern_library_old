@@ -4,8 +4,6 @@
 
 //Typography
 
-$max-width: 1170px;
-
 $font-size-small : 0.75em;
 $font-size-small-2 : 0.92em;
 $font-size-med : 1em;
@@ -37,5 +35,5 @@ $pad-quarter :$pad/4;
 $grid-space : $space*1.25;
 
 //Borders
-$border-med: 2px;
-$border-thick: 4px;
+$border-med: 2px solid $color--gray--darker;
+$border-thick: 4px solid $color--gray--darker;

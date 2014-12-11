@@ -6,6 +6,7 @@ $default-font: arial, 'sans serif';
 $times-font: TimesNewRoman, "Times New Roman", Times, serif;
 
 $font-body: $default-font;
+$font-body-alt: $times-font;
 $font-headline: $default-font;
 
 //////////////////////
@@ -18,17 +19,17 @@ $base-line-height: unitless-convert($base-line-em);
 //////////////////////
 
 /* HEADING SIZES */
-$heading-sizes:
-$typesize--60px
-$typesize--48px
-$typesize--36px
-$typesize--30px
-$typesize--24px
-$typesize--18px;
-$heading-line-heights:
-$lineheight--48-60
-$lineheight--42-48
-$lineheight--44-36
-$lineheight--30-30
-$lineheight--30-24
-$lineheight--20-18;
+//$heading-sizes:
+//$typesize--60px
+//$typesize--48px
+//$typesize--36px
+//$typesize--30px
+//$typesize--24px
+//$typesize--18px;
+//$heading-line-heights:
+//$lineheight--48-60
+//$lineheight--42-48
+//$lineheight--44-36
+//$lineheight--30-30
+//$lineheight--30-24
+//$lineheight--20-18;

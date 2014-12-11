@@ -1,4 +1,7 @@
 .header {
+  position: fixed;
+  top: 1;
+  width: 100%;
 
   .global-nav {
     @extend .cf;

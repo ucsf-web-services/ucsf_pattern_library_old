@@ -1,0 +1,8 @@
+.footer {
+}
+
+.footer-content {
+  @extend .center;
+  margin: $pad-triple auto 0;
+  max-width: $site-width;
+}

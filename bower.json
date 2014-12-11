@@ -16,11 +16,18 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~1.10.2",
+    "jquery": "~2.1.1",
     "jquery-migrate": "~1.2.1",
     "drupal": "http://cgit.drupalcode.org/drupal/plain/misc/drupal.js?h=7.x",
     "underscore": "~1.6.0",
     "html5shiv": "~3.7.2",
-    "respond": "~1.4.2"
+    "respond": "~1.4.2",
+    "modernizr": "~2.8.3",
+    "jquery-bridget": "~1.1.0",
+    "selectize": "~0.11.0",
+    "imagesloaded": "~3.0.4",
+    "masonry": "~3.1.5",
+    "scrollReveal.js": "~2.0.3",
+    "jquery-ui": "~1.11.2"
   }
 }

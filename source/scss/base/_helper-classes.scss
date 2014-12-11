@@ -85,3 +85,25 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+%adaptive-container {
+  @include breakpoint($bp--small-up) {
+    max-width: $width-small;
+  }
+
+  @include breakpoint($bp--medium-up) {
+    max-width: $width-medium;
+  }
+
+  @include breakpoint($bp--large-up) {
+    max-width: $width-large;
+  }
+
+  @include breakpoint($bp--xlarge-up) {
+    max-width: $width-xlarge;
+  }
+
+  @include breakpoint($bp--xxlarge-up) {
+    max-width: $width-xxlarge;
+  }
+}

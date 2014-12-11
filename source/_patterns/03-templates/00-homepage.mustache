@@ -1,6 +1,6 @@
 <div class="page" id="page">
     {{> organisms-header }}
-  <div role="main">
+  <div class="main" role="main">
       {{# emergency }}
           {{> molecules-alert:error }}
       {{/ emergency }}
@@ -8,25 +8,8 @@
           {{> molecules-block-hero }}
       {{/ hero}}
 
-    <hr/>
+   {{> organisms-homepage-pillars }}
 
-    <div class="l-two-col">
-      <div class="l-main">
-        <section class="section latest-posts">
-          <h2 class="section-title">Latest Posts</h2>
-          <ul class="post-list">
-              {{# latest-posts }}
-                <li>Latest posts</li>
-              {{/ latest-posts }}
-          </ul>
-          <a href="#" class="text-btn">View more posts</a>
-        </section>
-      </div>
-      <!--end .l-main-->
-
-
-    </div>
-    <!--end .l-two-col-->
   </div>
   <!--End role=main-->
     {{> organisms-footer }}

@@ -15,3 +15,9 @@ textarea {
   font-family: $font-body;
   font-size: $root-typesize;
 }
+
+.main {
+  padding: 130px $pad 0 $pad;
+  max-width: $site-width;
+  @extend .center;
+}
