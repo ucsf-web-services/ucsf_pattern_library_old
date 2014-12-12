@@ -87,9 +87,6 @@
 }
 
 %adaptive-container {
-  @include breakpoint($bp--small-up) {
-    max-width: $width-small;
-  }
 
   @include breakpoint($bp--medium-up) {
     max-width: $width-medium;

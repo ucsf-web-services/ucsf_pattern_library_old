@@ -17,7 +17,10 @@ textarea {
 }
 
 .main {
-  padding: 130px $pad 0 $pad;
   max-width: $site-width;
   @extend .center;
+
+  @include breakpoint($bp--medium-up) {
+    padding: 130px $pad 0 $pad;
+  }
 }

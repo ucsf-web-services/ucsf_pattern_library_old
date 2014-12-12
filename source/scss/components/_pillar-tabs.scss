@@ -1,23 +1,27 @@
 .pillar-tabs {
-  padding-bottom: $pad-double-half;
+  padding-bottom: $pad-half;
   //border-bottom: $border-thick;
-  margin-bottom: $pad-double-half;
+  margin-bottom: $pad-half;
   @extend .center;
   @extend %adaptive-container;
 
-  .ui-state-active {
+  @include breakpoint($bp--medium-up) {
+    padding-bottom: $pad-double-half;
+    margin-bottom: $pad-double-half;
+  }
+
+  .resp-tab-active {
     position: relative;
 
-    a {
+    .pillar-tabs-hit {
       background-color: $color--gray--dark;
       color: $white;
     }
 
     &:after {
-      content: "";
       position: absolute;
-      bottom: -37px;
-      left: 44%;
+      bottom: -29px;
+      left: 16%;
       width: 0;
       height: 0;
       border-style: solid;
@@ -26,10 +30,12 @@
 
       @include breakpoint($bp--medium-up) {
         left: 40%;
+        bottom: -37px;
+        content: "";
       }
 
       @include breakpoint($bp--large-up) {
-        left: 43%;
+        left: 42%;
       }
 
       @include breakpoint($bp--xlarge-up) {
@@ -43,9 +49,11 @@
 }
 
 .pillar-tabs-list-wrapper {
-  padding-bottom: $pad-double-half;
-  border-bottom: $border-med;
-  margin-bottom: $pad-double-half;
+  @include breakpoint($bp--medium-up) {
+    padding-bottom: $pad-double-half;
+    border-bottom: $border-med;
+    margin-bottom: $pad-double-half;
+  }
 }
 
 .pillar-tabs-list {
@@ -54,46 +62,190 @@
 }
 
 .pillar-tabs-btn {
-  width: 20%;
-  height: auto;
-  float: left;
 
   @include breakpoint($bp--medium-up) {
-    height: 130px;
+    width: 20%;
+    height: 109px;
+    float: left;
+    margin: 0;
   }
 
   @include breakpoint($bp--large-up) {
-    height: 140px;
+    height: 132px;
   }
 
   @include breakpoint($bp--xlarge-up) {
-    height: 210px;
+    height: 180px;
   }
 
-
-  a {
-    width: auto;
-    height: 100%;
-    display: block;
-    margin: 0 12px;
-    background-color: $color--gray--lighter;
-    text-align: center;
-    padding-top: auto;
-    font-family: $font-body-alt;
-    color: $color--gray--darker;
-    font-size: $font-size-xlarge;
-
-    @include breakpoint($bp--medium-up) {
-      padding-top: 40px;
-    }
-
-    @include breakpoint($bp--large-up) {
-      padding-top: 60px;
-    }
-
-    @include breakpoint($bp--xlarge-up) {
-      padding-top: 90px;
-    }
+  @include breakpoint($bp--xxlarge-up) {
+    height: 210px;
   }
 }
 
+.pillar-tabs-hit {
+  width: auto;
+  height: 100%;
+  display: block;
+  background-color: $color--gray--lighter;
+  font-family: $font-body-alt;
+  color: $color--gray--darker;
+  font-size: $font-size-large;
+  margin: 0 6px;
+  cursor: pointer;
+
+  @include breakpoint($bp--medium-up) {
+    margin: 0 12px;
+    text-align: center;
+  }
+
+  @include breakpoint($bp--large-up) {
+    font-size: $font-size-xlarge;
+  }
+
+  @include breakpoint($bp--xlarge-up) {
+    font-size: $font-size-xxlarge;
+  }
+
+  @include breakpoint($bp--xxlarge-up) {
+    font-size: $font-size-xxxlarge;
+  }
+}
+
+.pillar-tabs-word {
+  display: block;
+  padding: 0;
+
+  @include breakpoint($bp--medium-up) {
+    padding: 0 $pad-quarter;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  @include breakpoint($bp--large-up) {
+    padding: 0 $pad-half;
+  }
+
+  @include breakpoint($bp--xlarge-up) {
+    padding: 0 $pad;
+  }
+
+  @include breakpoint($bp--small-down) {
+    line-height: 45px;
+  }
+}
+
+
+/*-----------Styles for Accordion plugin-----------*/
+
+.resp-tabs-container {
+  padding: 0px;
+  background-color: #fff;
+  clear: left;
+}
+
+.resp-tab-content {
+  display: none;
+  border-top: $border-med;
+  margin: $pad-double $pad $pad;
+  padding-top: $pad-and-half;
+
+  @include breakpoint($bp--medium-up) {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+}
+
+h2.resp-accordion {
+  cursor: pointer;
+  padding: $pad-half;
+  display: none;
+}
+
+@include breakpoint($bp--small-down) {
+
+  .resp-content-active, .resp-accordion-active {
+    display: block;
+  }
+
+  h2.resp-accordion {
+    font-size: $font-size-med-2;
+    background: $color--gray--lighter;
+    border: none;
+    margin: 0 0 2px 0;
+    padding: 1px 15px;
+    display: block;
+    height: 50px;
+  }
+
+  h2.resp-tab-active {
+    margin-bottom: 0px !important;
+    padding: 1px 15px !important;
+    background-color: $color--gray--dark;
+  }
+
+  h2.resp-tab-title:last-child {
+    background: blue;
+  }
+
+  ul.resp-tabs-list, p {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .resp-easy-accordion  h2.resp-accordion {
+    display: block;
+  }
+
+  .resp-jfit {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .resp-tab-content-active {
+    position: relative;
+    display: block;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 9%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 12.5px 15px 12.5px;
+      border-color: transparent transparent #000000 transparent;
+    }
+  }
+
+  .resp-tabs-list li {
+    font-weight: 600;
+    //font-size: 13px;
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+  }
+
+  ul.resp-tabs-list {
+    display: none;
+  }
+
+  .resp-vtabs .resp-tabs-container {
+    border: none;
+    float: none;
+    width: 100%;
+    min-height: initial;
+    clear: none;
+  }
+  .resp-accordion-closed {
+    display:none !important;
+  }
+}
