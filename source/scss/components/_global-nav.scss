@@ -12,12 +12,12 @@
 }
 
 .global-nav-title {
-  @extend .left;
+  @extend .float--left;
   color: $white;
 }
 
 .global-nav-utility {
-  @extend .right;
+  @extend .float--right;
   @extend %links-list;
 
   a {

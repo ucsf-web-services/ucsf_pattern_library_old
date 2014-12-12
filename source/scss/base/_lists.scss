@@ -1,25 +1,90 @@
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul {
-  list-style: none;
-}
-ol {
-  margin-left: 2em;
-}
+/*------------------------------------*\
+    $LISTS
+\*------------------------------------*/
+/**
+ * Remove vertical spacing from nested lists.
+ */
+li > ul, li > ol {
+  margin-bottom: 0; }
 
-/* Definition Lists */
-dl {
-  overflow: hidden;
-  margin: 0 0 $space;
-}
+/**
+ * Have a numbered `ul` without the semantics implied by using an `ol`.
+ */
+/*ul*/
+.numbered-list {
+  list-style-type: decimal; }
 
-dt {
-  font-weight: bold;
-}
+/**
+ * List
+ */
+ul, ol {
+  margin-left: 2em; }
 
+/**
+ * List item
+ */
+li {
+  margin-bottom: 12px;
+  margin-bottom: 0.85714rem; }
+
+/**
+ * Definition List
+ */
 dd {
+  margin-left: 0; }
+
+/**
+ * Definition title
+ */
+dt {
+  font-weight: 600; }
+
+/**
+ * Inline List
+ */
+.list--inline {
+  list-style: none;
+  margin-left: 0; }
+.list--inline > li {
+  display: inline;
+  margin-right: 12px;
+  margin-right: 0.85714rem; }
+
+/**
+ * Inline List
+ */
+.list--unstyled {
+  list-style: none;
+  margin-left: 0; }
+
+/**
+ * Block list
+ */
+.list--block {
+  list-style: none;
+  margin-left: 0; }
+.list--block > li {
+  border-bottom: 1px #BFBFBF solid;
+  padding-bottom: 12px;
+  padding-bottom: 0.85714rem; }
+
+/**
+ * Grid list
+ */
+.list--grid {
+  list-style: none;
   margin-left: 0;
-}
+  font-size: 0; }
+.list--grid > li {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.71429; }
+@media only screen and (min-width: 600px) {
+  .list--grid {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .list--grid > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    padding: 0 15px; } }

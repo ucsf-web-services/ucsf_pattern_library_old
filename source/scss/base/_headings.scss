@@ -1,30 +1,133 @@
-/* Headings */
-/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
-h1, .alpha   { 
-	line-height: 1.2;
-}
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+/**
+ * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ *
+ * When we define a heading we also define a corresponding class to go with it.
+ * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
+ * heading hierarchy.
+ */
+h1, .alpha {
+  font-size: 30px;
+  font-size: 2.14286rem;
+  line-height: 1.6; }
 
-h2, .beta    { 
-	line-height: 1.2;
-}
+h2, .beta {
+  font-size: 24px;
+  font-size: 1.71429rem;
+  line-height: 1; }
 
-h3, .gamma   { 
-	line-height: 1.2;
-}
+h3, .gamma {
+  font-size: 20px;
+  font-size: 1.42857rem;
+  line-height: 1.2; }
 
-h4, .delta   {
-	
-}
+h4, .delta {
+  font-size: 18px;
+  font-size: 1.28571rem;
+  line-height: 1.33333; }
 
-h5, .epsilon { 
-	
-}
+h5, .epsilon {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 1.5; }
 
-h6, .zeta    { 
-	
-}
+h6, .zeta {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.71429; }
 
-/* Subheadings */
-.subheading {
-	font-weight: normal;
-}
+/**
+ * Heading groups and generic any-heading class.
+ * To target any heading of any level simply apply a class of `.hN`, e.g.:
+ *
+   <hgroup>
+       <h1 class=hN>inuit.css</h1>
+       <h2 class=hN>Best. Framework. Ever!</h2>
+   </hgroup>
+ *
+ */
+hgroup .hN {
+  margin-bottom: 0; }
+
+/**
+ * A series of classes for setting massive type; for use in heroes, mastheads,
+ * promos, etc.
+ */
+.giga {
+  font-size: 96px;
+  font-size: 6.85714rem;
+  line-height: 1; }
+
+.mega {
+  font-size: 72px;
+  font-size: 5.14286rem;
+  line-height: 1; }
+
+.kilo {
+  font-size: 48px;
+  font-size: 3.42857rem;
+  line-height: 1; }
+
+
+/**
+ * Headings 1 to 6
+ */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 12px;
+  margin-bottom: 0.85714rem;
+  font-family: $font-headline;
+  font-weight: normal;
+  line-height: 1.25; }
+
+/**
+ * Font sizes
+ */
+h1, .alpha {
+  font-size: 30px;
+  font-size: 2.14286rem; }
+@media only screen and (min-width: 600px) {
+  h1, .alpha {
+    font-size: 48px;
+    font-size: 3.42857rem; } }
+
+h2, .beta {
+  font-size: 24px;
+  font-size: 1.71429rem; }
+@media only screen and (min-width: 600px) {
+  h2, .beta {
+    font-size: 36px;
+    font-size: 2.57143rem; } }
+
+h3, .gamma {
+  font-size: 20px;
+  font-size: 1.42857rem; }
+@media only screen and (min-width: 600px) {
+  h3, .gamma {
+    font-size: 24px;
+    font-size: 1.71429rem; } }
+
+h4, .delta {
+  font-size: 18px;
+  font-size: 1.28571rem; }
+@media only screen and (min-width: 600px) {
+  h4, .delta {
+    font-size: 20px;
+    font-size: 1.42857rem; } }
+
+h5, .epsilon {
+  font-size: 16px;
+  font-size: 1.14286rem; }
+@media only screen and (min-width: 600px) {
+  h5, .epsilon {
+    font-size: 18px;
+    font-size: 1.28571rem; } }
+
+h6, .zeta {
+  font-size: 14px;
+  font-size: 1rem; }
+@media only screen and (min-width: 600px) {
+  h6, .zeta {
+    font-size: 16px;
+    font-size: 1.14286rem; } }

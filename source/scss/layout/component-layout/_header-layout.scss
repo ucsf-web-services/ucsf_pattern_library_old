@@ -16,17 +16,17 @@
   }
 
   .header-navs {
-    @extend .right;
+    @extend .float--right;
     padding-top: $pad-double-half;
   }
 
   .logo {
-    @extend .left;
+    @extend .float--left;
     padding-top: 20px;
   }
 
   .nav {
-    @extend .left;
+    @extend .float--left;
     margin: $pad-half $pad-double-half 0 0;
 
     ul {
@@ -35,6 +35,6 @@
   }
 
   .social-nav {
-    @extend .left;
+    @extend .float--left;
   }
 }

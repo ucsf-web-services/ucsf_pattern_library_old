@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    BREADCRUMBS.CSS
+\*------------------------------------*/
+.ui-breadcrumbs {
+  list-style: none;
+  margin-left: 0;
+  /* Icon Home */ }
+.ui-breadcrumbs > li {
+  display: inline;
+  margin-right: 8px;
+  margin-right: 0.57143rem; }
+.ui-breadcrumbs > li:before {
+  font-family: "FontAwesome";
+  content: "\f105";
+  padding-right: 8px;
+  padding-right: 0.57143rem;
+  color: #BFBFBF; }
+.ui-breadcrumbs > li:first-child:before {
+  content: '';
+  padding-right: 0; }
+.ui-breadcrumbs .fa {
+  font-size: 14px;
+  font-size: 1rem; }

@@ -3,6 +3,7 @@ require 'breakpoint'
 require 'singularitygs'
 require 'toolkit'
 require 'sass-globbing'
+require 'compass-normalize'
 require 'font-awesome-sass'
 
 # Set this to the root of your project when deployed:
