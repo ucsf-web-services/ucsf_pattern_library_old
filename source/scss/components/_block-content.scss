@@ -1,0 +1,54 @@
+.block-content {
+
+  h3, h5 {
+    padding: $pad-half;
+
+    @include breakpoint($bp--medium-up) {
+      padding: $pad-and-half $pad;
+    }
+  }
+
+  h5 {
+    font-weight: normal;
+    padding-top: $pad-double;
+  }
+
+  @include breakpoint($bp--medium-up) {
+    margin-bottom: $pad-double;
+  }
+}
+
+.block-content__inner {
+  position: relative;
+  background: $color--gray--lightest;
+
+  @extend %block-square-4-inner;
+}
+
+.block-content--quarter {
+  @extend %block-square-4;
+}
+
+.block-content--quarter-1col {
+  @extend %block-square-4-1col;
+}
+
+.block-content--quarter-2col {
+  @extend %block-square-4-2col;
+}
+
+.block-content__label {
+  border-top: 3px solid $color--gray--light;
+  padding-top: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: $font-size-small;
+  font-weight: bold;
+  color: $color--gray--light;
+  top: 0;
+  left: 0;
+}
+
+.block-content__label__text {
+  margin: 0 $pad-half;
+}

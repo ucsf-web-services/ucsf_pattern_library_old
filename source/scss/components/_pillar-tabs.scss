@@ -1,14 +1,13 @@
+.pillar-tabs-wrapper {
+  @extend %component-footer;
+  @include breakpoint($bp--medium-up) {
+    padding-bottom: $pad;
+  }
+}
+
 .pillar-tabs {
-  padding-bottom: $pad-half;
-  //border-bottom: $border-thick;
-  margin-bottom: $pad-half;
   @extend .center;
   @extend %adaptive-container;
-
-  @include breakpoint($bp--medium-up) {
-    padding-bottom: $pad-double-half;
-    margin-bottom: $pad-double-half;
-  }
 
   .resp-tab-active {
     position: relative;
@@ -57,30 +56,11 @@
 }
 
 .pillar-tabs-list {
-  margin: 0 -12px;
-  @extend .cf;
+  @extend %block-square-5-wrapper
 }
 
 .pillar-tabs-btn {
-
-  @include breakpoint($bp--medium-up) {
-    width: 20%;
-    height: 109px;
-    float: left;
-    margin: 0;
-  }
-
-  @include breakpoint($bp--large-up) {
-    height: 132px;
-  }
-
-  @include breakpoint($bp--xlarge-up) {
-    height: 180px;
-  }
-
-  @include breakpoint($bp--xxlarge-up) {
-    height: 210px;
-  }
+  @extend %block-square-5;
 }
 
 .pillar-tabs-hit {
@@ -91,10 +71,14 @@
   font-family: $font-body-alt;
   color: $color--gray--darker;
   font-size: $font-size-large;
-  margin: 0 6px;
+  line-height: 1.2;
   cursor: pointer;
+  padding: 3px 0 0 12px;
+
+  @include transition(background-color, $default-transition-duration, $default-transition-function);
 
   @include breakpoint($bp--medium-up) {
+    padding: 0;
     margin: 0 12px;
     text-align: center;
   }
@@ -109,6 +93,10 @@
 
   @include breakpoint($bp--xxlarge-up) {
     font-size: $font-size-xxxlarge;
+  }
+
+  &:hover {
+    background-color: darken($color--gray--lighter, 10);
   }
 }
 
@@ -162,7 +150,7 @@
 
 h2.resp-accordion {
   cursor: pointer;
-  padding: $pad-half;
+  //padding: $pad-half;
   display: none;
 }
 
@@ -177,15 +165,15 @@ h2.resp-accordion {
     background: $color--gray--lighter;
     border: none;
     margin: 0 0 2px 0;
-    padding: 1px 15px;
+    padding: 0;
     display: block;
     height: 50px;
   }
 
   h2.resp-tab-active {
     margin-bottom: 0px !important;
-    padding: 1px 15px !important;
-    background-color: $color--gray--dark;
+    //padding: 1px 15px !important;
+    //background-color: $color--gray--dark;
   }
 
   h2.resp-tab-title:last-child {

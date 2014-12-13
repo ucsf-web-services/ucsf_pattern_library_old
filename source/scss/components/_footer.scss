@@ -5,8 +5,11 @@
 }
 
 .copyright {
-  margin: 0 $pad;
   padding: $pad 0 $pad-double 0;
   border-top: $border-thick;
   font-size: $font-size-small;
+
+  @include breakpoint($bp--medium-up) {
+    margin: 0 $pad;
+  }
 }

@@ -1,0 +1,18 @@
+.block-more {
+  margin: $pad-half;
+  border: 2px solid $color--gray--lightest;
+  padding: $pad;
+  font-size: $font-size-large;
+
+
+  @include breakpoint($bp--medium-up) {
+    min-height: 250px;
+  }
+  @include breakpoint($bp--large-up) {
+
+  } 
+  @include breakpoint($bp--xlarge-up) {
+    min-height: 300px;
+  }
+  
+}

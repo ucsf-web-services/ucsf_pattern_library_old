@@ -1,40 +1,81 @@
 .header {
-  position: fixed;
-  top: 1;
-  width: 100%;
 
-  .global-nav {
+  @include breakpoint($bp--medium-up) {
+    position: fixed;
+    top: 1;
+    width: 100%;
+  }
+
+  .nav-global {
     @extend .cf;
+  }
+
+  .nav-global__utility {
+    display: none;
+
+    @include breakpoint($bp--medium-up) {
+      display: block;
+    }
   }
 
   .header-logo-bar {
     @extend .cf;
     @extend .center;
-    height: 86px;
+    height: 40px;
     padding: 0 $pad;
     max-width: $site-width;
+    position: relative;
+
+    @include breakpoint($bp--medium-up) {
+      height: 86px;
+    }
   }
 
   .header-navs {
     @extend .float--right;
-    padding-top: $pad-double-half;
+    padding-top: $pad-double;
+
+    @include breakpoint($bp--large-up) {
+      padding-top: 20px;
+    }
   }
 
   .logo {
     @extend .float--left;
-    padding-top: 20px;
-  }
+    padding-top: 7px;
+    width: 60px;
 
-  .nav {
-    @extend .float--left;
-    margin: $pad-half $pad-double-half 0 0;
-
-    ul {
-      @extend %links-list;
+    @include breakpoint($bp--medium-up) {
+      padding-top: 20px;
+      width: auto;
     }
   }
 
-  .social-nav {
+  .nav-primary {
     @extend .float--left;
+  }
+
+  .nav-social {
+    display: none;
+
+    @include breakpoint($bp--medium-up) {
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: 12px;
+    }
+
+    @include breakpoint($bp--large-up) {
+      position: relative;
+      top: auto;
+      right: auto;
+      float: left;
+    }
+  }
+
+  .mobile-menu-button {
+    @include breakpoint($bp--medium-up) {
+      display: none;
+    }
   }
 }

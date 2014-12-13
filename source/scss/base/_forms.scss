@@ -172,7 +172,7 @@ input[type="search"] {
  */
 .text-input, textarea {
   border: 1px #BFBFBF solid;
-  padding: 0.5em 1em;
+  padding: 0.24em 1em; // Original was 0.5em 1em, changed to match visually
   background: #FAFAFA;
   transition: all 0.1s ease-in;
   vertical-align: middle;
@@ -373,3 +373,28 @@ fieldset {
   border-bottom-right-radius: 2px; }
 .input-group .text-input:focus, .input-group textarea:focus {
   position: relative; }
+
+/**
+ * Select replacement
+ */
+/* Replaced element */
+.selecter {
+  margin: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.71429rem;
+  max-width: 100%;
+}
+
+/**
+ * Multiple select
+ */
+.selecter.multiple .selecter-item.selected {
+  position: relative; }
+.selecter.multiple .selecter-item.selected:after {
+  content: "\f058";
+  font-family: FontAwesome;
+  color: #18A3AC;
+  position: absolute;
+  right: 1em;
+  font-size: 18px;
+  top: 6px; }

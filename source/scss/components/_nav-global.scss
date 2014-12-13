@@ -1,4 +1,4 @@
-.global-nav {
+.nav-global {
   height: 30px;
   font-size: $font-size-small-2;
   line-height: 30px;
@@ -7,18 +7,23 @@
   @extend .center;
 }
 
-.global-nav-wrapper {
+.nav-global-wrapper {
   background-color: $color--gray--darker;
 }
 
-.global-nav-title {
+.nav-global__title {
   @extend .float--left;
   color: $white;
 }
 
-.global-nav-utility {
+.nav-global__utility {
+  display: none;
   @extend .float--right;
   @extend %links-list;
+
+  @include breakpoint($bp--medium-up) {
+    display: block;
+  }
 
   a {
     color: $white;

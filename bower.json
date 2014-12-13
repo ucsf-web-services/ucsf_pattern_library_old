@@ -28,6 +28,7 @@
     "imagesloaded": "~3.0.4",
     "masonry": "~3.1.5",
     "scrollReveal.js": "~2.0.3",
-    "jquery-ui": "~1.11.2"
+    "jquery-ui": "~1.11.2",
+    "Selecter": "~3.2.3"
   }
 }

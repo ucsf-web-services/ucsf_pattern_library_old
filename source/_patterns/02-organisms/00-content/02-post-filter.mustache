@@ -1,0 +1,60 @@
+<div class="post-filter__wrapper">
+  <div class="post-filter">
+    <h2>Latest News from UCSF</h2>
+
+    <div id="post-filter-tags" class="post-filter__tags">
+      <label>
+        <input type="checkbox" checked="checked" rel="patient-care"/>
+        Patient Care
+      </label>
+      <label>
+        <input type="checkbox" checked="checked" rel="education"/>
+        Education
+      </label>
+      <label>
+        <input type="checkbox" checked="checked" rel="research"/>
+        Research
+      </label>
+      <label>
+        <input type="checkbox" checked="checked" rel="campus-news"/>
+        Campus News
+      </label>
+      <label>
+        <input type="checkbox" checked="checked" rel="other"/>
+        Other
+      </label>
+    </div>
+    <div class="post-filter-results__wrapper">
+      <ul id="post-filter-results" class="post-filter__results">
+        <li class="patient-care">
+          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        </li>
+        <li class="research">
+          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        </li>
+        <li class="education">
+          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        </li>
+        <li class="campus-news">
+          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        </li>
+        <li class="other">
+          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        </li>
+        <li class="research">
+          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        </li>
+        <li class="patient-care">
+          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        </li>
+        <li class="more">
+          <div class="post-filter__results__inner">
+            <div class="block-more">
+              More Stories
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

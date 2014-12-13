@@ -1,0 +1,235 @@
+@media only screen and (min-width: 600px) {
+  /*------------------------------------*\
+    TABLET-DESKTOPS.CSS
+    For tablets and desktops and Up
+\*------------------------------------*/
+  /*
+ * Add Grids for tablets and desktops
+ */
+  /*------------------------------------*\
+	GRIDS
+\*------------------------------------*/
+  /**
+ * Nested Row
+ */
+  /**
+ * Collapsed Row
+ */
+  /**
+ * Grid Clearing
+ */
+  /* Columns */
+  /**
+ * Column aligned centrally
+ */
+  /**
+ * Generates grids columns
+ * .one, .two....
+ */
+  /**
+ * Creates Push Pull classes for alignment in mobile
+ */
+  /*
+ * Show Hide Sections
+ */
+  /* ---- */
+  /**
+ * Container
+ */
+  .row .row, .row--wide {
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    margin-left: -15px;
+    margin-right: -15px; }
+  .row--collapse .columns {
+    padding-left: 0;
+    padding-right: 0; }
+  .row .row--collapse {
+    margin-left: 0;
+    margin-right: 0; }
+  .row {
+    *zoom: 1; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .columns {
+    float: left;
+    min-height: 1px;
+    padding: 0 15px;
+    position: relative; }
+  .column--center {
+    float: none;
+    margin: 0 auto; }
+  .one {
+    width: 8.33333%; }
+  .two {
+    width: 16.66667%; }
+  .three {
+    width: 25%; }
+  .four {
+    width: 33.33333%; }
+  .five {
+    width: 41.66667%; }
+  .six {
+    width: 50%; }
+  .seven {
+    width: 58.33333%; }
+  .eight {
+    width: 66.66667%; }
+  .nine {
+    width: 75%; }
+  .ten {
+    width: 83.33333%; }
+  .eleven {
+    width: 91.66667%; }
+  .twelve {
+    width: 100%; }
+  .push--one {
+    left: 8.33333%; }
+  .pull--one {
+    right: 8.33333%; }
+  .push--two {
+    left: 16.66667%; }
+  .pull--two {
+    right: 16.66667%; }
+  .push--three {
+    left: 25%; }
+  .pull--three {
+    right: 25%; }
+  .push--four {
+    left: 33.33333%; }
+  .pull--four {
+    right: 33.33333%; }
+  .push--five {
+    left: 41.66667%; }
+  .pull--five {
+    right: 41.66667%; }
+  .push--six {
+    left: 50%; }
+  .pull--six {
+    right: 50%; }
+  .push--seven {
+    left: 58.33333%; }
+  .pull--seven {
+    right: 58.33333%; }
+  .push--eight {
+    left: 66.66667%; }
+  .pull--eight {
+    right: 66.66667%; }
+  .push--nine {
+    left: 75%; }
+  .pull--nine {
+    right: 75%; }
+  .push--ten {
+    left: 83.33333%; }
+  .pull--ten {
+    right: 83.33333%; }
+  .push--eleven {
+    left: 91.66667%; }
+  .pull--eleven {
+    right: 91.66667%; }
+  .show-for-desktop-above {
+    display: inherit; }
+  .hide-for-tablet-above {
+    display: none; }
+  .container .row {
+    margin-left: -15px;
+    margin-right: -15px; } }
+
+/**
+ * 992px
+ */
+@media only screen and (min-width: 960px) {
+  /*------------------------------------*\
+	DESKTOP.CSS
+\*------------------------------------*/
+  /*
+ * Show Hide Sections
+ */
+  /*
+ * Container
+ */
+  /**
+	 * Container Small
+	 */
+  /**
+ * Floated Media
+ */
+  /**
+ * Media grid Four
+ */
+  .show-for-desktop {
+    display: inherit; }
+  .hide-for-desktop {
+    display: none; }
+  .container {
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0; }
+  .container--small {
+    width: 700px; }
+  .ui-media--grid {
+    /* Media item */ }
+  .ui-media--grid > li {
+    display: inline-block;
+    width: 25%;
+    padding-right: 1em; }
+  .ui-media--grid .media__item {
+    margin-bottom: 12px;
+    margin-bottom: 0.85714rem; }
+  .ui-media-grid--four > .ui-media {
+    width: 25%; } }
+
+/**
+ * Target Specific Devices Only
+ */
+@media only screen and (max-width: 600px) {
+  /*------------------------------------*\
+    PHONE ONLY
+\*------------------------------------*/
+  /*
+ * Show Hide Sections
+ */
+  /*
+ * Add Grids for Phones only
+ */
+  /*------------------------------------*\
+	Grids for Phones Only
+\*------------------------------------*/
+  /**
+ * Phone - Specify number of columns
+ * <div class="columns three three--phone"></div>  => Two phone in tablet
+ */
+  .hide-for-phone {
+    display: none; }
+  .one--phone {
+    float: left;
+    padding: 0 15px;
+    width: 8.33333%; }
+  .two--phone {
+    float: left;
+    padding: 0 15px;
+    width: 16.66667%; }
+  .three--phone {
+    float: left;
+    padding: 0 15px;
+    width: 25%; }
+  .four--phone {
+    float: left;
+    padding: 0 15px;
+    width: 33.33333%; }
+  .five--phone {
+    float: left;
+    padding: 0 15px;
+    width: 41.66667%; }
+  .six--phone {
+    float: left;
+    padding: 0 15px;
+    width: 50%; }
+  .seven--phone {
+    float: 5px;
+    width: 100%; } }
