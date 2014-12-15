@@ -8,6 +8,14 @@
   }
 }
 
+.post-filter__wrapper {
+  @extend %component-footer;
+
+  @include breakpoint($bp--medium-up) {
+    padding-bottom: $pad-half;
+  }
+}
+
 .post-filter__tags {
   margin-bottom: $pad;
 
@@ -33,7 +41,6 @@
 
 .post-filter__results {
   @extend .center;
-  //@extend %block-square-4-wrapper;
 
   li {
     width: 290px;
@@ -63,7 +70,6 @@
 
 .post-filter__results__inner {
   margin: 0 0 $pad 0;
-  //background-color: $color--gray--white;
 
   @include breakpoint($bp--medium-up) {
     margin: $pad;

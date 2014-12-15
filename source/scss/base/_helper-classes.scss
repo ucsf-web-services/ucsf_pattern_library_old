@@ -326,6 +326,7 @@
 
 
 %adaptive-container {
+  margin: 0 auto;
 
   @include breakpoint($bp--medium-up) {
     max-width: $width-medium;
