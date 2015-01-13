@@ -35,6 +35,7 @@
 
   <script src="../../js/easyResponsiveTabs.js"></script>
   <script src="../../js/breakpoints.js"></script>
+  <script src="../../js/matchHeight.js"></script>
   <script src="../../js/script.js"></script>
   <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
   		<!-- never cache patterns -->
@@ -52,9 +53,13 @@
 
 </head>
 <body class="body">
-<div class="block-post">
-  <img src="../../images/fpo_16x9.png" alt="16x9 Image" />  <h4>Lorem ipsum dolor sit (37 characters)</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+<div class="block-post with-image ">
+    <img src="../../images/fpo_16x9.png" alt="16x9 Image" />  <a href="#" class="btn btn--term btn--term">Primary Term</a>
+  <div class="content">
+    <div class="submitted-date">December 11, 2014</div>
+    <h4><a href="#">Lorem ipsum dolor sit (37 characters)</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
 </div>
 	<!--DO NOT REMOVE-->
 		
@@ -62,7 +67,7 @@
 		// handle injection of items from PHP
 		var patternPartial = "molecules-block-post";
 		var lineage        = [{"lineagePattern":"atoms-landscape-16x9","lineagePath":"..\/..\/patterns\/00-atoms-04-images-02-landscape-16x9\/00-atoms-04-images-02-landscape-16x9.html"}];
-		var lineageR       = [{"lineagePattern":"organisms-post-filter","lineagePath":"..\/..\/patterns\/02-organisms-00-content-02-post-filter\/02-organisms-00-content-02-post-filter.html"}];
+		var lineageR       = [{"lineagePattern":"organisms-post-filter","lineagePath":"..\/..\/patterns\/02-organisms-00-content-02-post-filter\/02-organisms-00-content-02-post-filter.html"},{"lineagePattern":"organisms-news-center-latest-news","lineagePath":"..\/..\/patterns\/02-organisms-00-content-04-news-center-latest-news\/02-organisms-00-content-04-news-center-latest-news.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

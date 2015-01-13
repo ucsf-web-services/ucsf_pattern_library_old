@@ -64,7 +64,8 @@
 .btn--small {
   padding-right: 0.5em;
   padding-left: 0.5em;
-  line-height: 2; }
+  line-height: 2; 
+}
 
 .btn--large {
   padding-right: 1.5em;
@@ -457,4 +458,52 @@
   background: #323A45;
   border-color: #323A45;
   color: #fff;
+}
+
+
+.btn--term {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  line-height: 2; 
+  font-size: 10px;
+  text-transform: uppercase;
+  color: $white;
+  background: $color--blue-green;
+  
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn--term--research {
+  background: $color--blue-green;
+}
+
+.btn--term--campus-news {
+  background: $color--chetwode-blue;
+}
+
+.btn--term--patient-care {
+  background: $color--electric-blue;
+}
+
+.btn--term--education {
+  background: $color--yellow-green;
+}
+
+.btn--more {
+  font-family: $font-body;
+  font-weight: $font-body--medium;
+  float: right;
+  font-size: 10px;
+  line-height: 18px;
+  white-space: nowrap;
+  border-color: $color--electric-blue;
+  color: $color--electric-blue;
+  text-transform: uppercase;
+  
+  &:hover {
+    border-color: lighten($color--electric-blue, 10%);
+    color: lighten($color--electric-blue, 10%);
+  }
 }

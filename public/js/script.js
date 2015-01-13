@@ -1,6 +1,7 @@
-(function (w) {
+(function ($) {
+  "use strict";
+  
   $(function() {
-    "use strict";
 
     $(window).setBreakpoints({
       // use only largest available vs use all available
@@ -25,8 +26,8 @@
       type: 'default', //Types: default, vertical, accordion
       width: 'auto', //auto or any width like 600px
       fit: true,   // 100% fit in a container
-      closed: 'accordion', // Start closed if in accordion view
-      activate: function (event) { // Callback function if tab is switched
+      /*
+activate: function (event) { // Callback function if tab is switched
         //var $tab = $(this);
         //var $info = $('#tabInfo');
         //var $name = $('span', $info);
@@ -34,7 +35,10 @@
         //$name.text($tab.text());
 
         //$info.show();
-      }
+      },
+*/
+      closed: 'accordion' // Start closed if in accordion view
+      
     });
 
     var $container = $('#post-filter-results');
@@ -102,8 +106,10 @@
 
       $container.masonry();
 
-      });
     });
-
-})(this);
-
+      
+      
+    // provide some equal heights for various elements
+    $('.blog--science ul > li').matchHeight(false);
+  });  
+})(jQuery);

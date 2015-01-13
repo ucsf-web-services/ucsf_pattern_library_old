@@ -19,3 +19,27 @@ textarea {
     padding: 130px $pad 0 $pad;
   }
 }
+
+
+.wrapper {
+  
+}
+.wrapper--main {
+  @include breakpoint($bp--medium-up) {
+    padding-top: 130px;
+    padding-bottom: 0;
+  }
+}
+
+.wrapper--outer {
+  width: 100%;
+  @extend .center;
+}
+
+.wrapper--inner {
+  max-width: $site-width;
+  padding-left: $pad;
+  padding-right: $pad;
+  
+  @extend .center;
+}
