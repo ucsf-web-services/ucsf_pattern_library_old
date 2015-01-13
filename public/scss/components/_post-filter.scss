@@ -1,0 +1,81 @@
+.post-filter {
+  overflow: hidden;
+  margin: 0 $pad;
+  @extend %adaptive-container;
+
+  @include breakpoint($bp--medium-up) {
+    margin: 0 auto;
+  }
+}
+
+.post-filter__wrapper {
+  @extend %component-footer;
+
+  @include breakpoint($bp--medium-up) {
+    padding-bottom: $pad-half;
+  }
+}
+
+.post-filter__tags {
+  margin-bottom: $pad;
+
+  @include breakpoint($bp--large-up) {
+    margin-bottom: $pad-double;
+  }
+
+  label {
+    display: inline-block;
+    padding: $pad-quarter $pad-half;
+    background-color: $color--gray--lightest;
+    font-size: $font-size-med-2;
+    margin: 0 $pad-quarter $pad-quarter 0;
+    font-weight: normal;
+
+    @include breakpoint($bp--xlarge-up) {
+      margin: 0 $pad-half 0 0;
+      padding: $pad-quarter $pad;
+      font-size: $font-size-xlarge;
+    }
+  }
+}
+
+.post-filter__results {
+  @extend .center;
+
+  li {
+    width: 290px;
+    list-style-type: none;
+
+    @include breakpoint($bp--small-up) {
+      width: 440px;
+    }
+
+    @include breakpoint($bp--medium-up) {
+      width: 320px;
+    }
+
+    @include breakpoint($bp--large-up) {
+      width: 398px;
+    }
+
+    @include breakpoint($bp--xlarge-up) {
+      width: 340px;
+    }
+
+    @include breakpoint($bp--xxlarge-up) {
+      width: 297px;
+    }
+  }
+}
+
+.post-filter__results__inner {
+  margin: 0 0 $pad 0;
+
+  @include breakpoint($bp--medium-up) {
+    margin: $pad;
+  }
+}
+
+.post-filter-results__wrapper {
+  margin: 0 -30px;
+}

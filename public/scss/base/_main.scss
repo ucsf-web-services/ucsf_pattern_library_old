@@ -1,0 +1,21 @@
+html {
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font: 0.875em/1.71429 $default-font;
+}
+
+.main {
+  max-width: $site-width;
+  @extend .center;
+
+  @include breakpoint($bp--medium-up) {
+    padding: 130px $pad 0 $pad;
+  }
+}

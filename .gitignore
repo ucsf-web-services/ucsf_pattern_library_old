@@ -15,9 +15,9 @@ source/bower_components
 source/css/
 
 # Styleguide specific stuff
-public/*
+#public/*
 !public/styleguide/
-public/styleguide/html/styleguide.html
+#public/styleguide/html/styleguide.html
 
 # node stuffz
 node_modules

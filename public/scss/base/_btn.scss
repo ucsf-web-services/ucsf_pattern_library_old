@@ -1,0 +1,460 @@
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base button styles.
+ *
+ * 1. Allow us to better style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Stop buttons wrapping and looking broken.
+ * 4. Make buttons inherit font styles.
+ * 5. Force all elements using beautons to appear clickable.
+ * 6. Normalise box model styles.
+ * 7. If the buttonâ€™s text is 1em, and the button is (3 * font-size) tall, then
+ *    there is 1em of space above and below that text. We therefore apply 1em
+ *    of space to the left and right, as padding, to keep consistent spacing.
+ * 8. Basic cosmetics for default buttons. Change or override at will.
+ * 9. Donâ€™t allow buttons to have underlines; it kinda ruins the illusion.
+ */
+.btn {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  white-space: nowrap;
+  /* [3] */
+  font-family: inherit;
+  /* [4] */
+  font-size: 100%;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  border: none;
+  /* [6] */
+  margin: 0;
+  /* [6] */
+  padding-top: 0;
+  /* [6] */
+  padding-bottom: 0;
+  /* [6] */
+  line-height: 3;
+  /* [7] */
+  padding-right: 1em;
+  /* [7] */
+  padding-left: 1em;
+  /* [7] */
+  border-radius: 4px;
+  /* [8] */ }
+
+.btn, .btn:hover {
+  text-decoration: none;
+  /* [9] */ }
+.btn:active, .btn:focus {
+  outline: none; }
+
+/*------------------------------------*\
+    $SIZES
+\*------------------------------------*/
+/**
+ * Button size modifiers.
+ *
+ * These all follow the same sizing rules as above; text is 1em, space around it
+ * remains uniform.
+ */
+.btn--small {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  line-height: 2; }
+
+.btn--large {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  line-height: 4; }
+
+.btn--huge {
+  padding-right: 2em;
+  padding-left: 2em;
+  line-height: 5; }
+
+/**
+ * These buttons will fill the entirety of their container.
+ *
+ * 1. Remove padding so that widths and paddings donâ€™t conflict.
+ */
+.btn--full {
+  width: 100%;
+  padding-right: 0;
+  /* [1] */
+  padding-left: 0;
+  /* [1] */
+  text-align: center; }
+
+/*------------------------------------*\
+    $FONT-SIZES
+\*------------------------------------*/
+/**
+ * Button font-size modifiers.
+ */
+.btn--alpha {
+  font-size: 3rem; }
+
+.btn--beta {
+  font-size: 2rem; }
+
+.btn--gamma {
+  font-size: 1rem; }
+
+/**
+ * Make the button inherit sizing from its parent.
+ */
+.btn--natural {
+  vertical-align: baseline;
+  font-size: inherit;
+  line-height: inherit;
+  padding-right: 0.5em;
+  padding-left: 0.5em; }
+
+/**
+ * Positive actions; e.g. sign in, purchase, submit, etc.
+ */
+.btn--positive {
+  background-color: #4A993E;
+  color: #fff; }
+
+/**
+ * Negative actions; e.g. close account, delete photo, remove friend, etc.
+ */
+.btn--negative {
+  background-color: #b33630;
+  color: #fff; }
+
+/**
+ * Inactive, disabled buttons.
+ *
+ * 1. Make the button look like normal text when hovered.
+ */
+.btn--inactive, .btn--inactive:hover, .btn--inactive:active, .btn--inactive:focus {
+  background-color: #ddd;
+  color: #777;
+  cursor: text;
+  /* [1] */ }
+
+/**
+ * Button style modifiers.
+ *
+ * 1. Use an overly-large number to ensure completely rounded, pill-like ends.
+ */
+.btn--soft {
+  border-radius: 200px;
+  /* [1] */ }
+
+.btn--hard {
+  border-radius: 0; }
+
+/**
+* Adjacent buttons
+*/
+.btn + .btn, .btn-group + .btn-group {
+  margin-left: 12px;
+  margin-left: 0.85714rem; }
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  border-radius: 2px;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  background: #EDEEF1;
+  margin-bottom: 12px;
+  margin-bottom: 0.85714rem;
+}
+
+/**
+* Button Primary
+*/
+.btn--primary:hover, .btn--primary:active, .btn--primary {
+  background: #18A3AC;
+  border-color: #18A3AC;
+  color: #fff; }
+.btn--primary:hover {
+  background: #1bbac2;
+  border-color: #1bbac2; }
+.btn--primary:active, .btn--primary:focus {
+  background: #127a7f;
+  border-color: #127a7f; }
+
+/**
+* Button Secondary
+*/
+.btn--secondary:hover, .btn--secondary:active, .btn--secondary {
+  background: #9DA6AF;
+  border-color: #9DA6AF;
+  color: #fff; }
+.btn--secondary:hover {
+  background: #abb3ba;
+  border-color: #abb3ba; }
+.btn--secondary:active, .btn--secondary:focus {
+  background: #818c98;
+  border-color: #818c98; }
+
+/**
+* Button Secondary
+*/
+.btn--warning:hover, .btn--warning:active, .btn--warning {
+  background: #E74C3C;
+  border-color: #E74C3C;
+  color: #fff; }
+.btn--warning:hover {
+  background: #ed7469;
+  border-color: #ed7469; }
+.btn--warning:active, .btn--warning:focus {
+  background: #d62a1a;
+  border-color: #d62a1a; }
+
+/**
+* Dark button
+*/
+.btn--dark:hover, .btn--dark:active, .btn--dark {
+  background: #323A45;
+  border-color: #323A45;
+  color: #fff; }
+.btn--dark:hover {
+  background: #475363;
+  border-color: #475363; }
+.btn--dark:active, .btn--dark:focus {
+  background: #1d2127;
+  border-color: #1d2127; }
+
+/**
+* Button Facebook
+*/
+.btn--facebook:hover, .btn--facebook:active, .btn--facebook {
+  background: #5970B3;
+  border-color: #5970B3;
+  color: #fff; }
+.btn--facebook:hover {
+  background: #7c8fc3;
+  border-color: #7c8fc3; }
+.btn--facebook:active, .btn--facebook:focus {
+  background: #445a95;
+  border-color: #445a95; }
+
+/**
+* Button Google
+*/
+.btn--google:hover, .btn--google:active, .btn--google {
+  background: #EF2213;
+  border-color: #EF2213;
+  color: #fff; }
+.btn--google:hover {
+  background: #f24e43;
+  border-color: #f24e43; }
+.btn--google:active, .btn--google:focus {
+  background: #c2190d;
+  border-color: #c2190d; }
+
+/**
+* Button light
+*/
+.btn--light:hover, .btn--light:active, .btn--light {
+  background: #fff;
+  border-color: #a6a6a6;
+  color: #fff; }
+.btn--light:hover {
+  background: white;
+  border-color: #b2b2b2; }
+.btn--light:active, .btn--light:focus {
+  background: #e6e6e6;
+  border-color: #8c8c8c; }
+.btn--light, .btn--light:hover, .btn--light:active {
+  color: #444; }
+.btn--light:hover {
+  border-color: #bfbfbf; }
+
+/**
+* Button Transparent
+*/
+.btn--transparent:hover, .btn--transparent:active, .btn--transparent {
+  background: transparent;
+  border-color: #fff;
+  color: #fff; }
+.btn--transparent:hover {
+  border-color: white; }
+.btn--transparent:active, .btn--transparent:focus {
+  background: #e6e6e6;
+  border-color: #e6e6e6; }
+
+/**
+* Button unstyled
+*/
+.btn--unstyled, .btn--unstyled:hover {
+  background: transparent;
+  border-color: transparent !important; }
+
+/**
+* Toggle button
+*/
+.btn--toggle {
+  font-size: 30px;
+  float: right;
+  margin: 0;
+  padding: 0 15px; }
+.btn--toggle .fa {
+  margin: 0; }
+
+/**
+* Button group
+*/
+.btn-group {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 12px;
+  margin-bottom: 0.85714rem;
+  vertical-align: middle;
+  *zoom: 1;
+  /**
+  * Primary button
+  */
+  /**
+  * Secondary button
+  */
+  /**
+  * Warning button
+  */
+  /**
+  * Warning button
+  */ }
+.btn-group:before, .btn-group:after {
+  content: " ";
+  display: table; }
+.btn-group:after {
+  clear: both; }
+.btn-group > .btn {
+  float: left;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: -1px; }
+.btn-group > .btn:not(:first-child):not(:last-child):not(.btn--dropdown) {
+  border-radius: 0; }
+.btn-group > .btn:first-child {
+  margin-left: 0; }
+.btn-group > .btn:first-child:not(:last-child):not(.btn--dropdown) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .btn--dropdown:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+.btn-group .btn--primary {
+  border-left-color: #127a7f; }
+.btn-group .btn--primary:first-child {
+  border-left-color: transparent; }
+.btn-group .btn--secondary {
+  border-left-color: #818c98; }
+.btn-group .btn--secondary:first-child {
+  border-left-color: transparent; }
+.btn-group .btn--warning {
+  border-left-color: #d62a1a; }
+.btn-group .btn--warning:first-child {
+  border-left-color: transparent; }
+.btn-group .btn--dark {
+  border-left-color: #1d2127; }
+.btn-group .btn--dark:first-child {
+  border-left-color: transparent; }
+
+/**
+* Dropdown button
+*/
+.btn--dropdown {
+  padding-left: 0.8em;
+  padding-right: 0.8em; }
+.btn--dropdown .caret {
+  margin: 0; }
+
+/**
+* Button Sizes
+*/
+/**
+* Alpha Button
+*/
+.btn--alpha {
+  font-size: 16px;
+  font-size: 1.14286rem; }
+
+/**
+* Beta Button
+*/
+.btn--beta {
+  font-size: 14px;
+  font-size: 1rem; }
+
+/**
+* Gamma Button
+*/
+.btn--gamma {
+  font-size: 12px;
+  font-size: 0.85714rem; }
+
+/**
+* Hard Button
+*/
+.btn--hard {
+  border-radius: 0; }
+
+/**
+* Soft button
+*/
+.btn--soft {
+  border-radius: 200px; }
+
+/**
+* Button round
+*/
+.btn--round {
+  border-radius: 200px;
+  padding-left: 0.7em;
+  padding-right: 0.7em; }
+
+/**
+* Fixed width
+*/
+.btn--fix {
+  min-width: 100px;
+  text-align: center; }
+
+/**
+* Button large
+*/
+.btn--large {
+  padding: 0.8em 2em; }
+
+/**
+* Button with icons aligned to the left
+*/
+.btn--icon-left {
+  position: relative; }
+.btn--icon-left .fa {
+  position: absolute;
+  left: 15px;
+  top: 12px; }
+
+.btn .btn--dark {
+  border: 1px solid #fff;
+}
+
+.btn .caret {
+  margin-left: 0.3em;
+}
+
+.btn[disabled], .btn[disabled]:hover, .btn[disabled]:active {
+  background: #f0f1f3;
+  border-color: #f0f1f3;
+  color: #bbbbbb;
+}
+
+.btn--dark:hover, .btn--dark:active, .btn--dark {
+  background: #323A45;
+  border-color: #323A45;
+  color: #fff;
+}

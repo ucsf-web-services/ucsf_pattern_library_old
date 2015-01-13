@@ -1,0 +1,33 @@
+.block-event {
+  @extend .cf;
+}
+
+.block-event__inner {
+  padding: $pad;
+  @extend .cf;
+}
+
+.block-event__img {
+  float: left;
+
+  img {
+    width: 55px;
+    height: auto;
+  }
+}
+
+.block-event__body {
+  float: left;
+  padding-left: $pad;
+  width: 75%;
+}
+
+.block-event__date {
+  font-weight: bold;
+  font-size: $font-size-med-2;
+  margin-bottom: $pad-quarter;
+}
+
+.block-event__description {
+  line-height: 1.4;
+}

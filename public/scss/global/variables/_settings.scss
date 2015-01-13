@@ -1,0 +1,38 @@
+$site-width: $width-xxlarge; // defined in _breakpoints.scss
+$border: 1px solid $color--gray--lighter;
+$spacing: 20px;
+
+// Compass Overrides
+$default-transition-duration: .3s;
+$default-transition-function: ease-in-out;
+
+// Compass SPRITES
+//
+// Sprites are imported automagically in base/_base.scss
+//
+// use sprites like this:
+// @include sprites-sprite(
+//   $spritename: name of image in images/sprites without the .png suffix: "thingy",
+//   [$dimensions: include dimensions in output?]: true/false,
+//   [$offset-x: offset from left of sprite image]: 10px,
+//   [$offset-y: offset from top of sprite image]: 10px
+// );
+//
+// Our sprite map is called $sprites-sprites
+//
+// Helpful sprite functions:
+// sprites-sprite-height(some_icon)
+// sprites-sprite-width(some_icon)
+
+// sets the whitespace around sprites
+$sprites-spacing: 25px;
+
+// defaults to including the sprite dimensions
+$sprites-sprite-dimensions: true;
+
+// set per-sprite customizations here
+// $sprites-down-arrow-position: 100%; // set specific sprite to right side of spritesheet
+// $sprites-search-position: 100%; // example
+// $sprites-search_hover-position: 100%; // example
+//$sprites-country_chooser-position: 100%; // "for country_chooser.png, move it to right side of spriteesheet"
+//$sprites-country_chooser_hover-position: 100%;

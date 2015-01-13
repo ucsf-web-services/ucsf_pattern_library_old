@@ -1,0 +1,15 @@
+{
+  "name": "drupal",
+  "_cacheHeaders": {
+    "ETag": "\"643baa1bf0b270be3d5b283996617bd40d170e94\"",
+    "Last-Modified": "Tue, 21 Oct 2014 19:32:33 GMT",
+    "Content-Length": "14544",
+    "Content-Type": "application/x-javascript; charset=UTF-8",
+    "Content-Disposition": "inline; filename=\"drupal.js\""
+  },
+  "_release": "e-tag:643baa1bf",
+  "main": "index.js",
+  "_source": "http://cgit.drupalcode.org/drupal/plain/misc/drupal.js?h=7.x",
+  "_target": "*",
+  "_originalSource": "http://cgit.drupalcode.org/drupal/plain/misc/drupal.js?h=7.x"
+}
