@@ -1,0 +1,22 @@
+<div class="post-filter__wrapper">
+  <div class="post-filter">
+    <h2>Latest News from UCSF</h2>
+    <div class="post-filter-results__wrapper">
+      <ul id="post-filter-results" class="post-filter__results">
+        {{# latest-posts }}
+        <li>
+          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        </li>
+        {{/ latest-posts }}
+        
+        <!--<li class="more">
+          <div class="post-filter__results__inner">
+            <div class="block-more">
+              <a href="{{ url }}">More Stories <i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
+        </li>-->
+      </ul>
+    </div>
+  </div>
+</div>

@@ -3,11 +3,15 @@ TYPOGRAPHY
 *********************/
 // See: _fonts.scss
 $default-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font: Granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
 $times-font: TimesNewRoman, "Times New Roman", Times, serif;
 
 $font-body: $default-font;
+$font-body--regular: 400;
+$font-body--medium: 500;
+$font-body--bold: 800;
 $font-body-alt: $times-font;
-$font-headline: $default-font;
+$font-headline: $header-font;
 
 ////////////////////////
 //// Font size and line-height

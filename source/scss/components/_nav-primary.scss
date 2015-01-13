@@ -29,7 +29,8 @@
 .nav-primary > ul > li > a {
   display: inline-block;
   padding: .5em;
-
+  color: $color--oxford-blue;
+  
   @include breakpoint($bp--xlarge-up) {
     padding: 0.5em 1em;
   }

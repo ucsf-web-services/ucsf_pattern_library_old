@@ -1,0 +1,41 @@
+.block-blog {
+  @extend .cf;
+}
+
+.block-blog__inner {
+  padding: $pad;
+  @extend .cf;
+}
+
+.block-blog__img {
+  float: left;
+
+  img {
+    width: 55px;
+    height: auto;
+  }
+}
+
+.block-blog__body {
+  float: left;
+  padding-left: $pad;
+  width: 75%;
+  
+  h3 {
+    font-family: $font-body;
+    color: $color--gray-darker;
+    font-size: 15px;
+    line-height: 20px;
+    
+    a {
+      color: $color--gray-darker;
+      //text-decoration: none;
+    }
+  }
+}
+
+.submitted-by {
+  color: $color--electric-blue;
+  font-size: 13px;
+  line-height: 18px;
+}

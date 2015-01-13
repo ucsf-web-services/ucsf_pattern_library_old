@@ -1,5 +1,11 @@
-<div class="block-post">
-  {{> atoms-landscape-16x9 }}
-  <h4>{{ headline.short }}</h4>
-  <p>{{ excerpt.short }}</p>
+<div class="block-post {{#img.landscape-16x9.src}}with-image{{/img.landscape-16x9.src}} {{^img.landscape-16x9.src}}without-image{{/img.landscape-16x9.src}}">
+  {{#img.landscape-16x9.src}}
+    {{> atoms-landscape-16x9 }}
+  {{/img.landscape-16x9.src}}
+  <a href="#" class="btn btn--term {{ term.class }}">{{ term.name }}</a>
+  <div class="content">
+    <div class="submitted-date">{{ date.short }}</div>
+    <h4><a href="#">{{ headline.short }}</a></h4>
+    <!--<p>{{ excerpt.short }}</p>-->
+  </div>
 </div>
