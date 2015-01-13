@@ -9,9 +9,10 @@
 
 .block-blog__img {
   float: left;
-
+  margin-top: 5px;
+  
   img {
-    width: 55px;
+    width: 64px;
     height: auto;
   }
 }
@@ -23,6 +24,7 @@
   
   h3 {
     font-family: $font-body;
+    font-weight: $font-body--medium;
     color: $color--gray-darker;
     font-size: 15px;
     line-height: 20px;

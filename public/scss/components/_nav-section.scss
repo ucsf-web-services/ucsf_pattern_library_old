@@ -1,0 +1,30 @@
+.nav-section {
+  border-bottom: 2px solid $color--oxford-blue;
+  padding-bottom: 26px;
+  margin-bottom: 36px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @extend .cf;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+    margin-right: 10px;
+  }
+  
+  a {
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    
+    &.active {
+      background: #4d4d4d;
+    }
+  }
+}

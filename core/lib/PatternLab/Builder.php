@@ -497,22 +497,25 @@ class Builder {
 	* @return {Array}        an array of the appropriate MQs
 	*/
 	protected function gatherMQs() {
-
+		
 		$mqs = array();
-
+		
 		foreach(glob($this->sd."/css/*.css") as $filename) {
 			$data    = file_get_contents($filename);
-			preg_match_all("/(min|max)-width:([ ]+)?(([0-9]{1,5})(\.[0-9]{1,20}|)(px|em))/",$data,$matches);
+			// original regex
+			//preg_match_all("/(min|max)-width:([ ]+)?(([0-9]{1,5})(\.[0-9]{1,20}|)(px|em))/",$data,$matches);
+			// modified regext to NOT include normal min-max-width properties, only those in a media query
+			preg_match_all("/@media.*(min|max)-width:([ ]+)?(([0-9]{1,5})(\.[0-9]{1,20}|)(px|em))/",$data,$matches);
 			foreach ($matches[3] as $match) {
 				if (!in_array($match,$mqs)) {
 					$mqs[] = $match;
 				}
-			}
+			}	
 		}
-
-		sort($mqs);
+		// changing sort so they appear in "correct" order
+		sort($mqs, SORT_NUMERIC);
 		return $mqs;
-
+		
 	}
 
 	/**

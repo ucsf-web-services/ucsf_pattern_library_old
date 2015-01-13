@@ -79,7 +79,8 @@ dt {
   font-size: 14px;
   font-size: 1rem;
   line-height: 1.71429; }
-@media only screen and (min-width: 600px) {
+
+@include breakpoint($bp--medium-up) {
   .list--grid {
     margin-left: -15px;
     margin-right: -15px; }

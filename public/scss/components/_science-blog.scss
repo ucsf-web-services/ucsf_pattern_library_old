@@ -24,7 +24,7 @@
     @include breakpoint($bp--medium-up) {
       float: left;
       width: 33.333%;
-      border-right: 2px solid $color--gray-darker;
+      border-right: 2px solid lighten($color--gray-darker, 40%);
 
       &:last-child {
         border-right: none;
