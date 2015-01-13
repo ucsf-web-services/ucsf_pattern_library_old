@@ -1,0 +1,51 @@
+/**
+ * Nav Primary
+ */
+.nav-primary {
+  /* Links */
+  /* Forms */
+  /* Buttons */
+  float: left;
+  display: none;
+  /**
+     * Show on tablet
+     */
+}
+
+.nav-primary ul {
+  list-style: none;
+  margin: 0;
+}
+
+.nav-primary > ul > li {
+  display: inline-block;
+  margin: 0;
+
+  @include breakpoint($bp--xlarge-up) {
+    margin: 0 0 0 1em;
+  }
+}
+
+.nav-primary > ul > li > a {
+  display: inline-block;
+  padding: .5em;
+
+  @include breakpoint($bp--xlarge-up) {
+    padding: 0.5em 1em;
+  }
+}
+
+.nav-primary form, .nav-primary .text-input, .nav-primary .form-control {
+  display: inline-block;
+  margin: 0;
+}
+
+.nav-primary .btn {
+  margin-bottom: 0;
+}
+
+@include breakpoint($bp--medium-up) {
+  .nav-primary {
+    display: block;
+  }
+}

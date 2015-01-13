@@ -1,0 +1,20 @@
+/*********************
+TYPOGRAPHY
+*********************/
+// See: _fonts.scss
+$default-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$times-font: TimesNewRoman, "Times New Roman", Times, serif;
+
+$font-body: $default-font;
+$font-body-alt: $times-font;
+$font-headline: $default-font;
+
+////////////////////////
+//// Font size and line-height
+//$root-typesize   : 14px;
+//$base-font-size  : $root-typesize;
+//$base-line-px    : 18px;
+//$base-line-em    : em($base-line-px);
+//$base-line-height: unitless-convert($base-line-em);
+////////////////////////
+//

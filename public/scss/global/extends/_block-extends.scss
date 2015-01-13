@@ -1,0 +1,73 @@
+%block-square-5 {
+  list-style-type: none;
+
+  @include breakpoint($bp--medium-up) {
+    width: 20%;
+    height: 109px;
+    float: left;
+    margin: 0;
+  }
+
+  @include breakpoint($bp--large-up) {
+    height: 132px;
+  }
+
+  @include breakpoint($bp--xlarge-up) {
+    height: 180px;
+  }
+
+  @include breakpoint($bp--xxlarge-up) {
+    height: 210px;
+  }
+}
+
+%block-square-5-wrapper {
+  margin: 0 -12px;
+  @extend .cf;
+}
+
+%block-square-4 {
+  list-style-type: none;
+
+  @include breakpoint($bp--medium-up) {
+    float: left;
+    margin: 0;
+  }
+}
+
+%block-square-4-1col {
+  @include breakpoint($bp--medium-up) {
+    width: 33.3%;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    width: 25%;
+  }
+}
+
+%block-square-4-2col {
+  @include breakpoint($bp--medium-up) {
+    width: 33.3%;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    width: 50%;
+  }
+}
+
+%block-square-4-inner {
+  margin: 0 $pad;
+
+  @include breakpoint($bp--medium-up) {
+    height: 190px;
+  }
+  @include breakpoint($bp--large-up) {
+    height: 230px;
+  }
+  @include breakpoint($bp--xxlarge-up) {
+    height: 260px;
+  }
+}
+
+%block-square-4-wrapper {
+  margin: 0 -16px;
+  @extend .cf;
+}

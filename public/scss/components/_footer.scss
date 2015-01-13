@@ -1,0 +1,16 @@
+.footer {
+}
+
+.footer-content {
+}
+
+.copyright {
+  padding: $pad $pad-half $pad-double;
+  border-top: $border-thick;
+  font-size: $font-size-small;
+
+  @include breakpoint($bp--medium-up) {
+    margin: 0 $pad;
+    padding: $pad 0 $pad-double 0;
+  }
+}

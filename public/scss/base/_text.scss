@@ -1,0 +1,82 @@
+/* Text-Related Elements */
+
+/**
+ * Strong styles
+ */
+strong, b {
+  font-weight: 600; }
+
+/**
+ * Body Copy
+ */
+.section-body {
+  font-size: 16px;
+  font-size: 1.14286rem; }
+
+/**
+ * Leading text
+ */
+.text--lead {
+  font-size: 20px;
+  font-size: 1.42857rem;
+  font-weight: 300;
+  line-height: 1.4; }
+@media only screen and (min-width: 600px) {
+  .text--lead {
+    font-size: 30px;
+    font-size: 2.14286rem; } }
+
+/**
+ * Sub text
+ */
+.text--sub {
+  font-weight: 300;
+  font-size: 18px;
+  font-size: 1.28571rem; }
+@media only screen and (min-width: 600px) {
+  .text--sub {
+    font-size: 22px;
+    font-size: 1.57143rem; } }
+
+/**
+ * Summary text
+ */
+.text--summary, blockquote {
+  font-size: 16px;
+  font-size: 1.14286rem; }
+@media only screen and (min-width: 600px) {
+  .text--summary {
+    font-size: 20px;
+    font-size: 1.42857rem; } }
+
+/**
+ * Summary text
+ */
+.text--summary, blockquote {
+  font-size: 16px;
+  font-size: 1.14286rem; }
+@media only screen and (min-width: 600px) {
+  .text--summary {
+    font-size: 20px;
+    font-size: 1.42857rem; } }
+
+/**
+ * Secondary text
+ */
+.text--secondary {
+  font-size: 14px;
+  font-size: 1rem; }
+
+/**
+ * Tertiary text
+ */
+.text--tertiary {
+  font-size: 12px;
+  font-size: 0.85714rem; }
+
+/**
+ * Blockquote
+ */
+blockquote {
+  font-style: italic;
+  padding: 1em; }

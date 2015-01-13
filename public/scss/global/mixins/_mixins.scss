@@ -1,0 +1,83 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
+	Usage: @include font-size(1, large);
+*/
+@mixin font-size( $decimal-size, $keyword: null ) {
+  @if $keyword{ font-size: $keyword; }
+  @else { font-size: $decimal-size * $base-font-multiplier * 16px;}
+  font-size: $decimal-size * 1rem;
+}
+
+// Fontawesome fa-[$name] mixin
+@mixin icon($name) {
+  &:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    margin-right: 0.4em;
+  }
+  @extend .fa-#{$name};
+}
+
+@mixin btn-bg($color, $darken) {
+  background: $color; /* Old browsers */
+  background: -moz-linear-gradient(top, $color 0%, darken($color, $darken), 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color), color-stop(100%,darken($color, $darken))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $color 0%, darken($color, $darken) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $color 0%, darken($color, $darken) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $color 0%, darken($color, $darken) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $color 0%, darken($color, $darken) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color', endColorstr='darken($color, $darken)',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $color;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: $color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin quote-color($num) {
+  .quote-color-#{$num} {
+    border-color: $quote-color1;
+
+    .quote-text p:before {
+      color: $quote-color1;
+    }
+  }
+}

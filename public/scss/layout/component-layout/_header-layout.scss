@@ -1,0 +1,81 @@
+.header {
+
+  @include breakpoint($bp--medium-up) {
+    position: fixed;
+    top: 1;
+    width: 100%;
+  }
+
+  .nav-global {
+    @extend .cf;
+  }
+
+  .nav-global__utility {
+    display: none;
+
+    @include breakpoint($bp--medium-up) {
+      display: block;
+    }
+  }
+
+  .header-logo-bar {
+    @extend .cf;
+    @extend .center;
+    height: 40px;
+    padding: 0 $pad;
+    max-width: $site-width;
+    position: relative;
+
+    @include breakpoint($bp--medium-up) {
+      height: 86px;
+    }
+  }
+
+  .header-navs {
+    @extend .float--right;
+    padding-top: $pad-double;
+
+    @include breakpoint($bp--large-up) {
+      padding-top: 20px;
+    }
+  }
+
+  .logo {
+    @extend .float--left;
+    padding-top: 7px;
+    width: 60px;
+
+    @include breakpoint($bp--medium-up) {
+      padding-top: 20px;
+      width: auto;
+    }
+  }
+
+  .nav-primary {
+    @extend .float--left;
+  }
+
+  .nav-social {
+    display: none;
+
+    @include breakpoint($bp--medium-up) {
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: 12px;
+    }
+
+    @include breakpoint($bp--large-up) {
+      position: relative;
+      top: auto;
+      right: auto;
+      float: left;
+    }
+  }
+
+  .mobile-menu-button {
+    @include breakpoint($bp--medium-up) {
+      display: none;
+    }
+  }
+}

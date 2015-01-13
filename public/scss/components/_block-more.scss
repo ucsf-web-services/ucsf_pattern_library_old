@@ -1,0 +1,27 @@
+.block-more {
+  margin: $pad-half;
+  border: 2px solid $color--gray--lightest;
+
+  a {
+    display: block;
+    padding: $pad-quarter $pad-half;
+    font-size: $font-size-large;
+    width: 100%;
+
+    @include breakpoint($bp--medium-up) {
+      padding: $pad;
+      min-height: 250px;
+    }
+    @include breakpoint($bp--large-up) {
+
+    }
+    @include breakpoint($bp--xlarge-up) {
+      min-height: 300px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: $color--gray--white;
+    }
+  }
+}

@@ -1,0 +1,400 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+/**
+ *
+ * Demo: jsfiddle.net/inuitcss/MhHHU
+ *
+ */
+fieldset {
+  padding: 24px; }
+
+/**
+ * Text inputs
+ *
+ * Instead of a `[type]` selector for each kind of form input, we just use a
+ * class to target any/every one, e.g.:
+   <input type=text class=text-input>
+   <input type=email class=text-input>
+   <input type=password class=text-input>
+ *
+ */
+/**
+ * Group sets of form fields in a list, e.g.:
+ *
+   <ul class=form-fields>
+       <li>
+           <label />
+           <input />
+       </li>
+       <li>
+           <label />
+           <select />
+       </li>
+       <li>
+           <label />
+           <input />
+       </li>
+   </ul>
+ *
+ */
+.form-fields {
+  list-style: none;
+  margin: 0; }
+
+.form-fields > li:last-child {
+  margin-bottom: 0; }
+
+/**
+ * Labels
+ *
+ * Define a `.label` class as well as a `label` element. This means we can apply
+ * label-like styling to meta-labels for groups of options where a `label`
+ * element is not suitable, e.g.:
+ *
+   <li>
+       <span class=label>Select an option below:</span>
+       <ul class="multi-list  four-cols">
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+       </ul>
+   </li>
+ *
+ */
+label, .label {
+  display: block; }
+
+/**
+     * Extra help text in `label`s, e.g.:
+     *
+       <label>Card number <small class=additional>No spaces</small></label>
+     *
+     */
+.additional {
+  display: block;
+  font-weight: normal; }
+
+/*
+ * Groups of checkboxes and radios, e.g.:
+ *
+   <li>
+       <ul class=check-list>
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+       </ul>
+   </li>
+ *
+ */
+.check-list {
+  list-style: none;
+  margin: 0; }
+
+/*
+     * Labels in check-lists
+     */
+.check-label, .check-list label, .check-list .label {
+  display: inline-block; }
+
+/**
+ * Spoken forms are for forms that read like spoken word, e.g.:
+ *
+   <li class=spoken-form>
+       Hello, my <label for=spoken-name>name</label> is
+       <input type=text class=text-input id=spoken-name>. My home
+       <label for=country>country</label> is
+       <select id=country>
+           <option>UK</option>
+           <option>US</option>
+           <option>Other</option>
+       </select>
+   </li>
+ *
+ */
+.spoken-form label {
+  display: inline-block;
+  font: inherit; }
+
+/**
+ * Extra help text displayed after a field when that field is in focus, e.g.:
+ *
+   <label for=email>Email:</label>
+   <input type=email class=text-input id=email>
+   <small class=extra-help>.edu emails only</small>
+ *
+ * We leave the help text in the document flow and merely set it to
+ * `visibility:hidden;`. This means that it wonâ€™t interfere with anything once
+ * it reappears.
+ *
+ */
+/*small*/
+.extra-help {
+  display: inline-block;
+  visibility: hidden; }
+
+.text-input:active + .extra-help, .text-input:focus + .extra-help {
+  visibility: visible; }
+
+/*------------------------------------*\
+    FORM ELEMENT STYLES
+\*------------------------------------*/
+/**
+ * Forms
+ */
+form {
+  margin-bottom: 24px;
+  margin-bottom: 1.71429rem; }
+
+/**
+ * Add border box for input search
+ */
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Input Elements
+ */
+.text-input, textarea {
+  border: 1px #BFBFBF solid;
+  padding: 0.24em 1em; // Original was 0.5em 1em, changed to match visually
+  background: #FAFAFA;
+  transition: all 0.1s ease-in;
+  vertical-align: middle;
+  outline: none;
+  width: 100%;
+  border-radius: 2px;
+  font-size: 14px;
+  font-size: 1rem; }
+
+/**
+ * Disabled Input
+ */
+.text-input[disabled], textarea[disabled] {
+  opacity: 0.5; }
+
+/**
+ * Input inverted
+ */
+.input-inverted, .nav-bar--inverted .text-input {
+  background: transparent;
+  border-color: #fff;
+  color: #fff; }
+
+/**
+ * Medium input
+ */
+.input-medium {
+  padding: 0.8em 1em; }
+
+/**
+ * Large input
+ */
+.input-large {
+  padding: 1em 1em;
+  font-size: 16px;
+  font-size: 1.14286rem; }
+
+/**
+ * Input with icons
+ */
+.form-control {
+  position: relative;
+  margin-bottom: 18px;
+  margin-bottom: 1.28571rem;
+  /* Icon on the left side */
+  /* Button unstyled */ }
+.form-control .text-input {
+  padding-right: 35px;
+  margin-bottom: 0; }
+.form-control .fa {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin: 0;
+  margin-top: -6px;
+  height: 15px;
+  color: #BFBFBF; }
+.form-control.icon-left .text-input {
+  padding-left: 35px;
+  padding-right: inherit; }
+.form-control.icon-left .fa {
+  left: 10px;
+  right: auto; }
+.form-control .btn--unstyled {
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%; }
+
+/**
+ * Form control Inline
+ */
+.form-control--inline {
+  /* Button */ }
+.form-control--inline .text-input {
+  width: auto;
+  padding: 0.5em 1em;
+  margin-right: -4.8px;
+  margin-right: -0.34286rem; }
+.form-control--inline .btn {
+  margin-bottom: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+/**
+ * Round text input
+ */
+.input-soft {
+  border-radius: 200px; }
+
+/**
+ * Margins for Select, File
+ */
+select, input[type="file"], input[type="color"], input[type="range"], .label-checkbox, .label-radio, textarea, .text-input {
+  margin-bottom: 18px;
+  margin-bottom: 1.28571rem; }
+
+/**
+ * Wide select
+ */
+.select-wide {
+  width: 100%; }
+
+/**
+ * Checkbox, Radio
+ */
+input[type="checkbox"], input[type="radio"] {
+  margin-right: 0.5em; }
+
+/**
+ * Label
+ */
+label {
+  margin-bottom: 2.4px;
+  margin-bottom: 0.17143rem;
+  font-weight: 600; }
+
+/**
+ * Checkbox Display
+ */
+.label-checkbox, .label-radio {
+  font-weight: normal;
+  padding-left: 20px; }
+.label-checkbox input, .label-radio input {
+  float: left;
+  margin-left: -20px;
+  margin-top: 0.35714em;
+  margin-top: 1px \9;
+  /* Internet Explorer 8 Fix */
+  margin-right: 0; }
+
+/**
+ * Checkbox Replacement
+ */
+/**
+ * Inline Input
+ */
+.input-inline {
+  width: auto; }
+
+/**
+ * Inline Label
+ */
+.label-inline {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  margin-right: 0.85714rem; }
+
+/**
+ * Fieldset
+ */
+fieldset {
+  border-color: #BFBFBF;
+  padding: 15px; }
+
+/**
+ * Error Input
+ */
+.input-error {
+  border-color: #E74C3C; }
+
+/**
+ * Error Label
+ */
+.label-error {
+  color: #E74C3C;
+  display: inline-block;
+  margin-bottom: 12px;
+  margin-bottom: 0.85714rem;
+  font-size: 13px;
+  font-size: 0.92857rem;
+  font-weight: normal;
+  margin-top: -0.5em;
+  overflow-y: hidden; }
+
+/**
+ * Input groups
+ */
+.input-group {
+  margin-bottom: 24px;
+  margin-bottom: 1.71429rem; }
+.input-group .text-input, .input-group textarea {
+  margin-bottom: 0;
+  border-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+.input-group .text-input:first-child, .input-group textarea:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  margin-bottom: -1px; }
+.input-group .text-input:last-child, .input-group textarea:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; }
+.input-group .text-input:focus, .input-group textarea:focus {
+  position: relative; }
+
+/**
+ * Select replacement
+ */
+/* Replaced element */
+.selecter {
+  margin: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.71429rem;
+  max-width: 100%;
+}
+
+/**
+ * Multiple select
+ */
+.selecter.multiple .selecter-item.selected {
+  position: relative; }
+.selecter.multiple .selecter-item.selected:after {
+  content: "\f058";
+  font-family: FontAwesome;
+  color: #18A3AC;
+  position: absolute;
+  right: 1em;
+  font-size: 18px;
+  top: 6px; }
