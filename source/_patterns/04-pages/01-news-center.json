@@ -1,0 +1,451 @@
+{
+	"title" : "News Center",
+	"bodyClass": "news-center",
+	"emergency" : false,
+	
+	"science-blog" : [
+		{
+			"img": {
+    		"square": {
+					"src": "../../images/fpo_square.png",
+          "alt": "Square Thumbnail"
+				}
+			},
+			"submitted" : {
+				"info" : "By Scott Maier on September 22, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Partner a Finalist in Google’s Bay Area Impact Challenge"
+			}
+		},
+		{
+			"img": {
+    		"square": {
+					"src": "../../images/fpo_square.png",
+          "alt": "Square Thumbnail"
+				}
+			},
+			"submitted" : {
+				"info" : "By Michael W. Weiner, MD on June 16, 2014"
+			},
+			"headline" : {
+				"short" : "Online Project Aims to Speed Up Cures for Brain Disorders"
+			}
+		},
+		{
+			"img": {
+    		"square": {
+					"src": "../../images/fpo_square.png",
+          "alt": "Square Thumbnail"
+				}
+			},
+			"submitted" : {
+				"info" : "By Jennifer Wickre on May 2, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Hosts Capitol Hill Briefing on Kidney Research Innovations"
+			}
+		}
+  ],
+  "media-coverage" : [
+		{ 
+  		"term" : {
+				"name" : "Contra Costa Times"
+			},
+			"date" : {
+				"short" : "December 17, 2014"
+			},
+			"headline" : {
+				"short" : "Guest commentary: It is imperative that everyone be tested for HIV"
+			}
+		},
+		{ 
+  		"term" : {
+				"name" : "Forbes"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "Brain Training To Improve Cognition As We Age"
+			}
+		},
+		{ 
+  		"term" : {
+				"name" : "New York Times"
+			},
+			"date" : {
+				"short" : "December 15, 2014"
+			},
+			"headline" : {
+				"short" : "A Lesser Warning? Maybe"
+			}
+		},
+		{ 
+  		"term" : {
+				"name" : "Reuters"
+			},
+			"date" : {
+				"short" : "December 15, 2014"
+			},
+			"headline" : {
+				"short" : "Heavy drinking raises women's injury risk more than men's"
+			}
+		},
+		{ 
+  		"term" : {
+				"name" : "Los Angeles Times"
+			},
+			"date" : {
+				"short" : "December 14, 2014"
+			},
+			"headline" : {
+				"short" : "Google offers high-tech spoon that stays steady in shaky hands"
+			}
+		},
+		{ 
+  		"term" : {
+				"name" : "San Fransisco Business Times"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+				"short" : "UC says its five medical centers are ready to take Ebola patients"
+			}
+		},
+		{ 
+  		"term" : {
+				"name" : "San Jose Mercury News, Contra Costa Times, Marin Independent Journal"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+				"short" : "UC medical centers 'positioned' to treat Ebola victims"
+			}
+		}
+	],
+	"latest-posts" : [
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		},
+    		"square": {
+					"src": "../../images/fpo_square.png",
+          "alt": "Square Thumbnail"
+				}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+				"short" : "Williams Recieves President's Research Catalyst Award to Address Prison Health Care Crisis"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Employees of the New Mission Bay Hospitals Treated to Celebratory Party"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Research",
+				"class" : "btn--term--research"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Commends Student Leaders for Organizing Peaceful Demonstration, Reinforces Commitment to Diversity"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Research",
+				"class" : "btn--term--research"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Pantilat Receives Award for Work in Palliative Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 8, 2014"
+			},
+			"headline" : {
+        "short" : "Major Complication Rate After Abortion Is Extremely Low, Study Shows"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 8, 2014"
+			},
+			"headline" : {
+        "short" : "Williams Receives President’s Research Catalyst Award to Address Prison Health Care Crisis"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Employees of the New Mission Bay Hospitals Treated to Celebratory Party"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Pantilat Receives Award for Work in Palliative Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Research",
+				"class" : "btn--term--research"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		}
+	],
+	"inset-blocks" : [
+		{
+			"headline" : "This is the headline for the inset block"
+		}
+	],
+	"latest-block" : [
+		{
+			"headline" : "This is the headline for the latest block"
+		}
+	]
+}

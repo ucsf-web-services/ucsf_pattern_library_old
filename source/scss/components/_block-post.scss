@@ -1,0 +1,46 @@
+.block-post {
+  position: relative;
+  background: $color--gray--lighter;
+  
+  // when there is an image, render the primary term absolutely
+  .btn--term {
+    margin-bottom: 0;
+  }
+  &.with-image {
+    .btn--term {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }  
+  }
+  &.without-image {
+    .btn--term {
+      
+    }  
+  }
+  .content {
+    padding: 10px;
+  }
+  
+  
+  .submitted-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    color: $color--gray--light;
+  }
+  
+  h4 {
+    font-family: $default-font;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: normal;
+    color: $color--gray--darker;
+    
+    a {
+      color: $color--gray--darker;
+      //text-decoration: none;
+    }
+  }
+}
