@@ -1,0 +1,42 @@
+.wrapper--blog {
+  background: $color--gray;
+  padding: $pad 0;
+  @extend .cf;
+  margin-bottom: $pad-quad;
+}
+
+.blog--science {
+  padding: 0 $pad;
+  @extend %adaptive-container;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @extend .cf;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    
+    @include breakpoint($bp--medium-up) {
+      float: left;
+      width: 33.333%;
+      border-right: 2px solid $color--gray-darker;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  @include breakpoint($bp--medium-up) {
+    padding: 0;
+  }
+}
+
+.blog--science__wrapper {
+  @extend .cf;
+}
