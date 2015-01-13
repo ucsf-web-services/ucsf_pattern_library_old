@@ -1,5 +1,7 @@
 (function ($) {
-    "use strict";
+  "use strict";
+  
+  $(function() {
 
     $(window).setBreakpoints({
       // use only largest available vs use all available
@@ -109,5 +111,5 @@ activate: function (event) { // Callback function if tab is switched
       
     // provide some equal heights for various elements
     $('.blog--science ul > li').matchHeight(false);
-    
+  });  
 })(jQuery);
