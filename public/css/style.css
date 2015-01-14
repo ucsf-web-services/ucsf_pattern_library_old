@@ -7709,21 +7709,22 @@ h2.resp-accordion {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
 }
-/* line 19, ../scss/components/_science-blog.scss */
+/* line 20, ../scss/components/_science-blog.scss */
 .blog--science li {
   padding: 0;
   margin: 0;
   display: block;
 }
 @media (min-width: 640px) {
-  /* line 19, ../scss/components/_science-blog.scss */
+  /* line 20, ../scss/components/_science-blog.scss */
   .blog--science li {
     float: left;
     width: 33.333%;
     border-right: 2px solid #bebfc1;
   }
-  /* line 29, ../scss/components/_science-blog.scss */
+  /* line 30, ../scss/components/_science-blog.scss */
   .blog--science li:last-child {
     border-right: none;
   }
