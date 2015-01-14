@@ -7279,20 +7279,24 @@ blockquote {
     padding: 0.5em 1em;
   }
 }
+/* line 38, ../scss/components/_nav-primary.scss */
+.nav-primary > ul > li > a.active {
+  background: #dadee4;
+}
 
-/* line 39, ../scss/components/_nav-primary.scss */
+/* line 43, ../scss/components/_nav-primary.scss */
 .nav-primary form, .nav-primary .text-input, .nav-primary .form-control {
   display: inline-block;
   margin: 0;
 }
 
-/* line 44, ../scss/components/_nav-primary.scss */
+/* line 48, ../scss/components/_nav-primary.scss */
 .nav-primary .btn {
   margin-bottom: 0;
 }
 
 @media (min-width: 640px) {
-  /* line 49, ../scss/components/_nav-primary.scss */
+  /* line 53, ../scss/components/_nav-primary.scss */
   .nav-primary {
     display: block;
   }

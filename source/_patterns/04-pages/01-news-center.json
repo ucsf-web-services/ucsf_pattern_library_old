@@ -2,6 +2,38 @@
 	"title" : "News Center",
 	"bodyClass": "news-center",
 	"emergency" : false,
+	"navigation" : [
+		{
+			"title" : "About",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Patient Care",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Research",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Education",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "News Center",
+			"url" : "/patterns/04-pages-01-news-center/04-pages-01-news-center.html",
+		  "class" : "active"
+		},
+		{
+			"title" : "Inside UCSF",
+			"url" : "#",
+		  "class" : ""
+		}
+  ],
 	"popular" : [
 		{
 			"headline" : {

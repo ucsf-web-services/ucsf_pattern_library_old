@@ -34,6 +34,10 @@
   @include breakpoint($bp--xlarge-up) {
     padding: 0.5em 1em;
   }
+  
+  &.active {
+    background: $color--primary-nav-active;
+  }
 }
 
 .nav-primary form, .nav-primary .text-input, .nav-primary .form-control {

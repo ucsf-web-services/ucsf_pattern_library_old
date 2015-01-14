@@ -1,10 +1,7 @@
 <nav class="nav-primary">
-  <ul class="nav-primary__list">
-    <li><a href="{{ url }}">About</a></li>
-    <li><a href="{{ url }}">Patient Care</a></li>
-    <li><a href="{{ url }}">Research</a></li>
-    <li><a href="{{ url }}">Education</a></li>
-    <li><a href="{{ link.pages-news-center }}">News Center</a></li>
-    <li><a href="{{ url }}">Inside UCSF</a></li>
+  <ul class="nav-primary__list">    
+    {{# navigation }}
+    <li><a class="{{ class }}" href="{{ url }}">{{ title }}</a></li>
+    {{/ navigation }}
   </ul>
 </nav><!--end .nav-->

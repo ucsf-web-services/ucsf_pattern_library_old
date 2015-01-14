@@ -1,10 +1,7 @@
 &lt;nav class=&quot;nav-primary&quot;&gt;
-  &lt;ul class=&quot;nav-primary__list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Patient Care&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Research&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Education&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;{{ link.pages-news-center }}&quot;&gt;News Center&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Inside UCSF&lt;/a&gt;&lt;/li&gt;
+  &lt;ul class=&quot;nav-primary__list&quot;&gt;    
+    {{# navigation }}
+    &lt;li&gt;&lt;a class=&quot;{{ class }}&quot; href=&quot;{{ url }}&quot;&gt;{{ title }}&lt;/a&gt;&lt;/li&gt;
+    {{/ navigation }}
   &lt;/ul&gt;
 &lt;/nav&gt;&lt;!--end .nav--&gt;
