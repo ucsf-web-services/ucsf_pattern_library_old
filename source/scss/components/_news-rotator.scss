@@ -1,11 +1,15 @@
 .rotator__wrapper {
   
+  .flexslider {
+    position: relative;
+  }
+  
   ul.slides {
     list-style-type: none;
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
-    
+    position: relative;
     @extend .cf;
     
     li {
@@ -64,11 +68,17 @@
     margin-bottom: 10px;
     padding: 0;
     list-style-type: none;
-    @extend .cf;
+    
+    
+    z-index: 1;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
     
     li {
       //@extend .cf;
-      
+      z-index: 1;
       .btn {
         border: 1px solid $color--electric-blue;
         color: $color--electric-blue;
@@ -100,4 +110,18 @@
       }
     }
   }  
+  ol.flex-control-nav {
+    z-index: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 50px;
+    
+    li {
+      z-index: 2;
+      display: inline-block;
+      max-width: 120px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
 }

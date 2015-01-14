@@ -5,7 +5,7 @@
       <ul class="slides">
         
         {{# rotator-items }}
-        <li class="{{ term.class }}">
+        <li class="{{ term.class }}" data-thumb="{{ img.landscape-16x9.src }}">
           {{#img.landscape-16x9.src}}
             {{> atoms-landscape-16x9 }}
           {{/img.landscape-16x9.src}}

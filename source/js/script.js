@@ -138,7 +138,7 @@ activate: function (event) { // Callback function if tab is switched
       video: false,                   //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
       
       // Primary Controls
-      controlNav: false,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+      controlNav: "thumbnails",               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
       directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
       prevText: '<button class="btn btn--transparent" data-toggle="dropdown" type="button"><em class="fa fa-backward fa-lg fa-lone"></em></button>',           //String: Set the text for the "previous" directionNav item
       nextText: '<button class="btn btn--transparent" data-toggle="dropdown" type="button"><em class="fa fa-forward fa-lg fa-lone"></em></button>',               //String: Set the text for the "next" directionNav item

@@ -77,7 +77,7 @@
 				"class" : "btn--term--campus-news"
 			},
 			"headline" : {
-				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
+				"short" : "Biological Basis Found for Sensory Processing Disorders in Kids"
 			}
 		},
 		{
@@ -92,7 +92,67 @@
 				"class" : "btn--term--education"
 			},
 			"headline" : {
-				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
+				"short" : "Lifestyle Changes May Lengthen Telomeres, A Measure of Cell Aging"
+			}
+		},
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"headline" : {
+				"short" : "E-Cigarettes Expose People to More Than ‘Harmless’ Water Vapor"
+			}
+		},
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"headline" : {
+				"short" : "Lifestyle Changes May Lengthen Telomeres, A Measure of Cell Aging"
+			}
+		},
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Research",
+				"class" : "btn--term--research"
+			},
+			"headline" : {
+				"short" : "E-Cigarettes Expose People to More Than ‘Harmless’ Water Vapor"
+			}
+		},
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"headline" : {
+				"short" : "Lifestyle Changes May Lengthen Telomeres, A Measure of Cell Aging"
 			}
 		}
   ],

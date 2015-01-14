@@ -5463,7 +5463,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.flex-direction-nav:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
+.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
   display: table;
   clear: both;
@@ -7568,32 +7568,37 @@ blockquote {
 }
 
 /* line 3, ../scss/components/_news-rotator.scss */
+.rotator__wrapper .flexslider {
+  position: relative;
+}
+/* line 7, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides {
   list-style-type: none;
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
+  position: relative;
 }
-/* line 11, ../scss/components/_news-rotator.scss */
+/* line 15, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides li {
   position: relative;
   padding: 0;
   margin: 0;
   display: block;
 }
-/* line 17, ../scss/components/_news-rotator.scss */
+/* line 21, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides li img {
   display: block;
   z-index: 1;
 }
-/* line 22, ../scss/components/_news-rotator.scss */
+/* line 26, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides li .btn--term {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 13px;
 }
-/* line 28, ../scss/components/_news-rotator.scss */
+/* line 32, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides li .data {
   position: absolute;
   bottom: 0;
@@ -7605,30 +7610,39 @@ blockquote {
   text-transform: none;
   background: rgba(255, 255, 255, 0.9);
 }
-/* line 40, ../scss/components/_news-rotator.scss */
+/* line 44, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides li .data h4 {
   font-size: 24px;
   line-height: 30px;
   color: #58595b;
 }
-/* line 45, ../scss/components/_news-rotator.scss */
+/* line 49, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides li .data h4 a {
   color: #58595b;
 }
-/* line 52, ../scss/components/_news-rotator.scss */
+/* line 56, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides li .data .readmore a {
   font-size: 12px;
   line-height: 18px;
   font-weight: bold;
 }
-/* line 62, ../scss/components/_news-rotator.scss */
+/* line 66, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
   list-style-type: none;
+  z-index: 1;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
 }
-/* line 72, ../scss/components/_news-rotator.scss */
+/* line 79, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav li {
+  z-index: 1;
+}
+/* line 82, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn {
   border: 1px solid #178CCB;
   color: #178CCB;
@@ -7637,30 +7651,45 @@ blockquote {
   line-height: 30px;
   margin-bottom: 0;
 }
-/* line 80, ../scss/components/_news-rotator.scss */
+/* line 90, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn:hover {
   border-color: #2ea6e7;
   color: #2ea6e7;
 }
-/* line 85, ../scss/components/_news-rotator.scss */
+/* line 95, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn .fa {
   margin: 0;
 }
-/* line 89, ../scss/components/_news-rotator.scss */
+/* line 99, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-prev {
   float: left;
 }
-/* line 91, ../scss/components/_news-rotator.scss */
+/* line 101, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-prev .btn {
   padding-left: 6px;
 }
-/* line 95, ../scss/components/_news-rotator.scss */
+/* line 105, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-next {
   float: right;
 }
-/* line 97, ../scss/components/_news-rotator.scss */
+/* line 107, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-next .btn {
   padding-right: 6px;
+}
+/* line 113, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ol.flex-control-nav {
+  z-index: 2;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 50px;
+}
+/* line 119, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ol.flex-control-nav li {
+  z-index: 2;
+  display: inline-block;
+  max-width: 120px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 @media (min-width: 640px) {
