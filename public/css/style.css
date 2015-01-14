@@ -6803,29 +6803,24 @@ blockquote {
   }
 }
 
-/* line 5, ../scss/components/_block-blog.scss */
-.block-blog__inner {
-  padding: 1em;
-}
-
-/* line 10, ../scss/components/_block-blog.scss */
+/* line 9, ../scss/components/_block-blog.scss */
 .block-blog__img {
   float: left;
   margin-top: 5px;
 }
-/* line 14, ../scss/components/_block-blog.scss */
+/* line 13, ../scss/components/_block-blog.scss */
 .block-blog__img img {
   width: 64px;
   height: auto;
 }
 
-/* line 20, ../scss/components/_block-blog.scss */
+/* line 19, ../scss/components/_block-blog.scss */
 .block-blog__body {
   float: left;
   padding-left: 1em;
   width: 75%;
 }
-/* line 25, ../scss/components/_block-blog.scss */
+/* line 24, ../scss/components/_block-blog.scss */
 .block-blog__body h3 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -6833,12 +6828,12 @@ blockquote {
   font-size: 15px;
   line-height: 20px;
 }
-/* line 32, ../scss/components/_block-blog.scss */
+/* line 31, ../scss/components/_block-blog.scss */
 .block-blog__body h3 a {
   color: #58595b;
 }
 
-/* line 39, ../scss/components/_block-blog.scss */
+/* line 38, ../scss/components/_block-blog.scss */
 .submitted-by {
   color: #178CCB;
   font-size: 13px;
@@ -7721,12 +7716,19 @@ h2.resp-accordion {
   /* line 20, ../scss/components/_science-blog.scss */
   .blog--science li {
     float: left;
-    width: 33.333%;
+    width: 32.333%;
+    padding-right: 1.5%;
+    margin-left: 1.5%;
     border-right: 2px solid #bebfc1;
   }
-  /* line 30, ../scss/components/_science-blog.scss */
+  /* line 32, ../scss/components/_science-blog.scss */
+  .blog--science li:first-child {
+    margin-left: 0;
+  }
+  /* line 35, ../scss/components/_science-blog.scss */
   .blog--science li:last-child {
     border-right: none;
+    padding-right: 0;
   }
 }
 @media (min-width: 640px) {
