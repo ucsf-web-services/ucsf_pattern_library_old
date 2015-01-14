@@ -52,3 +52,19 @@
 .block-content__label__text {
   margin: 0 $pad-half;
 }
+
+
+.content-column--quarter {
+  @extend %content-column-4;
+}
+
+.content-column--quarter-1col {
+  @extend %content-column-4-1col;
+}
+
+.content-column--quarter-2col {
+  @extend %content-column-4-2col;
+}
+.content-column--quarter-3col {
+  @extend %content-column-4-3col;
+}

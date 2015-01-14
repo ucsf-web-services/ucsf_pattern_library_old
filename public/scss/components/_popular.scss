@@ -1,0 +1,47 @@
+
+// block outer
+.popular__wrapper {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    @extend .cf;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    border-bottom: 2px dotted $color--gray--dotted-borders;
+  }
+  h2.headline {
+    border-bottom: 2px solid $color--gray--lighter;
+  }
+  
+  h2 {
+    
+    .title-icon {
+      float: right;
+      font-size: 22px;
+      color: $color--gray--icons;
+      margin-top: 10px;
+    }
+  }
+}
+
+
+// single listing
+.block-popular {
+  h4 {
+    font-size: 15px;
+    line-height: 20px;
+    color: $color--gray--darker;
+    
+    a {
+      color: $color--gray--darker;
+    }
+  }
+}

@@ -7,6 +7,7 @@ All styles that are imported here will be compiled into css/style.css
 ******************************************************************/
 /*! normalize.css v1.1.0 | MIT License | git.io/normalize */
 /*! normalize.css v1.1.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+@import url("//hello.myfonts.net/count/2d0d15");
 /* line 9, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.4.3/stylesheets/normalize/_html5.scss */
 article,
 aside,
@@ -3082,6 +3083,57 @@ header, footer, nav, section, article, hgroup, figure {
 /*********************
 TYPOGRAPHY
 *********************/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Lt';
+  src: url("../fonts/ucsf/2D0D15_0_0.eot");
+  src: url("../fonts/ucsf/2D0D15_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_0_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_0_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_0_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'HelveticaNeueLTStd-MdIt';
+  src: url("../fonts/ucsf/2D0D15_1_0.eot");
+  src: url("../fonts/ucsf/2D0D15_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_1_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_1_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_1_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Bd';
+  src: url("../fonts/ucsf/2D0D15_2_0.eot");
+  src: url("../fonts/ucsf/2D0D15_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_2_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_2_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_2_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Roman';
+  src: url("../fonts/ucsf/2D0D15_3_0.eot");
+  src: url("../fonts/ucsf/2D0D15_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_3_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_3_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_3_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Md';
+  src: url("../fonts/ucsf/2D0D15_4_0.eot");
+  src: url("../fonts/ucsf/2D0D15_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_4_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_4_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_4_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'HelveticaNeueLTStd-It';
+  src: url("../fonts/ucsf/2D0D15_7_0.eot");
+  src: url("../fonts/ucsf/2D0D15_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_7_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_7_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_7_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'HelveticaNeueLTStd-LtIt';
+  src: url("../fonts/ucsf/2D0D15_8_0.eot");
+  src: url("../fonts/ucsf/2D0D15_8_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_8_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_8_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_8_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'granjon';
+  src: url("../fonts/ucsf/2D0D15_5_0.eot");
+  src: url("../fonts/ucsf/2D0D15_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_5_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_5_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_5_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'granjon-italic';
+  src: url("../fonts/ucsf/2D0D15_6_0.eot");
+  src: url("../fonts/ucsf/2D0D15_6_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_6_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_6_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_6_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'granjon-bold';
+  src: url("../fonts/ucsf/2D0D15_9_0.eot");
+  src: url("../fonts/ucsf/2D0D15_9_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_9_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_9_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_9_0.ttf") format("truetype");
+}
 /* ==========================================================================
    Variables
    ========================================================================== */
@@ -3195,6 +3247,44 @@ TYPOGRAPHY
 /* line 70, ../scss/global/extends/_block-extends.scss */
 .media-blocks, .pillar-content {
   margin: 0 -16px;
+}
+
+/* line 75, ../scss/global/extends/_block-extends.scss */
+.preface-blocks {
+  margin: 0 -16px;
+}
+
+/* line 79, ../scss/global/extends/_block-extends.scss */
+.content-column--quarter {
+  list-style-type: none;
+}
+@media (min-width: 640px) {
+  /* line 79, ../scss/global/extends/_block-extends.scss */
+  .content-column--quarter {
+    float: left;
+    margin: 0;
+  }
+}
+
+@media (min-width: 640px) {
+  /* line 87, ../scss/global/extends/_block-extends.scss */
+  .content-column--quarter-1col {
+    width: 25%;
+  }
+}
+
+@media (min-width: 640px) {
+  /* line 93, ../scss/global/extends/_block-extends.scss */
+  .content-column--quarter-2col {
+    width: 50%;
+  }
+}
+
+@media (min-width: 640px) {
+  /* line 99, ../scss/global/extends/_block-extends.scss */
+  .content-column--quarter-3col {
+    width: 75%;
+  }
 }
 
 /* line 1, ../scss/global/extends/_decorative-extends.scss */
@@ -5272,7 +5362,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 94, ../scss/base/_headings.scss */
 h1.headline, h2.headline, h3.headline, h4.headline, h5.headline, h6.headline {
-  font-family: Granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+  font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
 }
 
 /* line 99, ../scss/base/_headings.scss */
@@ -5373,7 +5463,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
+.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
   display: table;
   clear: both;
@@ -7300,6 +7390,13 @@ blockquote {
 }
 
 /* line 1, ../scss/components/_news-center.scss */
+.preface-blocks {
+  padding-bottom: 2em;
+  margin: 0;
+  margin-bottom: 4em;
+}
+
+/* line 11, ../scss/components/_news-center.scss */
 .media-blocks {
   padding-bottom: 2em;
   border-bottom: 2px solid #f1f1f1;
@@ -7307,19 +7404,19 @@ blockquote {
   margin-bottom: 2em;
 }
 @media (min-width: 640px) {
-  /* line 9, ../scss/components/_news-center.scss */
+  /* line 19, ../scss/components/_news-center.scss */
   .media-blocks .media--coverage__wrapper {
     padding-right: 30px;
     border-right: 3px dotted #b4b9bf;
   }
 }
 @media (min-width: 640px) {
-  /* line 16, ../scss/components/_news-center.scss */
+  /* line 26, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper,
   .media-blocks .twitter__wrapper {
     padding-left: 30px;
   }
-  /* line 21, ../scss/components/_news-center.scss */
+  /* line 31, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper img,
   .media-blocks .twitter__wrapper img {
     max-width: 75%;
@@ -7589,6 +7686,45 @@ h2.resp-accordion {
     display: none !important;
   }
 }
+/* line 4, ../scss/components/_popular.scss */
+.popular__wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+/* line 12, ../scss/components/_popular.scss */
+.popular__wrapper li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  border-bottom: 2px dotted #b4b9bf;
+}
+/* line 20, ../scss/components/_popular.scss */
+.popular__wrapper h2.headline {
+  border-bottom: 2px solid #f1f1f1;
+}
+/* line 26, ../scss/components/_popular.scss */
+.popular__wrapper h2 .title-icon {
+  float: right;
+  font-size: 22px;
+  color: #808285;
+  margin-top: 10px;
+}
+
+/* line 38, ../scss/components/_popular.scss */
+.block-popular h4 {
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+/* line 43, ../scss/components/_popular.scss */
+.block-popular h4 a {
+  color: #333333;
+}
+
 /* line 1, ../scss/components/_post-filter.scss */
 .post-filter {
   overflow: hidden;

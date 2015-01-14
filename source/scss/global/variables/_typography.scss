@@ -3,7 +3,7 @@ TYPOGRAPHY
 *********************/
 // See: _fonts.scss
 $default-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$header-font: Granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+$header-font: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
 $times-font: TimesNewRoman, "Times New Roman", Times, serif;
 
 $font-body: $default-font;
@@ -23,3 +23,19 @@ $font-headline: $header-font;
 //$base-line-height: unitless-convert($base-line-em);
 ////////////////////////
 //
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2d0d15");
+
+// HelveticaNeue variants
+@font-face {font-family: 'HelveticaNeueLTStd-Lt';src: url('../fonts/ucsf/2D0D15_0_0.eot');src: url('../fonts/ucsf/2D0D15_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_0_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_0_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_0_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueLTStd-MdIt';src: url('../fonts/ucsf/2D0D15_1_0.eot');src: url('../fonts/ucsf/2D0D15_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_1_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_1_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_1_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueLTStd-Bd';src: url('../fonts/ucsf/2D0D15_2_0.eot');src: url('../fonts/ucsf/2D0D15_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_2_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_2_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_2_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueLTStd-Roman';src: url('../fonts/ucsf/2D0D15_3_0.eot');src: url('../fonts/ucsf/2D0D15_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_3_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_3_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_3_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueLTStd-Md';src: url('../fonts/ucsf/2D0D15_4_0.eot');src: url('../fonts/ucsf/2D0D15_4_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_4_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_4_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_4_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueLTStd-It';src: url('../fonts/ucsf/2D0D15_7_0.eot');src: url('../fonts/ucsf/2D0D15_7_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_7_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_7_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_7_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueLTStd-LtIt';src: url('../fonts/ucsf/2D0D15_8_0.eot');src: url('../fonts/ucsf/2D0D15_8_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_8_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_8_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_8_0.ttf') format('truetype');}
+// Granjon variants
+@font-face {font-family: 'granjon';src: url('../fonts/ucsf/2D0D15_5_0.eot');src: url('../fonts/ucsf/2D0D15_5_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_5_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_5_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_5_0.ttf') format('truetype');}
+@font-face {font-family: 'granjon-italic';src: url('../fonts/ucsf/2D0D15_6_0.eot');src: url('../fonts/ucsf/2D0D15_6_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_6_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_6_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_6_0.ttf') format('truetype');}
+@font-face {font-family: 'granjon-bold';src: url('../fonts/ucsf/2D0D15_9_0.eot');src: url('../fonts/ucsf/2D0D15_9_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_9_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_9_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_9_0.ttf') format('truetype');}

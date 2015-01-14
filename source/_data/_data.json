@@ -122,6 +122,13 @@
 		{ },
 		{ }
 	],
+	"popular" : [
+		{ },
+		{ },
+		{ },
+		{ },
+		{ }
+	],
 	"term" : {
 		"name" : "Primary Term",
 		"class" : "btn--term"

@@ -1,3 +1,13 @@
+.preface-blocks {
+  @extend %content-column-4-wrapper;
+  padding-bottom: $pad-double;
+  margin: 0;
+  margin-bottom: $pad-quad;
+}
+
+
+
+
 .media-blocks {
   
   @extend %block-square-4-wrapper;
@@ -25,3 +35,4 @@
   }
   
 }
+

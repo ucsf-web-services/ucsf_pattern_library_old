@@ -2,7 +2,33 @@
 	"title" : "News Center",
 	"bodyClass": "news-center",
 	"emergency" : false,
-	
+	"popular" : [
+		{
+			"headline" : {
+				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Biological Basis Found for Sensory Processing Disorders in Kids"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "E-Cigarettes Expose People to More Than ‘Harmless’ Water Vapor"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Lifestyle Changes May Lengthen Telomeres, A Measure of Cell Aging"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "A San Francisco Jobs Program Gives People a 'Reason to Live'"
+			}
+		}
+  ],
 	"tweets" : [
 		{
 			"img": {
