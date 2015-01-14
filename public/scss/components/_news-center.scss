@@ -35,6 +35,25 @@
       }
     }
   }
-  
 }
 
+
+.news-center-masonry {
+  .block-more {
+    border: 0;
+    margin: 0;
+    
+    a {
+      min-height: 120px;
+      color: $color--oxford-blue;
+      font-size: 28px;
+      line-height: 32px;
+      font-weight: 200;
+      background: $color--gray--lighter;
+      
+      &:hover {
+        background: rgba($color--gray--lighter, 0.75);
+      }
+    }
+  }
+}

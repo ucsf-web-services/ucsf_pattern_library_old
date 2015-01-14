@@ -7495,6 +7495,25 @@ blockquote {
   }
 }
 
+/* line 42, ../scss/components/_news-center.scss */
+.news-center-masonry .block-more {
+  border: 0;
+  margin: 0;
+}
+/* line 46, ../scss/components/_news-center.scss */
+.news-center-masonry .block-more a {
+  min-height: 120px;
+  color: #052049;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 200;
+  background: #f1f1f1;
+}
+/* line 54, ../scss/components/_news-center.scss */
+.news-center-masonry .block-more a:hover {
+  background: rgba(241, 241, 241, 0.75);
+}
+
 @media (min-width: 640px) {
   /* line 1, ../scss/components/_pillar-tabs.scss */
   .pillar-tabs-wrapper {
