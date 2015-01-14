@@ -1,7 +1,7 @@
 <div class="block-twitter">
   <div class="content">    
     <h4><a href="#">{{ account.name }}</a> <a class="handle" href="#">{{ account.handle }}</a></h4>
-    <span class="tweet">{{ excerpt.short }}</span> <span class="submitted-date">{{ date.ago }}</span>
+    <p class="tweet">{{ excerpt.short }} <span class="submitted-date">{{ date.ago }}</span></p>
     {{#img.landscape-16x9.src}}
       {{> atoms-landscape-16x9 }}
     {{/img.landscape-16x9.src}}
