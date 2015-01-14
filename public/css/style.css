@@ -5463,7 +5463,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
+.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.flex-direction-nav:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
   display: table;
   clear: both;
@@ -7620,6 +7620,47 @@ blockquote {
   font-size: 12px;
   line-height: 18px;
   font-weight: bold;
+}
+/* line 62, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 72, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav li .btn {
+  border: 1px solid #178CCB;
+  color: #178CCB;
+  padding: 0 10px;
+  font-size: 10px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+/* line 80, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav li .btn:hover {
+  border-color: #2ea6e7;
+  color: #2ea6e7;
+}
+/* line 85, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav li .btn .fa {
+  margin: 0;
+}
+/* line 89, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav li .flex-prev {
+  float: left;
+}
+/* line 91, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav li .flex-prev .btn {
+  padding-left: 6px;
+}
+/* line 95, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav li .flex-next {
+  float: right;
+}
+/* line 97, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav li .flex-next .btn {
+  padding-right: 6px;
 }
 
 @media (min-width: 640px) {
