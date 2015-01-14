@@ -3,7 +3,9 @@
   @extend %block-square-4-wrapper;
   padding-bottom: $pad-double;
   border-bottom: 2px solid $color--gray--lighter;
+  margin: 0;
   margin-bottom: $pad-double;
+
   .media--coverage__wrapper {
     @include breakpoint($bp--medium-up) {
       padding-right: 30px;

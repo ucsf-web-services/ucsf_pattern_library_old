@@ -7308,22 +7308,23 @@ blockquote {
 .media-blocks {
   padding-bottom: 2em;
   border-bottom: 2px solid #f1f1f1;
+  margin: 0;
   margin-bottom: 2em;
 }
 @media (min-width: 640px) {
-  /* line 7, ../scss/components/_news-center.scss */
+  /* line 9, ../scss/components/_news-center.scss */
   .media-blocks .media--coverage__wrapper {
     padding-right: 30px;
     border-right: 3px dotted #b4b9bf;
   }
 }
 @media (min-width: 640px) {
-  /* line 14, ../scss/components/_news-center.scss */
+  /* line 16, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper,
   .media-blocks .twitter__wrapper {
     padding-left: 30px;
   }
-  /* line 19, ../scss/components/_news-center.scss */
+  /* line 21, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper img,
   .media-blocks .twitter__wrapper img {
     max-width: 75%;
