@@ -3250,7 +3250,7 @@ TYPOGRAPHY
 }
 
 /* line 75, ../scss/global/extends/_block-extends.scss */
-.preface-blocks {
+.footer-blocks, .preface-blocks {
   margin: 0 -16px;
 }
 
@@ -5463,7 +5463,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
+.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
   display: table;
   clear: both;
@@ -7125,18 +7125,81 @@ blockquote {
   }
 }
 
-/* line 8, ../scss/components/_footer.scss */
-.copyright {
-  padding: 1em 0.5em 2em;
-  border-top: 4px solid #333333;
-  font-size: 0.75em;
+/* line 2, ../scss/components/_footer.scss */
+.footer-blocks {
+  margin: 0;
 }
-@media (min-width: 640px) {
-  /* line 8, ../scss/components/_footer.scss */
-  .copyright {
-    margin: 0 1em;
-    padding: 1em 0 2em 0;
-  }
+
+/* line 8, ../scss/components/_footer.scss */
+.footer {
+  background: #052049;
+  color: white;
+  padding-top: 25px;
+}
+
+/* line 16, ../scss/components/_footer.scss */
+.footer-content {
+  margin-top: 0;
+}
+/* line 19, ../scss/components/_footer.scss */
+.footer-content h3 {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #b4b9bf;
+}
+
+/* line 30, ../scss/components/_footer.scss */
+.footer-block-main {
+  padding-right: 20px;
+}
+/* line 34, ../scss/components/_footer.scss */
+.footer-block-main ul {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  font-size: 12px;
+  line-height: 15px;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+/* line 48, ../scss/components/_footer.scss */
+.footer-block-main ul li a {
+  color: #b4b9bf;
+}
+
+/* line 57, ../scss/components/_footer.scss */
+.footer-block-right .text-input {
+  max-width: 75%;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 66, ../scss/components/_footer.scss */
+.footer-block-right .label-radio {
+  font-size: 12px;
+  line-height: 15px;
+  color: #b4b9bf;
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 73, ../scss/components/_footer.scss */
+.footer-block-right .label-radio input {
+  opacity: 0.3;
+}
+
+/* line 81, ../scss/components/_footer.scss */
+.copyright {
+  font-size: 12px;
+  color: white;
+  line-height: 15px;
+  padding-bottom: 20px;
 }
 
 /* line 1, ../scss/components/_header.scss */
@@ -7400,7 +7463,12 @@ blockquote {
   margin-bottom: 4em;
 }
 
-/* line 11, ../scss/components/_news-center.scss */
+/* line 8, ../scss/components/_news-center.scss */
+.news-center-masonry .post-filter__wrapper {
+  border-bottom: 0;
+}
+
+/* line 13, ../scss/components/_news-center.scss */
 .media-blocks {
   padding-bottom: 2em;
   border-bottom: 2px solid #f1f1f1;
@@ -7408,19 +7476,19 @@ blockquote {
   margin-bottom: 2em;
 }
 @media (min-width: 640px) {
-  /* line 19, ../scss/components/_news-center.scss */
+  /* line 21, ../scss/components/_news-center.scss */
   .media-blocks .media--coverage__wrapper {
     padding-right: 30px;
     border-right: 3px dotted #b4b9bf;
   }
 }
 @media (min-width: 640px) {
-  /* line 26, ../scss/components/_news-center.scss */
+  /* line 28, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper,
   .media-blocks .twitter__wrapper {
     padding-left: 30px;
   }
-  /* line 31, ../scss/components/_news-center.scss */
+  /* line 33, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper img,
   .media-blocks .twitter__wrapper img {
     max-width: 75%;
