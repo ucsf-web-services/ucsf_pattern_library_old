@@ -3,6 +3,17 @@
   padding-bottom: $pad-double;
   margin: 0;
   margin-bottom: $pad-quad;
+  
+  .preface-block-main {
+    @include breakpoint($bp--medium-up) {
+      padding-right: 15px;
+    }
+  }
+  .preface-block-popular {
+    @include breakpoint($bp--medium-up) {
+      padding-left: 15px;
+    }
+  }
 }
 
 .news-center-masonry .post-filter__wrapper {

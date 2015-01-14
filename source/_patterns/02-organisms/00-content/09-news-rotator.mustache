@@ -1,6 +1,22 @@
-<div class="rotator__wrapper">
+<div class="rotator__wrapper custom-color-element">
   <div class="rotator--inner">
-    <h2 class="headline">Rotator »</h2>
-
+    
+    <div class="flexslider__wrapper flexslider">
+      <ul class="slides">
+        
+        {{# rotator-items }}
+        <li class="{{ term.class }}">
+          {{#img.landscape-16x9.src}}
+            {{> atoms-landscape-16x9 }}
+          {{/img.landscape-16x9.src}}
+          <a href="#" class="btn btn--term {{ term.class }}">{{ term.name }}</a>
+          <div class="data">
+            <h4><a href="#">{{ headline.short }}</a></h4>
+            <div class="readmore"><a href="#">Read More</a></div>
+          </div>
+        </li>
+        {{/ rotator-items }}
+      </ul>
+    </div>
   </div>
 </div>

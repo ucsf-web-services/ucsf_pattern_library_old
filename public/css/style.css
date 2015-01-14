@@ -5463,7 +5463,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
+.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
   display: table;
   clear: both;
@@ -7081,6 +7081,47 @@ blockquote {
   color: #333333;
 }
 
+/* line 4, ../scss/components/_custom_post_colors.scss */
+.custom-color-element .data {
+  border-bottom: 4px solid #18A3AC;
+}
+/* line 6, ../scss/components/_custom_post_colors.scss */
+.custom-color-element .data .readmore a {
+  color: #18A3AC;
+}
+/* line 13, ../scss/components/_custom_post_colors.scss */
+.custom-color-element .btn--term--research .data {
+  border-bottom-color: #18A3AC;
+}
+/* line 15, ../scss/components/_custom_post_colors.scss */
+.custom-color-element .btn--term--research .data .readmore a {
+  color: #18A3AC;
+}
+/* line 22, ../scss/components/_custom_post_colors.scss */
+.custom-color-element .btn--term--campus-news .data {
+  border-bottom-color: #716FB2;
+}
+/* line 24, ../scss/components/_custom_post_colors.scss */
+.custom-color-element .btn--term--campus-news .data .readmore a {
+  color: #716FB2;
+}
+/* line 31, ../scss/components/_custom_post_colors.scss */
+.custom-color-element .btn--term--patient-care .data {
+  border-bottom-color: #178CCB;
+}
+/* line 33, ../scss/components/_custom_post_colors.scss */
+.custom-color-element .btn--term--patient-care .data .readmore a {
+  color: #178CCB;
+}
+/* line 40, ../scss/components/_custom_post_colors.scss */
+.custom-color-element .btn--term--education .data {
+  border-bottom-color: #90BD31;
+}
+/* line 42, ../scss/components/_custom_post_colors.scss */
+.custom-color-element .btn--term--education .data .readmore a {
+  color: #90BD31;
+}
+
 /* line 1, ../scss/components/_featured-events.scss */
 .featured-events {
   padding: 0 1em;
@@ -7462,13 +7503,25 @@ blockquote {
   margin: 0;
   margin-bottom: 4em;
 }
+@media (min-width: 640px) {
+  /* line 7, ../scss/components/_news-center.scss */
+  .preface-blocks .preface-block-main {
+    padding-right: 15px;
+  }
+}
+@media (min-width: 640px) {
+  /* line 12, ../scss/components/_news-center.scss */
+  .preface-blocks .preface-block-popular {
+    padding-left: 15px;
+  }
+}
 
-/* line 8, ../scss/components/_news-center.scss */
+/* line 19, ../scss/components/_news-center.scss */
 .news-center-masonry .post-filter__wrapper {
   border-bottom: 0;
 }
 
-/* line 13, ../scss/components/_news-center.scss */
+/* line 24, ../scss/components/_news-center.scss */
 .media-blocks {
   padding-bottom: 2em;
   border-bottom: 2px solid #f1f1f1;
@@ -7476,31 +7529,31 @@ blockquote {
   margin-bottom: 2em;
 }
 @media (min-width: 640px) {
-  /* line 21, ../scss/components/_news-center.scss */
+  /* line 32, ../scss/components/_news-center.scss */
   .media-blocks .media--coverage__wrapper {
     padding-right: 30px;
     border-right: 3px dotted #b4b9bf;
   }
 }
 @media (min-width: 640px) {
-  /* line 28, ../scss/components/_news-center.scss */
+  /* line 39, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper,
   .media-blocks .twitter__wrapper {
     padding-left: 30px;
   }
-  /* line 33, ../scss/components/_news-center.scss */
+  /* line 44, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper img,
   .media-blocks .twitter__wrapper img {
     max-width: 75%;
   }
 }
 
-/* line 42, ../scss/components/_news-center.scss */
+/* line 53, ../scss/components/_news-center.scss */
 .news-center-masonry .block-more {
   border: 0;
   margin: 0;
 }
-/* line 46, ../scss/components/_news-center.scss */
+/* line 57, ../scss/components/_news-center.scss */
 .news-center-masonry .block-more a {
   min-height: 120px;
   color: #052049;
@@ -7509,9 +7562,64 @@ blockquote {
   font-weight: 200;
   background: #f1f1f1;
 }
-/* line 54, ../scss/components/_news-center.scss */
+/* line 65, ../scss/components/_news-center.scss */
 .news-center-masonry .block-more a:hover {
   background: rgba(241, 241, 241, 0.75);
+}
+
+/* line 3, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.slides {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+/* line 11, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.slides li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+/* line 17, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.slides li img {
+  display: block;
+  z-index: 1;
+}
+/* line 22, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.slides li .btn--term {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 13px;
+}
+/* line 28, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.slides li .data {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 20px;
+  padding-bottom: 15px;
+  text-transform: none;
+  background: rgba(255, 255, 255, 0.9);
+}
+/* line 40, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.slides li .data h4 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #58595b;
+}
+/* line 45, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.slides li .data h4 a {
+  color: #58595b;
+}
+/* line 52, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.slides li .data .readmore a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 @media (min-width: 640px) {

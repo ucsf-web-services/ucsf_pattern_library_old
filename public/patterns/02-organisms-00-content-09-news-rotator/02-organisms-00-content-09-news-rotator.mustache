@@ -1,6 +1,22 @@
-&lt;div class=&quot;rotator__wrapper&quot;&gt;
+&lt;div class=&quot;rotator__wrapper custom-color-element&quot;&gt;
   &lt;div class=&quot;rotator--inner&quot;&gt;
-    &lt;h2 class=&quot;headline&quot;&gt;Rotator &Acirc;&raquo;&lt;/h2&gt;
-
+    
+    &lt;div class=&quot;flexslider__wrapper flexslider&quot;&gt;
+      &lt;ul class=&quot;slides&quot;&gt;
+        
+        {{# rotator-items }}
+        &lt;li class=&quot;{{ term.class }}&quot;&gt;
+          {{#img.landscape-16x9.src}}
+            {{&gt; atoms-landscape-16x9 }}
+          {{/img.landscape-16x9.src}}
+          &lt;a href=&quot;#&quot; class=&quot;btn btn--term {{ term.class }}&quot;&gt;{{ term.name }}&lt;/a&gt;
+          &lt;div class=&quot;data&quot;&gt;
+            &lt;h4&gt;&lt;a href=&quot;#&quot;&gt;{{ headline.short }}&lt;/a&gt;&lt;/h4&gt;
+            &lt;div class=&quot;readmore&quot;&gt;&lt;a href=&quot;#&quot;&gt;Read More&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/li&gt;
+        {{/ rotator-items }}
+      &lt;/ul&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;

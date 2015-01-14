@@ -1,0 +1,63 @@
+.rotator__wrapper {
+  
+  ul.slides {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    
+    @extend .cf;
+    
+    li {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      display: block;
+      
+      img {
+        display: block;
+        z-index: 1;
+      }
+      
+      .btn--term {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 13px;
+      }
+      .data {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        @extend .cf;
+        padding: 20px;
+        padding-bottom: 15px;
+        text-transform: none;
+        background: rgba($white, 0.9);
+        
+        h4 {
+          font-size: 24px;
+          line-height: 30px;
+          color: $color--gray-darker;
+          
+          a {
+            color: $color--gray-darker;
+          }
+        }
+        
+        .readmore {
+          
+          a {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  
+}

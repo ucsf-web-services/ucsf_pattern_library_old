@@ -36,6 +36,7 @@
   <script src="../../js/easyResponsiveTabs.js"></script>
   <script src="../../js/breakpoints.js"></script>
   <script src="../../js/matchHeight.js"></script>
+  <script src="../../js/flexslider/jquery.flexslider.js"></script>
   <script src="../../js/script.js"></script>
   <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
   		<!-- never cache patterns -->
@@ -53,10 +54,21 @@
 
 </head>
 <body class="body">
-<div class="rotator__wrapper">
+<div class="rotator__wrapper custom-color-element">
   <div class="rotator--inner">
-    <h2 class="headline">Rotator »</h2>
-
+    
+    <div class="flexslider__wrapper flexslider">
+      <ul class="slides">
+        
+        <li class="btn--term">
+            <img src="../../images/fpo_16x9.png" alt="16x9 Image" />          <a href="#" class="btn btn--term btn--term">Primary Term</a>
+          <div class="data">
+            <h4><a href="#">Lorem ipsum dolor sit (37 characters)</a></h4>
+            <div class="readmore"><a href="#">Read More</a></div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 	<!--DO NOT REMOVE-->
@@ -64,7 +76,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "organisms-news-rotator";
-		var lineage        = [];
+		var lineage        = [{"lineagePattern":"atoms-landscape-16x9","lineagePath":"..\/..\/patterns\/00-atoms-04-images-02-landscape-16x9\/00-atoms-04-images-02-landscape-16x9.html"}];
 		var lineageR       = [{"lineagePattern":"templates-news-center","lineagePath":"..\/..\/patterns\/03-templates-01-news-center\/03-templates-01-news-center.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;

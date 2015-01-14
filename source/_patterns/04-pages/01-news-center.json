@@ -34,7 +34,69 @@
 		  "class" : ""
 		}
   ],
-	"popular" : [
+	"rotator-items" : [
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Research",
+				"class" : "btn--term--research"
+			},
+			"headline" : {
+				"short" : "Blood Work: Scientists Uncover Surprising New Tools to Rejuvenate the Brain"
+			}
+		},
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"headline" : {
+				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
+			}
+		},
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"headline" : {
+				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
+			}
+		},
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"headline" : {
+				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
+			}
+		}
+  ],
+  "popular" : [
 		{
 			"headline" : {
 				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"

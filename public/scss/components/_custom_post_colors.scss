@@ -1,0 +1,47 @@
+.custom-color-element {
+  
+  // default
+  .data {
+    border-bottom: 4px solid $color--blue-green;  
+    .readmore a {
+      color: $color--blue-green;
+    }
+  }
+  
+  
+  .btn--term--research {
+    .data {
+      border-bottom-color: $color--blue-green;  
+      .readmore a {
+        color: $color--blue-green;
+      }
+    }
+  }
+  
+  .btn--term--campus-news {
+    .data {
+      border-bottom-color: $color--chetwode-blue;
+      .readmore a {
+        color: $color--chetwode-blue;
+      }
+    }
+  }
+  
+  .btn--term--patient-care {
+    .data {
+      border-bottom-color: $color--electric-blue;
+      .readmore a {
+        color: $color--electric-blue;
+      }
+    }
+  }
+  
+  .btn--term--education {
+    .data {
+      border-bottom-color: $color--yellow-green;
+      .readmore a {
+        color: $color--yellow-green;
+      }
+    }
+  }
+}
