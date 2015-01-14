@@ -1,4 +1,4 @@
-&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
+&lt;div class=&quot;page news-page&quot; id=&quot;page&quot;&gt;
   {{&gt; organisms-header }}
   &lt;div class=&quot;wrapper--main&quot; role=&quot;main&quot;&gt;
   
@@ -13,7 +13,19 @@
     &lt;/div&gt;
   
     &lt;div class=&quot;wrapper--inner&quot;&gt;
-      {{&gt; organisms-media-coverage }}
+      &lt;div class=&quot;media-blocks&quot;&gt;
+        &lt;div class=&quot;media-block-main block-content--quarter block-content--quarter-2col&quot;&gt;
+          {{&gt; organisms-media-coverage }}
+        &lt;/div&gt;
+        &lt;div class=&quot;media-block-second block-content--quarter block-content--quarter-1col&quot;&gt;
+          {{&gt; organisms-youtube }}
+        &lt;/div&gt;
+        &lt;div class=&quot;media-block-third block-content--quarter block-content--quarter-1col&quot;&gt;
+          {{&gt; organisms-twitter }}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wrapper--inner&quot;&gt;
       {{&gt; organisms-news-center-latest-news }}
     &lt;/div&gt;
   &lt;/div&gt;

@@ -34,12 +34,13 @@ textarea {
 .wrapper--outer {
   width: 100%;
   @extend .center;
+  @extend .cf;
 }
 
 .wrapper--inner {
   max-width: $site-width;
   padding-left: $pad;
   padding-right: $pad;
-  
+  @extend .cf;
   @extend .center;
 }

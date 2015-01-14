@@ -3,6 +3,10 @@
   @extend .cf;
   margin-bottom: $pad-quad;
   
+  h2.headline {
+    border-bottom: 2px solid $color--gray--lighter;
+  }
+  
   ul {
     list-style-type: none;
     padding: 0;

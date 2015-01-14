@@ -1,0 +1,53 @@
+.youtube__wrapper {
+  
+  h2.headline {
+    border-bottom: 2px solid $color--gray--lighter;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @extend .cf;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-bottom: 25px;
+  }
+  
+  h4 {
+    font-size: 13px;
+    line-height: 17px;
+    color: $black;
+    font-weight: $font-body--bold;
+    margin-bottom: 0;
+    
+    a {
+      color: $black;
+    }
+    .submitted-by {
+      font-weight: $font-body--regular;
+      color: $color--gray-darker;
+      
+      a {
+        color: $color--electric-blue;
+      }
+    }
+  }
+  .data {
+    color: $color--gray--light;
+    font-size: 13px;
+    line-height: 17px;
+    
+    a {
+      color: $color--gray--light;
+    }
+  }
+}
+
+.block-youtube__inner {
+  
+}

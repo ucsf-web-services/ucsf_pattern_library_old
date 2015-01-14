@@ -1,4 +1,4 @@
-<div class="page" id="page">
+<div class="page news-page" id="page">
   {{> organisms-header }}
   <div class="wrapper--main" role="main">
   
@@ -13,7 +13,19 @@
     </div>
   
     <div class="wrapper--inner">
-      {{> organisms-media-coverage }}
+      <div class="media-blocks">
+        <div class="media-block-main block-content--quarter block-content--quarter-2col">
+          {{> organisms-media-coverage }}
+        </div>
+        <div class="media-block-second block-content--quarter block-content--quarter-1col">
+          {{> organisms-youtube }}
+        </div>
+        <div class="media-block-third block-content--quarter block-content--quarter-1col">
+          {{> organisms-twitter }}
+        </div>
+      </div>
+    </div>
+    <div class="wrapper--inner">
       {{> organisms-news-center-latest-news }}
     </div>
   </div>

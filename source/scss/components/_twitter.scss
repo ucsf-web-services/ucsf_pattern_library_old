@@ -1,0 +1,52 @@
+.twitter__wrapper {
+  
+  h2.headline {
+    border-bottom: 2px solid $color--gray--lighter;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @extend .cf;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-bottom: 25px;
+  }
+  
+  img {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  h4 {
+    font-size: 13px;
+    line-height: 17px;
+    color: $color--oxford-blue;
+    font-weight: $font-body--bold;
+    margin-bottom: 0;
+    
+    a {
+      color: $color--oxford-blue;      
+
+      &.handle {
+        font-weight: $font-body--regular;
+        color: $color--gray--light;
+      }
+    }
+  }
+  .tweet {
+    color: $color--gray-darker;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .submitted-date {
+    color: $color--gray--light;
+    font-size: 13px;
+    line-height: 17px;
+  }
+}

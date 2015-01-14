@@ -3,6 +3,90 @@
 	"bodyClass": "news-center",
 	"emergency" : false,
 	
+	"tweets" : [
+		{
+			"img": {
+    		"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+      "account" : {
+				"name" : "UC San Francisco (UCSF)",
+				"handle" : "@UCSF"
+			},
+			"date" : {
+				"ago" : "2 hours ago"
+			},
+			"excerpt" : {
+				"short" : "Year in photos: A student #DieIn, Ebola volunteers, #SugarScience & more amazing images that capture UCSF in 2014."
+			}
+		},
+		{
+			"img": {
+    		
+			},
+      "account" : {
+				"name" : "UC San Francisco (UCSF)",
+				"handle" : "@UCSF"
+			},
+			"date" : {
+				"ago" : "10 hours ago"
+			},
+			"excerpt" : {
+				"short" : "What will health & medical landscape look like in 2015? UCSFers talk brains, teamwork & more: http://bit.ly/1yYXM2l"
+			}
+		},
+		{
+			"img": {
+    		
+			},
+      "account" : {
+				"name" : "UC San Francisco (UCSF)",
+				"handle" : "@UCSF"
+			},
+			"date" : {
+				"ago" : "10 hours ago"
+			},
+			"excerpt" : {
+				"short" : "2014 was an amazing year for UCSF science. These are some of the most-read stories: #goodreads  http://on.fb.me/1DPsdzP"
+			}
+		}
+  ],
+	"videos" : [
+		{
+			"img": {
+    		"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"author" : "UCSFMedicalCenter",
+			"views" : "2106",
+			"date" : {
+				"ago" : "8 Months ago"
+			},
+			"headline" : {
+				"short" : "Introducing UCSF Benioff Children's Hospitals"
+			}
+		},
+		{
+			"img": {
+    		"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"author" : "UCSF",
+			"views" : "8643",
+			"date" : {
+				"ago" : "10 Months ago"
+			},
+			"headline" : {
+				"short" : "Winner Funding Basic Science to Revolutionize Medicine, 2013 FASEB Stand Up for Science"
+			}
+		}
+  ],
 	"science-blog" : [
 		{
 			"img": {

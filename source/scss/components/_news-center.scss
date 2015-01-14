@@ -1,0 +1,23 @@
+.media-blocks {
+  
+  @extend %block-square-4-wrapper;
+    
+  .media--coverage__wrapper {
+    @include breakpoint($bp--medium-up) {
+      padding-right: 30px;
+      border-right: 3px dotted #b4b9bf;  
+    }
+  }
+  
+  .youtube__wrapper,
+  .twitter__wrapper {
+    @include breakpoint($bp--medium-up) {
+      padding-left: 30px;
+      
+      img {
+        max-width: 75%;
+      }
+    }
+  }
+  
+}

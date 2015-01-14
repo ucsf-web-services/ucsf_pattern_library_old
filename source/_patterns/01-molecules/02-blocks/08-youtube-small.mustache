@@ -1,0 +1,11 @@
+<div class="block-youtube block-youtube--small">
+  <div class="block-youtube__inner">
+    {{#img.landscape-16x9.src}}
+      {{> atoms-landscape-16x9 }}
+    {{/img.landscape-16x9.src}}
+    <div class="block-youtube__body">
+      <h4><a href="#">{{ headline.short }}</a> <span class="submitted-by">by <a href="#">{{ author }}</a></span></h4>
+      <div class="data"><span class="views">{{ views }} views</span> | <span class="time-ago"><a href="#">{{ date.ago }}</a></span></div>
+    </div>
+  </div>
+</div>

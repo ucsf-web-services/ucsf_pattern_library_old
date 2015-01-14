@@ -1,0 +1,9 @@
+&lt;div class=&quot;block-twitter&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;    
+    &lt;h4&gt;&lt;a href=&quot;#&quot;&gt;{{ account.name }}&lt;/a&gt; &lt;a class=&quot;handle&quot; href=&quot;#&quot;&gt;{{ account.handle }}&lt;/a&gt;&lt;/h4&gt;
+    &lt;span class=&quot;tweet&quot;&gt;{{ excerpt.short }}&lt;/span&gt; &lt;span class=&quot;submitted-date&quot;&gt;{{ date.ago }}&lt;/span&gt;
+    {{#img.landscape-16x9.src}}
+      {{&gt; atoms-landscape-16x9 }}
+    {{/img.landscape-16x9.src}}
+  &lt;/div&gt;
+&lt;/div&gt;

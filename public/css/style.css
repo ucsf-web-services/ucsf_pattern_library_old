@@ -3193,7 +3193,7 @@ TYPOGRAPHY
 }
 
 /* line 70, ../scss/global/extends/_block-extends.scss */
-.pillar-content {
+.media-blocks, .pillar-content {
   margin: 0 -16px;
 }
 
@@ -4266,6 +4266,8 @@ pre mark {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 500;
   float: right;
+  margin-top: 12px;
+  margin-bottom: 0;
   font-size: 10px;
   line-height: 18px;
   white-space: nowrap;
@@ -4273,7 +4275,7 @@ pre mark {
   color: #178CCB;
   text-transform: uppercase;
 }
-/* line 505, ../scss/base/_btn.scss */
+/* line 507, ../scss/base/_btn.scss */
 .btn--more:hover {
   border-color: #2ea6e7;
   color: #2ea6e7;
@@ -5263,13 +5265,17 @@ hgroup .hN {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 12px;
   margin-bottom: 0.85714rem;
-  font-family: Granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.25;
   color: #052049;
 }
+/* line 94, ../scss/base/_headings.scss */
+h1.headline, h2.headline, h3.headline, h4.headline, h5.headline, h6.headline {
+  font-family: Granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+}
 
-/* line 95, ../scss/base/_headings.scss */
+/* line 99, ../scss/base/_headings.scss */
 h3 {
   font-weight: normal;
 }
@@ -5277,78 +5283,78 @@ h3 {
 /**
  * Font sizes
  */
-/* line 103, ../scss/base/_headings.scss */
+/* line 107, ../scss/base/_headings.scss */
 h1, .alpha {
   font-size: 30px;
   font-size: 2.14286rem;
 }
 @media (min-width: 768px) {
-  /* line 103, ../scss/base/_headings.scss */
+  /* line 107, ../scss/base/_headings.scss */
   h1, .alpha {
     font-size: 48px;
     font-size: 3.42857rem;
   }
 }
 
-/* line 113, ../scss/base/_headings.scss */
+/* line 117, ../scss/base/_headings.scss */
 h2, .beta {
   font-size: 24px;
   font-size: 1.71429rem;
 }
 @media (min-width: 768px) {
-  /* line 113, ../scss/base/_headings.scss */
+  /* line 117, ../scss/base/_headings.scss */
   h2, .beta {
     font-size: 36px;
     font-size: 2.57143rem;
   }
 }
 
-/* line 122, ../scss/base/_headings.scss */
+/* line 126, ../scss/base/_headings.scss */
 h3, .gamma {
   font-size: 20px;
   font-size: 1.42857rem;
 }
 @media (min-width: 768px) {
-  /* line 122, ../scss/base/_headings.scss */
+  /* line 126, ../scss/base/_headings.scss */
   h3, .gamma {
     font-size: 24px;
     font-size: 1.71429rem;
   }
 }
 
-/* line 132, ../scss/base/_headings.scss */
+/* line 136, ../scss/base/_headings.scss */
 h4, .delta {
   font-size: 18px;
   font-size: 1.28571rem;
 }
 @media (min-width: 768px) {
-  /* line 132, ../scss/base/_headings.scss */
+  /* line 136, ../scss/base/_headings.scss */
   h4, .delta {
     font-size: 20px;
     font-size: 1.42857rem;
   }
 }
 
-/* line 142, ../scss/base/_headings.scss */
+/* line 146, ../scss/base/_headings.scss */
 h5, .epsilon {
   font-size: 16px;
   font-size: 1.14286rem;
 }
 @media (min-width: 768px) {
-  /* line 142, ../scss/base/_headings.scss */
+  /* line 146, ../scss/base/_headings.scss */
   h5, .epsilon {
     font-size: 18px;
     font-size: 1.28571rem;
   }
 }
 
-/* line 152, ../scss/base/_headings.scss */
+/* line 156, ../scss/base/_headings.scss */
 h6, .zeta {
   font-size: 14px;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
-  /* line 152, ../scss/base/_headings.scss */
+  /* line 156, ../scss/base/_headings.scss */
   h6, .zeta {
     font-size: 16px;
     font-size: 1.14286rem;
@@ -5367,7 +5373,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .pillar-content:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after {
+.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
   display: table;
   clear: both;
@@ -6209,7 +6215,7 @@ textarea {
   width: 100%;
 }
 
-/* line 39, ../scss/base/_main.scss */
+/* line 40, ../scss/base/_main.scss */
 .wrapper--inner {
   max-width: 1190px;
   padding-left: 1em;
@@ -7060,18 +7066,22 @@ blockquote {
   margin-bottom: 4em;
 }
 /* line 6, ../scss/components/_media_coverage.scss */
+.media--coverage h2.headline {
+  border-bottom: 2px solid #f1f1f1;
+}
+/* line 10, ../scss/components/_media_coverage.scss */
 .media--coverage ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 13, ../scss/components/_media_coverage.scss */
+/* line 17, ../scss/components/_media_coverage.scss */
 .media--coverage li {
   padding: 0;
   margin: 0;
   margin-bottom: 1em;
 }
-/* line 20, ../scss/components/_media_coverage.scss */
+/* line 24, ../scss/components/_media_coverage.scss */
 .media--coverage h3 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #178CCB;
@@ -7079,21 +7089,21 @@ blockquote {
   line-height: 18px;
   margin-bottom: 0;
 }
-/* line 27, ../scss/components/_media_coverage.scss */
+/* line 31, ../scss/components/_media_coverage.scss */
 .media--coverage h3 a {
   color: #178CCB;
   text-decoration: none;
 }
-/* line 31, ../scss/components/_media_coverage.scss */
+/* line 35, ../scss/components/_media_coverage.scss */
 .media--coverage h3 a:hover {
   text-decoration: underline;
 }
-/* line 37, ../scss/components/_media_coverage.scss */
+/* line 41, ../scss/components/_media_coverage.scss */
 .media--coverage .data {
   color: #989898;
   font-weight: 800;
 }
-/* line 41, ../scss/components/_media_coverage.scss */
+/* line 45, ../scss/components/_media_coverage.scss */
 .media--coverage .data a {
   color: #989898;
 }
@@ -7262,13 +7272,13 @@ blockquote {
   padding-bottom: 26px;
   margin-bottom: 36px;
 }
-/* line 5, ../scss/components/_nav-section.scss */
+/* line 6, ../scss/components/_nav-section.scss */
 .nav-section ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 12, ../scss/components/_nav-section.scss */
+/* line 13, ../scss/components/_nav-section.scss */
 .nav-section li {
   padding: 0;
   margin: 0;
@@ -7276,14 +7286,14 @@ blockquote {
   float: left;
   margin-right: 10px;
 }
-/* line 20, ../scss/components/_nav-section.scss */
+/* line 21, ../scss/components/_nav-section.scss */
 .nav-section a {
   text-transform: uppercase;
   font-size: 10px;
   line-height: 22px;
   margin-bottom: 10px;
 }
-/* line 26, ../scss/components/_nav-section.scss */
+/* line 27, ../scss/components/_nav-section.scss */
 .nav-section a.active {
   background: #4d4d4d;
 }
@@ -7296,6 +7306,26 @@ blockquote {
 .nav-social a {
   font-size: 22px;
   color: #4d4d4d;
+}
+
+@media (min-width: 640px) {
+  /* line 5, ../scss/components/_news-center.scss */
+  .media-blocks .media--coverage__wrapper {
+    padding-right: 30px;
+    border-right: 3px dotted #b4b9bf;
+  }
+}
+@media (min-width: 640px) {
+  /* line 12, ../scss/components/_news-center.scss */
+  .media-blocks .youtube__wrapper,
+  .media-blocks .twitter__wrapper {
+    padding-left: 30px;
+  }
+  /* line 17, ../scss/components/_news-center.scss */
+  .media-blocks .youtube__wrapper img,
+  .media-blocks .twitter__wrapper img {
+    max-width: 75%;
+  }
 }
 
 @media (min-width: 640px) {
@@ -7702,6 +7732,58 @@ h2.resp-accordion {
   }
 }
 
+/* line 3, ../scss/components/_twitter.scss */
+.twitter__wrapper h2.headline {
+  border-bottom: 2px solid #f1f1f1;
+}
+/* line 7, ../scss/components/_twitter.scss */
+.twitter__wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 14, ../scss/components/_twitter.scss */
+.twitter__wrapper li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-bottom: 25px;
+}
+/* line 21, ../scss/components/_twitter.scss */
+.twitter__wrapper img {
+  display: block;
+  margin-top: 5px;
+}
+/* line 26, ../scss/components/_twitter.scss */
+.twitter__wrapper h4 {
+  font-size: 13px;
+  line-height: 17px;
+  color: #052049;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+/* line 33, ../scss/components/_twitter.scss */
+.twitter__wrapper h4 a {
+  color: #052049;
+}
+/* line 36, ../scss/components/_twitter.scss */
+.twitter__wrapper h4 a.handle {
+  font-weight: 400;
+  color: #989898;
+}
+/* line 42, ../scss/components/_twitter.scss */
+.twitter__wrapper .tweet {
+  color: #58595b;
+  font-size: 13px;
+  line-height: 17px;
+}
+/* line 47, ../scss/components/_twitter.scss */
+.twitter__wrapper .submitted-date {
+  color: #989898;
+  font-size: 13px;
+  line-height: 17px;
+}
+
 /**
  * This or That
  */
@@ -7721,6 +7803,55 @@ h2.resp-accordion {
   position: relative;
   bottom: -0.8em;
   color: #BFBFBF;
+}
+
+/* line 3, ../scss/components/_youtube.scss */
+.youtube__wrapper h2.headline {
+  border-bottom: 2px solid #f1f1f1;
+}
+/* line 7, ../scss/components/_youtube.scss */
+.youtube__wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 14, ../scss/components/_youtube.scss */
+.youtube__wrapper li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-bottom: 25px;
+}
+/* line 21, ../scss/components/_youtube.scss */
+.youtube__wrapper h4 {
+  font-size: 13px;
+  line-height: 17px;
+  color: black;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+/* line 28, ../scss/components/_youtube.scss */
+.youtube__wrapper h4 a {
+  color: black;
+}
+/* line 31, ../scss/components/_youtube.scss */
+.youtube__wrapper h4 .submitted-by {
+  font-weight: 400;
+  color: #58595b;
+}
+/* line 35, ../scss/components/_youtube.scss */
+.youtube__wrapper h4 .submitted-by a {
+  color: #178CCB;
+}
+/* line 40, ../scss/components/_youtube.scss */
+.youtube__wrapper .data {
+  color: #989898;
+  font-size: 13px;
+  line-height: 17px;
+}
+/* line 45, ../scss/components/_youtube.scss */
+.youtube__wrapper .data a {
+  color: #989898;
 }
 
 /*# sourceMappingURL=style.css.map */
