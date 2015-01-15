@@ -6,6 +6,10 @@
   @include breakpoint($bp--medium-up) {
     margin: 0 auto;
   }
+  
+  h2.headline {
+    margin-bottom: 0;
+  }
 }
 
 .post-filter__wrapper {

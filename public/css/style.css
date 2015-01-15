@@ -4346,33 +4346,34 @@ pre mark {
   background: #18A3AC;
   font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   letter-spacing: 0.140em;
+  border-radius: 0;
 }
-/* line 481, ../scss/base/_btn.scss */
+/* line 482, ../scss/base/_btn.scss */
 .btn--term:hover {
   color: white;
 }
 
-/* line 486, ../scss/base/_btn.scss */
+/* line 487, ../scss/base/_btn.scss */
 .btn--term--research {
   background: #18A3AC;
 }
 
-/* line 490, ../scss/base/_btn.scss */
+/* line 491, ../scss/base/_btn.scss */
 .btn--term--campus-news {
   background: #716FB2;
 }
 
-/* line 494, ../scss/base/_btn.scss */
+/* line 495, ../scss/base/_btn.scss */
 .btn--term--patient-care {
   background: #178CCB;
 }
 
-/* line 498, ../scss/base/_btn.scss */
+/* line 499, ../scss/base/_btn.scss */
 .btn--term--education {
   background: #90BD31;
 }
 
-/* line 502, ../scss/base/_btn.scss */
+/* line 503, ../scss/base/_btn.scss */
 .btn--more {
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   float: right;
@@ -4386,12 +4387,12 @@ pre mark {
   text-transform: uppercase;
 }
 @media (min-width: 1190px) {
-  /* line 502, ../scss/base/_btn.scss */
+  /* line 503, ../scss/base/_btn.scss */
   .btn--more {
     margin-top: 15px;
   }
 }
-/* line 520, ../scss/base/_btn.scss */
+/* line 521, ../scss/base/_btn.scss */
 .btn--more:hover {
   border-color: #2ea6e7;
   color: #2ea6e7;
@@ -7513,8 +7514,9 @@ blockquote {
   font-size: 10px;
   line-height: 22px;
   margin-bottom: 10px;
+  border-radius: 0;
 }
-/* line 34, ../scss/components/_nav-section.scss */
+/* line 35, ../scss/components/_nav-section.scss */
 .nav-section a.active {
   background: #4d4d4d;
   border-color: #4d4d4d;
@@ -8120,25 +8122,29 @@ h2.resp-accordion {
     margin: 0 auto;
   }
 }
+/* line 10, ../scss/components/_post-filter.scss */
+.post-filter h2.headline {
+  margin-bottom: 0;
+}
 
 @media (min-width: 768px) {
-  /* line 11, ../scss/components/_post-filter.scss */
+  /* line 15, ../scss/components/_post-filter.scss */
   .post-filter__wrapper {
     padding-bottom: 0.5em;
   }
 }
 
-/* line 19, ../scss/components/_post-filter.scss */
+/* line 23, ../scss/components/_post-filter.scss */
 .post-filter__tags {
   margin-bottom: 1em;
 }
 @media (min-width: 960px) {
-  /* line 19, ../scss/components/_post-filter.scss */
+  /* line 23, ../scss/components/_post-filter.scss */
   .post-filter__tags {
     margin-bottom: 2em;
   }
 }
-/* line 26, ../scss/components/_post-filter.scss */
+/* line 30, ../scss/components/_post-filter.scss */
 .post-filter__tags label {
   display: inline-block;
   padding: 0.25em 0.5em;
@@ -8148,7 +8154,7 @@ h2.resp-accordion {
   font-weight: normal;
 }
 @media (min-width: 1024px) {
-  /* line 26, ../scss/components/_post-filter.scss */
+  /* line 30, ../scss/components/_post-filter.scss */
   .post-filter__tags label {
     margin: 0 0.5em 0 0;
     padding: 0.25em 1em;
@@ -8156,18 +8162,18 @@ h2.resp-accordion {
   }
 }
 
-/* line 42, ../scss/components/_post-filter.scss */
+/* line 46, ../scss/components/_post-filter.scss */
 .post-filter__results {
   min-width: 100% !important;
   max-width: 100% !important;
 }
-/* line 47, ../scss/components/_post-filter.scss */
+/* line 51, ../scss/components/_post-filter.scss */
 .post-filter__results li {
   width: 100%;
   list-style-type: none;
 }
 @media (min-width: 680px) {
-  /* line 55, ../scss/components/_post-filter.scss */
+  /* line 59, ../scss/components/_post-filter.scss */
   .post-filter__results li {
     width: 50%;
     padding: 15px;
@@ -8175,7 +8181,7 @@ h2.resp-accordion {
   }
 }
 @media (min-width: 768px) {
-  /* line 63, ../scss/components/_post-filter.scss */
+  /* line 67, ../scss/components/_post-filter.scss */
   .post-filter__results li {
     width: 33.333%;
     padding: 15px;
@@ -8183,7 +8189,7 @@ h2.resp-accordion {
   }
 }
 @media (min-width: 1024px) {
-  /* line 77, ../scss/components/_post-filter.scss */
+  /* line 81, ../scss/components/_post-filter.scss */
   .post-filter__results li {
     width: 25%;
     padding: 15px;
@@ -8191,13 +8197,13 @@ h2.resp-accordion {
   }
 }
 
-/* line 92, ../scss/components/_post-filter.scss */
+/* line 96, ../scss/components/_post-filter.scss */
 .post-filter__results__inner {
   margin: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 100, ../scss/components/_post-filter.scss */
+  /* line 104, ../scss/components/_post-filter.scss */
   .post-filter-results__wrapper {
     margin: 0 -15px;
   }
