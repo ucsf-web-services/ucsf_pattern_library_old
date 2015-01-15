@@ -33,10 +33,11 @@
 
   .header-navs {
     @extend .float--right;
+    clear: right;
     padding-top: $pad-double;
 
-    @include breakpoint($bp--large-up) {
-      padding-top: 47px;
+    @include breakpoint($bp--medium-up) {
+      padding-top: 37px;
     }
   }
 
@@ -52,7 +53,7 @@
   }
 
   .nav-primary {
-    @extend .float--left;
+    //@extend .float--right;
   }
 
   .nav-social {
@@ -60,9 +61,11 @@
 
     @include breakpoint($bp--medium-up) {
       display: block;
+      
       position: absolute;
       top: 5px;
-      right: 12px;
+      right: 12px;    
+      
     }
 
     @include breakpoint($bp--large-up) {

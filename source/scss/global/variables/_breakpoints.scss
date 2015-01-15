@@ -7,9 +7,10 @@ $breakpoint-no-query-fallbacks: false; // Breakpoint will output fallback select
 $breakpoint-to-ems: false; // Breakpoint will convert all media queries to use EMs rather than PX
 
 // sign posts
-$width-small   : 480px;
-$width-medium  : 640px;
-$width-large   : 768px;
+$width-xsmall   : 480px;
+$width-small   : 680px;
+$width-medium  : 768px;
+$width-large   : 960px;
 $width-xlarge  : 1024px;
 // design max-width
 $width-xxlarge : 1190px; // 1170 size visually without padding

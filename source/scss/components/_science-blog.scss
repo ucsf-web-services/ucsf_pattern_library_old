@@ -7,7 +7,11 @@
 
 .blog--science {
   padding: 0 $pad;
-  @extend %adaptive-container;
+
+  h2.headline {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
   ul {
     list-style-type: none;
@@ -25,8 +29,10 @@
     @include breakpoint($bp--medium-up) {
       float: left;
       width: 32.333%;
-      padding-right: 1.5%;
-      margin-left: 1.5%;
+      padding-right: 15px;
+      margin-left: 15px;
+      padding-top: 25px;
+      padding-bottom: 25px;
       border-right: 2px solid lighten($color--gray-darker, 40%);
 
       &:first-child {
@@ -38,6 +44,26 @@
       }
     }
   }
+  
+  .block-blog__inner {
+    position: relative;
+    padding-left: 84px;
+  }
+  .block-blog__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    img {
+      display: block;
+    }
+  }
+  .block-blog__body {
+    padding-left: 0;
+    float: none;
+    width: 100%;
+  }
+
 
   @include breakpoint($bp--medium-up) {
     padding: 0;
