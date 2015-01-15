@@ -3845,7 +3845,6 @@ pre mark {
 .btn {
   border: 1px solid transparent;
   border-radius: 2px;
-  border-radius: 2px;
   text-decoration: none;
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
@@ -3858,20 +3857,20 @@ pre mark {
 /**
 * Button Primary
 */
-/* line 178, ../scss/base/_btn.scss */
+/* line 177, ../scss/base/_btn.scss */
 .btn--primary:hover, .btn--primary:active, .btn--primary {
   background: #18A3AC;
   border-color: #18A3AC;
   color: #fff;
 }
 
-/* line 182, ../scss/base/_btn.scss */
+/* line 181, ../scss/base/_btn.scss */
 .btn--primary:hover {
   background: #1bbac2;
   border-color: #1bbac2;
 }
 
-/* line 185, ../scss/base/_btn.scss */
+/* line 184, ../scss/base/_btn.scss */
 .btn--primary:active, .btn--primary:focus {
   background: #127a7f;
   border-color: #127a7f;
@@ -3880,7 +3879,7 @@ pre mark {
 /**
 * Button Secondary
 */
-/* line 192, ../scss/base/_btn.scss */
+/* line 191, ../scss/base/_btn.scss */
 .btn--secondary:hover,
 .btn--secondary:active,
 .btn--secondary {
@@ -3893,13 +3892,13 @@ pre mark {
   color: #fff;
 }
 
-/* line 203, ../scss/base/_btn.scss */
+/* line 202, ../scss/base/_btn.scss */
 .btn--secondary:hover {
   background: #abb3ba;
   border-color: #abb3ba;
 }
 
-/* line 206, ../scss/base/_btn.scss */
+/* line 205, ../scss/base/_btn.scss */
 .btn--secondary:active, .btn--secondary:focus {
   background: #818c98;
   border-color: #818c98;
@@ -3908,20 +3907,20 @@ pre mark {
 /**
 * Button Secondary
 */
-/* line 213, ../scss/base/_btn.scss */
+/* line 212, ../scss/base/_btn.scss */
 .btn--warning:hover, .btn--warning:active, .btn--warning {
   background: #E74C3C;
   border-color: #E74C3C;
   color: #fff;
 }
 
-/* line 217, ../scss/base/_btn.scss */
+/* line 216, ../scss/base/_btn.scss */
 .btn--warning:hover {
   background: #ed7469;
   border-color: #ed7469;
 }
 
-/* line 220, ../scss/base/_btn.scss */
+/* line 219, ../scss/base/_btn.scss */
 .btn--warning:active, .btn--warning:focus {
   background: #d62a1a;
   border-color: #d62a1a;
@@ -3930,20 +3929,20 @@ pre mark {
 /**
 * Dark button
 */
-/* line 227, ../scss/base/_btn.scss */
+/* line 226, ../scss/base/_btn.scss */
 .btn--dark:hover, .btn--dark:active, .btn--dark {
   background: #323A45;
   border-color: #323A45;
   color: #fff;
 }
 
-/* line 231, ../scss/base/_btn.scss */
+/* line 230, ../scss/base/_btn.scss */
 .btn--dark:hover {
   background: #475363;
   border-color: #475363;
 }
 
-/* line 234, ../scss/base/_btn.scss */
+/* line 233, ../scss/base/_btn.scss */
 .btn--dark:active, .btn--dark:focus {
   background: #1d2127;
   border-color: #1d2127;
@@ -3952,20 +3951,20 @@ pre mark {
 /**
 * Button Facebook
 */
-/* line 241, ../scss/base/_btn.scss */
+/* line 240, ../scss/base/_btn.scss */
 .btn--facebook:hover, .btn--facebook:active, .btn--facebook {
   background: #5970B3;
   border-color: #5970B3;
   color: #fff;
 }
 
-/* line 245, ../scss/base/_btn.scss */
+/* line 244, ../scss/base/_btn.scss */
 .btn--facebook:hover {
   background: #7c8fc3;
   border-color: #7c8fc3;
 }
 
-/* line 248, ../scss/base/_btn.scss */
+/* line 247, ../scss/base/_btn.scss */
 .btn--facebook:active, .btn--facebook:focus {
   background: #445a95;
   border-color: #445a95;
@@ -3974,20 +3973,20 @@ pre mark {
 /**
 * Button Google
 */
-/* line 255, ../scss/base/_btn.scss */
+/* line 254, ../scss/base/_btn.scss */
 .btn--google:hover, .btn--google:active, .btn--google {
   background: #EF2213;
   border-color: #EF2213;
   color: #fff;
 }
 
-/* line 259, ../scss/base/_btn.scss */
+/* line 258, ../scss/base/_btn.scss */
 .btn--google:hover {
   background: #f24e43;
   border-color: #f24e43;
 }
 
-/* line 262, ../scss/base/_btn.scss */
+/* line 261, ../scss/base/_btn.scss */
 .btn--google:active, .btn--google:focus {
   background: #c2190d;
   border-color: #c2190d;
@@ -3996,31 +3995,31 @@ pre mark {
 /**
 * Button light
 */
-/* line 269, ../scss/base/_btn.scss */
+/* line 268, ../scss/base/_btn.scss */
 .btn--light:hover, .btn--light:active, .btn--light {
   background: #fff;
   border-color: #a6a6a6;
   color: #fff;
 }
 
-/* line 273, ../scss/base/_btn.scss */
+/* line 272, ../scss/base/_btn.scss */
 .btn--light:hover {
   background: white;
   border-color: #b2b2b2;
 }
 
-/* line 276, ../scss/base/_btn.scss */
+/* line 275, ../scss/base/_btn.scss */
 .btn--light:active, .btn--light:focus {
   background: #e6e6e6;
   border-color: #8c8c8c;
 }
 
-/* line 279, ../scss/base/_btn.scss */
+/* line 278, ../scss/base/_btn.scss */
 .btn--light, .btn--light:hover, .btn--light:active {
   color: #444;
 }
 
-/* line 281, ../scss/base/_btn.scss */
+/* line 280, ../scss/base/_btn.scss */
 .btn--light:hover {
   border-color: #bfbfbf;
 }
@@ -4028,19 +4027,19 @@ pre mark {
 /**
 * Button Transparent
 */
-/* line 287, ../scss/base/_btn.scss */
+/* line 286, ../scss/base/_btn.scss */
 .btn--transparent:hover, .btn--transparent:active, .btn--transparent {
   background: transparent;
   border-color: #fff;
   color: #fff;
 }
 
-/* line 291, ../scss/base/_btn.scss */
+/* line 290, ../scss/base/_btn.scss */
 .btn--transparent:hover {
   border-color: white;
 }
 
-/* line 293, ../scss/base/_btn.scss */
+/* line 292, ../scss/base/_btn.scss */
 .btn--transparent:active, .btn--transparent:focus {
   background: #e6e6e6;
   border-color: #e6e6e6;
@@ -4049,7 +4048,7 @@ pre mark {
 /**
 * Button unstyled
 */
-/* line 300, ../scss/base/_btn.scss */
+/* line 299, ../scss/base/_btn.scss */
 .btn--unstyled, .btn--unstyled:hover {
   background: transparent;
   border-color: transparent !important;
@@ -4058,7 +4057,7 @@ pre mark {
 /**
 * Toggle button
 */
-/* line 307, ../scss/base/_btn.scss */
+/* line 306, ../scss/base/_btn.scss */
 .btn--toggle {
   font-size: 30px;
   float: right;
@@ -4066,7 +4065,7 @@ pre mark {
   padding: 0 15px;
 }
 
-/* line 312, ../scss/base/_btn.scss */
+/* line 311, ../scss/base/_btn.scss */
 .btn--toggle .fa {
   margin: 0;
 }
@@ -4074,7 +4073,7 @@ pre mark {
 /**
 * Button group
 */
-/* line 318, ../scss/base/_btn.scss */
+/* line 317, ../scss/base/_btn.scss */
 .btn-group {
   position: relative;
   display: inline-block;
@@ -4096,18 +4095,18 @@ pre mark {
   */
 }
 
-/* line 337, ../scss/base/_btn.scss */
+/* line 336, ../scss/base/_btn.scss */
 .btn-group:before, .btn-group:after {
   content: " ";
   display: table;
 }
 
-/* line 340, ../scss/base/_btn.scss */
+/* line 339, ../scss/base/_btn.scss */
 .btn-group:after {
   clear: both;
 }
 
-/* line 342, ../scss/base/_btn.scss */
+/* line 341, ../scss/base/_btn.scss */
 .btn-group > .btn {
   float: left;
   margin-bottom: 0;
@@ -4115,64 +4114,64 @@ pre mark {
   margin-right: -1px;
 }
 
-/* line 347, ../scss/base/_btn.scss */
+/* line 346, ../scss/base/_btn.scss */
 .btn-group > .btn:not(:first-child):not(:last-child):not(.btn--dropdown) {
   border-radius: 0;
 }
 
-/* line 349, ../scss/base/_btn.scss */
+/* line 348, ../scss/base/_btn.scss */
 .btn-group > .btn:first-child {
   margin-left: 0;
 }
 
-/* line 351, ../scss/base/_btn.scss */
+/* line 350, ../scss/base/_btn.scss */
 .btn-group > .btn:first-child:not(:last-child):not(.btn--dropdown) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-/* line 354, ../scss/base/_btn.scss */
+/* line 353, ../scss/base/_btn.scss */
 .btn-group > .btn:last-child:not(:first-child), .btn-group > .btn--dropdown:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-/* line 357, ../scss/base/_btn.scss */
+/* line 356, ../scss/base/_btn.scss */
 .btn-group .btn--primary {
   border-left-color: #127a7f;
 }
 
-/* line 359, ../scss/base/_btn.scss */
+/* line 358, ../scss/base/_btn.scss */
 .btn-group .btn--primary:first-child {
   border-left-color: transparent;
 }
 
-/* line 361, ../scss/base/_btn.scss */
+/* line 360, ../scss/base/_btn.scss */
 .btn-group .btn--secondary {
   border-left-color: #818c98;
 }
 
-/* line 363, ../scss/base/_btn.scss */
+/* line 362, ../scss/base/_btn.scss */
 .btn-group .btn--secondary:first-child {
   border-left-color: transparent;
 }
 
-/* line 365, ../scss/base/_btn.scss */
+/* line 364, ../scss/base/_btn.scss */
 .btn-group .btn--warning {
   border-left-color: #d62a1a;
 }
 
-/* line 367, ../scss/base/_btn.scss */
+/* line 366, ../scss/base/_btn.scss */
 .btn-group .btn--warning:first-child {
   border-left-color: transparent;
 }
 
-/* line 369, ../scss/base/_btn.scss */
+/* line 368, ../scss/base/_btn.scss */
 .btn-group .btn--dark {
   border-left-color: #1d2127;
 }
 
-/* line 371, ../scss/base/_btn.scss */
+/* line 370, ../scss/base/_btn.scss */
 .btn-group .btn--dark:first-child {
   border-left-color: transparent;
 }
@@ -4180,13 +4179,13 @@ pre mark {
 /**
 * Dropdown button
 */
-/* line 377, ../scss/base/_btn.scss */
+/* line 376, ../scss/base/_btn.scss */
 .btn--dropdown {
   padding-left: 0.8em;
   padding-right: 0.8em;
 }
 
-/* line 380, ../scss/base/_btn.scss */
+/* line 379, ../scss/base/_btn.scss */
 .btn--dropdown .caret {
   margin: 0;
 }
@@ -4197,7 +4196,7 @@ pre mark {
 /**
 * Alpha Button
 */
-/* line 389, ../scss/base/_btn.scss */
+/* line 388, ../scss/base/_btn.scss */
 .btn--alpha {
   font-size: 16px;
   font-size: 1.14286rem;
@@ -4206,7 +4205,7 @@ pre mark {
 /**
 * Beta Button
 */
-/* line 396, ../scss/base/_btn.scss */
+/* line 395, ../scss/base/_btn.scss */
 .btn--beta {
   font-size: 14px;
   font-size: 1rem;
@@ -4215,7 +4214,7 @@ pre mark {
 /**
 * Gamma Button
 */
-/* line 403, ../scss/base/_btn.scss */
+/* line 402, ../scss/base/_btn.scss */
 .btn--gamma {
   font-size: 12px;
   font-size: 0.85714rem;
@@ -4224,7 +4223,7 @@ pre mark {
 /**
 * Hard Button
 */
-/* line 410, ../scss/base/_btn.scss */
+/* line 409, ../scss/base/_btn.scss */
 .btn--hard {
   border-radius: 0;
 }
@@ -4232,7 +4231,7 @@ pre mark {
 /**
 * Soft button
 */
-/* line 416, ../scss/base/_btn.scss */
+/* line 415, ../scss/base/_btn.scss */
 .btn--soft {
   border-radius: 200px;
 }
@@ -4240,7 +4239,7 @@ pre mark {
 /**
 * Button round
 */
-/* line 422, ../scss/base/_btn.scss */
+/* line 421, ../scss/base/_btn.scss */
 .btn--round {
   border-radius: 200px;
   padding-left: 0.7em;
@@ -4250,7 +4249,7 @@ pre mark {
 /**
 * Fixed width
 */
-/* line 430, ../scss/base/_btn.scss */
+/* line 429, ../scss/base/_btn.scss */
 .btn--fix {
   min-width: 100px;
   text-align: center;
@@ -4259,7 +4258,7 @@ pre mark {
 /**
 * Button large
 */
-/* line 437, ../scss/base/_btn.scss */
+/* line 436, ../scss/base/_btn.scss */
 .btn--large {
   padding: 0.8em 2em;
 }
@@ -4267,43 +4266,43 @@ pre mark {
 /**
 * Button with icons aligned to the left
 */
-/* line 443, ../scss/base/_btn.scss */
+/* line 442, ../scss/base/_btn.scss */
 .btn--icon-left {
   position: relative;
 }
 
-/* line 445, ../scss/base/_btn.scss */
+/* line 444, ../scss/base/_btn.scss */
 .btn--icon-left .fa {
   position: absolute;
   left: 15px;
   top: 12px;
 }
 
-/* line 450, ../scss/base/_btn.scss */
+/* line 449, ../scss/base/_btn.scss */
 .btn .btn--dark {
   border: 1px solid #fff;
 }
 
-/* line 454, ../scss/base/_btn.scss */
+/* line 453, ../scss/base/_btn.scss */
 .btn .caret {
   margin-left: 0.3em;
 }
 
-/* line 458, ../scss/base/_btn.scss */
+/* line 457, ../scss/base/_btn.scss */
 .btn[disabled], .btn[disabled]:hover, .btn[disabled]:active {
   background: #f0f1f3;
   border-color: #f0f1f3;
   color: #bbbbbb;
 }
 
-/* line 464, ../scss/base/_btn.scss */
+/* line 463, ../scss/base/_btn.scss */
 .btn--dark:hover, .btn--dark:active, .btn--dark {
   background: #323A45;
   border-color: #323A45;
   color: #fff;
 }
 
-/* line 471, ../scss/base/_btn.scss */
+/* line 470, ../scss/base/_btn.scss */
 .btn--term {
   padding-right: 0.5em;
   padding-left: 0.5em;
@@ -4313,32 +4312,32 @@ pre mark {
   color: white;
   background: #18A3AC;
 }
-/* line 480, ../scss/base/_btn.scss */
+/* line 479, ../scss/base/_btn.scss */
 .btn--term:hover {
   color: white;
 }
 
-/* line 485, ../scss/base/_btn.scss */
+/* line 484, ../scss/base/_btn.scss */
 .btn--term--research {
   background: #18A3AC;
 }
 
-/* line 489, ../scss/base/_btn.scss */
+/* line 488, ../scss/base/_btn.scss */
 .btn--term--campus-news {
   background: #716FB2;
 }
 
-/* line 493, ../scss/base/_btn.scss */
+/* line 492, ../scss/base/_btn.scss */
 .btn--term--patient-care {
   background: #178CCB;
 }
 
-/* line 497, ../scss/base/_btn.scss */
+/* line 496, ../scss/base/_btn.scss */
 .btn--term--education {
   background: #90BD31;
 }
 
-/* line 501, ../scss/base/_btn.scss */
+/* line 500, ../scss/base/_btn.scss */
 .btn--more {
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   float: right;
@@ -4350,7 +4349,7 @@ pre mark {
   color: #178CCB;
   text-transform: uppercase;
 }
-/* line 514, ../scss/base/_btn.scss */
+/* line 513, ../scss/base/_btn.scss */
 .btn--more:hover {
   border-color: #2ea6e7;
   color: #2ea6e7;
@@ -7359,21 +7358,22 @@ blockquote {
 /* line 38, ../scss/components/_nav-primary.scss */
 .nav-primary > ul > li > a.active {
   background: #dadee4;
+  border-radius: 2px;
 }
 
-/* line 43, ../scss/components/_nav-primary.scss */
+/* line 44, ../scss/components/_nav-primary.scss */
 .nav-primary form, .nav-primary .text-input, .nav-primary .form-control {
   display: inline-block;
   margin: 0;
 }
 
-/* line 48, ../scss/components/_nav-primary.scss */
+/* line 49, ../scss/components/_nav-primary.scss */
 .nav-primary .btn {
   margin-bottom: 0;
 }
 
 @media (min-width: 640px) {
-  /* line 53, ../scss/components/_nav-primary.scss */
+  /* line 54, ../scss/components/_nav-primary.scss */
   .nav-primary {
     display: block;
   }
@@ -7464,6 +7464,7 @@ blockquote {
 /* line 33, ../scss/components/_nav-section.scss */
 .nav-section a.active {
   background: #4d4d4d;
+  border-color: #4d4d4d;
 }
 
 /* line 4, ../scss/components/_nav-social.scss */
