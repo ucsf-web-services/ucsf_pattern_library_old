@@ -5341,7 +5341,7 @@ hgroup .hN {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 12px;
   margin-bottom: 0.85714rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.25;
   color: #052049;
@@ -7242,7 +7242,7 @@ blockquote {
 }
 /* line 23, ../scss/components/_media_coverage.scss */
 .media--coverage h3 {
-  font-family: HelveticaNeue-roman "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #178CCB;
   font-size: 18px;
   line-height: 18px;
@@ -8008,7 +8008,7 @@ h2.resp-accordion {
 }
 /* line 20, ../scss/components/_popular.scss */
 .popular__wrapper h2.headline {
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 2px solid #b4b9bf;
 }
 /* line 24, ../scss/components/_popular.scss */
 .popular__wrapper h2 {
@@ -8219,7 +8219,7 @@ h2.resp-accordion {
 }
 /* line 36, ../scss/components/_twitter.scss */
 .twitter__wrapper h4 a.handle {
-  font-family: HelveticaNeue-roman "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #989898;
 }
 /* line 42, ../scss/components/_twitter.scss */
@@ -8287,7 +8287,7 @@ h2.resp-accordion {
 }
 /* line 34, ../scss/components/_youtube.scss */
 .youtube__wrapper h4 .submitted-by {
-  font-family: HelveticaNeue-roman "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #58595b;
 }
 /* line 38, ../scss/components/_youtube.scss */
