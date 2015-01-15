@@ -9,7 +9,12 @@
   background: $color--oxford-blue;
   color: $white;
   
-  padding-top: 25px;
+  padding: 15px;
+  
+  
+  @include breakpoint($bp--large-up) {
+    padding-top: 25px;
+  }
   
 }
 
@@ -29,7 +34,11 @@
 
 .footer-block-main {
   
-  padding-right: 20px;
+  
+  
+  @include breakpoint($bp--large-up) {
+    padding-right: 20px;
+  }
   
   ul {
     -webkit-column-count: 3;
@@ -55,7 +64,7 @@
 .footer-block-right {
   
   .text-input {
-    max-width: 75%;
+    max-width: 235px;
     border: none;
     background: rgba($white, 0.3);
     color: rgba($white, 0.5);
