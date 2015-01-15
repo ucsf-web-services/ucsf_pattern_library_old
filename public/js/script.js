@@ -140,8 +140,8 @@ activate: function (event) { // Callback function if tab is switched
       // Primary Controls
       controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
       directionNav: false,             //Boolean: Create navigation for previous/next navigation? (true/false)
-      prevText: '<button class="btn btn--transparent" data-toggle="dropdown" type="button"><em class="fa fa-backward fa-lg fa-lone"></em></button>',           //String: Set the text for the "previous" directionNav item
-      nextText: '<button class="btn btn--transparent" data-toggle="dropdown" type="button"><em class="fa fa-forward fa-lg fa-lone"></em></button>',               //String: Set the text for the "next" directionNav item
+      prevText: 'Prev',           //String: Set the text for the "previous" directionNav item
+      nextText: 'Next',               //String: Set the text for the "next" directionNav item
       
       // Secondary Navigation
       keyboard: true,                 //Boolean: Allow slider navigating via keyboard left/right keys
@@ -152,7 +152,7 @@ activate: function (event) { // Callback function if tab is switched
       playText: 'Play',               //String: Set the text for the "play" pausePlay item
       
       // Special properties
-      controlsContainer: ".flexslider-carousel",          //{UPDATED} Selector: USE CLASS SELECTOR. Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be ".flexslider-container". Property is ignored if given element is not found.
+      controlsContainer: "",          //{UPDATED} Selector: USE CLASS SELECTOR. Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be ".flexslider-container". Property is ignored if given element is not found.
       manualControls: ".flexslider-carousel .thumbnail-carousel-navigation li",             //Selector: Declare custom control navigation. Examples would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
       sync: ".flexslider-carousel .thumbnail-cariousel-navigation li",                       //{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.
       asNavFor: "",                   //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
@@ -217,12 +217,12 @@ activate: function (event) { // Callback function if tab is switched
       controlsContainer: "",          //{UPDATED} Selector: USE CLASS SELECTOR. Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be ".flexslider-container". Property is ignored if given element is not found.
       manualControls: "",             //Selector: Declare custom control navigation. Examples would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
       sync: "",                       //{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.
-      asNavFor: ".flexslider",                   //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
+      asNavFor: "",                   //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
       
       // Carousel Options
       itemWidth: 120,                   //{NEW} Integer: Box-model width of individual carousel items, including horizontal borders and padding.
       itemMargin: 10,                  //{NEW} Integer: Margin between carousel items.
-      minItems: 5,                    //{NEW} Integer: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
+      minItems: 3,                    //{NEW} Integer: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
       maxItems: 5,                    //{NEW} Integer: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.
       move: 0,                        //{NEW} Integer: Number of carousel items that should move on animation. If 0, slider will move all visible items.
                                       

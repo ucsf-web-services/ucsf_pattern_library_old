@@ -148,7 +148,8 @@
       .flex-prev {
         position: absolute;
         left: 0;
-        top: 25px;
+        top: 50%;
+        margin-top: -20px;
         
         .btn {
           padding-left: 6px;
@@ -158,7 +159,8 @@
       .flex-next {
         position: absolute;
         right: 0;
-        top: 25px;
+        top: 50%;
+        margin-top: -20px;
         
         .btn {
           padding-right: 6px;
