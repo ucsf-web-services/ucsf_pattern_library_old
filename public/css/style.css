@@ -5478,7 +5478,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
+.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
   display: table;
   clear: both;
@@ -7529,9 +7529,7 @@ blockquote {
 
 /* line 1, ../scss/components/_news-center.scss */
 .preface-blocks {
-  padding-bottom: 2em;
   margin: 0;
-  margin-bottom: 4em;
   /*
 @include breakpoint($bp--medium-up) {
     .preface-block-main {
@@ -7546,23 +7544,35 @@ blockquote {
 */
 }
 @media (min-width: 960px) {
-  /* line 21, ../scss/components/_news-center.scss */
+  /* line 1, ../scss/components/_news-center.scss */
+  .preface-blocks {
+    margin-bottom: 25px;
+    padding-bottom: 2em;
+  }
+}
+/* line 24, ../scss/components/_news-center.scss */
+.preface-blocks .preface-block-main {
+  margin-bottom: 25px;
+}
+@media (min-width: 960px) {
+  /* line 28, ../scss/components/_news-center.scss */
   .preface-blocks .preface-block-main {
+    margin-bottom: 0;
     padding-right: 15px;
   }
-  /* line 25, ../scss/components/_news-center.scss */
+  /* line 32, ../scss/components/_news-center.scss */
   .preface-blocks .preface-block-popular {
     margin-top: 0;
     padding-left: 15px;
   }
 }
 
-/* line 33, ../scss/components/_news-center.scss */
+/* line 40, ../scss/components/_news-center.scss */
 .news-center-masonry .post-filter__wrapper {
   border-bottom: 0;
 }
 
-/* line 38, ../scss/components/_news-center.scss */
+/* line 45, ../scss/components/_news-center.scss */
 .media-blocks {
   padding-bottom: 2em;
   border-bottom: 2px solid #f1f1f1;
@@ -7570,31 +7580,31 @@ blockquote {
   margin-bottom: 2em;
 }
 @media (min-width: 768px) {
-  /* line 46, ../scss/components/_news-center.scss */
+  /* line 53, ../scss/components/_news-center.scss */
   .media-blocks .media--coverage__wrapper {
     padding-right: 30px;
     border-right: 2px dotted #b4b9bf;
   }
 }
 @media (min-width: 768px) {
-  /* line 53, ../scss/components/_news-center.scss */
+  /* line 60, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper,
   .media-blocks .twitter__wrapper {
     padding-left: 30px;
   }
-  /* line 58, ../scss/components/_news-center.scss */
+  /* line 65, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper img,
   .media-blocks .twitter__wrapper img {
     max-width: 75%;
   }
 }
 
-/* line 67, ../scss/components/_news-center.scss */
+/* line 74, ../scss/components/_news-center.scss */
 .news-center-masonry .block-more {
   border: 0;
   margin: 0;
 }
-/* line 71, ../scss/components/_news-center.scss */
+/* line 78, ../scss/components/_news-center.scss */
 .news-center-masonry .block-more a {
   min-height: 120px;
   color: #052049;
@@ -7603,7 +7613,7 @@ blockquote {
   font-weight: 200;
   background: #f1f1f1;
 }
-/* line 79, ../scss/components/_news-center.scss */
+/* line 86, ../scss/components/_news-center.scss */
 .news-center-masonry .block-more a:hover {
   background: rgba(241, 241, 241, 0.75);
 }
@@ -8219,44 +8229,53 @@ h2.resp-accordion {
   padding: 0;
   margin: 0;
   display: block;
+  padding-top: 10px;
+  margin-bottom: 0;
+  border-bottom: 2px solid #bebfc1;
+  min-height: 94px;
+}
+/* line 35, ../scss/components/_science-blog.scss */
+.blog--science li:last-child {
+  border-bottom: 0;
 }
 @media (min-width: 768px) {
   /* line 24, ../scss/components/_science-blog.scss */
   .blog--science li {
     float: left;
-    width: 32.333%;
-    padding-right: 15px;
-    margin-left: 15px;
+    width: 32%;
+    padding-right: 1%;
+    margin-left: 1%;
     padding-top: 25px;
     padding-bottom: 25px;
     border-right: 2px solid #bebfc1;
+    border-bottom: 0;
   }
-  /* line 38, ../scss/components/_science-blog.scss */
+  /* line 50, ../scss/components/_science-blog.scss */
   .blog--science li:first-child {
     margin-left: 0;
   }
-  /* line 41, ../scss/components/_science-blog.scss */
+  /* line 53, ../scss/components/_science-blog.scss */
   .blog--science li:last-child {
     border-right: none;
     padding-right: 0;
   }
 }
-/* line 48, ../scss/components/_science-blog.scss */
+/* line 60, ../scss/components/_science-blog.scss */
 .blog--science .block-blog__inner {
   position: relative;
   padding-left: 84px;
 }
-/* line 52, ../scss/components/_science-blog.scss */
+/* line 65, ../scss/components/_science-blog.scss */
 .blog--science .block-blog__img {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 57, ../scss/components/_science-blog.scss */
+/* line 70, ../scss/components/_science-blog.scss */
 .blog--science .block-blog__img img {
   display: block;
 }
-/* line 61, ../scss/components/_science-blog.scss */
+/* line 74, ../scss/components/_science-blog.scss */
 .blog--science .block-blog__body {
   padding-left: 0;
   float: none;

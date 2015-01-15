@@ -1,9 +1,12 @@
 .preface-blocks {
   @extend %content-column-4-wrapper;
-  padding-bottom: $pad-double;
-  margin: 0;
-  margin-bottom: $pad-quad;
   
+  margin: 0;
+  
+  @include breakpoint($bp--large-up) {
+    margin-bottom: 25px;
+    padding-bottom: $pad-double;
+  }
   
   /*
 @include breakpoint($bp--medium-up) {
@@ -17,9 +20,13 @@
     }
   }
 */
+
+  .preface-block-main {
+    margin-bottom: 25px;
+  }
   @include breakpoint($bp--large-up) {
     .preface-block-main {
-      //@extend %preface-column-4-3col;
+      margin-bottom: 0;
       padding-right: 15px;
     }
     .preface-block-popular {
