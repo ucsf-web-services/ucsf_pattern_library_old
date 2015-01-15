@@ -3154,41 +3154,22 @@ TYPOGRAPHY
   /* line 1, ../scss/global/extends/_block-extends.scss */
   .pillar-tabs-btn {
     width: 20%;
-    height: 109px;
     float: left;
     margin: 0;
   }
 }
-@media (min-width: 768px) {
-  /* line 1, ../scss/global/extends/_block-extends.scss */
-  .pillar-tabs-btn {
-    height: 132px;
-  }
-}
-@media (min-width: 1024px) {
-  /* line 1, ../scss/global/extends/_block-extends.scss */
-  .pillar-tabs-btn {
-    height: 180px;
-  }
-}
-@media (min-width: 1190px) {
-  /* line 1, ../scss/global/extends/_block-extends.scss */
-  .pillar-tabs-btn {
-    height: 210px;
-  }
-}
 
-/* line 24, ../scss/global/extends/_block-extends.scss */
+/* line 13, ../scss/global/extends/_block-extends.scss */
 .pillar-tabs-list {
   margin: 0 -12px;
 }
 
-/* line 29, ../scss/global/extends/_block-extends.scss */
+/* line 18, ../scss/global/extends/_block-extends.scss */
 .block-content--quarter {
   list-style-type: none;
 }
 @media (min-width: 640px) {
-  /* line 29, ../scss/global/extends/_block-extends.scss */
+  /* line 18, ../scss/global/extends/_block-extends.scss */
   .block-content--quarter {
     float: left;
     margin: 0;
@@ -3196,70 +3177,70 @@ TYPOGRAPHY
 }
 
 @media (min-width: 640px) {
-  /* line 38, ../scss/global/extends/_block-extends.scss */
+  /* line 27, ../scss/global/extends/_block-extends.scss */
   .block-content--quarter-1col {
     width: 33.3%;
   }
 }
 @media (min-width: 1024px) {
-  /* line 38, ../scss/global/extends/_block-extends.scss */
+  /* line 27, ../scss/global/extends/_block-extends.scss */
   .block-content--quarter-1col {
     width: 25%;
   }
 }
 
 @media (min-width: 640px) {
-  /* line 47, ../scss/global/extends/_block-extends.scss */
+  /* line 36, ../scss/global/extends/_block-extends.scss */
   .block-content--quarter-2col {
     width: 33.3%;
   }
 }
 @media (min-width: 1024px) {
-  /* line 47, ../scss/global/extends/_block-extends.scss */
+  /* line 36, ../scss/global/extends/_block-extends.scss */
   .block-content--quarter-2col {
     width: 50%;
   }
 }
 
-/* line 56, ../scss/global/extends/_block-extends.scss */
+/* line 45, ../scss/global/extends/_block-extends.scss */
 .block-content__inner {
   margin: 0 1em;
 }
 @media (min-width: 640px) {
-  /* line 56, ../scss/global/extends/_block-extends.scss */
+  /* line 45, ../scss/global/extends/_block-extends.scss */
   .block-content__inner {
     height: 190px;
   }
 }
 @media (min-width: 768px) {
-  /* line 56, ../scss/global/extends/_block-extends.scss */
+  /* line 45, ../scss/global/extends/_block-extends.scss */
   .block-content__inner {
     height: 230px;
   }
 }
 @media (min-width: 1190px) {
-  /* line 56, ../scss/global/extends/_block-extends.scss */
+  /* line 45, ../scss/global/extends/_block-extends.scss */
   .block-content__inner {
     height: 260px;
   }
 }
 
-/* line 70, ../scss/global/extends/_block-extends.scss */
+/* line 59, ../scss/global/extends/_block-extends.scss */
 .media-blocks, .pillar-content {
   margin: 0 -16px;
 }
 
-/* line 75, ../scss/global/extends/_block-extends.scss */
+/* line 64, ../scss/global/extends/_block-extends.scss */
 .footer-blocks, .preface-blocks {
   margin: 0 -16px;
 }
 
-/* line 79, ../scss/global/extends/_block-extends.scss */
+/* line 68, ../scss/global/extends/_block-extends.scss */
 .content-column--quarter {
   list-style-type: none;
 }
 @media (min-width: 640px) {
-  /* line 79, ../scss/global/extends/_block-extends.scss */
+  /* line 68, ../scss/global/extends/_block-extends.scss */
   .content-column--quarter {
     float: left;
     margin: 0;
@@ -3267,21 +3248,21 @@ TYPOGRAPHY
 }
 
 @media (min-width: 640px) {
-  /* line 87, ../scss/global/extends/_block-extends.scss */
+  /* line 76, ../scss/global/extends/_block-extends.scss */
   .content-column--quarter-1col {
     width: 25%;
   }
 }
 
 @media (min-width: 640px) {
-  /* line 93, ../scss/global/extends/_block-extends.scss */
+  /* line 82, ../scss/global/extends/_block-extends.scss */
   .content-column--quarter-2col {
     width: 50%;
   }
 }
 
 @media (min-width: 640px) {
-  /* line 99, ../scss/global/extends/_block-extends.scss */
+  /* line 88, ../scss/global/extends/_block-extends.scss */
   .content-column--quarter-3col {
     width: 75%;
   }
@@ -7247,7 +7228,7 @@ blockquote {
 .header {
   background-color: white;
   border-bottom: 1px solid #f0f0f0;
-  z-index: 99;
+  z-index: 999;
 }
 
 /* line 5, ../scss/components/_media_coverage.scss */
@@ -7746,67 +7727,65 @@ blockquote {
     padding-bottom: 1em;
   }
 }
+/* line 7, ../scss/components/_pillar-tabs.scss */
+.pillar-tabs-wrapper h3 {
+  color: #052049;
+}
 
-/* line 12, ../scss/components/_pillar-tabs.scss */
+/* line 16, ../scss/components/_pillar-tabs.scss */
 .pillar-tabs .resp-tab-active {
   position: relative;
 }
-/* line 15, ../scss/components/_pillar-tabs.scss */
+/* line 19, ../scss/components/_pillar-tabs.scss */
 .pillar-tabs .resp-tab-active .pillar-tabs-hit {
-  background-color: #4d4d4d;
+  background-color: #052049;
+  border-top: 1px solid #052049;
   color: white;
 }
-/* line 20, ../scss/components/_pillar-tabs.scss */
+/* line 25, ../scss/components/_pillar-tabs.scss */
 .pillar-tabs .resp-tab-active:after {
   position: absolute;
-  bottom: -29px;
+  bottom: 0;
   left: 16%;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 12.5px 15px 12.5px;
-  border-color: transparent transparent #000000 transparent;
+  border-width: 20px 20px 0 20px;
+  border-color: #052049 transparent transparent transparent;
 }
 @media (min-width: 640px) {
-  /* line 20, ../scss/components/_pillar-tabs.scss */
+  /* line 25, ../scss/components/_pillar-tabs.scss */
   .pillar-tabs .resp-tab-active:after {
-    left: 40%;
-    bottom: -37px;
+    left: 50%;
+    margin-left: -20px;
+    bottom: -20px;
     content: "";
-  }
-}
-@media (min-width: 768px) {
-  /* line 20, ../scss/components/_pillar-tabs.scss */
-  .pillar-tabs .resp-tab-active:after {
-    left: 42%;
-  }
-}
-@media (min-width: 1024px) {
-  /* line 20, ../scss/components/_pillar-tabs.scss */
-  .pillar-tabs .resp-tab-active:after {
-    left: 44%;
   }
 }
 
 @media (min-width: 640px) {
-  /* line 50, ../scss/components/_pillar-tabs.scss */
+  /* line 58, ../scss/components/_pillar-tabs.scss */
   .pillar-tabs-list-wrapper {
-    padding-bottom: 2.5em;
-    border-bottom: 2px solid #333333;
-    margin-bottom: 2.5em;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
 /* line 66, ../scss/components/_pillar-tabs.scss */
+.pillar-tabs-list {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 76, ../scss/components/_pillar-tabs.scss */
 .pillar-tabs-hit {
   width: auto;
-  height: 100%;
   display: block;
-  background-color: #f1f1f1;
-  font-family: TimesNewRoman, "Times New Roman", Times, serif;
-  color: #333333;
+  background-color: none;
+  font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+  color: gray;
   font-size: 1.4375em;
-  line-height: 1.2;
+  line-height: 1.4375em;
   cursor: pointer;
   padding: 3px 0 0 12px;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -7814,82 +7793,80 @@ blockquote {
   -ms-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 @media (min-width: 640px) {
-  /* line 66, ../scss/components/_pillar-tabs.scss */
+  /* line 76, ../scss/components/_pillar-tabs.scss */
   .pillar-tabs-hit {
-    padding: 0;
-    margin: 0 12px;
+    border-top: 1px solid #b4b9bf;
+    padding: 10px 0;
+    margin: 0;
     text-align: center;
   }
 }
 @media (min-width: 768px) {
-  /* line 66, ../scss/components/_pillar-tabs.scss */
+  /* line 76, ../scss/components/_pillar-tabs.scss */
   .pillar-tabs-hit {
     font-size: 1.6em;
   }
 }
 @media (min-width: 1024px) {
-  /* line 66, ../scss/components/_pillar-tabs.scss */
+  /* line 76, ../scss/components/_pillar-tabs.scss */
   .pillar-tabs-hit {
+    padding: 20px 0;
     font-size: 2em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 66, ../scss/components/_pillar-tabs.scss */
+  /* line 76, ../scss/components/_pillar-tabs.scss */
   .pillar-tabs-hit {
-    font-size: 2.4em;
+    font-size: 32px;
   }
 }
-/* line 98, ../scss/components/_pillar-tabs.scss */
+/* line 114, ../scss/components/_pillar-tabs.scss */
 .pillar-tabs-hit:hover {
-  background-color: #d7d7d7;
+  background-color: #f9f9f9;
+  color: #4d4d4d;
 }
 
-/* line 103, ../scss/components/_pillar-tabs.scss */
+/* line 120, ../scss/components/_pillar-tabs.scss */
 .pillar-tabs-word {
   display: block;
   padding: 0;
+  white-space: nowrap;
 }
 @media (min-width: 640px) {
-  /* line 103, ../scss/components/_pillar-tabs.scss */
+  /* line 120, ../scss/components/_pillar-tabs.scss */
   .pillar-tabs-word {
-    padding: 0 0.25em;
     position: relative;
-    top: 50%;
+    /*
+top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
-}
-@media (min-width: 768px) {
-  /* line 103, ../scss/components/_pillar-tabs.scss */
-  .pillar-tabs-word {
-    padding: 0 0.5em;
-  }
-}
-@media (min-width: 1024px) {
-  /* line 103, ../scss/components/_pillar-tabs.scss */
-  .pillar-tabs-word {
-    padding: 0 1em;
+*/
   }
 }
 @media (max-width: 639px) {
-  /* line 103, ../scss/components/_pillar-tabs.scss */
+  /* line 120, ../scss/components/_pillar-tabs.scss */
   .pillar-tabs-word {
     line-height: 45px;
   }
 }
 
 /*-----------Styles for Accordion plugin-----------*/
-/* line 132, ../scss/components/_pillar-tabs.scss */
+/* line 153, ../scss/components/_pillar-tabs.scss */
 .resp-tabs-container {
   padding: 0px;
   background-color: #fff;
   clear: left;
 }
 
-/* line 138, ../scss/components/_pillar-tabs.scss */
+/* line 159, ../scss/components/_pillar-tabs.scss */
 .resp-tab-content {
   display: none;
   border-top: 2px solid #333333;
@@ -7897,7 +7874,7 @@ blockquote {
   padding-top: 1.5em;
 }
 @media (min-width: 640px) {
-  /* line 138, ../scss/components/_pillar-tabs.scss */
+  /* line 159, ../scss/components/_pillar-tabs.scss */
   .resp-tab-content {
     padding: 0;
     margin: 0;
@@ -7905,19 +7882,19 @@ blockquote {
   }
 }
 
-/* line 151, ../scss/components/_pillar-tabs.scss */
+/* line 172, ../scss/components/_pillar-tabs.scss */
 h2.resp-accordion {
   cursor: pointer;
   display: none;
 }
 
 @media (max-width: 639px) {
-  /* line 159, ../scss/components/_pillar-tabs.scss */
+  /* line 180, ../scss/components/_pillar-tabs.scss */
   .resp-content-active, .resp-accordion-active {
     display: block;
   }
 
-  /* line 163, ../scss/components/_pillar-tabs.scss */
+  /* line 184, ../scss/components/_pillar-tabs.scss */
   h2.resp-accordion {
     font-size: 1.0625em;
     background: #f1f1f1;
@@ -7928,39 +7905,39 @@ h2.resp-accordion {
     height: 50px;
   }
 
-  /* line 173, ../scss/components/_pillar-tabs.scss */
+  /* line 194, ../scss/components/_pillar-tabs.scss */
   h2.resp-tab-active {
     margin-bottom: 0px !important;
   }
 
-  /* line 179, ../scss/components/_pillar-tabs.scss */
+  /* line 200, ../scss/components/_pillar-tabs.scss */
   h2.resp-tab-title:last-child {
     background: blue;
   }
 
-  /* line 183, ../scss/components/_pillar-tabs.scss */
+  /* line 204, ../scss/components/_pillar-tabs.scss */
   ul.resp-tabs-list, p {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 188, ../scss/components/_pillar-tabs.scss */
+  /* line 209, ../scss/components/_pillar-tabs.scss */
   .resp-easy-accordion h2.resp-accordion {
     display: block;
   }
 
-  /* line 192, ../scss/components/_pillar-tabs.scss */
+  /* line 213, ../scss/components/_pillar-tabs.scss */
   .resp-jfit {
     width: 100%;
     margin: 0px;
   }
 
-  /* line 197, ../scss/components/_pillar-tabs.scss */
+  /* line 218, ../scss/components/_pillar-tabs.scss */
   .resp-tab-content-active {
     position: relative;
     display: block;
   }
-  /* line 201, ../scss/components/_pillar-tabs.scss */
+  /* line 222, ../scss/components/_pillar-tabs.scss */
   .resp-tab-content-active:before {
     content: "";
     position: absolute;
@@ -7973,7 +7950,7 @@ h2.resp-accordion {
     border-color: transparent transparent #000000 transparent;
   }
 
-  /* line 214, ../scss/components/_pillar-tabs.scss */
+  /* line 235, ../scss/components/_pillar-tabs.scss */
   .resp-tabs-list li {
     font-weight: 600;
     display: inline-block;
@@ -7984,12 +7961,12 @@ h2.resp-accordion {
     float: left;
   }
 
-  /* line 225, ../scss/components/_pillar-tabs.scss */
+  /* line 246, ../scss/components/_pillar-tabs.scss */
   ul.resp-tabs-list {
     display: none;
   }
 
-  /* line 229, ../scss/components/_pillar-tabs.scss */
+  /* line 250, ../scss/components/_pillar-tabs.scss */
   .resp-vtabs .resp-tabs-container {
     border: none;
     float: none;
@@ -7998,7 +7975,7 @@ h2.resp-accordion {
     clear: none;
   }
 
-  /* line 236, ../scss/components/_pillar-tabs.scss */
+  /* line 257, ../scss/components/_pillar-tabs.scss */
   .resp-accordion-closed {
     display: none !important;
   }

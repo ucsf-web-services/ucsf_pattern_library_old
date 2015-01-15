@@ -3,6 +3,10 @@
   @include breakpoint($bp--medium-up) {
     padding-bottom: $pad;
   }
+  
+  h3 {
+    color: $color--oxford-blue;
+  }
 }
 
 .pillar-tabs {
@@ -13,50 +17,56 @@
     position: relative;
 
     .pillar-tabs-hit {
-      background-color: $color--gray--dark;
+      background-color: $color--oxford-blue;
+      border-top: 1px solid $color--oxford-blue;
       color: $white;
     }
 
     &:after {
       position: absolute;
-      bottom: -29px;
+      bottom: 0;
       left: 16%;
+      
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 0 12.5px 15px 12.5px;
-      border-color: transparent transparent #000000 transparent;
+      border-width: 20px 20px 0 20px;
+      border-color: $color--oxford-blue transparent transparent transparent;
 
       @include breakpoint($bp--medium-up) {
-        left: 40%;
-        bottom: -37px;
+        left: 50%;
+        margin-left: -20px;
+        bottom: -20px;
         content: "";
       }
 
       @include breakpoint($bp--large-up) {
-        left: 42%;
+        //left: 40%;
       }
 
       @include breakpoint($bp--xlarge-up) {
-        left: 44%;
+        //left: 44%;
       }
     }
   }
 }
 
 .pillar-tabs-container {
+  
 }
 
 .pillar-tabs-list-wrapper {
   @include breakpoint($bp--medium-up) {
-    padding-bottom: $pad-double-half;
-    border-bottom: $border-med;
-    margin-bottom: $pad-double-half;
+    
+    padding-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
 .pillar-tabs-list {
-  @extend %block-square-5-wrapper
+  @extend %block-square-5-wrapper;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .pillar-tabs-btn {
@@ -65,21 +75,26 @@
 
 .pillar-tabs-hit {
   width: auto;
-  height: 100%;
+  //height: 100%;
   display: block;
-  background-color: $color--gray--lighter;
-  font-family: $font-body-alt;
-  color: $color--gray--darker;
+  background-color: none;
+  
+  font-family: $font-headline;
+  
+  
+  color: lighten($color--gray-pillar, 20);
   font-size: $font-size-large;
-  line-height: 1.2;
+  line-height: $font-size-large;
   cursor: pointer;
   padding: 3px 0 0 12px;
 
   @include transition(background-color, $default-transition-duration, $default-transition-function);
+  @include transition(color, $default-transition-duration, $default-transition-function);
 
   @include breakpoint($bp--medium-up) {
-    padding: 0;
-    margin: 0 12px;
+    border-top: 1px solid $color--gray--dotted-borders;
+    padding: 10px 0;
+    margin: 0;
     text-align: center;
   }
 
@@ -88,37 +103,43 @@
   }
 
   @include breakpoint($bp--xlarge-up) {
+    padding: 20px 0;
     font-size: $font-size-xxlarge;
   }
 
   @include breakpoint($bp--xxlarge-up) {
-    font-size: $font-size-xxxlarge;
+    font-size: 32px;
   }
 
   &:hover {
-    background-color: darken($color--gray--lighter, 10);
+    background-color: darken($white, 2.5);
+    color: $color--gray-pillar;
   }
 }
 
 .pillar-tabs-word {
   display: block;
   padding: 0;
-
+  white-space: nowrap;
+  
+  
   @include breakpoint($bp--medium-up) {
-    padding: 0 $pad-quarter;
+    //padding: 0 $pad-quarter;
     position: relative;
-    top: 50%;
+    /*
+top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+*/
   }
 
   @include breakpoint($bp--large-up) {
-    padding: 0 $pad-half;
+    //padding: 0 $pad-half;
   }
 
   @include breakpoint($bp--xlarge-up) {
-    padding: 0 $pad;
+    //padding: 0 $pad;
   }
 
   @include breakpoint($bp--small-down) {
