@@ -44,7 +44,7 @@ activate: function (event) { // Callback function if tab is switched
     var $container = $('#post-filter-results');
     // initialize
     $container.masonry({
-      columnWidth: 290,
+      //columnWidth: 290,
       "isFitWidth": true,
       itemSelector: '#post-filter-results li'
     });
@@ -56,37 +56,43 @@ activate: function (event) { // Callback function if tab is switched
 
     $(window).bind('enterBreakpoint300',function() {
       $container.masonry({
-        columnWidth: 290
+        //columnWidth: 290
+        "isFitWidth": true
       });
     });
 
     $(window).bind('enterBreakpoint480',function() {
       $container.masonry({
-        columnWidth: 440
+        //columnWidth: 440
+        "isFitWidth": true
       });
     });
 
     $(window).bind('enterBreakpoint640',function() {
       $container.masonry({
-        columnWidth: 320
+        //columnWidth: 320
+        "isFitWidth": true
       });
     });
 
     $(window).bind('enterBreakpoint768',function() {
       $container.masonry({
-        columnWidth: 398
+        //columnWidth: 398
+        "isFitWidth": true
       });
     });
 
     $(window).bind('enterBreakpoint1024',function() {
       $container.masonry({
-        columnWidth: 340
+        //columnWidth: 340
+        "isFitWidth": true
       });
     });
 
     $(window).bind('enterBreakpoint1190',function() {
       $container.masonry({
-        columnWidth: 297
+        //columnWidth: 297
+        "isFitWidth": true
       });
     });
 

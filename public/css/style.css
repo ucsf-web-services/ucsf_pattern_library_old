@@ -4376,6 +4376,7 @@ pre mark {
 .btn--more {
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   float: right;
+  margin-top: 5px;
   margin-bottom: 0;
   font-size: 10px;
   line-height: 18px;
@@ -4384,7 +4385,13 @@ pre mark {
   color: #178CCB;
   text-transform: uppercase;
 }
-/* line 515, ../scss/base/_btn.scss */
+@media (min-width: 1190px) {
+  /* line 502, ../scss/base/_btn.scss */
+  .btn--more {
+    margin-top: 15px;
+  }
+}
+/* line 520, ../scss/base/_btn.scss */
 .btn--more:hover {
   border-color: #2ea6e7;
   color: #2ea6e7;
@@ -5404,7 +5411,7 @@ h3 {
 h1, .alpha {
   font-size: 30px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   /* line 113, ../scss/base/_headings.scss */
   h1, .alpha {
     font-size: 48px;
@@ -5415,7 +5422,7 @@ h1, .alpha {
 h2, .beta {
   font-size: 24px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1190px) {
   /* line 121, ../scss/base/_headings.scss */
   h2, .beta {
     font-size: 36px;
@@ -5426,7 +5433,7 @@ h2, .beta {
 h3, .gamma {
   font-size: 20px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   /* line 128, ../scss/base/_headings.scss */
   h3, .gamma {
     font-size: 24px;
@@ -5437,7 +5444,7 @@ h3, .gamma {
 h4, .delta {
   font-size: 18px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   /* line 136, ../scss/base/_headings.scss */
   h4, .delta {
     font-size: 20px;
@@ -5448,7 +5455,7 @@ h4, .delta {
 h5, .epsilon {
   font-size: 16px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   /* line 144, ../scss/base/_headings.scss */
   h5, .epsilon {
     font-size: 18px;
@@ -5459,7 +5466,7 @@ h5, .epsilon {
 h6, .zeta {
   font-size: 14px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   /* line 152, ../scss/base/_headings.scss */
   h6, .zeta {
     font-size: 16px;
@@ -5855,30 +5862,30 @@ h6, .zeta {
 }
 
 /* line 328, ../scss/base/_helper-classes.scss */
-.featured-events, .pillar-tabs, .post-filter {
+.featured-events, .pillar-tabs {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   /* line 328, ../scss/base/_helper-classes.scss */
-  .featured-events, .pillar-tabs, .post-filter {
+  .featured-events, .pillar-tabs {
     max-width: 768px;
   }
 }
 @media (min-width: 960px) {
   /* line 328, ../scss/base/_helper-classes.scss */
-  .featured-events, .pillar-tabs, .post-filter {
+  .featured-events, .pillar-tabs {
     max-width: 960px;
   }
 }
 @media (min-width: 1024px) {
   /* line 328, ../scss/base/_helper-classes.scss */
-  .featured-events, .pillar-tabs, .post-filter {
+  .featured-events, .pillar-tabs {
     max-width: 1024px;
   }
 }
 @media (min-width: 1190px) {
   /* line 328, ../scss/base/_helper-classes.scss */
-  .featured-events, .pillar-tabs, .post-filter {
+  .featured-events, .pillar-tabs {
     max-width: 1190px;
   }
 }
@@ -8105,7 +8112,7 @@ h2.resp-accordion {
 /* line 1, ../scss/components/_post-filter.scss */
 .post-filter {
   overflow: hidden;
-  margin: 0 1em;
+  margin: 0;
 }
 @media (min-width: 768px) {
   /* line 1, ../scss/components/_post-filter.scss */
@@ -8149,56 +8156,51 @@ h2.resp-accordion {
   }
 }
 
-/* line 45, ../scss/components/_post-filter.scss */
+/* line 42, ../scss/components/_post-filter.scss */
+.post-filter__results {
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+/* line 47, ../scss/components/_post-filter.scss */
 .post-filter__results li {
-  width: 290px;
+  width: 100%;
   list-style-type: none;
 }
 @media (min-width: 680px) {
-  /* line 45, ../scss/components/_post-filter.scss */
+  /* line 55, ../scss/components/_post-filter.scss */
   .post-filter__results li {
-    width: 440px;
+    width: 50%;
+    padding: 15px;
+    margin: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 45, ../scss/components/_post-filter.scss */
+  /* line 63, ../scss/components/_post-filter.scss */
   .post-filter__results li {
-    width: 320px;
-  }
-}
-@media (min-width: 960px) {
-  /* line 45, ../scss/components/_post-filter.scss */
-  .post-filter__results li {
-    width: 398px;
+    width: 33.333%;
+    padding: 15px;
+    margin: 0;
   }
 }
 @media (min-width: 1024px) {
-  /* line 45, ../scss/components/_post-filter.scss */
+  /* line 77, ../scss/components/_post-filter.scss */
   .post-filter__results li {
-    width: 340px;
-  }
-}
-@media (min-width: 1190px) {
-  /* line 45, ../scss/components/_post-filter.scss */
-  .post-filter__results li {
-    width: 297px;
+    width: 25%;
+    padding: 15px;
+    margin: 0;
   }
 }
 
-/* line 71, ../scss/components/_post-filter.scss */
+/* line 92, ../scss/components/_post-filter.scss */
 .post-filter__results__inner {
-  margin: 0 0 1em 0;
-}
-@media (min-width: 768px) {
-  /* line 71, ../scss/components/_post-filter.scss */
-  .post-filter__results__inner {
-    margin: 1em;
-  }
+  margin: 0;
 }
 
-/* line 79, ../scss/components/_post-filter.scss */
-.post-filter-results__wrapper {
-  margin: 0 -30px;
+@media (min-width: 768px) {
+  /* line 100, ../scss/components/_post-filter.scss */
+  .post-filter-results__wrapper {
+    margin: 0 -15px;
+  }
 }
 
 /* line 1, ../scss/components/_science-blog.scss */

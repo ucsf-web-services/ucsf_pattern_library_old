@@ -503,6 +503,11 @@
   font-family: $font-body--medium;
   float: right;
   
+  margin-top: 5px;
+  
+  @include breakpoint($bp--xxlarge-up) {
+    margin-top: 15px;
+  }
   
   margin-bottom: 0;
   font-size: 10px;

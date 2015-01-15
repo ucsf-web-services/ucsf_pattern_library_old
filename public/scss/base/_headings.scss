@@ -113,14 +113,14 @@ h3 {
 h1, .alpha {
   font-size: 30px;
 
-  @include breakpoint($bp--large-up) {
+  @include breakpoint($bp--xlarge-up) {
     font-size: 48px;
   }
 }
 
 h2, .beta {
   font-size: 24px;
-  @include breakpoint($bp--xlarge-up) {
+  @include breakpoint($bp--xxlarge-up) {
     font-size: 36px;
   }
 }
@@ -128,7 +128,7 @@ h2, .beta {
 h3, .gamma {
   font-size: 20px;
 
-  @include breakpoint($bp--large-up) {
+  @include breakpoint($bp--xlarge-up) {
     font-size: 24px;
   }
 }
@@ -136,7 +136,7 @@ h3, .gamma {
 h4, .delta {
   font-size: 18px;
 
-  @include breakpoint($bp--large-up) {
+  @include breakpoint($bp--xlarge-up) {
     font-size: 20px;
   }
 }
@@ -144,7 +144,7 @@ h4, .delta {
 h5, .epsilon {
   font-size: 16px;
 
-  @include breakpoint($bp--large-up) {
+  @include breakpoint($bp--xlarge-up) {
     font-size: 18px;
   }
 }
@@ -152,7 +152,7 @@ h5, .epsilon {
 h6, .zeta {
   font-size: 14px;
 
-  @include breakpoint($bp--large-up) {
+  @include breakpoint($bp--xlarge-up) {
     font-size: 16px;
   }
 }

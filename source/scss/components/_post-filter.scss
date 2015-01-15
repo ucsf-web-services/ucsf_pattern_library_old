@@ -1,7 +1,7 @@
 .post-filter {
   overflow: hidden;
-  margin: 0 $pad;
-  @extend %adaptive-container;
+  margin: 0;
+  //@extend %adaptive-container;
 
   @include breakpoint($bp--medium-up) {
     margin: 0 auto;
@@ -10,7 +10,7 @@
 
 .post-filter__wrapper {
   @extend %component-footer;
-
+  
   @include breakpoint($bp--medium-up) {
     padding-bottom: $pad-half;
   }
@@ -41,41 +41,66 @@
 
 .post-filter__results {
   @extend .center;
-
+  min-width: 100% !important;
+  max-width: 100% !important;
+  
   li {
-    width: 290px;
-    list-style-type: none;
-
-    @include breakpoint($bp--small-up) {
-      width: 440px;
-    }
-
-    @include breakpoint($bp--medium-up) {
-      width: 320px;
-    }
-
-    @include breakpoint($bp--large-up) {
-      width: 398px;
-    }
-
-    @include breakpoint($bp--xlarge-up) {
-      width: 340px;
-    }
-
-    @include breakpoint($bp--xxlarge-up) {
-      width: 297px;
+    width: 100%;
+    list-style-type: none;  
+  }
+  
+  @include breakpoint($bp--small-up) {
+    //margin: 0 -15px;
+    
+    li {
+      width: 50%;
+      padding: 15px;
+      margin: 0;
     }
   }
+
+  @include breakpoint($bp--medium-up) {
+    li {
+      width: 33.333%;
+      padding: 15px;
+      margin: 0;
+    }
+  }
+
+  @include breakpoint($bp--large-up) {
+    li {
+      
+    }
+  }
+
+  @include breakpoint($bp--xlarge-up) {
+    li {
+      width: 25%;
+      padding: 15px;
+      margin: 0;
+    }
+  }
+
+  @include breakpoint($bp--xxlarge-up) {
+    li {
+      
+    }
+  }
+
 }
 
 .post-filter__results__inner {
-  margin: 0 0 $pad 0;
+  margin: 0;
 
   @include breakpoint($bp--medium-up) {
-    margin: $pad;
+    //margin: $pad;
   }
 }
 
 .post-filter-results__wrapper {
-  margin: 0 -30px;
+  
+  @include breakpoint($bp--medium-up) {
+    margin: 0 -15px;
+  }
+  
 }
