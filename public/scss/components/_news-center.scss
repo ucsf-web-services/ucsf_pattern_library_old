@@ -44,7 +44,7 @@
   .media--coverage__wrapper {
     @include breakpoint($bp--medium-up) {
       padding-right: 30px;
-      border-right: 3px dotted #b4b9bf;  
+      border-right: 2px dotted $color--gray--borders;  
     }
   }
   

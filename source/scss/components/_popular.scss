@@ -14,7 +14,9 @@
     margin: 0;
     display: block;
     padding-top: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    min-height: 85px;
     border-bottom: 2px dotted $color--gray--borders;
   }
   h2.headline {
@@ -26,6 +28,7 @@
     //@include breakpoint($bp--xlarge-up) {
       font-size: 25px;
       line-height: 35px;
+      margin-bottom: 10px;
     //}
     
     .title-icon {

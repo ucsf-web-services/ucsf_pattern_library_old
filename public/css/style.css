@@ -5351,8 +5351,15 @@ h1.headline, h2.headline, h3.headline, h4.headline, h5.headline, h6.headline {
   font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
   font-weight: normal;
 }
+@media (min-width: 768px) {
+  /* line 94, ../scss/base/_headings.scss */
+  h1.headline, h2.headline, h3.headline, h4.headline, h5.headline, h6.headline {
+    padding-bottom: 5px;
+    margin-bottom: 18px;
+  }
+}
 
-/* line 104, ../scss/base/_headings.scss */
+/* line 105, ../scss/base/_headings.scss */
 h3 {
   font-weight: normal;
 }
@@ -5360,67 +5367,67 @@ h3 {
 /**
  * Font sizes
  */
-/* line 112, ../scss/base/_headings.scss */
+/* line 113, ../scss/base/_headings.scss */
 h1, .alpha {
   font-size: 30px;
 }
 @media (min-width: 768px) {
-  /* line 112, ../scss/base/_headings.scss */
+  /* line 113, ../scss/base/_headings.scss */
   h1, .alpha {
     font-size: 48px;
   }
 }
 
-/* line 120, ../scss/base/_headings.scss */
+/* line 121, ../scss/base/_headings.scss */
 h2, .beta {
   font-size: 24px;
 }
 @media (min-width: 1024px) {
-  /* line 120, ../scss/base/_headings.scss */
+  /* line 121, ../scss/base/_headings.scss */
   h2, .beta {
     font-size: 36px;
   }
 }
 
-/* line 127, ../scss/base/_headings.scss */
+/* line 128, ../scss/base/_headings.scss */
 h3, .gamma {
   font-size: 20px;
 }
 @media (min-width: 768px) {
-  /* line 127, ../scss/base/_headings.scss */
+  /* line 128, ../scss/base/_headings.scss */
   h3, .gamma {
     font-size: 24px;
   }
 }
 
-/* line 135, ../scss/base/_headings.scss */
+/* line 136, ../scss/base/_headings.scss */
 h4, .delta {
   font-size: 18px;
 }
 @media (min-width: 768px) {
-  /* line 135, ../scss/base/_headings.scss */
+  /* line 136, ../scss/base/_headings.scss */
   h4, .delta {
     font-size: 20px;
   }
 }
 
-/* line 143, ../scss/base/_headings.scss */
+/* line 144, ../scss/base/_headings.scss */
 h5, .epsilon {
   font-size: 16px;
 }
 @media (min-width: 768px) {
-  /* line 143, ../scss/base/_headings.scss */
+  /* line 144, ../scss/base/_headings.scss */
   h5, .epsilon {
     font-size: 18px;
   }
 }
 
-/* line 151, ../scss/base/_headings.scss */
+/* line 152, ../scss/base/_headings.scss */
 h6, .zeta {
   font-size: 14px;
 }
 @media (min-width: 768px) {
-  /* line 151, ../scss/base/_headings.scss */
+  /* line 152, ../scss/base/_headings.scss */
   h6, .zeta {
     font-size: 16px;
   }
@@ -7226,7 +7233,7 @@ blockquote {
 
 /* line 5, ../scss/components/_media_coverage.scss */
 .media--coverage h2.headline {
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 2px solid rgba(180, 185, 191, 0.3);
 }
 /* line 9, ../scss/components/_media_coverage.scss */
 .media--coverage ul {
@@ -7238,7 +7245,7 @@ blockquote {
 .media--coverage li {
   padding: 0;
   margin: 0;
-  margin-bottom: 1em;
+  margin-bottom: 20px;
 }
 /* line 23, ../scss/components/_media_coverage.scss */
 .media--coverage h3 {
@@ -7261,8 +7268,10 @@ blockquote {
 .media--coverage .data {
   color: #989898;
   font-family: HelveticaNeue-bold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
 }
-/* line 44, ../scss/components/_media_coverage.scss */
+/* line 45, ../scss/components/_media_coverage.scss */
 .media--coverage .data a {
   color: #989898;
 }
@@ -7360,7 +7369,7 @@ blockquote {
 /* line 38, ../scss/components/_nav-primary.scss */
 .nav-primary > ul > li > a.active {
   background: #dadee4;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 /* line 44, ../scss/components/_nav-primary.scss */
@@ -7440,15 +7449,16 @@ blockquote {
   /* line 6, ../scss/components/_nav-section.scss */
   .nav-section h2.headline {
     margin-bottom: 8px;
+    padding-bottom: 0;
   }
 }
-/* line 12, ../scss/components/_nav-section.scss */
+/* line 13, ../scss/components/_nav-section.scss */
 .nav-section ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 19, ../scss/components/_nav-section.scss */
+/* line 20, ../scss/components/_nav-section.scss */
 .nav-section li {
   padding: 0;
   margin: 0;
@@ -7456,14 +7466,14 @@ blockquote {
   float: left;
   margin-right: 10px;
 }
-/* line 27, ../scss/components/_nav-section.scss */
+/* line 28, ../scss/components/_nav-section.scss */
 .nav-section a {
   text-transform: uppercase;
   font-size: 10px;
   line-height: 22px;
   margin-bottom: 10px;
 }
-/* line 33, ../scss/components/_nav-section.scss */
+/* line 34, ../scss/components/_nav-section.scss */
 .nav-section a.active {
   background: #4d4d4d;
   border-color: #4d4d4d;
@@ -7523,7 +7533,7 @@ blockquote {
   /* line 44, ../scss/components/_news-center.scss */
   .media-blocks .media--coverage__wrapper {
     padding-right: 30px;
-    border-right: 3px dotted #b4b9bf;
+    border-right: 2px dotted #b4b9bf;
   }
 }
 @media (min-width: 640px) {
@@ -8008,19 +8018,22 @@ h2.resp-accordion {
   margin: 0;
   display: block;
   padding-top: 5px;
-  padding-bottom: 40px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  min-height: 85px;
   border-bottom: 2px dotted #b4b9bf;
 }
-/* line 20, ../scss/components/_popular.scss */
+/* line 22, ../scss/components/_popular.scss */
 .popular__wrapper h2.headline {
   border-bottom: 2px solid #b4b9bf;
 }
-/* line 24, ../scss/components/_popular.scss */
+/* line 26, ../scss/components/_popular.scss */
 .popular__wrapper h2 {
   font-size: 25px;
   line-height: 35px;
+  margin-bottom: 10px;
 }
-/* line 31, ../scss/components/_popular.scss */
+/* line 34, ../scss/components/_popular.scss */
 .popular__wrapper h2 .title-icon {
   float: right;
   font-size: 22px;
@@ -8028,13 +8041,13 @@ h2.resp-accordion {
   margin-top: 2px;
 }
 
-/* line 43, ../scss/components/_popular.scss */
+/* line 46, ../scss/components/_popular.scss */
 .block-popular h4 {
   font-size: 15px;
   line-height: 20px;
   color: #333333;
 }
-/* line 48, ../scss/components/_popular.scss */
+/* line 51, ../scss/components/_popular.scss */
 .block-popular h4 a {
   color: #333333;
 }
@@ -8190,7 +8203,7 @@ h2.resp-accordion {
 
 /* line 3, ../scss/components/_twitter.scss */
 .twitter__wrapper h2.headline {
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 2px solid rgba(180, 185, 191, 0.3);
 }
 /* line 7, ../scss/components/_twitter.scss */
 .twitter__wrapper ul {
@@ -8263,7 +8276,7 @@ h2.resp-accordion {
 
 /* line 3, ../scss/components/_youtube.scss */
 .youtube__wrapper h2.headline {
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 2px solid rgba(180, 185, 191, 0.3);
 }
 /* line 7, ../scss/components/_youtube.scss */
 .youtube__wrapper ul {

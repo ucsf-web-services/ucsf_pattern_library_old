@@ -6,6 +6,7 @@
   h2.headline {
     @include breakpoint($bp--large-up) {
       margin-bottom: 8px;
+      padding-bottom: 0;
     }
   }
   

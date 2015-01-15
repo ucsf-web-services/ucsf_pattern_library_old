@@ -3,7 +3,7 @@
   @extend .cf;
   
   h2.headline {
-    border-bottom: 2px solid $color--gray--lighter;
+    border-bottom: $border--headline--border;
   }
   
   ul {
@@ -16,7 +16,7 @@
   li {
     padding: 0;
     margin: 0;
-    margin-bottom: 1em;
+    margin-bottom: 20px;
   }
   
   
@@ -40,7 +40,8 @@
   .data {
     color: $color--gray--light;
     font-family: $font-body--bold;
-    
+    font-size: 12px;
+    line-height: 18px;
     a {
       color: $color--gray--light;
     }

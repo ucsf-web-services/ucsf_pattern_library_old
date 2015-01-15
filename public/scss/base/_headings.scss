@@ -96,7 +96,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     
     @include breakpoint($bp--large-up) {
-      //margin-bottom: 10px;  
+      padding-bottom: 5px;
+      margin-bottom: 18px;
     }
   }
 }
