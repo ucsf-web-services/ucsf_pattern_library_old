@@ -5463,7 +5463,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
+.cf:after, .pillar-tabs-list:after, .media-blocks:after, .pillar-content:after, .footer-blocks:after, .preface-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
   display: table;
   clear: both;
@@ -7626,23 +7626,65 @@ blockquote {
   line-height: 18px;
   font-weight: bold;
 }
-/* line 66, ../scss/components/_news-rotator.scss */
-.rotator__wrapper ul.flex-direction-nav {
+/* line 67, ../scss/components/_news-rotator.scss */
+.rotator__wrapper .flexslider-carousel {
+  position: relative;
+  padding: 0 40px;
+}
+/* line 72, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.thumbnail-carousel-navigation {
+  list-style-type: none;
+  padding: 0;
   margin: 0;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 100;
+}
+/* line 81, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.thumbnail-carousel-navigation li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  display: block;
+}
+/* line 90, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.thumbnail-carousel-navigation img {
+  display: block;
+  z-index: 1;
+  opacity: 0.4;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+/* line 105, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.thumbnail-carousel-navigation li.flex-active img {
+  opacity: 1;
+}
+/* line 113, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav {
+  margin: 0;
   padding: 0;
   list-style-type: none;
   z-index: 1;
   position: absolute;
-  bottom: 15px;
+  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
 }
-/* line 79, ../scss/components/_news-rotator.scss */
+/* line 127, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li {
   z-index: 1;
 }
-/* line 82, ../scss/components/_news-rotator.scss */
+/* line 130, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn {
   border: 1px solid #178CCB;
   color: #178CCB;
@@ -7651,39 +7693,43 @@ blockquote {
   line-height: 30px;
   margin-bottom: 0;
 }
-/* line 90, ../scss/components/_news-rotator.scss */
+/* line 138, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn:hover {
   border-color: #2ea6e7;
   color: #2ea6e7;
 }
-/* line 95, ../scss/components/_news-rotator.scss */
+/* line 143, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn .fa {
   margin: 0;
 }
-/* line 99, ../scss/components/_news-rotator.scss */
+/* line 148, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-prev {
-  float: left;
+  position: absolute;
+  left: 0;
+  top: 25px;
 }
-/* line 101, ../scss/components/_news-rotator.scss */
+/* line 153, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-prev .btn {
   padding-left: 6px;
 }
-/* line 105, ../scss/components/_news-rotator.scss */
+/* line 158, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-next {
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 25px;
 }
-/* line 107, ../scss/components/_news-rotator.scss */
+/* line 163, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-next .btn {
   padding-right: 6px;
 }
-/* line 113, ../scss/components/_news-rotator.scss */
+/* line 169, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ol.flex-control-nav {
   z-index: 2;
   list-style-type: none;
   margin: 0;
   padding: 0 50px;
 }
-/* line 119, ../scss/components/_news-rotator.scss */
+/* line 175, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ol.flex-control-nav li {
   z-index: 2;
   display: inline-block;

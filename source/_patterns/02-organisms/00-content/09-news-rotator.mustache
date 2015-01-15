@@ -18,5 +18,17 @@
         {{/ rotator-items }}
       </ul>
     </div>
+    <div class="flexslider-carousel">
+      <ul class="thumbnail-carousel-navigation">
+        {{# rotator-items }}
+        <li>
+          {{#img.landscape-16x9.src}}
+            {{> atoms-landscape-16x9 }}
+          {{/img.landscape-16x9.src}}
+        </li>
+        {{/ rotator-items }}
+      </ul>
+    </div>
+    
   </div>
 </div>
