@@ -189,11 +189,17 @@
 /**
 * Button Secondary
 */
-.btn--secondary:hover, .btn--secondary:active, .btn--secondary {
+.btn--secondary:hover, 
+.btn--secondary:active, 
+.btn--secondary {
   font-family: $font-body--medium;
+  letter-spacing: 0.140em;
+  padding-left: 6px;
+  padding-right: 6px;
   background: $color--gray--secondary-nav;
   border-color: $color--gray--secondary-nav;
-  color: #fff; }
+  color: #fff; 
+  }
 .btn--secondary:hover {
   background: #abb3ba;
   border-color: #abb3ba; }
