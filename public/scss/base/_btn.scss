@@ -190,6 +190,7 @@
 * Button Secondary
 */
 .btn--secondary:hover, .btn--secondary:active, .btn--secondary {
+  font-family: $font-body--medium;
   background: $color--gray--secondary-nav;
   border-color: $color--gray--secondary-nav;
   color: #fff; }

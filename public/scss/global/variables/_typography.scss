@@ -19,20 +19,20 @@ $helvetica--medium--italic: HelveticaNeue-medium-italic;
 $helvetica--bold: HelveticaNeue-bold;
 
 $font-body: $helvetica $default-font;
-$font-body--italic: $helvetica--italic $default-font;
-$font-body--light: $helvetica--light $default-font;
-$font-body--light--italic: $helvetica--light--italic $default-font;
-$font-body--medium: $helvetica--medium $default-font;
-$font-body--medium--italic: $helvetica--medium--italic $default-font;
-$font-body--bold: $helvetica--bold $default-font;
+$font-body--italic: $helvetica--italic, $default-font;
+$font-body--light: $helvetica--light, $default-font;
+$font-body--light--italic: $helvetica--light--italic, $default-font;
+$font-body--medium: $helvetica--medium, $default-font;
+$font-body--medium--italic: $helvetica--medium--italic, $default-font;
+$font-body--bold: $helvetica--bold, $default-font;
 
 $font-body-alt: $default-font;
 $font-header: $default-font;
 
 // Granjon Headline Font assignments
-$font-headline: $granjon $header-font;
-$font-headline--bold: $granjon--bold $header-font;
-$font-headline--italic: $granjon--italic $header-font;
+$font-headline: $granjon, $header-font;
+$font-headline--bold: $granjon--bold, $header-font;
+$font-headline--italic: $granjon--italic, $header-font;
 
 ////////////////////////
 //// Font size and line-height
