@@ -5,27 +5,29 @@
   margin-bottom: $pad-quad;
   
   
-  
-  
-  
-  
-  .preface-block-main {
-    @include breakpoint($bp--medium-up) {
-      //float: none;
-      //width: 100%;  
+  /*
+@include breakpoint($bp--medium-up) {
+    .preface-block-main {
+      float: none;
+      width: 100%;  
     }
-    @include breakpoint($bp--large-up) {
-      //@extend %content-column-4-3col;
-      padding-right: 15px;
+    .preface-block-popular {
+      float: none;
+      width: 100%;  
     }
   }
-  .preface-block-popular {
-    margin-top: 40px;
-    @include breakpoint($bp--large-up) {
+*/
+  @include breakpoint($bp--large-up) {
+    .preface-block-main {
+      //@extend %preface-column-4-3col;
+      padding-right: 15px;
+    }
+    .preface-block-popular {
       margin-top: 0;
       padding-left: 15px;
     }
   }
+  
 }
 
 .news-center-masonry .post-filter__wrapper {

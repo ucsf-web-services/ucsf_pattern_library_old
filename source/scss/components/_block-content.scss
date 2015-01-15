@@ -68,3 +68,20 @@
 .content-column--quarter-3col {
   @extend %content-column-4-3col;
 }
+
+
+
+.preface-column--quarter {
+  @extend %preface-column-4;
+}
+
+.preface-column--quarter-1col {
+  @extend %preface-column-4-1col;
+}
+
+.preface-column--quarter-2col {
+  @extend %preface-column-4-2col;
+}
+.preface-column--quarter-3col {
+  @extend %preface-column-4-3col;
+}
