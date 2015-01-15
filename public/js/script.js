@@ -116,8 +116,8 @@ activate: function (event) { // Callback function if tab is switched
       
       
     // provide some equal heights for various elements
-    $('.blog--science ul > li').matchHeight(false);
-    $('.media-blocks .media--coverage__wrapper, .media-blocks .youtube__wrapper, .media-blocks .twitter__wrapper').matchHeight(false);
+    $('.blog--science ul > li').matchHeight(true);
+    $('.media-blocks .media--coverage__wrapper, .media-blocks .youtube__wrapper, .media-blocks .twitter__wrapper').matchHeight(true);
     
     // create a rotator
     $('.flexslider').flexslider({
