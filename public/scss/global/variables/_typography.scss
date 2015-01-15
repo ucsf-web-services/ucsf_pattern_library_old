@@ -3,16 +3,36 @@ TYPOGRAPHY
 *********************/
 // See: _fonts.scss
 $default-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$header-font: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
-$times-font: TimesNewRoman, "Times New Roman", Times, serif;
+$header-font: Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+$times-font: $header-font;
 
-$font-body: $default-font;
-$font-body--regular: 400;
-$font-body--medium: 500;
-$font-body--bold: 800;
-$font-body-alt: $times-font;
+$granjon: granjon;
+$granjon--bold: granjon-bold;
+$granjon--italic: granjon-italic;
+
+$helvetica: HelveticaNeue-roman;
+$helvetica--italic: HelveticaNeue-italic;
+$helvetica--light: HelveticaNeue-light;
+$helvetica--light--italic: HelveticaNeue-light-italic;
+$helvetica--medium: HelveticaNeue-medium;
+$helvetica--medium--italic: HelveticaNeue-medium-italic;
+$helvetica--bold: HelveticaNeue-bold;
+
+$font-body: $helvetica $default-font;
+$font-body--italic: $helvetica--italic $default-font;
+$font-body--light: $helvetica--light $default-font;
+$font-body--light--italic: $helvetica--light--italic $default-font;
+$font-body--medium: $helvetica--medium $default-font;
+$font-body--medium--italic: $helvetica--medium--italic $default-font;
+$font-body--bold: $helvetica--bold $default-font;
+
+$font-body-alt: $default-font;
 $font-header: $default-font;
-$font-headline: $header-font;
+
+// Granjon Headline Font assignments
+$font-headline: $granjon $header-font;
+$font-headline--bold: $granjon--bold $header-font;
+$font-headline--italic: $granjon--italic $header-font;
 
 ////////////////////////
 //// Font size and line-height
@@ -28,13 +48,15 @@ $font-headline: $header-font;
 @import url("//hello.myfonts.net/count/2d0d15");
 
 // HelveticaNeue variants
-@font-face {font-family: 'HelveticaNeueLTStd-Lt';src: url('../fonts/ucsf/2D0D15_0_0.eot');src: url('../fonts/ucsf/2D0D15_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_0_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_0_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_0_0.ttf') format('truetype');}
-@font-face {font-family: 'HelveticaNeueLTStd-MdIt';src: url('../fonts/ucsf/2D0D15_1_0.eot');src: url('../fonts/ucsf/2D0D15_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_1_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_1_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_1_0.ttf') format('truetype');}
-@font-face {font-family: 'HelveticaNeueLTStd-Bd';src: url('../fonts/ucsf/2D0D15_2_0.eot');src: url('../fonts/ucsf/2D0D15_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_2_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_2_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_2_0.ttf') format('truetype');}
-@font-face {font-family: 'HelveticaNeueLTStd-Roman';src: url('../fonts/ucsf/2D0D15_3_0.eot');src: url('../fonts/ucsf/2D0D15_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_3_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_3_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_3_0.ttf') format('truetype');}
-@font-face {font-family: 'HelveticaNeueLTStd-Md';src: url('../fonts/ucsf/2D0D15_4_0.eot');src: url('../fonts/ucsf/2D0D15_4_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_4_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_4_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_4_0.ttf') format('truetype');}
-@font-face {font-family: 'HelveticaNeueLTStd-It';src: url('../fonts/ucsf/2D0D15_7_0.eot');src: url('../fonts/ucsf/2D0D15_7_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_7_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_7_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_7_0.ttf') format('truetype');}
-@font-face {font-family: 'HelveticaNeueLTStd-LtIt';src: url('../fonts/ucsf/2D0D15_8_0.eot');src: url('../fonts/ucsf/2D0D15_8_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_8_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_8_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_8_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeue-light';src: url('../fonts/ucsf/2D0D15_0_0.eot');src: url('../fonts/ucsf/2D0D15_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_0_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_0_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_0_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeue-light-italic';src: url('../fonts/ucsf/2D0D15_8_0.eot');src: url('../fonts/ucsf/2D0D15_8_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_8_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_8_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_8_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeue-roman';src: url('../fonts/ucsf/2D0D15_3_0.eot');src: url('../fonts/ucsf/2D0D15_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_3_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_3_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_3_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeue-italic';src: url('../fonts/ucsf/2D0D15_7_0.eot');src: url('../fonts/ucsf/2D0D15_7_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_7_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_7_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_7_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeue-medium';src: url('../fonts/ucsf/2D0D15_4_0.eot');src: url('../fonts/ucsf/2D0D15_4_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_4_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_4_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_4_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeue-medium-italic';src: url('../fonts/ucsf/2D0D15_1_0.eot');src: url('../fonts/ucsf/2D0D15_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_1_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_1_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_1_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeue-bold';src: url('../fonts/ucsf/2D0D15_2_0.eot');src: url('../fonts/ucsf/2D0D15_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_2_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_2_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_2_0.ttf') format('truetype');}
+
+
 // Granjon variants
 @font-face {font-family: 'granjon';src: url('../fonts/ucsf/2D0D15_5_0.eot');src: url('../fonts/ucsf/2D0D15_5_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_5_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_5_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_5_0.ttf') format('truetype');}
 @font-face {font-family: 'granjon-italic';src: url('../fonts/ucsf/2D0D15_6_0.eot');src: url('../fonts/ucsf/2D0D15_6_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ucsf/2D0D15_6_0.woff2') format('woff2'),url('../fonts/ucsf/2D0D15_6_0.woff') format('woff'),url('../fonts/ucsf/2D0D15_6_0.ttf') format('truetype');}

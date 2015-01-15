@@ -190,8 +190,8 @@
 * Button Secondary
 */
 .btn--secondary:hover, .btn--secondary:active, .btn--secondary {
-  background: #9DA6AF;
-  border-color: #9DA6AF;
+  background: $color--gray--secondary-nav;
+  border-color: $color--gray--secondary-nav;
   color: #fff; }
 .btn--secondary:hover {
   background: #abb3ba;
@@ -492,10 +492,10 @@
 }
 
 .btn--more {
-  font-family: $font-body;
-  font-weight: $font-body--medium;
+  font-family: $font-body--medium;
   float: right;
-  margin-top: 12px;
+  
+  
   margin-bottom: 0;
   font-size: 10px;
   line-height: 18px;

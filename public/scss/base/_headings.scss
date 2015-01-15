@@ -93,6 +93,11 @@ h1, h2, h3, h4, h5, h6 {
   
   &.headline {
     font-family: $font-headline;
+    font-weight: normal;
+    
+    @include breakpoint($bp--large-up) {
+      //margin-bottom: 10px;  
+    }
   }
 }
 
@@ -106,59 +111,47 @@ h3 {
  */
 h1, .alpha {
   font-size: 30px;
-  font-size: 2.14286rem;
 
   @include breakpoint($bp--large-up) {
     font-size: 48px;
-    font-size: 3.42857rem;
   }
 }
 
 h2, .beta {
   font-size: 24px;
-  font-size: 1.71429rem;
-  @include breakpoint($bp--large-up) {
+  @include breakpoint($bp--xlarge-up) {
     font-size: 36px;
-    font-size: 2.57143rem;
   }
 }
 
 h3, .gamma {
   font-size: 20px;
-  font-size: 1.42857rem;
 
   @include breakpoint($bp--large-up) {
     font-size: 24px;
-    font-size: 1.71429rem;
   }
 }
 
 h4, .delta {
   font-size: 18px;
-  font-size: 1.28571rem;
 
   @include breakpoint($bp--large-up) {
     font-size: 20px;
-    font-size: 1.42857rem;
   }
 }
 
 h5, .epsilon {
   font-size: 16px;
-  font-size: 1.14286rem;
 
   @include breakpoint($bp--large-up) {
     font-size: 18px;
-    font-size: 1.28571rem;
   }
 }
 
 h6, .zeta {
   font-size: 14px;
-  font-size: 1rem;
 
   @include breakpoint($bp--large-up) {
     font-size: 16px;
-    font-size: 1.14286rem;
   }
 }

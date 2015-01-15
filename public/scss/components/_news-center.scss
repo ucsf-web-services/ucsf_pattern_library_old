@@ -4,13 +4,25 @@
   margin: 0;
   margin-bottom: $pad-quad;
   
+  
+  
+  
+  
+  
   .preface-block-main {
     @include breakpoint($bp--medium-up) {
+      //float: none;
+      //width: 100%;  
+    }
+    @include breakpoint($bp--large-up) {
+      //@extend %content-column-4-3col;
       padding-right: 15px;
     }
   }
   .preface-block-popular {
-    @include breakpoint($bp--medium-up) {
+    margin-top: 40px;
+    @include breakpoint($bp--large-up) {
+      margin-top: 0;
       padding-left: 15px;
     }
   }

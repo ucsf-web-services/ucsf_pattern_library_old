@@ -27,14 +27,14 @@
     font-size: 13px;
     line-height: 17px;
     color: $color--oxford-blue;
-    font-weight: $font-body--bold;
+    font-family: $font-body--bold;
     margin-bottom: 0;
     
     a {
       color: $color--oxford-blue;      
 
       &.handle {
-        font-weight: $font-body--regular;
+        font-family: $font-body;
         color: $color--gray--light;
       }
     }

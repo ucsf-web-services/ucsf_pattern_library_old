@@ -1,7 +1,13 @@
 .nav-section {
   border-bottom: 2px solid $color--oxford-blue;
-  padding-bottom: 26px;
+  padding-bottom: 22px;
   margin-bottom: 36px;
+  
+  h2.headline {
+    @include breakpoint($bp--large-up) {
+      margin-bottom: 8px;
+    }
+  }
   
   ul {
     list-style-type: none;

@@ -22,7 +22,7 @@
     @extend .cf;
     @extend .center;
     height: 40px;
-    padding: 0 $pad;
+    padding: 0 10px;
     max-width: $site-width;
     position: relative;
 
@@ -36,7 +36,7 @@
     padding-top: $pad-double;
 
     @include breakpoint($bp--large-up) {
-      padding-top: 20px;
+      padding-top: 47px;
     }
   }
 
@@ -46,7 +46,7 @@
     width: 60px;
 
     @include breakpoint($bp--medium-up) {
-      padding-top: 20px;
+      padding-top: 32px;
       width: auto;
     }
   }

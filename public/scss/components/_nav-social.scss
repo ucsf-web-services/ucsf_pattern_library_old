@@ -3,6 +3,12 @@
   
   li {
     margin-right: $pad-half;
+
+    &:last-child {
+      .fa {
+        margin-right: 0;
+      }
+    }
   }
 
   a {

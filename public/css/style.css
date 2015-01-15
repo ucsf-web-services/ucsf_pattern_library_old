@@ -3085,39 +3085,39 @@ TYPOGRAPHY
 *********************/
 /* @import must be at top of file, otherwise CSS will not work */
 @font-face {
-  font-family: 'HelveticaNeueLTStd-Lt';
+  font-family: 'HelveticaNeue-light';
   src: url("../fonts/ucsf/2D0D15_0_0.eot");
   src: url("../fonts/ucsf/2D0D15_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_0_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_0_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_0_0.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'HelveticaNeueLTStd-MdIt';
-  src: url("../fonts/ucsf/2D0D15_1_0.eot");
-  src: url("../fonts/ucsf/2D0D15_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_1_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_1_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_1_0.ttf") format("truetype");
+  font-family: 'HelveticaNeue-light-italic';
+  src: url("../fonts/ucsf/2D0D15_8_0.eot");
+  src: url("../fonts/ucsf/2D0D15_8_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_8_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_8_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_8_0.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'HelveticaNeueLTStd-Bd';
-  src: url("../fonts/ucsf/2D0D15_2_0.eot");
-  src: url("../fonts/ucsf/2D0D15_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_2_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_2_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_2_0.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'HelveticaNeueLTStd-Roman';
+  font-family: 'HelveticaNeue-roman';
   src: url("../fonts/ucsf/2D0D15_3_0.eot");
   src: url("../fonts/ucsf/2D0D15_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_3_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_3_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_3_0.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'HelveticaNeueLTStd-Md';
-  src: url("../fonts/ucsf/2D0D15_4_0.eot");
-  src: url("../fonts/ucsf/2D0D15_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_4_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_4_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_4_0.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'HelveticaNeueLTStd-It';
+  font-family: 'HelveticaNeue-italic';
   src: url("../fonts/ucsf/2D0D15_7_0.eot");
   src: url("../fonts/ucsf/2D0D15_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_7_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_7_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_7_0.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'HelveticaNeueLTStd-LtIt';
-  src: url("../fonts/ucsf/2D0D15_8_0.eot");
-  src: url("../fonts/ucsf/2D0D15_8_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_8_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_8_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_8_0.ttf") format("truetype");
+  font-family: 'HelveticaNeue-medium';
+  src: url("../fonts/ucsf/2D0D15_4_0.eot");
+  src: url("../fonts/ucsf/2D0D15_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_4_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_4_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_4_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'HelveticaNeue-medium-italic';
+  src: url("../fonts/ucsf/2D0D15_1_0.eot");
+  src: url("../fonts/ucsf/2D0D15_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_1_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_1_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_1_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'HelveticaNeue-bold';
+  src: url("../fonts/ucsf/2D0D15_2_0.eot");
+  src: url("../fonts/ucsf/2D0D15_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ucsf/2D0D15_2_0.woff2") format("woff2"), url("../fonts/ucsf/2D0D15_2_0.woff") format("woff"), url("../fonts/ucsf/2D0D15_2_0.ttf") format("truetype");
 }
 @font-face {
   font-family: 'granjon';
@@ -3235,34 +3235,34 @@ TYPOGRAPHY
   margin: 0 -16px;
 }
 
-/* line 68, ../scss/global/extends/_block-extends.scss */
+/* line 69, ../scss/global/extends/_block-extends.scss */
 .content-column--quarter {
   list-style-type: none;
 }
-@media (min-width: 640px) {
-  /* line 68, ../scss/global/extends/_block-extends.scss */
+@media (min-width: 768px) {
+  /* line 69, ../scss/global/extends/_block-extends.scss */
   .content-column--quarter {
     float: left;
     margin: 0;
   }
 }
 
-@media (min-width: 640px) {
-  /* line 76, ../scss/global/extends/_block-extends.scss */
+@media (min-width: 768px) {
+  /* line 78, ../scss/global/extends/_block-extends.scss */
   .content-column--quarter-1col {
     width: 25%;
   }
 }
 
-@media (min-width: 640px) {
-  /* line 82, ../scss/global/extends/_block-extends.scss */
+@media (min-width: 768px) {
+  /* line 84, ../scss/global/extends/_block-extends.scss */
   .content-column--quarter-2col {
     width: 50%;
   }
 }
 
-@media (min-width: 640px) {
-  /* line 88, ../scss/global/extends/_block-extends.scss */
+@media (min-width: 768px) {
+  /* line 90, ../scss/global/extends/_block-extends.scss */
   .content-column--quarter-3col {
     width: 75%;
   }
@@ -3882,8 +3882,8 @@ pre mark {
 */
 /* line 192, ../scss/base/_btn.scss */
 .btn--secondary:hover, .btn--secondary:active, .btn--secondary {
-  background: #9DA6AF;
-  border-color: #9DA6AF;
+  background: #b4b9bf;
+  border-color: #b4b9bf;
   color: #fff;
 }
 
@@ -4334,10 +4334,8 @@ pre mark {
 
 /* line 494, ../scss/base/_btn.scss */
 .btn--more {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: HelveticaNeue-medium "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   float: right;
-  margin-top: 12px;
   margin-bottom: 0;
   font-size: 10px;
   line-height: 18px;
@@ -5343,10 +5341,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 94, ../scss/base/_headings.scss */
 h1.headline, h2.headline, h3.headline, h4.headline, h5.headline, h6.headline {
-  font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+  font-family: granjon Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+  font-weight: normal;
 }
 
-/* line 99, ../scss/base/_headings.scss */
+/* line 104, ../scss/base/_headings.scss */
 h3 {
   font-weight: normal;
 }
@@ -5354,81 +5353,69 @@ h3 {
 /**
  * Font sizes
  */
-/* line 107, ../scss/base/_headings.scss */
+/* line 112, ../scss/base/_headings.scss */
 h1, .alpha {
   font-size: 30px;
-  font-size: 2.14286rem;
 }
 @media (min-width: 768px) {
-  /* line 107, ../scss/base/_headings.scss */
+  /* line 112, ../scss/base/_headings.scss */
   h1, .alpha {
     font-size: 48px;
-    font-size: 3.42857rem;
   }
 }
 
-/* line 117, ../scss/base/_headings.scss */
+/* line 120, ../scss/base/_headings.scss */
 h2, .beta {
   font-size: 24px;
-  font-size: 1.71429rem;
 }
-@media (min-width: 768px) {
-  /* line 117, ../scss/base/_headings.scss */
+@media (min-width: 1024px) {
+  /* line 120, ../scss/base/_headings.scss */
   h2, .beta {
     font-size: 36px;
-    font-size: 2.57143rem;
   }
 }
 
-/* line 126, ../scss/base/_headings.scss */
+/* line 127, ../scss/base/_headings.scss */
 h3, .gamma {
   font-size: 20px;
-  font-size: 1.42857rem;
 }
 @media (min-width: 768px) {
-  /* line 126, ../scss/base/_headings.scss */
+  /* line 127, ../scss/base/_headings.scss */
   h3, .gamma {
     font-size: 24px;
-    font-size: 1.71429rem;
   }
 }
 
-/* line 136, ../scss/base/_headings.scss */
+/* line 135, ../scss/base/_headings.scss */
 h4, .delta {
   font-size: 18px;
-  font-size: 1.28571rem;
 }
 @media (min-width: 768px) {
-  /* line 136, ../scss/base/_headings.scss */
+  /* line 135, ../scss/base/_headings.scss */
   h4, .delta {
     font-size: 20px;
-    font-size: 1.42857rem;
   }
 }
 
-/* line 146, ../scss/base/_headings.scss */
+/* line 143, ../scss/base/_headings.scss */
 h5, .epsilon {
   font-size: 16px;
-  font-size: 1.14286rem;
 }
 @media (min-width: 768px) {
-  /* line 146, ../scss/base/_headings.scss */
+  /* line 143, ../scss/base/_headings.scss */
   h5, .epsilon {
     font-size: 18px;
-    font-size: 1.28571rem;
   }
 }
 
-/* line 156, ../scss/base/_headings.scss */
+/* line 151, ../scss/base/_headings.scss */
 h6, .zeta {
   font-size: 14px;
-  font-size: 1rem;
 }
 @media (min-width: 768px) {
-  /* line 156, ../scss/base/_headings.scss */
+  /* line 151, ../scss/base/_headings.scss */
   h6, .zeta {
     font-size: 16px;
-    font-size: 1.14286rem;
   }
 }
 
@@ -6276,7 +6263,7 @@ textarea {
 @media (min-width: 640px) {
   /* line 27, ../scss/base/_main.scss */
   .wrapper--main {
-    padding-top: 130px;
+    padding-top: 150px;
     padding-bottom: 0;
   }
 }
@@ -6289,8 +6276,8 @@ textarea {
 /* line 40, ../scss/base/_main.scss */
 .wrapper--inner {
   max-width: 1190px;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*------------------------------------*\
@@ -6813,7 +6800,7 @@ blockquote {
 /* line 21, ../scss/layout/component-layout/_header-layout.scss */
 .header .header-logo-bar {
   height: 40px;
-  padding: 0 1em;
+  padding: 0 10px;
   max-width: 1190px;
   position: relative;
 }
@@ -6830,7 +6817,7 @@ blockquote {
 @media (min-width: 768px) {
   /* line 34, ../scss/layout/component-layout/_header-layout.scss */
   .header .header-navs {
-    padding-top: 20px;
+    padding-top: 47px;
   }
 }
 /* line 43, ../scss/layout/component-layout/_header-layout.scss */
@@ -6841,7 +6828,7 @@ blockquote {
 @media (min-width: 640px) {
   /* line 43, ../scss/layout/component-layout/_header-layout.scss */
   .header .logo {
-    padding-top: 20px;
+    padding-top: 32px;
     width: auto;
   }
 }
@@ -6893,18 +6880,17 @@ blockquote {
 }
 /* line 24, ../scss/components/_block-blog.scss */
 .block-blog__body h3 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: HelveticaNeue-medium "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #58595b;
   font-size: 15px;
   line-height: 20px;
 }
-/* line 31, ../scss/components/_block-blog.scss */
+/* line 30, ../scss/components/_block-blog.scss */
 .block-blog__body h3 a {
   color: #58595b;
 }
 
-/* line 38, ../scss/components/_block-blog.scss */
+/* line 37, ../scss/components/_block-blog.scss */
 .submitted-by {
   color: #178CCB;
   font-size: 13px;
@@ -7249,7 +7235,7 @@ blockquote {
 }
 /* line 23, ../scss/components/_media_coverage.scss */
 .media--coverage h3 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: HelveticaNeue-roman "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #178CCB;
   font-size: 18px;
   line-height: 18px;
@@ -7267,7 +7253,7 @@ blockquote {
 /* line 40, ../scss/components/_media_coverage.scss */
 .media--coverage .data {
   color: #989898;
-  font-weight: 800;
+  font-family: HelveticaNeue-bold "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 44, ../scss/components/_media_coverage.scss */
 .media--coverage .data a {
@@ -7439,16 +7425,22 @@ blockquote {
 /* line 1, ../scss/components/_nav-section.scss */
 .nav-section {
   border-bottom: 2px solid #052049;
-  padding-bottom: 26px;
+  padding-bottom: 22px;
   margin-bottom: 36px;
 }
-/* line 6, ../scss/components/_nav-section.scss */
+@media (min-width: 768px) {
+  /* line 6, ../scss/components/_nav-section.scss */
+  .nav-section h2.headline {
+    margin-bottom: 8px;
+  }
+}
+/* line 12, ../scss/components/_nav-section.scss */
 .nav-section ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 13, ../scss/components/_nav-section.scss */
+/* line 19, ../scss/components/_nav-section.scss */
 .nav-section li {
   padding: 0;
   margin: 0;
@@ -7456,14 +7448,14 @@ blockquote {
   float: left;
   margin-right: 10px;
 }
-/* line 21, ../scss/components/_nav-section.scss */
+/* line 27, ../scss/components/_nav-section.scss */
 .nav-section a {
   text-transform: uppercase;
   font-size: 10px;
   line-height: 22px;
   margin-bottom: 10px;
 }
-/* line 27, ../scss/components/_nav-section.scss */
+/* line 33, ../scss/components/_nav-section.scss */
 .nav-section a.active {
   background: #4d4d4d;
 }
@@ -7473,6 +7465,10 @@ blockquote {
   margin-right: 0.5em;
 }
 /* line 8, ../scss/components/_nav-social.scss */
+.nav-social li:last-child .fa {
+  margin-right: 0;
+}
+/* line 14, ../scss/components/_nav-social.scss */
 .nav-social a {
   font-size: 22px;
   color: #4d4d4d;
@@ -7484,25 +7480,30 @@ blockquote {
   margin: 0;
   margin-bottom: 4em;
 }
-@media (min-width: 640px) {
-  /* line 7, ../scss/components/_news-center.scss */
+@media (min-width: 768px) {
+  /* line 12, ../scss/components/_news-center.scss */
   .preface-blocks .preface-block-main {
     padding-right: 15px;
   }
 }
-@media (min-width: 640px) {
-  /* line 12, ../scss/components/_news-center.scss */
+/* line 22, ../scss/components/_news-center.scss */
+.preface-blocks .preface-block-popular {
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  /* line 22, ../scss/components/_news-center.scss */
   .preface-blocks .preface-block-popular {
+    margin-top: 0;
     padding-left: 15px;
   }
 }
 
-/* line 19, ../scss/components/_news-center.scss */
+/* line 31, ../scss/components/_news-center.scss */
 .news-center-masonry .post-filter__wrapper {
   border-bottom: 0;
 }
 
-/* line 24, ../scss/components/_news-center.scss */
+/* line 36, ../scss/components/_news-center.scss */
 .media-blocks {
   padding-bottom: 2em;
   border-bottom: 2px solid #f1f1f1;
@@ -7510,31 +7511,31 @@ blockquote {
   margin-bottom: 2em;
 }
 @media (min-width: 640px) {
-  /* line 32, ../scss/components/_news-center.scss */
+  /* line 44, ../scss/components/_news-center.scss */
   .media-blocks .media--coverage__wrapper {
     padding-right: 30px;
     border-right: 3px dotted #b4b9bf;
   }
 }
 @media (min-width: 640px) {
-  /* line 39, ../scss/components/_news-center.scss */
+  /* line 51, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper,
   .media-blocks .twitter__wrapper {
     padding-left: 30px;
   }
-  /* line 44, ../scss/components/_news-center.scss */
+  /* line 56, ../scss/components/_news-center.scss */
   .media-blocks .youtube__wrapper img,
   .media-blocks .twitter__wrapper img {
     max-width: 75%;
   }
 }
 
-/* line 53, ../scss/components/_news-center.scss */
+/* line 65, ../scss/components/_news-center.scss */
 .news-center-masonry .block-more {
   border: 0;
   margin: 0;
 }
-/* line 57, ../scss/components/_news-center.scss */
+/* line 69, ../scss/components/_news-center.scss */
 .news-center-masonry .block-more a {
   min-height: 120px;
   color: #052049;
@@ -7543,7 +7544,7 @@ blockquote {
   font-weight: 200;
   background: #f1f1f1;
 }
-/* line 65, ../scss/components/_news-center.scss */
+/* line 77, ../scss/components/_news-center.scss */
 .news-center-masonry .block-more a:hover {
   background: rgba(241, 241, 241, 0.75);
 }
@@ -7782,7 +7783,7 @@ blockquote {
   width: auto;
   display: block;
   background-color: none;
-  font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+  font-family: granjon Georgia, TimesNewRoman, "Times New Roman", Times, serif;
   color: gray;
   font-size: 1.4375em;
   line-height: 1.4375em;
@@ -8000,21 +8001,26 @@ h2.resp-accordion {
 .popular__wrapper h2.headline {
   border-bottom: 2px solid #f1f1f1;
 }
-/* line 26, ../scss/components/_popular.scss */
+/* line 24, ../scss/components/_popular.scss */
+.popular__wrapper h2 {
+  font-size: 25px;
+  line-height: 35px;
+}
+/* line 31, ../scss/components/_popular.scss */
 .popular__wrapper h2 .title-icon {
   float: right;
   font-size: 22px;
   color: #808285;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 
-/* line 38, ../scss/components/_popular.scss */
+/* line 43, ../scss/components/_popular.scss */
 .block-popular h4 {
   font-size: 15px;
   line-height: 20px;
   color: #333333;
 }
-/* line 43, ../scss/components/_popular.scss */
+/* line 48, ../scss/components/_popular.scss */
 .block-popular h4 a {
   color: #333333;
 }
@@ -8195,7 +8201,7 @@ h2.resp-accordion {
   font-size: 13px;
   line-height: 17px;
   color: #052049;
-  font-weight: 800;
+  font-family: HelveticaNeue-bold "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   margin-bottom: 0;
 }
 /* line 33, ../scss/components/_twitter.scss */
@@ -8204,7 +8210,7 @@ h2.resp-accordion {
 }
 /* line 36, ../scss/components/_twitter.scss */
 .twitter__wrapper h4 a.handle {
-  font-weight: 400;
+  font-family: HelveticaNeue-roman "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #989898;
 }
 /* line 42, ../scss/components/_twitter.scss */
@@ -8263,29 +8269,29 @@ h2.resp-accordion {
   font-size: 13px;
   line-height: 17px;
   color: black;
-  font-weight: 800;
+  font-family: HelveticaNeue-bold "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   margin-bottom: 0;
 }
-/* line 28, ../scss/components/_youtube.scss */
+/* line 31, ../scss/components/_youtube.scss */
 .youtube__wrapper h4 a {
   color: black;
 }
-/* line 31, ../scss/components/_youtube.scss */
+/* line 34, ../scss/components/_youtube.scss */
 .youtube__wrapper h4 .submitted-by {
-  font-weight: 400;
+  font-family: HelveticaNeue-roman "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #58595b;
 }
-/* line 35, ../scss/components/_youtube.scss */
+/* line 38, ../scss/components/_youtube.scss */
 .youtube__wrapper h4 .submitted-by a {
   color: #178CCB;
 }
-/* line 40, ../scss/components/_youtube.scss */
+/* line 43, ../scss/components/_youtube.scss */
 .youtube__wrapper .data {
   color: #989898;
   font-size: 13px;
   line-height: 17px;
 }
-/* line 45, ../scss/components/_youtube.scss */
+/* line 48, ../scss/components/_youtube.scss */
 .youtube__wrapper .data a {
   color: #989898;
 }

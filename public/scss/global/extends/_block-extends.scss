@@ -65,28 +65,30 @@
   margin: 0 -16px;
   @extend .cf;
 }
+
 %content-column-4 {
   list-style-type: none;
 
-  @include breakpoint($bp--medium-up) {
+  @include breakpoint($bp--large-up) {
     float: left;
     margin: 0;
   }
 }
+
 %content-column-4-1col {
-  @include breakpoint($bp--medium-up) {
+  @include breakpoint($bp--large-up) {
     width: 25%;
   }
 }
 
 %content-column-4-2col {
-  @include breakpoint($bp--medium-up) {
+  @include breakpoint($bp--large-up) {
     width: 50%;
   }
 }
 
 %content-column-4-3col {
-  @include breakpoint($bp--medium-up) {
+  @include breakpoint($bp--large-up) {
     width: 75%;
   }
 }
