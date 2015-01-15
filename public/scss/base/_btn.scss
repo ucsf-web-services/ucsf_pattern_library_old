@@ -475,6 +475,8 @@
   text-transform: uppercase;
   color: $white;
   background: $color--blue-green;
+  font-family: $font-body--medium;
+  letter-spacing: 0.140em;
   
   &:hover {
     color: $white;

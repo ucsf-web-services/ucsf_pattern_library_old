@@ -4311,33 +4311,35 @@ pre mark {
   text-transform: uppercase;
   color: white;
   background: #18A3AC;
+  font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.140em;
 }
-/* line 479, ../scss/base/_btn.scss */
+/* line 481, ../scss/base/_btn.scss */
 .btn--term:hover {
   color: white;
 }
 
-/* line 484, ../scss/base/_btn.scss */
+/* line 486, ../scss/base/_btn.scss */
 .btn--term--research {
   background: #18A3AC;
 }
 
-/* line 488, ../scss/base/_btn.scss */
+/* line 490, ../scss/base/_btn.scss */
 .btn--term--campus-news {
   background: #716FB2;
 }
 
-/* line 492, ../scss/base/_btn.scss */
+/* line 494, ../scss/base/_btn.scss */
 .btn--term--patient-care {
   background: #178CCB;
 }
 
-/* line 496, ../scss/base/_btn.scss */
+/* line 498, ../scss/base/_btn.scss */
 .btn--term--education {
   background: #90BD31;
 }
 
-/* line 500, ../scss/base/_btn.scss */
+/* line 502, ../scss/base/_btn.scss */
 .btn--more {
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   float: right;
@@ -4349,7 +4351,7 @@ pre mark {
   color: #178CCB;
   text-transform: uppercase;
 }
-/* line 513, ../scss/base/_btn.scss */
+/* line 515, ../scss/base/_btn.scss */
 .btn--more:hover {
   border-color: #2ea6e7;
   color: #2ea6e7;
@@ -7478,7 +7480,7 @@ blockquote {
 /* line 14, ../scss/components/_nav-social.scss */
 .nav-social a {
   font-size: 22px;
-  color: #4d4d4d;
+  color: #808285;
 }
 
 /* line 1, ../scss/components/_news-center.scss */
