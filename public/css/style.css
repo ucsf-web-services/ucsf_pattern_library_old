@@ -4311,7 +4311,7 @@ pre mark {
   text-transform: uppercase;
   color: white;
   background: #18A3AC;
-  font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   letter-spacing: 0.140em;
 }
 /* line 481, ../scss/base/_btn.scss */
