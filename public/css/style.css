@@ -7660,38 +7660,63 @@ blockquote {
 }
 /* line 32, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides li .data {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   z-index: 2;
-  padding: 20px;
-  padding-bottom: 15px;
+  padding: 10px;
   text-transform: none;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
 }
-/* line 44, ../scss/components/_news-rotator.scss */
+@media (min-width: 680px) {
+  /* line 32, ../scss/components/_news-rotator.scss */
+  .rotator__wrapper ul.slides li .data {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    padding-bottom: 15px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+/* line 51, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides li .data h4 {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
   color: #58595b;
 }
-/* line 49, ../scss/components/_news-rotator.scss */
+@media (min-width: 680px) {
+  /* line 51, ../scss/components/_news-rotator.scss */
+  .rotator__wrapper ul.slides li .data h4 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+/* line 64, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.slides li .data h4 a {
   color: #58595b;
 }
-/* line 56, ../scss/components/_news-rotator.scss */
-.rotator__wrapper ul.slides li .data .readmore a {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: bold;
+@media (min-width: 680px) {
+  /* line 72, ../scss/components/_news-rotator.scss */
+  .rotator__wrapper ul.slides li .data .readmore a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+  }
 }
-/* line 67, ../scss/components/_news-rotator.scss */
+/* line 84, ../scss/components/_news-rotator.scss */
 .rotator__wrapper .flexslider-carousel {
   position: relative;
   padding: 0 40px;
+  display: none;
 }
-/* line 72, ../scss/components/_news-rotator.scss */
+@media (min-width: 680px) {
+  /* line 84, ../scss/components/_news-rotator.scss */
+  .rotator__wrapper .flexslider-carousel {
+    display: block;
+  }
+}
+/* line 94, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.thumbnail-carousel-navigation {
   list-style-type: none;
   padding: 0;
@@ -7700,7 +7725,7 @@ blockquote {
   position: relative;
   z-index: 100;
 }
-/* line 81, ../scss/components/_news-rotator.scss */
+/* line 103, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.thumbnail-carousel-navigation li {
   position: relative;
   padding: 0;
@@ -7711,7 +7736,7 @@ blockquote {
   min-height: 60px;
   overflow: hidden;
 }
-/* line 92, ../scss/components/_news-rotator.scss */
+/* line 114, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.thumbnail-carousel-navigation img {
   display: block;
   z-index: 1;
@@ -7729,11 +7754,11 @@ blockquote {
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
 }
-/* line 112, ../scss/components/_news-rotator.scss */
+/* line 134, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.thumbnail-carousel-navigation li.flex-active img {
   opacity: 1;
 }
-/* line 120, ../scss/components/_news-rotator.scss */
+/* line 142, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav {
   margin: 0;
   padding: 0;
@@ -7745,11 +7770,11 @@ blockquote {
   left: 0;
   right: 0;
 }
-/* line 134, ../scss/components/_news-rotator.scss */
+/* line 156, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li {
   z-index: 1;
 }
-/* line 137, ../scss/components/_news-rotator.scss */
+/* line 159, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn {
   border: 1px solid #178CCB;
   color: #178CCB;
@@ -7758,45 +7783,45 @@ blockquote {
   line-height: 30px;
   margin-bottom: 0;
 }
-/* line 145, ../scss/components/_news-rotator.scss */
+/* line 167, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn:hover {
   border-color: #2ea6e7;
   color: #2ea6e7;
 }
-/* line 150, ../scss/components/_news-rotator.scss */
+/* line 172, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn .fa {
   margin: 0;
 }
-/* line 155, ../scss/components/_news-rotator.scss */
+/* line 177, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-prev {
   position: absolute;
   left: 0;
   top: 50%;
   margin-top: -20px;
 }
-/* line 161, ../scss/components/_news-rotator.scss */
+/* line 183, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-prev .btn {
   padding-left: 6px;
 }
-/* line 166, ../scss/components/_news-rotator.scss */
+/* line 188, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-next {
   position: absolute;
   right: 0;
   top: 50%;
   margin-top: -20px;
 }
-/* line 172, ../scss/components/_news-rotator.scss */
+/* line 194, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-next .btn {
   padding-right: 6px;
 }
-/* line 178, ../scss/components/_news-rotator.scss */
+/* line 200, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ol.flex-control-nav {
   z-index: 2;
   list-style-type: none;
   margin: 0;
   padding: 0 50px;
 }
-/* line 184, ../scss/components/_news-rotator.scss */
+/* line 206, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ol.flex-control-nav li {
   z-index: 2;
   display: inline-block;

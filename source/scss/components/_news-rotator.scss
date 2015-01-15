@@ -30,20 +30,35 @@
         font-size: 13px;
       }
       .data {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        
         z-index: 2;
         @extend .cf;
-        padding: 20px;
-        padding-bottom: 15px;
+        padding: 10px;
+        
         text-transform: none;
-        background: rgba($white, 0.9);
+        background: $white;
+        
+        @include breakpoint($bp--small-up) {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 20px;
+          padding-bottom: 15px;
+          background: rgba($white, 0.9);
+        }
         
         h4 {
-          font-size: 24px;
-          line-height: 30px;
+          
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 0;
+          
+          @include breakpoint($bp--small-up) {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 10px;
+          }
           color: $color--gray-darker;
           
           a {
@@ -51,12 +66,14 @@
           }
         }
         
-        .readmore {
-          
-          a {
-            font-size: 12px;
-            line-height: 18px;
-            font-weight: bold;
+        @include breakpoint($bp--small-up) {
+          .readmore {
+            
+            a {
+              font-size: 12px;
+              line-height: 18px;
+              font-weight: bold;
+            }
           }
         }
       }
@@ -67,6 +84,11 @@
   .flexslider-carousel {
     position: relative;
     padding: 0 40px;
+    display: none;
+    
+    @include breakpoint($bp--small-up) {
+      display: block;  
+    }
   }
   
   ul.thumbnail-carousel-navigation {
