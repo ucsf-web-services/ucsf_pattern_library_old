@@ -2,22 +2,20 @@
   <div class="pillar-2col">
     <div class="pillar-2col-half">
       <div class="pillar-top-half">
-        {{> molecules-block-content-quarter }}
-        {{> molecules-block-content-quarter }}  
+        {{# pillar-community-first }}{{> molecules-block-content-quarter }}{{/ pillar-community-first }}
+        {{# pillar-community-second }}{{> molecules-block-content-quarter }}{{/ pillar-community-second }}
       </div>
       <div class="pillar-bottom-half">
-        {{> molecules-block-content-quarter }}
-        {{> molecules-block-content-quarter }}
+        {{# pillar-community-third }}{{> molecules-block-content-quarter }}{{/ pillar-community-third }}
+        {{# pillar-community-fourth }}{{> molecules-block-content-quarter }}{{/ pillar-community-fourth }}
       </div>
     </div>
-    <div class="pillar-2col-half">
-      
+    <div class="pillar-2col-half">      
       <div class="pillar-top-half">
-        {{> molecules-block-content-quarter-2col }}
+        {{# pillar-community-fifth }}{{> molecules-block-content-quarter-2col }}{{/ pillar-community-fifth }}
       </div>
       <div class="pillar-bottom-half">
-        {{> molecules-block-content-quarter }}
-        
+        {{# pillar-community-sixth }}{{> molecules-block-content-quarter }}{{/ pillar-community-sixth }}
       </div>
     </div>
   </div>

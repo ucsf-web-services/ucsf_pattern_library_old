@@ -3,9 +3,12 @@
     {{#img.landscape-4x3.src}}
       {{> atoms-landscape-4x3 }}
     {{/img.landscape-4x3.src}}
+    
+    {{^image-type}}
     <div class="data">
-      <h4><a href="#">{{ headline.short }}</a></h4>
-      <div class="readmore"><a href="#">Read More</a></div>
+      {{#headline.short}}<h4><a href="#">{{ headline.short }}</a></h4>{{/headline.short}}
+      {{#link.name}}<div class="readmore"><a href="#">{{ link.name }}</a></div>{{/link.name}}
     </div>
+    {{/image-type}}
   </div>
 </div>

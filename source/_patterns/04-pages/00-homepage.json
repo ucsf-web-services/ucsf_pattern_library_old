@@ -47,110 +47,718 @@
 			}
 		}
 	],
-	"touts" : [
+	"pillar-patients-first" : [
 		{
 			"img": {
 				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-climber.jpg",
-					"alt": "Climber"	
-				}
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
 			},
 			"headline" : {
-				"short" : "Extreme climbing tips"
-			}
-		},
-		{
-			"img": {
-				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-stream.jpg",
-					"alt": "Stream hiking"	
-				}
+				"short" : "The Art of Healing: Art as Medicine"
 			},
-			"headline" : {
-				"short" : "Stream hiking"
-			}
-		},
-		{
-			"img": {
-				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-climbers.jpg",
-					"alt": "Explore hiking trails"	
-				}
+			"ctype" : {
+				"name" : "News Story",
+				"class" : "btn--ctype--news-story"
 			},
-			"headline" : {
-				"short" : "Explore hiking trails"
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
 			}
 		}
-	],
+  ],
+  "pillar-patients-second" : [
+		{
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "UCSF Medical Center"
+			},
+			"link" : {
+				"name" : "Visit Website",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-patients-third" : [
+		{
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "UCSF Benioff Childrens Hospital"
+			},
+			"link" : {
+				"name" : "Visit Website",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-patients-fourth" : [
+		{
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "UCSF Dental Center"
+			},
+			"link" : {
+				"name" : "Visit Website",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-patients-fifth" : [
+		{
+  		"image-type" : true,
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			}
+		}
+  ],
+  "pillar-community-first" : [
+		{
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "Committed to the City"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-community-second" : [
+		{
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "Community and Government Relations"
+			},
+			"link" : {
+				"name" : "Visit Website",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-community-third" : [
+		{
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "150th Anniversary"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-community-fourth" : [
+		{
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "Projects"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-community-fifth" : [
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "Making UCSF a 'More Inclusive Place'"
+			},
+			"ctype" : {
+				"name" : "News Story",
+				"class" : "btn--ctype--news-story"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-community-sixth" : [
+		{
+  		"image-type" : true,
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			}
+		}
+  ],
+  "pillar-students-first" : [
+		{
+  		"image-type" : true,
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			}
+		}
+  ],
+  "pillar-students-second" : [
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "Registrar"
+			},
+			"link" : {
+				"name" : "Visit Website",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-students-third" : [
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "UCSF Teams Make Final Push for Sunday's AIDS Walk San Francisco"
+			},
+			"ctype" : {
+				"name" : "News Story",
+				"class" : "btn--ctype--news-story"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-students-fourth" : [
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "Student Inside Guide"
+			},
+			"link" : {
+				"name" : "Visit Website",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-students-fifth" : [
+		{
+  		"image-type" : true,
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			}
+		}
+  ],
+  "pillar-faculty-first" : [
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "150th Anniversary"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-faculty-second" : [
+		{
+  		"image-type" : true,
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			}
+		}
+  ],
+  "pillar-faculty-third" : [
+		{
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "Making UCSF a 'More Inclusive Place'"
+			},
+			"ctype" : {
+				"name" : "News Story",
+				"class" : "btn--ctype--news-story"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-faculty-fourth" : [
+		{
+  		"image-type" : true,
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			}
+		}
+  ],
+  "pillar-alumni-first" : [
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "2014: The Year in Review at UCSF"
+			},
+			"ctype" : {
+				"name" : "News Story",
+				"class" : "btn--ctype--news-story"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-alumni-second" : [
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "150th Anniversary"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-alumni-third" : [
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "UCSF Alumni"
+			},
+			"link" : {
+				"name" : "Visit Website",
+				"class" : ""
+			}
+		}
+  ],
+  "pillar-alumni-fourth" : [
+		{
+  		"image-type" : true,
+			"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			}
+		}
+  ],
+  "pillar-alumni-fifth" : [
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/fpo_4x3.png",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"headline" : {
+				"short" : "Alumni Weekend"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+		}
+  ],
 	"latest-posts" : [
 		{
 			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-river.jpg",
-					"alt": "Post Thumbnail"	
-				}
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
 			},
 			"headline" : {
-				"short" : "Navigate the Allegheny River"
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
 			},
 			"exerpt" : {
-				"medium" : "The Allegheny River is a principal tributary of the Ohio River; it is located in the Eastern United States. The Allegheny River joins with the Monongahela River to form the Ohio River at the Point of Point State Park in Downtown Pittsburgh, Pennsylvania."
+				"medium" : ""
 			}
 		},
 		{
 			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-ivy.jpg",
-					"alt": "Ivy"	
-				}
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
 			},
 			"headline" : {
-				"short" : "How to detect and avoid poison ivy"
-			},
+        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
+      },
 			"exerpt" : {
-				"medium" : "Toxicodendron radicans, commonly known as poison ivy is a poisonous North American plant that is well known for its production of urushiol"
+				"medium" : ""
 			}
 		},
 		{
 			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-yosemite.jpg",
-					"alt": "Yosemite"	
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		},
+    		"square": {
+					"src": "../../images/fpo_square.png",
+          "alt": "Square Thumbnail"
 				}
 			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
 			"headline" : {
-				"short" : "Top 10 hiking mountains"
+				"short" : "Williams Recieves President's Research Catalyst Award to Address Prison Health Care Crisis"
 			},
 			"exerpt" : {
-				"medium" : "Yosemite National Park is a United States National Park spanning eastern portions of Tuolumne, Mariposa and Madera counties in the central eastern portion of the U.S. state of California."
+				"medium" : ""
 			}
 		},
 		{
 			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-fire.jpg",
-					"alt": "Fire"	
-				}
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
 			},
 			"headline" : {
-				"short" : "How to build a campfire"
+				"short" : "Employees of the New Mission Bay Hospitals Treated to Celebratory Party"
 			},
 			"exerpt" : {
-				"medium" : "A campfire is a fire lit at a campsite, to serve the following functions: light, warmth, a beacon, an insect and/or apex predator deterrent, to cook, and for a psychological sense of security. "
+				"medium" : ""
 			}
 		},
 		{
 			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-gear.jpg",
-					"alt": "Camping Gear"	
-				}
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Research",
+				"class" : "btn--term--research"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
 			},
 			"headline" : {
-				"short" : "Pick the right camping gear"
+				"short" : "American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF"
 			},
 			"exerpt" : {
-				"medium" : "The equipment used in camping varies with the particular type of camping. For instance, in survival camping the equipment consists of small items which have the purpose of helping the camper in providing food, heat and safety."
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Commends Student Leaders for Organizing Peaceful Demonstration, Reinforces Commitment to Diversity"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Research",
+				"class" : "btn--term--research"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Pantilat Receives Award for Work in Palliative Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 8, 2014"
+			},
+			"headline" : {
+        "short" : "Major Complication Rate After Abortion Is Extremely Low, Study Shows"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 8, 2014"
+			},
+			"headline" : {
+        "short" : "Williams Receives President’s Research Catalyst Award to Address Prison Health Care Crisis"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Employees of the New Mission Bay Hospitals Treated to Celebratory Party"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Pantilat Receives Award for Work in Palliative Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Research",
+				"class" : "btn--term--research"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/fpo_16x9.png",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
 			}
 		}
 	],

@@ -1,16 +1,18 @@
 <div class="pillar-content">
   <div class="pillar-2col">
     <div class="pillar-2col-half">
+      {{# pillar-patients-first }}
       {{> molecules-block-content-quarter-2by2col }}
+      {{/ pillar-patients-first }}
     </div>
     <div class="pillar-2col-half">
-      <div class="pillar-top-half">
-        {{> molecules-block-content-quarter }}
-        {{> molecules-block-content-quarter }}  
+      <div class="pillar-vertical-half pillar-top-half">
+        {{# pillar-patients-second }}{{> molecules-block-content-quarter }}{{/ pillar-patients-second }}
+        {{# pillar-patients-third }}{{> molecules-block-content-quarter }}{{/ pillar-patients-third }}
       </div>
-      <div class="pillar-bottom-half">
-        {{> molecules-block-content-quarter }}
-        {{> molecules-block-content-quarter }}
+      <div class="pillar-vertical-half pillar-bottom-half">
+        {{# pillar-patients-fourth }}{{> molecules-block-content-quarter }}{{/ pillar-patients-fourth }}
+        {{# pillar-patients-fifth }}{{> molecules-block-content-quarter }}{{/ pillar-patients-fifth }}
       </div>
     </div>
   </div>

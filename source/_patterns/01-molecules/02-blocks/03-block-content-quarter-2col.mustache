@@ -3,10 +3,12 @@
     {{#img.landscape-16x9.src}}
       {{> atoms-landscape-16x9 }}
     {{/img.landscape-16x9.src}}
-    <a href="#" class="btn btn--ctype">{{ term.name }}</a>
+    <a href="#" class="btn btn--ctype">{{ ctype.name }}</a>
+    {{^image-type}}
     <div class="data">
-      <h4><a href="#">{{ headline.short }}</a></h4>
-      <div class="readmore"><a href="#">Read More</a></div>
+      {{#headline.short}}<h4><a href="#">{{ headline.short }}</a></h4>{{/headline.short}}
+      {{#link.name}}<div class="readmore"><a href="#">{{ link.name }}</a></div>{{/link.name}}
     </div>
+    {{/image-type}}
   </div>
 </div>

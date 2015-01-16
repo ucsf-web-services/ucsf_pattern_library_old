@@ -1,16 +1,18 @@
 &lt;div class=&quot;pillar-content&quot;&gt;
   &lt;div class=&quot;pillar-2col&quot;&gt;
     &lt;div class=&quot;pillar-2col-half&quot;&gt;
+      {{# pillar-patients-first }}
       {{&gt; molecules-block-content-quarter-2by2col }}
+      {{/ pillar-patients-first }}
     &lt;/div&gt;
     &lt;div class=&quot;pillar-2col-half&quot;&gt;
-      &lt;div class=&quot;pillar-top-half&quot;&gt;
-        {{&gt; molecules-block-content-quarter }}
-        {{&gt; molecules-block-content-quarter }}  
+      &lt;div class=&quot;pillar-vertical-half pillar-top-half&quot;&gt;
+        {{# pillar-patients-second }}{{&gt; molecules-block-content-quarter }}{{/ pillar-patients-second }}
+        {{# pillar-patients-third }}{{&gt; molecules-block-content-quarter }}{{/ pillar-patients-third }}
       &lt;/div&gt;
-      &lt;div class=&quot;pillar-bottom-half&quot;&gt;
-        {{&gt; molecules-block-content-quarter }}
-        {{&gt; molecules-block-content-quarter }}
+      &lt;div class=&quot;pillar-vertical-half pillar-bottom-half&quot;&gt;
+        {{# pillar-patients-fourth }}{{&gt; molecules-block-content-quarter }}{{/ pillar-patients-fourth }}
+        {{# pillar-patients-fifth }}{{&gt; molecules-block-content-quarter }}{{/ pillar-patients-fifth }}
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;

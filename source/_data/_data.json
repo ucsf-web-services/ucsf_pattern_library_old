@@ -136,6 +136,14 @@
 		"name" : "Primary Term",
 		"class" : "btn--term"
 	},
+	"ctype" : {
+		"name" : "Content Type",
+		"class" : "btn--ctype"
+	},
+	"link" : {
+		"name" : "Read More",
+		"class" : ""
+	},
 	"date" : {
 		"short" : "December 11, 2014"
 	}
