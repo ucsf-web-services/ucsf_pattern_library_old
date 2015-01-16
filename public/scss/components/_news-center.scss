@@ -1,4 +1,5 @@
-.preface-column--quarter {
+.preface-column--quarter,
+.media-column--quarter {
   @extend %preface-column-4;
 }
 
@@ -9,6 +10,17 @@
 .preface-column--quarter-2col {
   @extend %preface-column-4-2col;
 }
+
+
+.media-column--quarter-1col {
+  @extend %preface-column-4-1col;
+}
+
+.media-column--quarter-2col {
+  @extend %preface-column-4-2col;
+}
+
+
 .preface-column--quarter-3col {
   @extend %preface-column-4-3col;
 }
@@ -59,7 +71,7 @@
 
 .media-blocks {
   
-  @extend %block-square-4-wrapper;
+  @extend %content-column-4-wrapper;
   padding-bottom: $pad-double;
   border-bottom: 2px solid $color--gray--lighter;
   margin: 0;
