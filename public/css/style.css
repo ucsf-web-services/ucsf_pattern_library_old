@@ -8014,7 +8014,7 @@ blockquote {
   /* line 56, ../scss/components/_pillar-tabs.scss */
   .pillar-tabs-list-wrapper {
     padding-bottom: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 0;
   }
 }
 
