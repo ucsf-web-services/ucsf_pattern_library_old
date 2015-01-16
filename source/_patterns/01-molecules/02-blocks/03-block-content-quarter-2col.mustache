@@ -1,6 +1,12 @@
 <div class="block-content block-content--quarter block-content--quarter-2col">
   <div class="block-content__inner">
-    <div class="block-content__label"><div class="block-content__label__text">Story/Video</div></div>
-    <h5>{{ excerpt.short }}</h5>
+    {{#img.landscape-16x9.src}}
+      {{> atoms-landscape-16x9 }}
+    {{/img.landscape-16x9.src}}
+    <a href="#" class="btn btn--ctype">{{ term.name }}</a>
+    <div class="data">
+      <h4><a href="#">{{ headline.short }}</a></h4>
+      <div class="readmore"><a href="#">Read More</a></div>
+    </div>
   </div>
 </div>

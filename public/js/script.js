@@ -117,6 +117,9 @@ activate: function (event) { // Callback function if tab is switched
       
     // provide some equal heights for various elements
     $('.blog--science ul > li').matchHeight(true);
+    
+    $('.pillar-content .pillar-2col > .pillar-2col-half').matchHeight(true);
+    
     $('.media-blocks .media--coverage__wrapper, .media-blocks .youtube__wrapper, .media-blocks .twitter__wrapper').matchHeight(true);
     
     // create a rotator

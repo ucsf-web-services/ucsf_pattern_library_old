@@ -1,5 +1,11 @@
 &lt;div class=&quot;block-content block-content--quarter block-content--quarter-1col&quot;&gt;
   &lt;div class=&quot;block-content__inner&quot;&gt;
-    &lt;h3&gt;{{ headline.short }}&lt;/h3&gt;
+    {{#img.landscape-4x3.src}}
+      {{&gt; atoms-landscape-4x3 }}
+    {{/img.landscape-4x3.src}}
+    &lt;div class=&quot;data&quot;&gt;
+      &lt;h4&gt;&lt;a href=&quot;#&quot;&gt;{{ headline.short }}&lt;/a&gt;&lt;/h4&gt;
+      &lt;div class=&quot;readmore&quot;&gt;&lt;a href=&quot;#&quot;&gt;Read More&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;

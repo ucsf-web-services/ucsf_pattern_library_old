@@ -1,58 +1,27 @@
 .block-content {
-
-  h3, h5 {
-    padding: $pad-half;
-
-    @include breakpoint($bp--medium-up) {
-      padding: $pad-and-half $pad;
-    }
-  }
-
-  h5 {
-    font-weight: normal;
-    padding-top: $pad-double;
-  }
-
-  @include breakpoint($bp--medium-up) {
-    margin-bottom: $pad-double;
+  img {
+    display: block;
   }
 }
 
 .block-content__inner {
   position: relative;
-  background: $color--gray--lightest;
+  //background: $color--gray--lightest;
 
-  @extend %block-square-4-inner;
+  //@extend %block-square-4-inner;
 }
 
 .block-content--quarter {
-  @extend %block-square-4;
+  //@extend %block-square-4;
 }
 
 .block-content--quarter-1col {
-  @extend %block-square-4-1col;
+  //@extend %block-square-4-1col;
 }
 
 .block-content--quarter-2col {
-  @extend %block-square-4-2col;
+  //@extend %block-square-4-2col;
 }
-
-.block-content__label {
-  border-top: 3px solid $color--gray--light;
-  padding-top: 1px;
-  text-transform: uppercase;
-  position: absolute;
-  font-size: $font-size-small;
-  font-weight: bold;
-  color: $color--gray--light;
-  top: 0;
-  left: 0;
-}
-
-.block-content__label__text {
-  margin: 0 $pad-half;
-}
-
 
 .content-column--quarter {
   @extend %content-column-4;
@@ -71,17 +40,3 @@
 
 
 
-.preface-column--quarter {
-  @extend %preface-column-4;
-}
-
-.preface-column--quarter-1col {
-  @extend %preface-column-4-1col;
-}
-
-.preface-column--quarter-2col {
-  @extend %preface-column-4-2col;
-}
-.preface-column--quarter-3col {
-  @extend %preface-column-4-3col;
-}

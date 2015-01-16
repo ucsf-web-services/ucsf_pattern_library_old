@@ -1,3 +1,129 @@
 .pillar-content {
-  @extend %block-square-4-wrapper;
+  @extend .cf;
+  
+  .block-content--quarter-2by2col {
+    margin-bottom: 30px;  
+    
+    @include breakpoint($bp--large-up) {
+      margin-bottom: 0;  
+    }
+  }
+  
+  
+  
+  
+  .pillar-2col {
+    @extend .cf;
+    
+    .pillar-2col-half {
+      position: relative;
+      
+      
+      @include breakpoint($bp--medium-up) {
+        
+        // make the small ones half width (2 per col)
+        .block-content--quarter-1col {
+          width: 50%;
+          float: left;
+          margin-bottom: 30px;
+          
+          &:nth-child(2n+1) {
+            padding-right: 15px;
+          }
+          
+          &:nth-child(2n+2) {
+            padding-left: 15px;
+          }
+          
+          &:nth-child(3),
+          &:nth-child(4) {
+            margin-bottom: 0;
+          }
+          
+        }
+      }
+      
+      // create the MAIN columns
+      @include breakpoint($bp--large-up) {
+        width: 50%;
+        float: left;
+        
+        &:first-child {
+          padding-right: 15px;
+        }
+        
+        &:last-child {
+          padding-left: 15px;
+        }
+        
+        // manipulate the 2x2 to 'line up'
+        // equal heights is used so the columns are the same height
+        .block-content--quarter-2by2col {
+          height: 100%;
+          position: relative;
+          overflow: hidden;
+          
+          .block-content__inner {
+            height: 100%;
+            position: relative;
+          }
+          
+          img {
+            min-height: 100%;
+            width: auto;
+          }
+        }
+        
+        
+      }
+    }
+  }
+  
+  
+  .data {
+        
+    z-index: 2;
+    @extend .cf;
+    padding: 10px;
+    
+    text-transform: none;
+    background: $white;
+    
+    @include breakpoint($bp--small-up) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 8px;
+      background: rgba($white, 0.9);
+      border-bottom: 4px solid $color--oxford-blue;
+    }
+    
+    h4 {
+      
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 0;
+      
+      @include breakpoint($bp--xlarge-up) {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+      color: $color--gray-darker;
+      
+      a {
+        color: $color--gray-darker;
+      }
+    }
+    
+    .readmore {
+      font-size: 10px;
+      
+      a {
+        
+        color: $color--gray--darker;
+      }
+    }
+  }
 }
