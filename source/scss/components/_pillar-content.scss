@@ -1,11 +1,17 @@
 .pillar-content {
   @extend .cf;
+  margin: 0 -15px;
   
   img, .btn--ctype {
     display: none;
   }
   
   @include breakpoint($bp--large-up) {
+    
+    max-height: 462px;
+    
+    
+    
     img, .btn--ctype {
       display: block;
     }
@@ -17,86 +23,39 @@
     
   }
   
-  .block-content--quarter-2by2col {
-    //margin-bottom: 30px;  
-    
-    @include breakpoint($bp--large-up) {
-      margin-bottom: 0;  
-    }
+  .block-content {
+    padding: 15px;
   }
-  
-  
-  
-  .pillar-top-half {
-    position: relative;
-    height: 50%;
-  }
+
+  .pillar-top-half,
   .pillar-bottom-half {
-    position: relative;
-    height: 50%;
-  }
-  
-  // can visually only hold one row
-  .pillar-top-half {
-    
-    .block-content {
-      padding: 0;
-      
-      &:nth-child(1) {
-        // 1x1
-        &.block-content--quarter-1col {
-          padding: 0 15px 15px 0;
-        }
-        // 2x1
-        &.block-content--quarter-2col {
-          padding: 0 0 15px 0;
-        }
-      }
-      
-      &:nth-child(2) {
-        // 1x1
-        &.block-content--quarter-1col {
-          padding: 0 0 15px 15px;
-        }
-      }
-    }
-  }
-  
-  .pillar-bottom-half {
-    
-    .block-content {
-      padding: 0;
-      
-      &:nth-child(1) {
-        // 1x1
-        &.block-content--quarter-1col {
-          padding: 15px 15px 0 0;
-        }
-        // 2x1
-        &.block-content--quarter-2col {
-          padding: 15px 0 0 0;
-        }
-      }
-      
-      &:nth-child(2) {
-        // 1x1
-        &.block-content--quarter-1col {
-          padding: 15px 0 0 15px;
-        }
-      }
-    }
-  }
-  
-  
-  .pillar-2col {
     @extend .cf;
     
-    .pillar-2col-half {
+    position: relative;
+    height: 50%;
+    max-height: 231px;
+  }
+  
+  
+  .pillar-2col,
+  .pillar-3col {
+    @extend .cf;
+    
+    .pillar-3col-quarter {
+      @include breakpoint($bp--large-up) {
+        width: 25%;
+        float: left;
+      }
+    }
+    
+    .pillar-2col-half,
+    .pillar-3col-half {
       position: relative;
       
-      
+      // create the MAIN columns
       @include breakpoint($bp--large-up) {
-        // the default for ANY block (1x1, 2x1, 2x2)
+        width: 50%;
+        float: left;
         
         // make the small ones half width (2 per col)
         .block-content--quarter-1col {
@@ -104,32 +63,9 @@
           float: left;
         }
         
-        .block-content--quarter-2col {
-          padding-bottom: 15px;
-          
-          &:nth-child(2) {
-            padding-bottom: 0;
-          }
-        }
-      }
-      
-      // create the MAIN columns
-      @include breakpoint($bp--large-up) {
-        width: 50%;
-        float: left;
-        
-        &:first-child {
-          padding-right: 15px;
-        }
-        
-        &:last-child {
-          padding-left: 15px;
-        }
-        
-        
         .block-content--quarter-1col,
         .block-content--quarter-2col {
-          min-height: 222px;
+          //min-height: 231px;
         }
         
         // manipulate the 2x2 to 'line up'
@@ -137,25 +73,26 @@
         .block-content--quarter-1col,
         .block-content--quarter-2col {
           height: 100%;
+          max-height: 100%;
           position: relative;
           
           .block-content__inner {
             height: 100%;
+            max-height: 100%;
             position: relative;
           }
-          
-          
         }
+        
         .block-content--quarter-2by2col {
           height: 100%;
+          max-height: 100%;
           position: relative;
           
           .block-content__inner {
             height: 100%;
+            max-height: 100%;
             position: relative;
           }
-          
-          
         }
         
         .block-content--quarter-1col,
@@ -165,9 +102,7 @@
           .block-content__inner {
             overflow: hidden;
           }
-          
           img {
-            
             min-height: 100%;
             width: auto;
           }

@@ -119,6 +119,7 @@ activate: function (event) { // Callback function if tab is switched
     $('.blog--science ul > li').matchHeight(true);
     
     $('.pillar-content .pillar-2col > .pillar-2col-half').matchHeight(true);
+    $('.pillar-content .pillar-3col > .pillar-3col-half, .pillar-content .pillar-3col > .pillar-3col-quarter').matchHeight(true);
     
     $('.media-blocks .media--coverage__wrapper, .media-blocks .youtube__wrapper, .media-blocks .twitter__wrapper').matchHeight(true);
     
