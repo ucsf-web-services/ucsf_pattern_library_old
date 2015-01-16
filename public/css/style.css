@@ -7764,79 +7764,158 @@ blockquote {
 }
 
 /* line 4, ../scss/components/_pillar-content.scss */
-.pillar-content .block-content--quarter-2by2col {
-  margin-bottom: 30px;
+.pillar-content img, .pillar-content .btn--ctype {
+  display: none;
 }
 @media (min-width: 960px) {
-  /* line 4, ../scss/components/_pillar-content.scss */
+  /* line 9, ../scss/components/_pillar-content.scss */
+  .pillar-content img, .pillar-content .btn--ctype {
+    display: block;
+  }
+  /* line 12, ../scss/components/_pillar-content.scss */
+  .pillar-content .block-content--quarter-2by2col,
+  .pillar-content .block-content--quarter-1col,
+  .pillar-content .block-content--quarter-2col {
+    display: block;
+  }
+}
+@media (min-width: 960px) {
+  /* line 20, ../scss/components/_pillar-content.scss */
   .pillar-content .block-content--quarter-2by2col {
     margin-bottom: 0;
   }
 }
-/* line 18, ../scss/components/_pillar-content.scss */
+/* line 30, ../scss/components/_pillar-content.scss */
+.pillar-content .pillar-top-half {
+  position: relative;
+  height: 50%;
+}
+/* line 34, ../scss/components/_pillar-content.scss */
+.pillar-content .pillar-bottom-half {
+  position: relative;
+  height: 50%;
+}
+/* line 42, ../scss/components/_pillar-content.scss */
+.pillar-content .pillar-top-half .block-content {
+  padding: 0;
+}
+/* line 47, ../scss/components/_pillar-content.scss */
+.pillar-content .pillar-top-half .block-content:nth-child(1).block-content--quarter-1col {
+  padding: 0 15px 15px 0;
+}
+/* line 51, ../scss/components/_pillar-content.scss */
+.pillar-content .pillar-top-half .block-content:nth-child(1).block-content--quarter-2col {
+  padding: 0 0 15px 0;
+}
+/* line 58, ../scss/components/_pillar-content.scss */
+.pillar-content .pillar-top-half .block-content:nth-child(2).block-content--quarter-1col {
+  padding: 0 0 15px 15px;
+}
+/* line 67, ../scss/components/_pillar-content.scss */
+.pillar-content .pillar-bottom-half .block-content {
+  padding: 0;
+}
+/* line 72, ../scss/components/_pillar-content.scss */
+.pillar-content .pillar-bottom-half .block-content:nth-child(1).block-content--quarter-1col {
+  padding: 15px 15px 0 0;
+}
+/* line 76, ../scss/components/_pillar-content.scss */
+.pillar-content .pillar-bottom-half .block-content:nth-child(1).block-content--quarter-2col {
+  padding: 15px 0 0 0;
+}
+/* line 83, ../scss/components/_pillar-content.scss */
+.pillar-content .pillar-bottom-half .block-content:nth-child(2).block-content--quarter-1col {
+  padding: 15px 0 0 15px;
+}
+/* line 94, ../scss/components/_pillar-content.scss */
 .pillar-content .pillar-2col .pillar-2col-half {
   position: relative;
 }
-@media (min-width: 768px) {
-  /* line 25, ../scss/components/_pillar-content.scss */
+@media (min-width: 960px) {
+  /* line 102, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col {
     width: 50%;
     float: left;
-    margin-bottom: 30px;
   }
-  /* line 30, ../scss/components/_pillar-content.scss */
-  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col:nth-child(2n+1) {
-    padding-right: 15px;
+  /* line 107, ../scss/components/_pillar-content.scss */
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col {
+    padding-bottom: 15px;
   }
-  /* line 34, ../scss/components/_pillar-content.scss */
-  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col:nth-child(2n+2) {
-    padding-left: 15px;
-  }
-  /* line 38, ../scss/components/_pillar-content.scss */
-  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col:nth-child(3), .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col:nth-child(4) {
-    margin-bottom: 0;
+  /* line 110, ../scss/components/_pillar-content.scss */
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col:nth-child(2) {
+    padding-bottom: 0;
   }
 }
 @media (min-width: 960px) {
-  /* line 18, ../scss/components/_pillar-content.scss */
+  /* line 94, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half {
     width: 50%;
     float: left;
   }
-  /* line 51, ../scss/components/_pillar-content.scss */
+  /* line 121, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half:first-child {
     padding-right: 15px;
   }
-  /* line 55, ../scss/components/_pillar-content.scss */
+  /* line 125, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half:last-child {
     padding-left: 15px;
   }
-  /* line 61, ../scss/components/_pillar-content.scss */
+  /* line 130, ../scss/components/_pillar-content.scss */
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col,
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col {
+    min-height: 222px;
+  }
+  /* line 137, ../scss/components/_pillar-content.scss */
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col,
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col {
+    height: 100%;
+    position: relative;
+  }
+  /* line 142, ../scss/components/_pillar-content.scss */
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col .block-content__inner,
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col .block-content__inner {
+    height: 100%;
+    position: relative;
+  }
+  /* line 149, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col {
     height: 100%;
     position: relative;
-    overflow: hidden;
   }
-  /* line 66, ../scss/components/_pillar-content.scss */
+  /* line 153, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col .block-content__inner {
     height: 100%;
     position: relative;
   }
-  /* line 71, ../scss/components/_pillar-content.scss */
+  /* line 161, ../scss/components/_pillar-content.scss */
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col,
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col,
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col {
+    overflow: hidden;
+  }
+  /* line 165, ../scss/components/_pillar-content.scss */
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col .block-content__inner,
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col .block-content__inner,
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col .block-content__inner {
+    overflow: hidden;
+  }
+  /* line 169, ../scss/components/_pillar-content.scss */
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col img,
+  .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col img,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col img {
     min-height: 100%;
     width: auto;
   }
 }
-/* line 83, ../scss/components/_pillar-content.scss */
+/* line 180, ../scss/components/_pillar-content.scss */
 .pillar-content .data {
   z-index: 2;
   padding: 10px;
   text-transform: none;
   background: white;
 }
-@media (min-width: 680px) {
-  /* line 83, ../scss/components/_pillar-content.scss */
+@media (min-width: 960px) {
+  /* line 180, ../scss/components/_pillar-content.scss */
   .pillar-content .data {
     position: absolute;
     bottom: 0;
@@ -7847,7 +7926,7 @@ blockquote {
     border-bottom: 4px solid #052049;
   }
 }
-/* line 102, ../scss/components/_pillar-content.scss */
+/* line 199, ../scss/components/_pillar-content.scss */
 .pillar-content .data h4 {
   font-size: 16px;
   line-height: 18px;
@@ -7855,22 +7934,22 @@ blockquote {
   color: #58595b;
 }
 @media (min-width: 1024px) {
-  /* line 102, ../scss/components/_pillar-content.scss */
+  /* line 199, ../scss/components/_pillar-content.scss */
   .pillar-content .data h4 {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 10px;
   }
 }
-/* line 115, ../scss/components/_pillar-content.scss */
+/* line 212, ../scss/components/_pillar-content.scss */
 .pillar-content .data h4 a {
   color: #58595b;
 }
-/* line 120, ../scss/components/_pillar-content.scss */
+/* line 217, ../scss/components/_pillar-content.scss */
 .pillar-content .data .readmore {
   font-size: 10px;
 }
-/* line 123, ../scss/components/_pillar-content.scss */
+/* line 220, ../scss/components/_pillar-content.scss */
 .pillar-content .data .readmore a {
   color: #333333;
 }
