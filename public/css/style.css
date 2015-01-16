@@ -6959,33 +6959,34 @@ blockquote {
 
 /* line 1, ../scss/components/_block-more.scss */
 .block-more {
-  margin: 0.5em;
-  border: 2px solid #dbdbdb;
+  margin: 0;
 }
-/* line 5, ../scss/components/_block-more.scss */
+/* line 4, ../scss/components/_block-more.scss */
 .block-more a {
   display: block;
-  padding: 0.25em 0.5em;
-  font-size: 1.4375em;
+  padding: 10px;
+  font-size: 24px;
+  line-height: 28px;
   width: 100%;
+  color: #052049;
+  background-color: #f0f0f0;
 }
 @media (min-width: 768px) {
-  /* line 5, ../scss/components/_block-more.scss */
+  /* line 4, ../scss/components/_block-more.scss */
   .block-more a {
-    padding: 1em;
-    min-height: 250px;
+    min-height: 120px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 5, ../scss/components/_block-more.scss */
+  /* line 4, ../scss/components/_block-more.scss */
   .block-more a {
-    min-height: 300px;
+    min-height: 120px;
   }
 }
-/* line 22, ../scss/components/_block-more.scss */
+/* line 23, ../scss/components/_block-more.scss */
 .block-more a:hover {
   text-decoration: none;
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 0.75);
 }
 
 /* line 1, ../scss/components/_block-post.scss */
@@ -7419,20 +7420,26 @@ blockquote {
   padding-bottom: 22px;
   margin-bottom: 36px;
 }
+/* line 6, ../scss/components/_nav-section.scss */
+.nav-section.hide-border {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+}
 @media (min-width: 960px) {
-  /* line 6, ../scss/components/_nav-section.scss */
+  /* line 12, ../scss/components/_nav-section.scss */
   .nav-section h2.headline {
     margin-bottom: 8px;
     padding-bottom: 0;
   }
 }
-/* line 13, ../scss/components/_nav-section.scss */
+/* line 19, ../scss/components/_nav-section.scss */
 .nav-section ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 20, ../scss/components/_nav-section.scss */
+/* line 26, ../scss/components/_nav-section.scss */
 .nav-section li {
   padding: 0;
   margin: 0;
@@ -7440,7 +7447,7 @@ blockquote {
   float: left;
   margin-right: 10px;
 }
-/* line 28, ../scss/components/_nav-section.scss */
+/* line 34, ../scss/components/_nav-section.scss */
 .nav-section a {
   text-transform: uppercase;
   font-size: 10px;
@@ -7448,7 +7455,7 @@ blockquote {
   margin-bottom: 10px;
   border-radius: 0;
 }
-/* line 35, ../scss/components/_nav-section.scss */
+/* line 41, ../scss/components/_nav-section.scss */
 .nav-section a.active {
   background: #4d4d4d;
   border-color: #4d4d4d;
@@ -8321,18 +8328,35 @@ h2.resp-accordion {
   }
 }
 
-/* line 46, ../scss/components/_post-filter.scss */
+/*
+.masonry-size {
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  
+  @include breakpoint($bp--small-up) {
+    width: 50%;
+  }
+  @include breakpoint($bp--medium-up) {
+    width: 50%;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    width: 25%;  
+  }
+}
+*/
+/* line 66, ../scss/components/_post-filter.scss */
 .post-filter__results {
   min-width: 100% !important;
   max-width: 100% !important;
 }
-/* line 51, ../scss/components/_post-filter.scss */
+/* line 71, ../scss/components/_post-filter.scss */
 .post-filter__results li {
   width: 100%;
   list-style-type: none;
 }
 @media (min-width: 680px) {
-  /* line 59, ../scss/components/_post-filter.scss */
+  /* line 80, ../scss/components/_post-filter.scss */
   .post-filter__results li {
     width: 50%;
     padding: 15px;
@@ -8340,29 +8364,39 @@ h2.resp-accordion {
   }
 }
 @media (min-width: 768px) {
-  /* line 67, ../scss/components/_post-filter.scss */
+  /* line 88, ../scss/components/_post-filter.scss */
   .post-filter__results li {
     width: 33.333%;
     padding: 15px;
     margin: 0;
   }
+  /* line 93, ../scss/components/_post-filter.scss */
+  .post-filter__results li.big-article {
+    width: 66.333%;
+    padding: 15px;
+  }
 }
 @media (min-width: 1024px) {
-  /* line 81, ../scss/components/_post-filter.scss */
+  /* line 107, ../scss/components/_post-filter.scss */
   .post-filter__results li {
     width: 25%;
     padding: 15px;
     margin: 0;
   }
+  /* line 112, ../scss/components/_post-filter.scss */
+  .post-filter__results li.big-article {
+    width: 50%;
+    padding: 15px;
+  }
 }
 
-/* line 96, ../scss/components/_post-filter.scss */
+/* line 126, ../scss/components/_post-filter.scss */
 .post-filter__results__inner {
   margin: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 104, ../scss/components/_post-filter.scss */
+  /* line 134, ../scss/components/_post-filter.scss */
   .post-filter-results__wrapper {
     margin: 0 -15px;
   }

@@ -1,56 +1,33 @@
 <div class="post-filter__wrapper">
   <div class="post-filter">
-    <h2>Latest News from UCSF</h2>
-
-    <div id="post-filter-tags" class="post-filter__tags">
-      <label>
-        <input type="checkbox" checked="checked" rel="patient-care"/>
-        Patient Care
-      </label>
-      <label>
-        <input type="checkbox" checked="checked" rel="education"/>
-        Education
-      </label>
-      <label>
-        <input type="checkbox" checked="checked" rel="research"/>
-        Research
-      </label>
-      <label>
-        <input type="checkbox" checked="checked" rel="campus-news"/>
-        Campus News
-      </label>
-      <label>
-        <input type="checkbox" checked="checked" rel="other"/>
-        Other
-      </label>
+    <h2 class="headline">Latest News from UCSF</h2>
+    <div id="post-filter-tags" class="nav nav-section hide-border post-filter__tags">
+      <ul>
+        <li><a href="#" class="active btn btn--gamma btn--secondary">All</a></li>
+        <li><a href="#" class="btn btn--gamma btn--secondary">Patient Care</a></li>
+        <li><a href="#" class="btn btn--gamma btn--secondary">Education</a></li>
+        <li><a href="#" class="btn btn--gamma btn--secondary">Research</a></li>
+        <li><a href="#" class="btn btn--gamma btn--secondary">Campus News</a></li>
+        <li><a href="#" class="btn btn--gamma btn--secondary">Other</a></li>
+      </ul>
     </div>
     <div class="post-filter-results__wrapper">
       <ul id="post-filter-results" class="post-filter__results">
-        <li class="patient-care">
-          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        <li class="big-article"> 
+          {{# homepage-latest-news-first }}
+            {{> molecules-block-post }}
+          {{/ homepage-latest-news-first }}
         </li>
-        <li class="research">
-          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        
+        {{# latest-posts }}
+        <li class="masonry-sizer">
+          <div class="post-filter__results__inner">{{> molecules-block-post-no-image }}</div>
         </li>
-        <li class="education">
-          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
-        </li>
-        <li class="campus-news">
-          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
-        </li>
-        <li class="other">
-          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
-        </li>
-        <li class="research">
-          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
-        </li>
-        <li class="patient-care">
-          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
-        </li>
-        <li class="more">
+        {{/ latest-posts }}
+        <li class="more masonry-sizer">
           <div class="post-filter__results__inner">
             <div class="block-more">
-              <a href="{{ url }}">More Stories <i class="fa fa-angle-double-right"></i></a>
+              <a href="{{ url }}">See more from the News Center » </a>
             </div>
           </div>
         </li>

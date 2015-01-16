@@ -3,6 +3,12 @@
   padding-bottom: 22px;
   margin-bottom: 36px;
   
+  &.hide-border {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+  
   h2.headline {
     @include breakpoint($bp--large-up) {
       margin-bottom: 8px;

@@ -450,13 +450,34 @@
 			}
 		}
   ],
-	"latest-posts" : [
-		{
-			"img": {
+  "homepage-latest-news-first" : [
+    {
+      "img": {
 				"landscape-16x9": {
     			"src": "../../images/fpo_16x9.png",
     			"alt": "16x9 Image"
     		}
+			},
+			"headline" : {
+				"short" : "Chancellor Sam Hawgood learns about how he found the magic at UCSF more than 30 years ago"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+    }
+  ],
+	"latest-posts" : [
+		{
+			"img": {
+				
 			},
 			"term" : {
 				"name" : "Campus News",
@@ -474,10 +495,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
+				
 			},
 			"term" : {
 				"name" : "Patient Care",
@@ -495,14 +513,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		},
-    		"square": {
-					"src": "../../images/fpo_square.png",
-          "alt": "Square Thumbnail"
-				}
+				
 			},
 			"term" : {
 				"name" : "Education",
@@ -520,10 +531,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
+				
 			},
 			"term" : {
 				"name" : "Campus News",
@@ -541,10 +549,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
+				
 			},
 			"term" : {
 				"name" : "Research",
@@ -562,10 +567,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
+				
 			},
 			"term" : {
 				"name" : "Education",
@@ -583,10 +585,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
+				
 			},
 			"term" : {
 				"name" : "Research",
@@ -604,10 +603,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
+				
 			},
 			"term" : {
 				"name" : "Patient Care",
@@ -643,10 +639,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
+				
 			},
 			"term" : {
 				"name" : "Campus News",
@@ -682,10 +675,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
+				
 			},
 			"term" : {
 				"name" : "Campus News",
@@ -703,10 +693,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
+				
 			},
 			"term" : {
 				"name" : "Education",
@@ -742,10 +729,7 @@
 		},
 		{
 			"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
+				
 			},
 			"term" : {
 				"name" : "Education",

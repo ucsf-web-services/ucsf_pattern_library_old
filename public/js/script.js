@@ -40,13 +40,23 @@ activate: function (event) { // Callback function if tab is switched
       closed: 'accordion' // Start closed if in accordion view
       
     });
-
-    var $container = $('#post-filter-results');
-    // initialize
-    $container.masonry({
+    
+    /*
+$('#home-post-filter-results').masonry({
       //columnWidth: 290,
       "isFitWidth": true,
-      itemSelector: '#post-filter-results li'
+      itemSelector: '#post-filter-results li.masonry-sizer'
+    });
+*/
+    
+    var $container = $('#post-filter-results');
+    //var itemWidthMatch = $('#post-filter-results li.masonry-sizer');
+    // initialize
+    $container.masonry({
+      //columnWidth: itemWidthMatch,
+      "isFitWidth": true,
+      itemSelector: "#post-filter-results li.masonry-sizer",
+      "stamp": ".big-article"
     });
 
     // layout Masonry again after all images have loaded
@@ -57,42 +67,54 @@ activate: function (event) { // Callback function if tab is switched
     $(window).bind('enterBreakpoint300',function() {
       $container.masonry({
         //columnWidth: 290
-        "isFitWidth": true
+        "isFitWidth": true,
+        itemSelector: "#post-filter-results li.masonry-sizer",
+        "stamp": ".big-article"
       });
     });
 
     $(window).bind('enterBreakpoint480',function() {
       $container.masonry({
         //columnWidth: 440
-        "isFitWidth": true
+        "isFitWidth": true,
+        itemSelector: "#post-filter-results li.masonry-sizer",
+        "stamp": ".big-article"
       });
     });
 
     $(window).bind('enterBreakpoint640',function() {
       $container.masonry({
         //columnWidth: 320
-        "isFitWidth": true
+        "isFitWidth": true,
+        itemSelector: "#post-filter-results li.masonry-sizer",
+        "stamp": ".big-article"
       });
     });
 
     $(window).bind('enterBreakpoint768',function() {
       $container.masonry({
         //columnWidth: 398
-        "isFitWidth": true
+        "isFitWidth": true,
+        itemSelector: "#post-filter-results li.masonry-sizer",
+        "stamp": ".big-article"
       });
     });
 
     $(window).bind('enterBreakpoint1024',function() {
       $container.masonry({
         //columnWidth: 340
-        "isFitWidth": true
+        "isFitWidth": true,
+        itemSelector: "#post-filter-results li.masonry-sizer",
+        "stamp": ".big-article"
       });
     });
 
     $(window).bind('enterBreakpoint1190',function() {
       $container.masonry({
         //columnWidth: 297
-        "isFitWidth": true
+        "isFitWidth": true,
+        itemSelector: "#post-filter-results li.masonry-sizer",
+        "stamp": ".big-article"
       });
     });
 

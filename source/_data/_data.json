@@ -157,6 +157,7 @@
 	"pillar-alumni-third" : [{}],
 	"pillar-alumni-fourth" : [{}],
 	"pillar-alumni-fifth" : [{}],
+	"homepage-latest-news-first" : [{}],
 	"term" : {
 		"name" : "Primary Term",
 		"class" : "btn--term"

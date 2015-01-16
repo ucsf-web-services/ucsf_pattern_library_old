@@ -1,27 +1,28 @@
 .block-more {
-  margin: $pad-half;
-  border: 2px solid $color--gray--lightest;
+  margin: 0;
 
   a {
     display: block;
-    padding: $pad-quarter $pad-half;
-    font-size: $font-size-large;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 28px;
     width: 100%;
-
+    color: $color--oxford-blue;
+    background-color: $color--gray--white;
+    
     @include breakpoint($bp--medium-up) {
-      padding: $pad;
-      min-height: 250px;
+      min-height: 120px;
     }
     @include breakpoint($bp--large-up) {
 
     }
     @include breakpoint($bp--xlarge-up) {
-      min-height: 300px;
+      min-height: 120px;
     }
 
     &:hover {
       text-decoration: none;
-      background-color: $color--gray--white;
+      background-color: rgba($color--gray--white, 0.75);
     }
   }
 }
