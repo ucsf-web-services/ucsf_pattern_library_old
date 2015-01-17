@@ -7777,7 +7777,7 @@ blockquote {
 .pillar-content img, .pillar-content .btn--ctype {
   display: none;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   /* line 1, ../scss/components/_pillar-content.scss */
   .pillar-content {
     max-height: 462px;
@@ -7804,7 +7804,7 @@ blockquote {
   height: 50%;
   max-height: 231px;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   /* line 44, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-3col-quarter,
   .pillar-content .pillar-3col .pillar-3col-quarter {
@@ -7819,7 +7819,7 @@ blockquote {
 .pillar-content .pillar-3col .pillar-3col-half {
   position: relative;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   /* line 51, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half,
   .pillar-content .pillar-2col .pillar-3col-half,
@@ -7934,7 +7934,7 @@ blockquote {
   text-transform: none;
   background: white;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   /* line 115, ../scss/components/_pillar-content.scss */
   .pillar-content .data {
     position: absolute;

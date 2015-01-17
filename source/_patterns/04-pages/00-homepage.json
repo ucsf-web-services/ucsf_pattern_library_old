@@ -51,8 +51,8 @@
 		{
 			"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
-    			"alt": "4x3 Image"
+    			"src": "../../images/4x3/sample-image-1.jpg",
+    			"alt": "UCSF Mission Bay"
     		}
 			},
 			"headline" : {
@@ -454,8 +454,8 @@
     {
       "img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
+    			"src": "../../images/16x9/sample-image-1.jpg",
+    			"alt": "UCSF Students Graduating"
     		}
 			},
 			"headline" : {

@@ -6,7 +6,7 @@
     display: none;
   }
   
-  @include breakpoint($bp--large-up) {
+  @include breakpoint($bp--medium-up) {
     
     max-height: 462px;
     
@@ -42,7 +42,7 @@
     @extend .cf;
     
     .pillar-3col-quarter {
-      @include breakpoint($bp--large-up) {
+      @include breakpoint($bp--medium-up) {
         width: 25%;
         float: left;
       }
@@ -53,7 +53,7 @@
       position: relative;
       
       // create the MAIN columns
-      @include breakpoint($bp--large-up) {
+      @include breakpoint($bp--medium-up) {
         width: 50%;
         float: left;
         
@@ -121,7 +121,7 @@
     text-transform: none;
     background: $white;
     
-    @include breakpoint($bp--large-up) {
+    @include breakpoint($bp--medium-up) {
       position: absolute;
       bottom: 0;
       left: 0;
