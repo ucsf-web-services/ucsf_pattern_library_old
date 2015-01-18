@@ -208,7 +208,7 @@ $('#home-post-filter-results').masonry({
         $('.flex-prev, .flex-next').click(function(){
           var disabledItem = $(this).hasClass('flex-disabled');
           if (!disabledItem) {
-            console.log('disabled');
+            //console.log('disabled');
             return false;  
           }
         });
