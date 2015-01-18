@@ -9,6 +9,7 @@
       // array of widths in pixels where breakpoints
       // should be triggered
       breakpoints: [
+        320,
         480,
         768,
         1024,
@@ -42,7 +43,17 @@
     $container.imagesLoaded( function() {
       $container.masonry();
     });
-
+    
+    
+    $(window).bind('enterBreakpoint320',function() {
+      $container.masonry({
+        //columnWidth: 440
+        "isFitWidth": true,
+        itemSelector: "#post-filter-results li.masonry-sizer",
+        "stamp": ".big-article"
+      });
+    });
+    
     $(window).bind('enterBreakpoint480',function() {
       $container.masonry({
         //columnWidth: 440
