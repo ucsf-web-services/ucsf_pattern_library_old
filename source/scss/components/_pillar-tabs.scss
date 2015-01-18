@@ -155,9 +155,7 @@ top: 50%;
 
 .resp-tab-content {
   display: none;
-  border-top: $border-med;
-  margin: $pad-double $pad $pad;
-  padding-top: $pad-and-half;
+  @extend .cf;
 
   @include breakpoint($bp--medium-up) {
     padding: 0;
@@ -190,8 +188,6 @@ h2.resp-accordion {
 
   h2.resp-tab-active {
     margin-bottom: 0px !important;
-    //padding: 1px 15px !important;
-    //background-color: $color--gray--dark;
   }
 
   h2.resp-tab-title:last-child {
@@ -215,18 +211,6 @@ h2.resp-accordion {
   .resp-tab-content-active {
     position: relative;
     display: block;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: -15px;
-      left: 9%;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 12.5px 15px 12.5px;
-      border-color: transparent transparent #000000 transparent;
-    }
   }
 
   .resp-tabs-list li {

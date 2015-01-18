@@ -5446,7 +5446,7 @@ h6, .zeta {
 /* line 16, ../scss/base/_helper-classes.scss */
 .cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events:after, .featured-events__wrapper:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
 .pillar-content .pillar-bottom-half:after, .pillar-content .pillar-2col:after,
-.pillar-content .pillar-3col:after, .pillar-content .data:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
+.pillar-content .pillar-3col:after, .pillar-content .data:after, .resp-tab-content:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
   display: table;
   clear: both;
@@ -7932,18 +7932,24 @@ blockquote {
 .pillar-content .pillar-top-half,
 .pillar-content .pillar-bottom-half {
   position: relative;
-  height: 50%;
-  max-height: 231px;
 }
 @media (min-width: 768px) {
-  /* line 44, ../scss/components/_pillar-content.scss */
+  /* line 30, ../scss/components/_pillar-content.scss */
+  .pillar-content .pillar-top-half,
+  .pillar-content .pillar-bottom-half {
+    height: 50%;
+    max-height: 231px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 46, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-3col-quarter,
   .pillar-content .pillar-3col .pillar-3col-quarter {
     width: 25%;
     float: left;
   }
 }
-/* line 51, ../scss/components/_pillar-content.scss */
+/* line 53, ../scss/components/_pillar-content.scss */
 .pillar-content .pillar-2col .pillar-2col-half,
 .pillar-content .pillar-2col .pillar-3col-half,
 .pillar-content .pillar-3col .pillar-2col-half,
@@ -7951,7 +7957,7 @@ blockquote {
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 51, ../scss/components/_pillar-content.scss */
+  /* line 53, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half,
   .pillar-content .pillar-2col .pillar-3col-half,
   .pillar-content .pillar-3col .pillar-2col-half,
@@ -7959,7 +7965,7 @@ blockquote {
     width: 50%;
     float: left;
   }
-  /* line 61, ../scss/components/_pillar-content.scss */
+  /* line 63, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col,
   .pillar-content .pillar-2col .pillar-3col-half .block-content--quarter-1col,
   .pillar-content .pillar-3col .pillar-2col-half .block-content--quarter-1col,
@@ -7967,7 +7973,7 @@ blockquote {
     width: 50%;
     float: left;
   }
-  /* line 73, ../scss/components/_pillar-content.scss */
+  /* line 75, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col,
   .pillar-content .pillar-2col .pillar-3col-half .block-content--quarter-1col,
@@ -7980,7 +7986,7 @@ blockquote {
     max-height: 100%;
     position: relative;
   }
-  /* line 79, ../scss/components/_pillar-content.scss */
+  /* line 81, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col .block-content__inner,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col .block-content__inner,
   .pillar-content .pillar-2col .pillar-3col-half .block-content--quarter-1col .block-content__inner,
@@ -7993,7 +7999,7 @@ blockquote {
     max-height: 100%;
     position: relative;
   }
-  /* line 86, ../scss/components/_pillar-content.scss */
+  /* line 88, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col,
   .pillar-content .pillar-2col .pillar-3col-half .block-content--quarter-2by2col,
   .pillar-content .pillar-3col .pillar-2col-half .block-content--quarter-2by2col,
@@ -8002,7 +8008,7 @@ blockquote {
     max-height: 100%;
     position: relative;
   }
-  /* line 91, ../scss/components/_pillar-content.scss */
+  /* line 93, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col .block-content__inner,
   .pillar-content .pillar-2col .pillar-3col-half .block-content--quarter-2by2col .block-content__inner,
   .pillar-content .pillar-3col .pillar-2col-half .block-content--quarter-2by2col .block-content__inner,
@@ -8011,7 +8017,7 @@ blockquote {
     max-height: 100%;
     position: relative;
   }
-  /* line 98, ../scss/components/_pillar-content.scss */
+  /* line 100, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col,
@@ -8026,7 +8032,7 @@ blockquote {
   .pillar-content .pillar-3col .pillar-3col-half .block-content--quarter-2by2col {
     overflow: hidden;
   }
-  /* line 102, ../scss/components/_pillar-content.scss */
+  /* line 104, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col .block-content__inner,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col .block-content__inner,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col .block-content__inner,
@@ -8041,7 +8047,7 @@ blockquote {
   .pillar-content .pillar-3col .pillar-3col-half .block-content--quarter-2by2col .block-content__inner {
     overflow: hidden;
   }
-  /* line 105, ../scss/components/_pillar-content.scss */
+  /* line 107, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col img,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col img,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col img,
@@ -8058,7 +8064,7 @@ blockquote {
     width: auto;
   }
 }
-/* line 115, ../scss/components/_pillar-content.scss */
+/* line 117, ../scss/components/_pillar-content.scss */
 .pillar-content .data {
   z-index: 2;
   padding: 10px;
@@ -8066,7 +8072,7 @@ blockquote {
   background: white;
 }
 @media (min-width: 768px) {
-  /* line 115, ../scss/components/_pillar-content.scss */
+  /* line 117, ../scss/components/_pillar-content.scss */
   .pillar-content .data {
     position: absolute;
     bottom: 0;
@@ -8077,7 +8083,7 @@ blockquote {
     border-bottom: 4px solid #052049;
   }
 }
-/* line 134, ../scss/components/_pillar-content.scss */
+/* line 136, ../scss/components/_pillar-content.scss */
 .pillar-content .data h4 {
   font-size: 16px;
   line-height: 18px;
@@ -8085,22 +8091,22 @@ blockquote {
   color: #58595b;
 }
 @media (min-width: 1024px) {
-  /* line 134, ../scss/components/_pillar-content.scss */
+  /* line 136, ../scss/components/_pillar-content.scss */
   .pillar-content .data h4 {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 10px;
   }
 }
-/* line 147, ../scss/components/_pillar-content.scss */
+/* line 149, ../scss/components/_pillar-content.scss */
 .pillar-content .data h4 a {
   color: #58595b;
 }
-/* line 152, ../scss/components/_pillar-content.scss */
+/* line 154, ../scss/components/_pillar-content.scss */
 .pillar-content .data .readmore {
   font-size: 10px;
 }
-/* line 155, ../scss/components/_pillar-content.scss */
+/* line 157, ../scss/components/_pillar-content.scss */
 .pillar-content .data .readmore a {
   color: #333333;
 }
@@ -8250,9 +8256,6 @@ top: 50%;
 /* line 156, ../scss/components/_pillar-tabs.scss */
 .resp-tab-content {
   display: none;
-  border-top: 2px solid #333333;
-  margin: 2em 1em 1em;
-  padding-top: 1.5em;
 }
 @media (min-width: 768px) {
   /* line 156, ../scss/components/_pillar-tabs.scss */
@@ -8263,19 +8266,19 @@ top: 50%;
   }
 }
 
-/* line 169, ../scss/components/_pillar-tabs.scss */
+/* line 167, ../scss/components/_pillar-tabs.scss */
 h2.resp-accordion {
   cursor: pointer;
   display: none;
 }
 
 @media (max-width: 767px) {
-  /* line 177, ../scss/components/_pillar-tabs.scss */
+  /* line 175, ../scss/components/_pillar-tabs.scss */
   .resp-content-active, .resp-accordion-active {
     display: block;
   }
 
-  /* line 181, ../scss/components/_pillar-tabs.scss */
+  /* line 179, ../scss/components/_pillar-tabs.scss */
   h2.resp-accordion {
     font-size: 1.0625em;
     background: #f1f1f1;
@@ -8286,52 +8289,40 @@ h2.resp-accordion {
     height: 50px;
   }
 
-  /* line 191, ../scss/components/_pillar-tabs.scss */
+  /* line 189, ../scss/components/_pillar-tabs.scss */
   h2.resp-tab-active {
     margin-bottom: 0px !important;
   }
 
-  /* line 197, ../scss/components/_pillar-tabs.scss */
+  /* line 193, ../scss/components/_pillar-tabs.scss */
   h2.resp-tab-title:last-child {
     background: blue;
   }
 
-  /* line 201, ../scss/components/_pillar-tabs.scss */
+  /* line 197, ../scss/components/_pillar-tabs.scss */
   ul.resp-tabs-list, p {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 206, ../scss/components/_pillar-tabs.scss */
+  /* line 202, ../scss/components/_pillar-tabs.scss */
   .resp-easy-accordion h2.resp-accordion {
     display: block;
   }
 
-  /* line 210, ../scss/components/_pillar-tabs.scss */
+  /* line 206, ../scss/components/_pillar-tabs.scss */
   .resp-jfit {
     width: 100%;
     margin: 0px;
   }
 
-  /* line 215, ../scss/components/_pillar-tabs.scss */
+  /* line 211, ../scss/components/_pillar-tabs.scss */
   .resp-tab-content-active {
     position: relative;
     display: block;
   }
-  /* line 219, ../scss/components/_pillar-tabs.scss */
-  .resp-tab-content-active:before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: 9%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 12.5px 15px 12.5px;
-    border-color: transparent transparent #000000 transparent;
-  }
 
-  /* line 232, ../scss/components/_pillar-tabs.scss */
+  /* line 216, ../scss/components/_pillar-tabs.scss */
   .resp-tabs-list li {
     font-weight: 600;
     display: inline-block;
@@ -8342,12 +8333,12 @@ h2.resp-accordion {
     float: left;
   }
 
-  /* line 243, ../scss/components/_pillar-tabs.scss */
+  /* line 227, ../scss/components/_pillar-tabs.scss */
   ul.resp-tabs-list {
     display: none;
   }
 
-  /* line 247, ../scss/components/_pillar-tabs.scss */
+  /* line 231, ../scss/components/_pillar-tabs.scss */
   .resp-vtabs .resp-tabs-container {
     border: none;
     float: none;
@@ -8356,7 +8347,7 @@ h2.resp-accordion {
     clear: none;
   }
 
-  /* line 254, ../scss/components/_pillar-tabs.scss */
+  /* line 238, ../scss/components/_pillar-tabs.scss */
   .resp-accordion-closed {
     display: none !important;
   }

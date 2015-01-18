@@ -30,10 +30,12 @@
   .pillar-top-half,
   .pillar-bottom-half {
     @extend .cf;
-    
     position: relative;
-    height: 50%;
-    max-height: 231px;
+    
+    @include breakpoint($bp--medium-up) {
+      height: 50%;
+      max-height: 231px;
+    }
   }
   
   
