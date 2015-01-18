@@ -1,21 +1,28 @@
 .featured-events {
+  @extend .cf;
   padding: 0 $pad;
-  @extend %adaptive-container;
-
+  margin-bottom: 40px;
+  
+  
+  .headline {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
   ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0 -20px;
   }
 
   li {
-    padding: 0;
+    padding: 10px 20px;
     margin: 0;
 
     @include breakpoint($bp--medium-up) {
       float: left;
       width: 50%;
-
+      
       &:nth-of-type(odd) {
         border-right: 2px solid $color--gray--lighter;
       }

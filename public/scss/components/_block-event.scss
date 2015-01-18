@@ -1,26 +1,33 @@
 .block-event {
   @extend .cf;
+  //margin-bottom: 20px;
 }
 
 .block-event__inner {
-  padding: $pad;
+  //padding: $pad;
   @extend .cf;
 }
 
-.block-event__img {
-  float: left;
 
+
+.block-event__body {
+  position: relative;
+  padding-left: 84px;
+  min-height: 64px;
+}
+
+.block-event__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
   img {
-    width: 55px;
+    width: 64px;
     height: auto;
   }
 }
 
-.block-event__body {
-  float: left;
-  padding-left: $pad;
-  width: 75%;
-}
+
 
 .block-event__date {
   font-weight: bold;

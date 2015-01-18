@@ -5444,7 +5444,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
+.cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events:after, .featured-events__wrapper:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
 .pillar-content .pillar-bottom-half:after, .pillar-content .pillar-2col:after,
 .pillar-content .pillar-3col:after, .pillar-content .data:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
@@ -5820,35 +5820,6 @@ h6, .zeta {
 /* line 324, ../scss/base/_helper-classes.scss */
 .caps {
   text-transform: uppercase !important;
-}
-
-/* line 328, ../scss/base/_helper-classes.scss */
-.featured-events {
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  /* line 328, ../scss/base/_helper-classes.scss */
-  .featured-events {
-    max-width: 768px;
-  }
-}
-@media (min-width: 960px) {
-  /* line 328, ../scss/base/_helper-classes.scss */
-  .featured-events {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1024px) {
-  /* line 328, ../scss/base/_helper-classes.scss */
-  .featured-events {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1190px) {
-  /* line 328, ../scss/base/_helper-classes.scss */
-  .featured-events {
-    max-width: 1190px;
-  }
 }
 
 /**
@@ -6930,36 +6901,33 @@ blockquote {
   position: relative;
 }
 
-/* line 5, ../scss/components/_block-event.scss */
-.block-event__inner {
-  padding: 1em;
-}
-
-/* line 10, ../scss/components/_block-event.scss */
-.block-event__img {
-  float: left;
-}
 /* line 13, ../scss/components/_block-event.scss */
-.block-event__img img {
-  width: 55px;
-  height: auto;
+.block-event__body {
+  position: relative;
+  padding-left: 84px;
+  min-height: 64px;
 }
 
 /* line 19, ../scss/components/_block-event.scss */
-.block-event__body {
-  float: left;
-  padding-left: 1em;
-  width: 75%;
+.block-event__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 24, ../scss/components/_block-event.scss */
+.block-event__img img {
+  width: 64px;
+  height: auto;
 }
 
-/* line 25, ../scss/components/_block-event.scss */
+/* line 32, ../scss/components/_block-event.scss */
 .block-event__date {
   font-weight: bold;
   font-size: 1.0625em;
   margin-bottom: 0.25em;
 }
 
-/* line 31, ../scss/components/_block-event.scss */
+/* line 38, ../scss/components/_block-event.scss */
 .block-event__description {
   line-height: 1.4;
 }
@@ -7080,36 +7048,42 @@ blockquote {
 /* line 1, ../scss/components/_featured-events.scss */
 .featured-events {
   padding: 0 1em;
+  margin-bottom: 40px;
 }
-/* line 5, ../scss/components/_featured-events.scss */
+/* line 7, ../scss/components/_featured-events.scss */
+.featured-events .headline {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 12, ../scss/components/_featured-events.scss */
 .featured-events ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 -20px;
 }
-/* line 11, ../scss/components/_featured-events.scss */
+/* line 18, ../scss/components/_featured-events.scss */
 .featured-events li {
-  padding: 0;
+  padding: 10px 20px;
   margin: 0;
 }
 @media (min-width: 768px) {
-  /* line 11, ../scss/components/_featured-events.scss */
+  /* line 18, ../scss/components/_featured-events.scss */
   .featured-events li {
     float: left;
     width: 50%;
   }
-  /* line 19, ../scss/components/_featured-events.scss */
+  /* line 26, ../scss/components/_featured-events.scss */
   .featured-events li:nth-of-type(odd) {
     border-right: 2px solid #f1f1f1;
   }
 }
 @media (min-width: 1024px) {
-  /* line 11, ../scss/components/_featured-events.scss */
+  /* line 18, ../scss/components/_featured-events.scss */
   .featured-events li {
     width: 25%;
     border-right: 2px solid #f1f1f1;
   }
-  /* line 28, ../scss/components/_featured-events.scss */
+  /* line 35, ../scss/components/_featured-events.scss */
   .featured-events li:last-child {
     border-right: none;
   }
@@ -7130,6 +7104,7 @@ blockquote {
 .footer {
   background: #052049;
   color: white;
+  margin-top: 20px;
   padding: 15px;
 }
 @media (min-width: 960px) {

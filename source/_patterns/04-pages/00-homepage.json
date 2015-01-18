@@ -54,6 +54,64 @@
     	}
 		}
 	],
+	"featured-events" : [
+		{ 
+  		"img": {
+				"square": {
+					"src": "../../images/1x1/sample-image-1.jpg",
+					"alt": "UCSF"
+				}
+			},
+			"headline" : {
+				"short" : "Songs for the Season"
+			},
+			"date" : {
+				"short" : "DEC 17"
+			}
+		},
+		{ 
+  		"img": {
+				"square": {
+					"src": "../../images/1x1/sample-image-2.jpg",
+					"alt": "UCSF"
+				}
+			},
+			"headline" : {
+				"short" : "Mission Bay Postdoc Neuroscience Seminar"
+			},
+			"date" : {
+				"short" : "DEC 19"
+			}
+		},
+		{ 
+  		"img": {
+				"square": {
+					"src": "../../images/1x1/sample-image-3.jpg",
+					"alt": "UCSF"
+				}
+			},
+			"headline" : {
+				"short" : "Surgery Journal Club"
+			},
+			"date" : {
+				"short" : "DEC 26"
+			}
+		},
+		{ 
+  		"img": {
+				"square": {
+					"src": "../../images/1x1/sample-image-4.jpg",
+					"alt": "UCSF"
+				}
+			},
+			"headline" : {
+				"short" : "Department of Psychiatry Faculty Meeting"
+			},
+			"date" : {
+				"short" : "DEC 27"
+			}
+		}
+	],
 	"pillar-patients-first" : [
 		{
 			"img": {

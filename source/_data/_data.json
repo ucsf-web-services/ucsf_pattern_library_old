@@ -136,6 +136,12 @@
 		{ },
 		{ }
 	],
+	"featured-events" : [
+		{ },
+		{ },
+		{ },
+		{ }
+	],
 	"pillar-patients-first" : [{}],
 	"pillar-patients-second" : [{}],
 	"pillar-patients-third" : [{}],
