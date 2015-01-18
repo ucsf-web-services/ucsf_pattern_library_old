@@ -7052,7 +7052,7 @@ blockquote {
 }
 /* line 7, ../scss/components/_featured-events.scss */
 .featured-events .headline {
-  margin-bottom: 0;
+  margin-bottom: 10px;
   padding-bottom: 0;
 }
 /* line 12, ../scss/components/_featured-events.scss */
