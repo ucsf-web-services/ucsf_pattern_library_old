@@ -135,10 +135,16 @@ $('#home-post-filter-results').masonry({
       $container.masonry();
 
     });
-      
+    
+    
+    // create the hero background
+    var heroImage = $('.hero-image').attr('data-img');
+    $(".hero-image").css('background-image', 'url(' + heroImage + ')');
       
     // provide some equal heights for various elements
     $('.blog--science ul > li').matchHeight(true);
+    
+    
     
     $('.pillar-content .pillar-2col > .pillar-2col-half').matchHeight(true);
     $('.pillar-content .pillar-3col > .pillar-3col-half, .pillar-content .pillar-3col > .pillar-3col-quarter').matchHeight(true);

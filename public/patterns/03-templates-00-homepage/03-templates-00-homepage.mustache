@@ -1,18 +1,19 @@
 &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
     {{&gt; organisms-header }}
-  &lt;div class=&quot;main&quot; role=&quot;main&quot;&gt;
-      {{# emergency }}
-          {{&gt; molecules-alert:error }}
-      {{/ emergency }}
-      {{# hero }}
-         &lt;!-- {{&gt; molecules-block-hero }} --&gt;
-      {{/ hero}}
+  
+  &lt;div class=&quot;scroll&quot;&gt;
+    {{# hero }}
+       {{&gt; molecules-block-hero }}
+    {{/ hero}}
 
-    {{&gt; organisms-homepage-pillars }}
-    {{&gt; organisms-post-filter }}
-    {{&gt; organisms-featured-events }}
-
-  &lt;/div&gt;
-  &lt;!--End role=main--&gt;
+    &lt;div class=&quot;main&quot; role=&quot;main&quot;&gt;
+      {{&gt; organisms-homepage-pillars }}
+      {{&gt; organisms-post-filter }}
+      {{&gt; organisms-featured-events }}
+    &lt;/div&gt;
+    &lt;!--End role=main--&gt;
+    
     {{&gt; organisms-footer }}
+    
+  &lt;/div&gt;
 &lt;/div&gt;

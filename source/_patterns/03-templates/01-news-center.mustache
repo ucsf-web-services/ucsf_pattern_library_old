@@ -1,48 +1,51 @@
 <div class="page news-page" id="page">
   {{> organisms-header }}
-  <div class="wrapper--main" role="main">
   
-    <div class="wrapper--inner">
-      {{> molecules-nav-section }}
-    </div>
-    <div class="wrapper--inner">
-      
-      <div class="preface-blocks">
-        <div class="preface-block-main content-column--quarter content-column--quarter-3col">
-          {{> organisms-news-rotator }}
-        </div>
-        <div class="preface-block-popular content-column--quarter content-column--quarter-1col">
-          {{> organisms-most-popular }}
-        </div>
-      </div>
-    </div>
+  <div class="scroll">
+    <div class="wrapper--main" role="main">
     
-    <div class="wrapper--outer wrapper--blog">
       <div class="wrapper--inner">
-        {{> organisms-science-blog }}
+        {{> molecules-nav-section }}
       </div>
-    </div>
-    <a id="media"></a>
-    <div class="wrapper--inner">
-      <div class="media-blocks">
-        <div class="media-block-main media-column--quarter media-column--quarter-2col">
-          {{> organisms-media-coverage }}
-        </div>
-        <div class="media-block-second media-column--quarter media-column--quarter-1col">
-          {{> organisms-youtube }}
-        </div>
-        <div class="media-block-third media-column--quarter media-column--quarter-1col">
-          {{> organisms-twitter }}
+      <div class="wrapper--inner">
+        
+        <div class="preface-blocks">
+          <div class="preface-block-main content-column--quarter content-column--quarter-3col">
+            {{> organisms-news-rotator }}
+          </div>
+          <div class="preface-block-popular content-column--quarter content-column--quarter-1col">
+            {{> organisms-most-popular }}
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div class="wrapper--inner">
-      <div class="news-center-masonry">
-        {{> organisms-news-center-latest-news }}
+      
+      <div class="wrapper--outer wrapper--blog">
+        <div class="wrapper--inner">
+          {{> organisms-science-blog }}
+        </div>
+      </div>
+      <a id="media"></a>
+      <div class="wrapper--inner">
+        <div class="media-blocks">
+          <div class="media-block-main media-column--quarter media-column--quarter-2col">
+            {{> organisms-media-coverage }}
+          </div>
+          <div class="media-block-second media-column--quarter media-column--quarter-1col">
+            {{> organisms-youtube }}
+          </div>
+          <div class="media-block-third media-column--quarter media-column--quarter-1col">
+            {{> organisms-twitter }}
+          </div>
+        </div>
+      </div>
+      
+      <div class="wrapper--inner">
+        <div class="news-center-masonry">
+          {{> organisms-news-center-latest-news }}
+        </div>
       </div>
     </div>
+    <!--End role=main-->
+      {{> organisms-footer }}
   </div>
-  <!--End role=main-->
-    {{> organisms-footer }}
 </div>

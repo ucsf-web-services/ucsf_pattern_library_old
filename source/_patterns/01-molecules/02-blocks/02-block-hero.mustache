@@ -1,3 +1,17 @@
-<div class="block block-hero">
-	<img src="../../images/test-assets/hero.png" />
+<div class="hero-wrapper">
+  {{#img.landscape-16x9.src}}
+    {{> atoms-landscape-16x9 }}
+  {{/img.landscape-16x9.src}}
+
+  <div class="hero-image" data-img="{{img.hero-image-bg.src}}"></div>
+  
+  <div class="block block-hero">
+    <div class="hero-header">
+      <h4 class="headline"><a href="#">{{ headline.short }}</a></h4>
+    </div>
+    
+    <div class="hero-excerpt">
+      <p>{{ excerpt.short }}</p>
+    </div>
+  </div>
 </div>

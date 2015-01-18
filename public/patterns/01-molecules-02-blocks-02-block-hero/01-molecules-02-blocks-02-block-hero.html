@@ -54,15 +54,26 @@
 
 </head>
 <body class="body">
-<div class="block block-hero">
-	<img src="../../images/test-assets/hero.png" />
+<div class="hero-wrapper">
+    <img src="../../images/fpo_16x9.png" alt="16x9 Image" />
+  <div class="hero-image" data-img="../../images/fpo_16x9.png"></div>
+  
+  <div class="block block-hero">
+    <div class="hero-header">
+      <h4 class="headline"><a href="#">Lorem ipsum dolor sit (37 characters)</a></h4>
+    </div>
+    
+    <div class="hero-excerpt">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+    </div>
+  </div>
 </div>
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "molecules-block-hero";
-		var lineage        = [];
+		var lineage        = [{"lineagePattern":"atoms-landscape-16x9","lineagePath":"..\/..\/patterns\/00-atoms-04-images-02-landscape-16x9\/00-atoms-04-images-02-landscape-16x9.html"}];
 		var lineageR       = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-00-homepage\/03-templates-00-homepage.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;

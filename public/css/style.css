@@ -3257,14 +3257,14 @@ TYPOGRAPHY
 }
 
 /* line 19, ../scss/global/extends/_decorative-extends.scss */
-.block-hero, .pillar-tabs-wrapper, .post-filter__wrapper {
+.pillar-tabs-wrapper, .post-filter__wrapper {
   border-bottom: 1px solid #b4b9bf;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   /* line 19, ../scss/global/extends/_decorative-extends.scss */
-  .block-hero, .pillar-tabs-wrapper, .post-filter__wrapper {
+  .pillar-tabs-wrapper, .post-filter__wrapper {
     padding-bottom: 40px;
     margin-bottom: 40px;
   }
@@ -5444,7 +5444,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
+.cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events__wrapper:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
 .pillar-content .pillar-bottom-half:after, .pillar-content .pillar-2col:after,
 .pillar-content .pillar-3col:after, .pillar-content .data:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
   content: "";
@@ -6264,31 +6264,38 @@ textarea {
   font: 0.875em/1.71429 "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 14, ../scss/base/_main.scss */
+@media (min-width: 768px) {
+  /* line 14, ../scss/base/_main.scss */
+  .scroll {
+    padding-top: 130px;
+  }
+}
+
+/* line 22, ../scss/base/_main.scss */
 .main {
   max-width: 1190px;
 }
 @media (min-width: 768px) {
-  /* line 14, ../scss/base/_main.scss */
+  /* line 22, ../scss/base/_main.scss */
   .main {
-    padding: 130px 1em 0 1em;
+    padding: 0 1em 0 1em;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 27, ../scss/base/_main.scss */
+  /* line 35, ../scss/base/_main.scss */
   .wrapper--main {
-    padding-top: 150px;
+    padding-top: 20px;
     padding-bottom: 0;
   }
 }
 
-/* line 34, ../scss/base/_main.scss */
+/* line 42, ../scss/base/_main.scss */
 .wrapper--outer {
   width: 100%;
 }
 
-/* line 40, ../scss/base/_main.scss */
+/* line 48, ../scss/base/_main.scss */
 .wrapper--inner {
   max-width: 1190px;
   padding-left: 10px;
@@ -7204,6 +7211,148 @@ blockquote {
   background-color: white;
   border-bottom: 1px solid #f0f0f0;
   z-index: 999;
+}
+
+/* line 1, ../scss/components/_hero.scss */
+.hero-wrapper {
+  width: auto;
+  display: block;
+  position: relative;
+}
+/* line 8, ../scss/components/_hero.scss */
+.hero-wrapper img {
+  display: block;
+}
+/* line 12, ../scss/components/_hero.scss */
+.hero-wrapper .hero-image {
+  display: none;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  /* line 1, ../scss/components/_hero.scss */
+  .hero-wrapper {
+    min-height: 360px;
+  }
+  /* line 36, ../scss/components/_hero.scss */
+  .hero-wrapper img {
+    display: none;
+  }
+  /* line 39, ../scss/components/_hero.scss */
+  .hero-wrapper .hero-image {
+    display: block;
+  }
+  /* line 42, ../scss/components/_hero.scss */
+  .hero-wrapper .block-hero {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@media (min-width: 960px) {
+  /* line 1, ../scss/components/_hero.scss */
+  .hero-wrapper {
+    min-height: 520px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 1, ../scss/components/_hero.scss */
+  .hero-wrapper {
+    min-height: 630px;
+  }
+}
+
+/* line 60, ../scss/components/_hero.scss */
+.block-hero {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+@media (min-width: 960px) {
+  /* line 60, ../scss/components/_hero.scss */
+  .block-hero {
+    max-width: 1190px;
+  }
+}
+/* line 71, ../scss/components/_hero.scss */
+.block-hero .hero-header {
+  position: relative;
+  background: white;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  /* line 71, ../scss/components/_hero.scss */
+  .block-hero .hero-header {
+    width: 420px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -120px;
+    margin-left: -210px;
+  }
+}
+/* line 86, ../scss/components/_hero.scss */
+.block-hero .hero-header h4 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 0;
+  color: #178CCB;
+}
+@media (min-width: 768px) {
+  /* line 86, ../scss/components/_hero.scss */
+  .block-hero .hero-header h4 {
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+}
+/* line 98, ../scss/components/_hero.scss */
+.block-hero .hero-header h4 a {
+  text-decoration: none;
+  color: #178CCB;
+}
+/* line 102, ../scss/components/_hero.scss */
+.block-hero .hero-header h4 a:hover {
+  color: rgba(23, 140, 203, 0.75);
+}
+/* line 109, ../scss/components/_hero.scss */
+.block-hero .hero-excerpt {
+  z-index: 2;
+  padding: 10px 15px 20px 15px;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  background: white;
+  border-top: 4px solid #178CCB;
+  color: #333333;
+}
+@media (min-width: 768px) {
+  /* line 109, ../scss/components/_hero.scss */
+  .block-hero .hero-excerpt {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    padding: 10px 15px 20px 15px;
+    font-size: 18px;
+    line-height: 22px;
+    background: rgba(255, 255, 255, 0.9);
+  }
 }
 
 /* line 5, ../scss/components/_media_coverage.scss */

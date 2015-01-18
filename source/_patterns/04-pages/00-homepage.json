@@ -38,13 +38,20 @@
 		{
 			"img": {
 				"landscape-16x9": {
-					"src": "../../images/sample/landscape-16x9-mountains.jpg",
-					"alt": "Mountains"	
+					"src": "../../images/panorama-mobile.jpg",
+					"alt": "UCSF"
+				},
+				"hero-image-bg": {
+					"src": "/images/panorama.jpg",
+					"alt": "UCSF"
 				}
 			},
 			"headline" : {
-				"medium" : "Top 10 mountain ranges for hiking"
-			}
+				"short" : "Leading Revolutions in Health"
+			},
+			"excerpt" : {
+    		"short" : "UC San Francisco is driven by the idea that when the best research, the best education and the best patient care converge, great breakthroughs are achieved."
+    	}
 		}
 	],
 	"pillar-patients-first" : [

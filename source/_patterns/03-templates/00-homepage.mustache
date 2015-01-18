@@ -1,18 +1,19 @@
 <div class="page" id="page">
     {{> organisms-header }}
-  <div class="main" role="main">
-      {{# emergency }}
-          {{> molecules-alert:error }}
-      {{/ emergency }}
-      {{# hero }}
-         <!-- {{> molecules-block-hero }} -->
-      {{/ hero}}
+  
+  <div class="scroll">
+    {{# hero }}
+       {{> molecules-block-hero }}
+    {{/ hero}}
 
-    {{> organisms-homepage-pillars }}
-    {{> organisms-post-filter }}
-    {{> organisms-featured-events }}
-
-  </div>
-  <!--End role=main-->
+    <div class="main" role="main">
+      {{> organisms-homepage-pillars }}
+      {{> organisms-post-filter }}
+      {{> organisms-featured-events }}
+    </div>
+    <!--End role=main-->
+    
     {{> organisms-footer }}
+    
+  </div>
 </div>

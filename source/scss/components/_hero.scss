@@ -1,3 +1,139 @@
+.hero-wrapper {
+  width: auto;
+  display: block;
+  position: relative;
+  @extend .cf;
+  
+  
+  img {
+    display: block;
+  }
+  
+  .hero-image {
+    display: none;
+    z-index: 0;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background-position: center center;
+    background-attachment: fixed;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  @include breakpoint($bp--small-up) {
+    
+  }
+  @include breakpoint($bp--medium-up) {
+    min-height: 360px;
+    //display: block;
+    img {
+      display: none;
+    }
+    .hero-image {
+      display: block;
+    }
+    .block-hero {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  @include breakpoint($bp--large-up) {
+    min-height: 520px;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    min-height: 630px;
+  }
+}
+
+
+
 .block-hero {
-  @extend %component-footer;
+  position: relative;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+  
+  @include breakpoint($bp--large-up) {
+    max-width: $site-width;
+  }
+  
+  .hero-header {
+    position: relative;
+    
+    background: $white;
+    padding: 20px;
+    
+    @include breakpoint($bp--medium-up) {
+      width: 420px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -120px;
+      margin-left: -210px;
+    }
+    
+    h4 {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 0;
+      
+      @include breakpoint($bp--medium-up) {
+        font-size: 44px;
+        line-height: 50px;
+        margin-bottom: 10px;
+      }
+      color: $color--electric-blue;
+      
+      a {
+        text-decoration: none;
+        color: $color--electric-blue;
+        
+        &:hover {
+          color: rgba($color--electric-blue, 0.75);
+        }
+      }
+    }
+  }
+  
+  .hero-excerpt {   
+    z-index: 2;
+    @extend .cf;
+    padding: 10px 15px 20px 15px;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    background: $white;
+    border-top: 4px solid $color--electric-blue;
+    
+    color: $color--gray--darker;
+    
+    @include breakpoint($bp--medium-up) {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      right: 10px;
+      
+      padding: 10px 15px 20px 15px;
+      font-size: 18px;
+      line-height: 22px;
+      background: rgba($white, 0.9);
+      
+      
+      
+    }
+    
+    
+  }
 }

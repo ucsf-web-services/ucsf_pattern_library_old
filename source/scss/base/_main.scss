@@ -11,12 +11,20 @@ textarea {
   font: 0.875em/1.71429 $default-font;
 }
 
+.scroll {
+  
+  @include breakpoint($bp--medium-up) {
+    padding-top: 130px;
+  }
+}
+
+
 .main {
   max-width: $site-width;
   @extend .center;
 
   @include breakpoint($bp--medium-up) {
-    padding: 130px $pad 0 $pad;
+    padding: 0 $pad 0 $pad;
   }
 }
 
@@ -26,7 +34,7 @@ textarea {
 }
 .wrapper--main {
   @include breakpoint($bp--medium-up) {
-    padding-top: 150px;
+    padding-top: 20px;
     padding-bottom: 0;
   }
 }
