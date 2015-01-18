@@ -72,7 +72,7 @@
 		{
 			"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-3.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -89,7 +89,7 @@
 		{
 			"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-4.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -106,7 +106,7 @@
 		{
 			"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-2.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -134,7 +134,7 @@
 		{
 			"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-6.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -151,7 +151,7 @@
 		{
 			"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-5.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -168,7 +168,7 @@
 		{
 			"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-2.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -185,7 +185,7 @@
 		{
 			"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-4.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -202,7 +202,7 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-7.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -245,7 +245,7 @@
 		{
   		"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-2.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -262,7 +262,7 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-1.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -283,7 +283,7 @@
 		{
   		"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-4.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -311,7 +311,7 @@
 		{
   		"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-5.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -339,7 +339,7 @@
 		{
 			"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-2.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -371,7 +371,7 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-1.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -392,7 +392,7 @@
 		{
   		"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-5.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -409,7 +409,7 @@
 		{
   		"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-4.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -437,7 +437,7 @@
 		{
   		"img": {
 				"landscape-4x3": {
-    			"src": "../../images/fpo_4x3.png",
+    			"src": "../../images/4x3/sample-image-2.jpg",
     			"alt": "4x3 Image"
     		}
 			},
@@ -454,7 +454,7 @@
     {
       "img": {
 				"landscape-16x9": {
-    			"src": "../../images/16x9/sample-image-1.jpg",
+    			"src": "../../images/16x9/sample-image-2.jpg",
     			"alt": "UCSF Students Graduating"
     		}
 			},

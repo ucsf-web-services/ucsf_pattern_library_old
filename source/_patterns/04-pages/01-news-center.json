@@ -38,7 +38,7 @@
 		{
   		"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-1.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -53,7 +53,7 @@
 		{
   		"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-2.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -68,7 +68,7 @@
 		{
   		"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-3.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -83,7 +83,7 @@
 		{
   		"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-4.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -98,7 +98,7 @@
 		{
   		"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-5.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -113,7 +113,7 @@
 		{
   		"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-6.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -128,7 +128,7 @@
 		{
   		"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-7.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -138,21 +138,6 @@
 			},
 			"headline" : {
 				"short" : "E-Cigarettes Expose People to More Than ‘Harmless’ Water Vapor"
-			}
-		},
-		{
-  		"img": {
-				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
-    		}
-			},
-			"term" : {
-				"name" : "Education",
-				"class" : "btn--term--education"
-			},
-			"headline" : {
-				"short" : "Lifestyle Changes May Lengthen Telomeres, A Measure of Cell Aging"
 			}
 		}
   ],
@@ -187,7 +172,7 @@
 		{
 			"img": {
     		"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-5.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -237,7 +222,7 @@
 		{
 			"img": {
     		"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-3.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -253,7 +238,7 @@
 		{
 			"img": {
     		"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-6.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -271,7 +256,7 @@
 		{
 			"img": {
     		"square": {
-					"src": "../../images/fpo_square.png",
+					"src": "../../images/1x1/sample-image-2.jpg",
           "alt": "Square Thumbnail"
 				}
 			},
@@ -285,7 +270,7 @@
 		{
 			"img": {
     		"square": {
-					"src": "../../images/fpo_square.png",
+					"src": "../../images/1x1/sample-image-4.jpg",
           "alt": "Square Thumbnail"
 				}
 			},
@@ -299,7 +284,7 @@
 		{
 			"img": {
     		"square": {
-					"src": "../../images/fpo_square.png",
+					"src": "../../images/1x1/sample-image-6.jpg",
           "alt": "Square Thumbnail"
 				}
 			},
@@ -394,7 +379,7 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-5.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -415,8 +400,8 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
+    			"src": "../../images/4x3/sample-image-1.jpg",
+    			"alt": "4x3 Image"
     		}
 			},
 			"term" : {
@@ -436,7 +421,7 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-7.jpg",
     			"alt": "16x9 Image"
     		},
     		"square": {
@@ -461,8 +446,8 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
+    			"src": "../../images/1x1/sample-image-2.jpg",
+    			"alt": "1x1 Image"
     		}
 			},
 			"term" : {
@@ -482,8 +467,8 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
+    			"src": "../../images/4x3/sample-image-3.jpg",
+    			"alt": "4x3 Image"
     		}
 			},
 			"term" : {
@@ -503,7 +488,7 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-6.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -524,8 +509,8 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
+    			"src": "../../images/1x1/sample-image-1.jpg",
+    			"alt": "1x1 Image"
     		}
 			},
 			"term" : {
@@ -545,7 +530,7 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-2.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -584,8 +569,8 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
+    			"src": "../../images/4x3/sample-image-7.jpg",
+    			"alt": "4x3 Image"
     		}
 			},
 			"term" : {
@@ -623,8 +608,8 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
+    			"src": "../../images/1x1/sample-image-5.jpg",
+    			"alt": "1x1 Image"
     		}
 			},
 			"term" : {
@@ -644,7 +629,7 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
+    			"src": "../../images/16x9/sample-image-3.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -683,8 +668,8 @@
 		{
 			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/fpo_16x9.png",
-    			"alt": "16x9 Image"
+    			"src": "../../images/4x3/sample-image-4.jpg",
+    			"alt": "4x3 Image"
     		}
 			},
 			"term" : {
