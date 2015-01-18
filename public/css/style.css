@@ -8095,12 +8095,11 @@ blockquote {
   margin-bottom: 0;
   color: #58595b;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1190px) {
   /* line 136, ../scss/components/_pillar-content.scss */
   .pillar-content .data h4 {
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 10px;
   }
 }
 /* line 149, ../scss/components/_pillar-content.scss */
@@ -8110,8 +8109,16 @@ blockquote {
 /* line 154, ../scss/components/_pillar-content.scss */
 .pillar-content .data .readmore {
   font-size: 10px;
+  margin-top: 10px;
+  display: none;
 }
-/* line 157, ../scss/components/_pillar-content.scss */
+@media (min-width: 1190px) {
+  /* line 154, ../scss/components/_pillar-content.scss */
+  .pillar-content .data .readmore {
+    display: block;
+  }
+}
+/* line 161, ../scss/components/_pillar-content.scss */
 .pillar-content .data .readmore a {
   color: #333333;
 }

@@ -139,10 +139,10 @@
       line-height: 18px;
       margin-bottom: 0;
       
-      @include breakpoint($bp--xlarge-up) {
+      @include breakpoint($bp--xxlarge-up) {
         font-size: 20px;
         line-height: 22px;
-        margin-bottom: 10px;
+        
       }
       color: $color--gray-darker;
       
@@ -153,7 +153,11 @@
     
     .readmore {
       font-size: 10px;
-      
+      margin-top: 10px;
+      display: none;
+      @include breakpoint($bp--xxlarge-up) {
+        display: block;  
+      }
       a {
         
         color: $color--gray--darker;
