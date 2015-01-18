@@ -203,8 +203,19 @@ $('#home-post-filter-results').masonry({
       move: 0,                        //{NEW} Integer: Number of carousel items that should move on animation. If 0, slider will move all visible items.
                                       
       // Callback API
-      start: function(){},            //Callback: function(slider) - Fires when the slider loads the first slide
-      before: function(){},           //Callback: function(slider) - Fires asynchronously with each slider animation
+      start: function(){
+        // fix disabled arrows
+        $('.flex-prev, .flex-next').click(function(){
+          var disabledItem = $(this).hasClass('flex-disabled');
+          if (!disabledItem) {
+            console.log('disabled');
+            return false;  
+          }
+        });
+      },            //Callback: function(slider) - Fires when the slider loads the first slide
+      before: function(){
+        
+      },           //Callback: function(slider) - Fires asynchronously with each slider animation
       after: function(){},            //Callback: function(slider) - Fires after each slider animation completes
       end: function(){},              //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
       added: function(){},            //{NEW} Callback: function(slider) - Fires after a slide is added
@@ -231,10 +242,10 @@ $('#home-post-filter-results').masonry({
       randomize: false,               //Boolean: Randomize slide order
       
       // Usability features
-      pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+      pauseOnAction: false,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
       pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
       useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
-      touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
+      touch: false,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
       video: false,                   //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
       
       // Primary Controls
@@ -244,7 +255,7 @@ $('#home-post-filter-results').masonry({
       nextText: '<button class="btn btn--transparent" data-toggle="dropdown" type="button"><em class="fa fa-forward fa-lg fa-lone"></em></button>',               //String: Set the text for the "next" directionNav item
       
       // Secondary Navigation
-      keyboard: true,                 //Boolean: Allow slider navigating via keyboard left/right keys
+      keyboard: false,                 //Boolean: Allow slider navigating via keyboard left/right keys
       multipleKeyboard: false,        //{NEW} Boolean: Allow keyboard navigation to affect multiple sliders. Default behavior cuts out keyboard navigation with more than one slider present.
       mousewheel: false,              //{UPDATED} Boolean: Requires jquery.mousewheel.js (https://github.com/brandonaaron/jquery-mousewheel) - Allows slider navigating via mousewheel
       pausePlay: false,               //Boolean: Create pause/play dynamic element
@@ -255,17 +266,19 @@ $('#home-post-filter-results').masonry({
       controlsContainer: "",          //{UPDATED} Selector: USE CLASS SELECTOR. Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be ".flexslider-container". Property is ignored if given element is not found.
       manualControls: "",             //Selector: Declare custom control navigation. Examples would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
       sync: "",                       //{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.
-      asNavFor: "",                   //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
+      asNavFor: ".flexslider",                   //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
       
       // Carousel Options
       itemWidth: 120,                   //{NEW} Integer: Box-model width of individual carousel items, including horizontal borders and padding.
       itemMargin: 10,                  //{NEW} Integer: Margin between carousel items.
-      minItems: 3,                    //{NEW} Integer: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
+      minItems: 5,                    //{NEW} Integer: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
       maxItems: 5,                    //{NEW} Integer: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.
-      move: 0,                        //{NEW} Integer: Number of carousel items that should move on animation. If 0, slider will move all visible items.
+      move: 5,                        //{NEW} Integer: Number of carousel items that should move on animation. If 0, slider will move all visible items.
                                       
       // Callback API
-      start: function(){},            //Callback: function(slider) - Fires when the slider loads the first slide
+      start: function(){
+        
+      },            //Callback: function(slider) - Fires when the slider loads the first slide
       before: function(){},           //Callback: function(slider) - Fires asynchronously with each slider animation
       after: function(){},            //Callback: function(slider) - Fires after each slider animation completes
       end: function(){},              //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
@@ -274,4 +287,5 @@ $('#home-post-filter-results').masonry({
       
     });
   });  
+  
 })(jQuery);

@@ -153,9 +153,19 @@
     left: 0;
     right: 0;
     
+    
+    
     li {
       //@extend .cf;
       z-index: 1;
+      
+      a.flex-disabled {
+        .btn {
+          color: $color--gray--light;
+          border: 1px solid $color--gray--light;
+        }
+          
+      }
       .btn {
         border: 1px solid $color--electric-blue;
         color: $color--electric-blue;
@@ -168,6 +178,8 @@
           border-color: lighten($color--electric-blue, 10%);
           color: lighten($color--electric-blue, 10%);
         }
+        
+        
         
         .fa {
           margin: 0;

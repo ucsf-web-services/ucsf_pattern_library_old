@@ -7840,11 +7840,16 @@ blockquote {
   left: 0;
   right: 0;
 }
-/* line 156, ../scss/components/_news-rotator.scss */
+/* line 158, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li {
   z-index: 1;
 }
-/* line 159, ../scss/components/_news-rotator.scss */
+/* line 163, ../scss/components/_news-rotator.scss */
+.rotator__wrapper ul.flex-direction-nav li a.flex-disabled .btn {
+  color: #989898;
+  border: 1px solid #989898;
+}
+/* line 169, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn {
   border: 1px solid #178CCB;
   color: #178CCB;
@@ -7853,45 +7858,45 @@ blockquote {
   line-height: 30px;
   margin-bottom: 0;
 }
-/* line 167, ../scss/components/_news-rotator.scss */
+/* line 177, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn:hover {
   border-color: #2ea6e7;
   color: #2ea6e7;
 }
-/* line 172, ../scss/components/_news-rotator.scss */
+/* line 184, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .btn .fa {
   margin: 0;
 }
-/* line 177, ../scss/components/_news-rotator.scss */
+/* line 189, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-prev {
   position: absolute;
   left: 0;
   top: 50%;
   margin-top: -20px;
 }
-/* line 183, ../scss/components/_news-rotator.scss */
+/* line 195, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-prev .btn {
   padding-left: 6px;
 }
-/* line 188, ../scss/components/_news-rotator.scss */
+/* line 200, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-next {
   position: absolute;
   right: 0;
   top: 50%;
   margin-top: -20px;
 }
-/* line 194, ../scss/components/_news-rotator.scss */
+/* line 206, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ul.flex-direction-nav li .flex-next .btn {
   padding-right: 6px;
 }
-/* line 200, ../scss/components/_news-rotator.scss */
+/* line 212, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ol.flex-control-nav {
   z-index: 2;
   list-style-type: none;
   margin: 0;
   padding: 0 50px;
 }
-/* line 206, ../scss/components/_news-rotator.scss */
+/* line 218, ../scss/components/_news-rotator.scss */
 .rotator__wrapper ol.flex-control-nav li {
   z-index: 2;
   display: inline-block;
