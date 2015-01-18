@@ -7,21 +7,22 @@ $breakpoint-no-query-fallbacks: false; // Breakpoint will output fallback select
 $breakpoint-to-ems: false; // Breakpoint will convert all media queries to use EMs rather than PX
 
 // sign posts
-$width-xsmall   : 480px;
-$width-small   : 680px;
+$width-xsmall  : 480px;
+$width-small   : 480px;
 $width-medium  : 768px;
-$width-large   : 960px;
+$width-large   : 1024px;
 $width-xlarge  : 1024px;
 // design max-width
 $width-xxlarge : 1190px; // 1170 size visually without padding
 
 // Breakpoint variables are prefixed with "$bp--"
 // Mobile-first queries
-$bp--small-up  : $width-small;
-$bp--medium-up : $width-medium;
-$bp--large-up  : $width-large;
-$bp--xlarge-up: $width-xlarge;
-$bp--xxlarge-up: $width-xxlarge;
+$bp--xsmall-up  : $width-xsmall;
+$bp--small-up   : $width-small;
+$bp--medium-up  : $width-medium;
+$bp--large-up   : $width-large;
+$bp--xlarge-up  : $width-xlarge;
+$bp--xxlarge-up : $width-xxlarge;
 
 // Fenced queries
 //$bp--xsmall    : max-width $width-small - 1;

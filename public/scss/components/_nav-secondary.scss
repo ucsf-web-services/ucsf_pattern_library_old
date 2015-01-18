@@ -24,6 +24,10 @@
   margin: 0; }
 .nav-secondary .btn {
   margin-bottom: 0; }
-@media only screen and (min-width: 960px) {
+
+
+ @include breakpoint($bp--large-up) {
   .nav-secondary {
-    display: block; } }
+    display: block; 
+  } 
+}

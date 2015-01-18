@@ -9,9 +9,7 @@
       // array of widths in pixels where breakpoints
       // should be triggered
       breakpoints: [
-        300,
         480,
-        640,
         768,
         1024,
         1190
@@ -26,28 +24,9 @@
       type: 'default', //Types: default, vertical, accordion
       width: 'auto', //auto or any width like 600px
       fit: true,   // 100% fit in a container
-      /*
-activate: function (event) { // Callback function if tab is switched
-        //var $tab = $(this);
-        //var $info = $('#tabInfo');
-        //var $name = $('span', $info);
-
-        //$name.text($tab.text());
-
-        //$info.show();
-      },
-*/
       closed: 'accordion' // Start closed if in accordion view
       
     });
-    
-    /*
-$('#home-post-filter-results').masonry({
-      //columnWidth: 290,
-      "isFitWidth": true,
-      itemSelector: '#post-filter-results li.masonry-sizer'
-    });
-*/
     
     var $container = $('#post-filter-results');
     //var itemWidthMatch = $('#post-filter-results li.masonry-sizer');
@@ -64,27 +43,9 @@ $('#home-post-filter-results').masonry({
       $container.masonry();
     });
 
-    $(window).bind('enterBreakpoint300',function() {
-      $container.masonry({
-        //columnWidth: 290
-        "isFitWidth": true,
-        itemSelector: "#post-filter-results li.masonry-sizer",
-        "stamp": ".big-article"
-      });
-    });
-
     $(window).bind('enterBreakpoint480',function() {
       $container.masonry({
         //columnWidth: 440
-        "isFitWidth": true,
-        itemSelector: "#post-filter-results li.masonry-sizer",
-        "stamp": ".big-article"
-      });
-    });
-
-    $(window).bind('enterBreakpoint640',function() {
-      $container.masonry({
-        //columnWidth: 320
         "isFitWidth": true,
         itemSelector: "#post-filter-results li.masonry-sizer",
         "stamp": ".big-article"

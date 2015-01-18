@@ -508,7 +508,9 @@ class Builder {
 			preg_match_all("/@media.*(min|max)-width:([ ]+)?(([0-9]{1,5})(\.[0-9]{1,20}|)(px|em))/",$data,$matches);
 			foreach ($matches[3] as $match) {
 				if (!in_array($match,$mqs)) {
-					$mqs[] = $match;
+  				if ($match != '767px') { // remove this only for the purposes of patternlab.
+    			  $mqs[] = $match;	
+  				}
 				}
 			}	
 		}
