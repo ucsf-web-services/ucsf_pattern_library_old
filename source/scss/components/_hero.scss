@@ -50,7 +50,7 @@
   @include breakpoint($bp--large-up) {
     min-height: 520px;
   }
-  @include breakpoint($bp--xlarge-up) {
+  @include breakpoint($bp--xxlarge-up) {
     min-height: 630px;
   }
 }

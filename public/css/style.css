@@ -7249,7 +7249,7 @@ blockquote {
     min-height: 520px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1190px) {
   /* line 1, ../scss/components/_hero.scss */
   .hero-wrapper {
     min-height: 630px;
