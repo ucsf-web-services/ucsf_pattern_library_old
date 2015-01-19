@@ -62,8 +62,16 @@ pre {
 }
 
 
+/**
+  * Some elements in PatternLabs just look ridiculous full width on the 'all' page
+  * and should be kept tidy by applying a max width when they are being shown on 
+  * the 'all' page
+  */
 $styleguide-maxwidth: 500px;
 
+#atoms-landscape-4x3,
+#atoms-landscape-16x9,
+#atoms-square,
 #molecules-block-content-quarter-2by2col,
 #molecules-block-content-quarter-2col,
 #molecules-block-content-quarter,

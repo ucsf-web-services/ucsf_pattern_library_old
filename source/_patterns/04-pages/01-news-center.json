@@ -231,7 +231,7 @@
     			"alt": "16x9 Image"
     		}
 			},
-			"author" : "UCSFMedicalCenter",
+			"remote-account" : "UCSFMedicalCenter",
 			"views" : "2106",
 			"date" : {
 				"ago" : "8 Months ago"
@@ -247,7 +247,7 @@
     			"alt": "16x9 Image"
     		}
 			},
-			"author" : "UCSF",
+			"remote-account" : "UCSF",
 			"views" : "8643",
 			"date" : {
 				"ago" : "10 Months ago"

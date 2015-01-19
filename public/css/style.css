@@ -8335,7 +8335,15 @@ pre {
   padding: 40px;
 }
 
-/* line 85, ../scss/patternlab/_styleguide-specific.scss */
+/**
+  * Some elements in PatternLabs just look ridiculous full width on the 'all' page
+  * and should be kept tidy by applying a max width when they are being shown on 
+  * the 'all' page
+  */
+/* line 93, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-landscape-4x3 .sg-pattern-body,
+#atoms-landscape-16x9 .sg-pattern-body,
+#atoms-square .sg-pattern-body,
 #molecules-block-content-quarter-2by2col .sg-pattern-body,
 #molecules-block-content-quarter-2col .sg-pattern-body,
 #molecules-block-content-quarter .sg-pattern-body,
@@ -8356,7 +8364,7 @@ pre {
   max-width: 500px;
 }
 
-/* line 92, ../scss/patternlab/_styleguide-specific.scss */
+/* line 100, ../scss/patternlab/_styleguide-specific.scss */
 #organisms-header .header {
   position: relative;
   top: 0;
