@@ -8,6 +8,15 @@
  * These styles will not be your production CSS.
  */
 
+#sg-viewport {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#sg-patterns {
+  max-width: $site-width;
+  margin: 0 auto;
+}
 
 // Style Guide color swatches
 .sg-colors {
@@ -51,3 +60,30 @@ pre {
 #sg-patterns {
   padding: 40px;
 }
+
+
+$styleguide-maxwidth: 500px;
+
+#molecules-block-content-quarter-2by2col,
+#molecules-block-content-quarter-2col,
+#molecules-block-content-quarter,
+#molecules-block-post-no-image,
+#molecules-block-post,
+#molecules-block-event-small,
+#molecules-block-blog-small,
+#molecules-media-coverage-small,
+#molecules-youtube-small,
+#molecules-twitter-small,
+#molecules-popular-small,
+#molecules-login-form,
+#molecules-subscribe-form,
+#organisms-media-coverage,
+#organisms-twitter,
+#organisms-youtube,
+#organisms-most-popular
+{
+  .sg-pattern-body {
+    max-width: $styleguide-maxwidth;
+  }
+}
+

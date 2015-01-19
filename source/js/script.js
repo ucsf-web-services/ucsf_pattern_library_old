@@ -29,7 +29,7 @@
       
     });
     
-    var $container = $('#post-filter-results');
+    var $container = $('#masonry--homepage .masonry-results, #masonry--news-center .masonry-results');
     //var itemWidthMatch = $('#post-filter-results li.masonry-sizer');
     // initialize
     $container.masonry({
@@ -89,25 +89,6 @@
         "stamp": ".big-article"
       });
     });
-
-    /**
-     * Initialize Select replacement
-     */
-
-    $('.js-selecter').selecter();
-
-    $(document).on( "click", "#post-filter-tags input", function() {
-      $('#post-filter-results > li').not('.more').hide();
-
-
-      $('#post-filter-tags').find('input:checked').each(function () {
-        $('#post-filter-results > li.' + $(this).attr('rel')).show();
-      });
-
-      $container.masonry();
-
-    });
-    
     
     // create the hero background
     var heroImage = $('.hero-image').attr('data-img');
