@@ -8356,4 +8356,10 @@ pre {
   max-width: 500px;
 }
 
+/* line 92, ../scss/patternlab/_styleguide-specific.scss */
+#organisms-header .header {
+  position: relative;
+  top: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
