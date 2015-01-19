@@ -132,7 +132,7 @@
 				"name" : "News Story",
 				"class" : "btn--ctype--news-story"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -149,7 +149,7 @@
 			"headline" : {
 				"short" : "UCSF Medical Center"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Visit Website",
 				"class" : ""
 			}
@@ -166,7 +166,7 @@
 			"headline" : {
 				"short" : "UCSF Benioff Childrens Hospital"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Visit Website",
 				"class" : ""
 			}
@@ -183,7 +183,7 @@
 			"headline" : {
 				"short" : "UCSF Dental Center"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Visit Website",
 				"class" : ""
 			}
@@ -211,7 +211,7 @@
 			"headline" : {
 				"short" : "Committed to the City"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -228,7 +228,7 @@
 			"headline" : {
 				"short" : "Community and Government Relations"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Visit Website",
 				"class" : ""
 			}
@@ -245,7 +245,7 @@
 			"headline" : {
 				"short" : "150th Anniversary"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -262,7 +262,7 @@
 			"headline" : {
 				"short" : "Projects"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -283,7 +283,7 @@
 				"name" : "News Story",
 				"class" : "btn--ctype--news-story"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -322,7 +322,7 @@
 			"headline" : {
 				"short" : "Registrar"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Visit Website",
 				"class" : ""
 			}
@@ -343,7 +343,7 @@
 				"name" : "News Story",
 				"class" : "btn--ctype--news-story"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -360,7 +360,7 @@
 			"headline" : {
 				"short" : "Student Inside Guide"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Visit Website",
 				"class" : ""
 			}
@@ -388,7 +388,7 @@
 			"headline" : {
 				"short" : "150th Anniversary"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -420,7 +420,7 @@
 				"name" : "News Story",
 				"class" : "btn--ctype--news-story"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -452,7 +452,7 @@
 				"name" : "News Story",
 				"class" : "btn--ctype--news-story"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -469,7 +469,7 @@
 			"headline" : {
 				"short" : "150th Anniversary"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -486,7 +486,7 @@
 			"headline" : {
 				"short" : "UCSF Alumni"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Visit Website",
 				"class" : ""
 			}
@@ -514,7 +514,7 @@
 			"headline" : {
 				"short" : "Alumni Weekend"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}
@@ -538,7 +538,7 @@
 				"name" : "Education",
 				"class" : "btn--term--education"
 			},
-			"link" : {
+			"node-link" : {
 				"name" : "Read More",
 				"class" : ""
 			}

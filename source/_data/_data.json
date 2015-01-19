@@ -185,7 +185,7 @@
 		"name" : "Content Type",
 		"class" : "btn--ctype"
 	},
-	"link" : {
+	"node-link" : {
 		"name" : "Read More",
 		"class" : ""
 	},
