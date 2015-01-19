@@ -68,13 +68,9 @@ module.exports = function(grunt) {
 //        },
         files: [
           'source/**/*',
-          '!**/source/scss/**', // watch:scss has this
-          '!**/source/css/**', // watch:scss has this
-          '!**/source/images/icons/src/**', // watch:icons has this
-          '!**/source/images/icons/templates/*', // watch:icons has this
-          '!**/source/images/icons/unused-library/*', // watch:icons has this
-          //'!**/source/images/icons/output/**', // watch:icons has this
-          '!**/bower_components/**' // IGNORE bower_components
+          '!source/scss/**', // watch:scss has this
+          '!source/css/**' // watch:scss has this
+          
         ],
         tasks: [
           'shell:pattern_lab_build',
@@ -166,14 +162,13 @@ module.exports = function(grunt) {
 
       dist: {
         // [REQUIRED] Path to the build you're using for development.
-        "devFile" : "source/js/modernizr-dev.js",
+        "devFile" : "source/js/modernizr/modernizr-dev.js",
 
         // [REQUIRED] Path to save out the built file.
-        "outputFile" : "source/js/modernizr-custom.js",
+        "outputFile" : "source/js/modernizr/modernizr-custom.js",
 
         // Based on default settings on http://modernizr.com/download/
         "extra" : {
-          "shiv" : true,
           "shiv" : true,
           "printshiv" : false,
           "load" : true,
@@ -311,7 +306,6 @@ module.exports = function(grunt) {
     'parallel:watch'
   ]);
 };
-
 
 
 
