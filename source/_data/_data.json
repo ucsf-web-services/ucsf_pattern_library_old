@@ -189,5 +189,10 @@
 	},
 	"date" : {
 		"short" : "December 11, 2014"
+	},
+	"logo-link" : {
+  	"title" : "Home",
+		"url" : "#",
+	  "class" : ""
 	}
 }

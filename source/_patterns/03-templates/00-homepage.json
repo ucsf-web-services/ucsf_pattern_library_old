@@ -1,4 +1,9 @@
 {
+  "logo-link" : {
+  	"title" : "Home",
+		"url" : "/patterns/03-templates-00-homepage/03-templates-00-homepage.html",
+	  "class" : ""
+	},
 	"navigation" : [
 		{
 			"title" : "About",
@@ -22,7 +27,7 @@
 		},
 		{
 			"title" : "News Center",
-			"url" : "/patterns/04-pages-01-news-center/04-pages-01-news-center.html",
+			"url" : "/patterns/03-templates-01-news-center/03-templates-01-news-center.html",
 		  "class" : ""
 		},
 		{

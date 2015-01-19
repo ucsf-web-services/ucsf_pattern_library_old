@@ -2,6 +2,11 @@
 	"title" : "Home Page",
 	"bodyClass": "home",
 	"emergency" : false,
+	"logo-link" : {
+  	"title" : "Home",
+		"url" : "/patterns/04-pages-00-homepage/04-pages-00-homepage.html",
+	  "class" : ""
+	},
 	"navigation" : [
 		{
 			"title" : "About",
