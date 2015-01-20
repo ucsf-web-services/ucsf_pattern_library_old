@@ -1,14 +1,14 @@
 {
-  "name": "PatternLabStarter",
+  "name": "UCSFPatternLab",
   "version": "0.1.0",
-  "description": "Pattern Lab Starter",
+  "description": "PatternLab implementation for UCSF",
   "main": "public/index.html",
   "scripts": {
     "test": "ls"
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:phase2tech/pattern-lab-starter.git"
+    "url": "git@bitbucket.org:phase2tech/ucsf-pattern-lab.git"
   },
   "keywords": [
     "pattern-lab"

@@ -56,7 +56,7 @@ module.exports = function(grunt) {
           base: 'public',
           keepalive: true,
           livereload: true,
-          open: true
+          open: false
         }
       }
     },
@@ -67,10 +67,16 @@ module.exports = function(grunt) {
 //          spawn: false
 //        },
         files: [
-          'source/**/*',
-          '!source/scss/**', // watch:scss has this
-          '!source/css/**' // watch:scss has this
-          
+          //'source/**/*',
+          //'!source/scss/**', // watch:scss has this
+          //'!source/css/**', // watch:scss has this
+          'source/_data/**/*',
+          'source/_patterns/**/*',
+          'source/fonts/**/*',
+          'source/images/**/*',
+          'source/js/**/*',
+          '!source/js/modernizr/**',
+          '!source/bower_components/**' // IGNORE bower_components
         ],
         tasks: [
           'shell:pattern_lab_build',
