@@ -18,6 +18,65 @@
   margin: 0 auto;
 }
 
+#atoms-fonts {
+  h3 {
+    
+  }
+  p {
+    margin: 0;
+    font-size: 12px;
+    
+    strong {
+      text-transform: uppercase;
+      text-align: left;
+      font-size: 11px;
+      font-family: $font-body--medium;
+    }
+  }
+  .font-type {
+    @extend .cf;
+  }
+  .font-sample {
+    margin-bottom: 30px;
+    
+    @include breakpoint($bp--large-up) {
+      float: left;
+      width: 50%;  
+    }
+  }
+  // fallbacks for demo or class usage
+  .font-headline {
+    font-family: $font-headline;
+  }
+  .font-headline--italic {
+    font-family: $font-headline--italic;
+  }
+  .font-headline--bold {
+    font-family: $font-headline--bold;
+  }
+  .font-body {
+    font-family: $font-body;
+  }
+  .font-body--italic {
+    font-family: $font-body--italic;
+  }
+  .font-body--bold {
+    font-family: $font-body--bold;
+  }
+  .font-body--light {
+    font-family: $font-body--light;
+  }
+  .font-body--light--italic {
+    font-family: $font-body--light--italic;
+  }
+  .font-body--medium {
+    font-family: $font-body--medium;
+  }
+  .font-body--medium--italic {
+    font-family: $font-body--medium--italic;
+  }
+}
+
 // Style Guide color swatches
 #atoms-colors {
   overflow: hidden;
@@ -51,7 +110,19 @@
       width: 24%;
     }
   }
-  
+  h5.headline {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .palette {
+
+    h3 {
+      text-transform: uppercase;
+      text-align: left;
+      font-size: 11px;
+      font-family: $font-body--medium;
+    }
+  }
   .palette .color:last-child {
     border-radius: 5px;
   }

@@ -5059,7 +5059,7 @@ h6, .zeta {
 /* line 16, ../scss/base/_helper-classes.scss */
 .cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events:after, .featured-events__wrapper:after, #gallery-rotator:after, #gallery-rotator ul.slides:after, #gallery-rotator ul.slides li:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
 .pillar-content .pillar-bottom-half:after, .pillar-content .pillar-2col:after,
-.pillar-content .pillar-3col:after, .pillar-content .data:after, .resp-tab-content:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after {
+.pillar-content .pillar-3col:after, .pillar-content .data:after, .resp-tab-content:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after, #atoms-fonts .font-type:after {
   content: "";
   display: table;
   clear: both;
@@ -6514,8 +6514,8 @@ blockquote {
 .block-more a {
   display: block;
   padding: 10px;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 26px;
   width: 100%;
   color: #052049;
   background-color: #f0f0f0;
@@ -8470,11 +8470,75 @@ h2.resp-accordion {
   margin: 0 auto;
 }
 
-/* line 22, ../scss/patternlab/_styleguide-specific.scss */
+/* line 25, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts p {
+  margin: 0;
+  font-size: 12px;
+}
+/* line 29, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts p strong {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 11px;
+  font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 39, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-sample {
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  /* line 39, ../scss/patternlab/_styleguide-specific.scss */
+  #atoms-fonts .font-sample {
+    float: left;
+    width: 50%;
+  }
+}
+/* line 48, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-headline {
+  font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+}
+/* line 51, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-headline--italic {
+  font-family: granjon-italic, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+}
+/* line 54, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-headline--bold {
+  font-family: granjon-bold, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+}
+/* line 57, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-body {
+  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 60, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-body--italic {
+  font-family: HelveticaNeue-italic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 63, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-body--bold {
+  font-family: HelveticaNeue-bold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 66, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-body--light {
+  font-family: HelveticaNeue-light, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 69, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-body--light--italic {
+  font-family: HelveticaNeue-light-italic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 72, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-body--medium {
+  font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 75, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-fonts .font-body--medium--italic {
+  font-family: HelveticaNeue-medium-italic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+/* line 81, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors {
   overflow: hidden;
 }
-/* line 24, ../scss/patternlab/_styleguide-specific.scss */
+/* line 83, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors > li {
   overflow: hidden;
   border: 1px solid #ccc;
@@ -8482,7 +8546,7 @@ h2.resp-accordion {
   margin: 0;
   box-sizing: border-box;
 }
-/* line 30, ../scss/patternlab/_styleguide-specific.scss */
+/* line 89, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors > li .sg-swatch {
   display: block;
   height: 50px;
@@ -8490,41 +8554,53 @@ h2.resp-accordion {
   width: 33%;
   outline: dotted 1px gray;
 }
-/* line 37, ../scss/patternlab/_styleguide-specific.scss */
+/* line 96, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors > li .sg-info {
   line-height: 1;
   float: right;
   width: 66%;
 }
 @media (min-width: 768px) {
-  /* line 24, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 83, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors > li {
     float: left;
     width: 49%;
     margin-right: 1%;
   }
-  /* line 46, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 105, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors > li .sg-swatch {
     height: 100px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 24, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 83, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors > li {
     width: 24%;
   }
 }
-/* line 55, ../scss/patternlab/_styleguide-specific.scss */
+/* line 113, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-colors h5.headline {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+/* line 119, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-colors .palette h3 {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 11px;
+  font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 126, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette .color:last-child {
   border-radius: 5px;
 }
 
-/* line 60, ../scss/patternlab/_styleguide-specific.scss */
+/* line 131, ../scss/patternlab/_styleguide-specific.scss */
 pre {
   margin-top: 0;
 }
 
-/* line 64, ../scss/patternlab/_styleguide-specific.scss */
+/* line 135, ../scss/patternlab/_styleguide-specific.scss */
 #sg-patterns {
   padding: 40px;
 }
@@ -8534,7 +8610,7 @@ pre {
   * and should be kept tidy by applying a max width when they are being shown on 
   * the 'all' page
   */
-/* line 100, ../scss/patternlab/_styleguide-specific.scss */
+/* line 171, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-landscape-4x3 .sg-pattern-body,
 #atoms-landscape-4x3-with-caption .sg-pattern-body,
 #atoms-landscape-16x9 .sg-pattern-body,
@@ -8561,7 +8637,7 @@ pre {
   max-width: 500px;
 }
 
-/* line 107, ../scss/patternlab/_styleguide-specific.scss */
+/* line 178, ../scss/patternlab/_styleguide-specific.scss */
 #organisms-header .header {
   position: relative;
   top: 0;
