@@ -5,11 +5,9 @@
         {{# rotator-items }}
         <li class="" data-thumb="{{ img.landscape-4x3.src }}">
           <a href="#" class="slideshow-popup">Full Screen</a>
-          <div class="image">
-            {{#img.landscape-4x3.src}}
-              {{> atoms-landscape-4x3 }}
-            {{/img.landscape-4x3.src}}
-          </div>
+          {{#img.landscape-4x3.src}}
+            {{> atoms-landscape-4x3 }}
+          {{/img.landscape-4x3.src}}
           <div class="data">
             <div class="excerpt">
               {{# paragraphs }}
