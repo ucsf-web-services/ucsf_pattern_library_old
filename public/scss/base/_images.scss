@@ -25,6 +25,32 @@ img[width], img[height] {
 /**
  * Image placement variations.
  */
+.embedded-image {
+  width: 100%;
+  margin-top: 20px;
+  
+  &.img--left,
+  &.img--right {
+    margin-bottom: 0;  
+  }
+  
+  
+  img {
+    display: block;
+  }
+  @include breakpoint($bp--medium-up) {
+    width: 40%;
+  }
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 10px 0;
+}
+.image {
+  
+}
 .img--right {
   float: right;
   margin-bottom: 24px;

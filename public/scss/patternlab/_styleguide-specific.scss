@@ -19,7 +19,7 @@
 }
 
 // Style Guide color swatches
-.sg-colors {
+#atoms-colors {
   overflow: hidden;
   >li {
     overflow: hidden;
@@ -39,7 +39,7 @@
       float: right;
       width: 66%;
     }
-    @media all and (min-width: 400px) {
+    @include breakpoint($bp--medium-up) {
       float: left;
       width: 49%;
       margin-right: 1%;
@@ -47,9 +47,13 @@
         height: 100px;
       }
     }
-    @media all and (min-width: 700px) {
+    @include breakpoint($bp--large-up) {
       width: 24%;
     }
+  }
+  
+  .palette .color:last-child {
+    border-radius: 5px;
   }
 }
 

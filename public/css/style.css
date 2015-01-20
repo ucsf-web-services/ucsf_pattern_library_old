@@ -5555,20 +5555,47 @@ img[width], img[height] {
  * Image placement variations.
  */
 /* line 28, ../scss/base/_images.scss */
+.embedded-image {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 32, ../scss/base/_images.scss */
+.embedded-image.img--left, .embedded-image.img--right {
+  margin-bottom: 0;
+}
+/* line 38, ../scss/base/_images.scss */
+.embedded-image img {
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 28, ../scss/base/_images.scss */
+  .embedded-image {
+    width: 40%;
+  }
+}
+
+/* line 46, ../scss/base/_images.scss */
+.caption {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 10px 0;
+}
+
+/* line 54, ../scss/base/_images.scss */
 .img--right {
   float: right;
   margin-bottom: 24px;
   margin-left: 24px;
 }
 
-/* line 33, ../scss/base/_images.scss */
+/* line 59, ../scss/base/_images.scss */
 .img--left {
   float: left;
   margin-right: 24px;
   margin-bottom: 24px;
 }
 
-/* line 38, ../scss/base/_images.scss */
+/* line 64, ../scss/base/_images.scss */
 .img--center {
   display: block;
   margin-right: auto;
@@ -5582,17 +5609,17 @@ img[width], img[height] {
  * Please note, these will not work too nicely with fluid images and will
  * distort when resized below a certain width. Use with caution.
  */
-/* line 50, ../scss/base/_images.scss */
+/* line 76, ../scss/base/_images.scss */
 .img--short {
   height: 120px;
 }
 
-/* line 53, ../scss/base/_images.scss */
+/* line 79, ../scss/base/_images.scss */
 .img--medium {
   height: 240px;
 }
 
-/* line 56, ../scss/base/_images.scss */
+/* line 82, ../scss/base/_images.scss */
 .img--tall {
   height: 360px;
 }
@@ -5600,7 +5627,7 @@ img[width], img[height] {
 /**
  * Images in `figure` elements.
  */
-/* line 62, ../scss/base/_images.scss */
+/* line 88, ../scss/base/_images.scss */
 figure > img {
   display: block;
 }
@@ -8444,11 +8471,11 @@ h2.resp-accordion {
 }
 
 /* line 22, ../scss/patternlab/_styleguide-specific.scss */
-.sg-colors {
+#atoms-colors {
   overflow: hidden;
 }
 /* line 24, ../scss/patternlab/_styleguide-specific.scss */
-.sg-colors > li {
+#atoms-colors > li {
   overflow: hidden;
   border: 1px solid #ccc;
   padding: 0.3em;
@@ -8456,7 +8483,7 @@ h2.resp-accordion {
   box-sizing: border-box;
 }
 /* line 30, ../scss/patternlab/_styleguide-specific.scss */
-.sg-colors > li .sg-swatch {
+#atoms-colors > li .sg-swatch {
   display: block;
   height: 50px;
   float: left;
@@ -8464,36 +8491,40 @@ h2.resp-accordion {
   outline: dotted 1px gray;
 }
 /* line 37, ../scss/patternlab/_styleguide-specific.scss */
-.sg-colors > li .sg-info {
+#atoms-colors > li .sg-info {
   line-height: 1;
   float: right;
   width: 66%;
 }
-@media all and (min-width: 400px) {
+@media (min-width: 768px) {
   /* line 24, ../scss/patternlab/_styleguide-specific.scss */
-  .sg-colors > li {
+  #atoms-colors > li {
     float: left;
     width: 49%;
     margin-right: 1%;
   }
   /* line 46, ../scss/patternlab/_styleguide-specific.scss */
-  .sg-colors > li .sg-swatch {
+  #atoms-colors > li .sg-swatch {
     height: 100px;
   }
 }
-@media all and (min-width: 700px) {
+@media (min-width: 1024px) {
   /* line 24, ../scss/patternlab/_styleguide-specific.scss */
-  .sg-colors > li {
+  #atoms-colors > li {
     width: 24%;
   }
 }
+/* line 55, ../scss/patternlab/_styleguide-specific.scss */
+#atoms-colors .palette .color:last-child {
+  border-radius: 5px;
+}
 
-/* line 56, ../scss/patternlab/_styleguide-specific.scss */
+/* line 60, ../scss/patternlab/_styleguide-specific.scss */
 pre {
   margin-top: 0;
 }
 
-/* line 60, ../scss/patternlab/_styleguide-specific.scss */
+/* line 64, ../scss/patternlab/_styleguide-specific.scss */
 #sg-patterns {
   padding: 40px;
 }
@@ -8503,7 +8534,7 @@ pre {
   * and should be kept tidy by applying a max width when they are being shown on 
   * the 'all' page
   */
-/* line 96, ../scss/patternlab/_styleguide-specific.scss */
+/* line 100, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-landscape-4x3 .sg-pattern-body,
 #atoms-landscape-4x3-with-caption .sg-pattern-body,
 #atoms-landscape-16x9 .sg-pattern-body,
@@ -8530,7 +8561,7 @@ pre {
   max-width: 500px;
 }
 
-/* line 103, ../scss/patternlab/_styleguide-specific.scss */
+/* line 107, ../scss/patternlab/_styleguide-specific.scss */
 #organisms-header .header {
   position: relative;
   top: 0;
