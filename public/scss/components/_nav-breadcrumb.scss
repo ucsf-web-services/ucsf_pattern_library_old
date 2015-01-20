@@ -1,0 +1,28 @@
+.breadcrumb {
+  font-size: 12px;
+  line-height: 18px;
+  color: $color--gray--light;
+  font-family: $font-body--bold;
+  margin-top: 20px;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+    li {
+      display: inline-block;
+      
+      a {
+        color: $color--electric-blue;
+        
+        &:after {
+          content: " >";
+        }
+      }
+      span {
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,484 @@
+{
+	"title" : "Gallery Page",
+	"bodyClass": "gallery",
+	"emergency" : false,
+	"logo-link" : {
+  	"title" : "Home",
+		"url" : "/patterns/04-pages-00-homepage/04-pages-00-homepage.html",
+	  "class" : ""
+	},
+	"breadcrumb" : [
+		{
+			"title" : "Home",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "UCSF Art & Architecture at Mission Bay: Changing the Landscape",
+			"url" : false,
+		  "class" : ""
+		}
+  ],
+	"navigation" : [
+		{
+			"title" : "About",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Patient Care",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Research",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Education",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "News Center",
+			"url" : "/patterns/04-pages-01-news-center/04-pages-01-news-center.html",
+		  "class" : ""
+		},
+		{
+			"title" : "Inside UCSF",
+			"url" : "#",
+		  "class" : ""
+		}
+  ],
+  "node" : [
+    {
+      "title" : "UCSF Art & Architecture at Mission Bay: Changing the Landscape",
+      "author" : {
+        "full-name" : "Suzanne Leigh"
+      },
+      "date" : {
+				"short" : "August 12, 2014"
+			}
+    }
+  ],
+  "rotator-items" : [
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/4x3/sample-image-1.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"paragraphs" : [
+  			{
+    			"excerpt" : {
+      		  "short" : "Along the shores of San Francisco Bay, just south of AT&T Park, a long-underused swath of land began to realize a potential greater than anything the city could have imagined when, in 2003, UCSF opened Genentech Hall, the first building on its Mission Bay campus, San Francisco."
+    		  }
+    		},
+    		{
+    			"excerpt" : {
+      		  "short" : "The moon rises over the construction site for the UCSF Medical Center scheduled to open in 2015 as San Francisco’s first new hospital in 30 years."
+    		  }
+    		},
+    		{
+    			"excerpt" : {
+      		  "short" : "Photo by Mark Citret."
+    		  }
+    		}
+			]
+		},
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/4x3/sample-image-2.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"paragraphs" : [
+  			{
+    			"excerpt" : {
+      		  "short" : "Along the shores of San Francisco Bay, just south of AT&T Park, a long-underused swath of land began to realize a potential greater than anything the city could have imagined when, in 2003, UCSF opened Genentech Hall, the first building on its Mission Bay campus, San Francisco."
+    		  }
+    		},
+    		{
+    			"excerpt" : {
+      		  "short" : "Photo by Mark Citret."
+    		  }
+    		}
+			]
+		},
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/4x3/sample-image-3.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"paragraphs" : [
+  			{
+    			"excerpt" : {
+      		  "short" : "Along the shores of San Francisco Bay, just south of AT&T Park, a long-underused swath of land began to realize a potential greater than anything the city could have imagined when, in 2003, UCSF opened Genentech Hall, the first building on its Mission Bay campus, San Francisco."
+    		  }
+    		},
+    		{
+    			"excerpt" : {
+      		  "short" : "Photo by Mark Citret."
+    		  }
+    		}
+			]
+		},
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/4x3/sample-image-4.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"paragraphs" : [
+  			{
+    			"excerpt" : {
+      		  "short" : "Along the shores of San Francisco Bay, just south of AT&T Park, a long-underused swath of land began to realize a potential greater than anything the city could have imagined when, in 2003, UCSF opened Genentech Hall, the first building on its Mission Bay campus, San Francisco."
+    		  }
+    		},
+    		{
+    			"excerpt" : {
+      		  "short" : "Photo by Mark Citret."
+    		  }
+    		}
+			]
+		},
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/4x3/sample-image-5.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"paragraphs" : [
+  			{
+    			"excerpt" : {
+      		  "short" : "Along the shores of San Francisco Bay, just south of AT&T Park, a long-underused swath of land began to realize a potential greater than anything the city could have imagined when, in 2003, UCSF opened Genentech Hall, the first building on its Mission Bay campus, San Francisco."
+    		  }
+    		},
+    		{
+    			"excerpt" : {
+      		  "short" : "Photo by Mark Citret."
+    		  }
+    		}
+			]
+		},
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/4x3/sample-image-6.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"paragraphs" : [
+  			{
+    			"excerpt" : {
+      		  "short" : "Along the shores of San Francisco Bay, just south of AT&T Park, a long-underused swath of land began to realize a potential greater than anything the city could have imagined when, in 2003, UCSF opened Genentech Hall, the first building on its Mission Bay campus, San Francisco."
+    		  }
+    		},
+    		{
+    			"excerpt" : {
+      		  "short" : "Photo by Mark Citret."
+    		  }
+    		}
+			]
+		},
+		{
+  		"img": {
+				"landscape-4x3": {
+    			"src": "../../images/4x3/sample-image-7.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"paragraphs" : [
+  			{
+    			"excerpt" : {
+      		  "short" : "Along the shores of San Francisco Bay, just south of AT&T Park, a long-underused swath of land began to realize a potential greater than anything the city could have imagined when, in 2003, UCSF opened Genentech Hall, the first building on its Mission Bay campus, San Francisco."
+    		  }
+    		},
+    		{
+    			"excerpt" : {
+      		  "short" : "Photo by Mark Citret."
+    		  }
+    		}
+			]
+		}
+  ],
+	"most-read" : [
+		{
+			"headline" : {
+				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
+			},
+			"date" : {
+				"short" : "December 18, 2014"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Biological Basis Found for Sensory Processing Disorders in Kids"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "E-Cigarettes Expose People to More Than ‘Harmless’ Water Vapor"
+			},
+			"date" : {
+				"short" : "December 10, 2014"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Lifestyle Changes May Lengthen Telomeres, A Measure of Cell Aging"
+			},
+			"date" : {
+				"short" : "December 6, 2014"
+			}
+		}
+  ],
+	"featured-events" : [
+		{ 
+  		"img": {
+				"square": {
+					"src": "../../images/1x1/sample-image-1.jpg",
+					"alt": "UCSF"
+				}
+			},
+			"headline" : {
+				"short" : "Songs for the Season"
+			},
+			"date" : {
+				"short" : "DEC 17"
+			}
+		},
+		{ 
+  		"img": {
+				"square": {
+					"src": "../../images/1x1/sample-image-2.jpg",
+					"alt": "UCSF"
+				}
+			},
+			"headline" : {
+				"short" : "Mission Bay Postdoc Neuroscience Seminar"
+			},
+			"date" : {
+				"short" : "DEC 19"
+			}
+		},
+		{ 
+  		"img": {
+				"square": {
+					"src": "../../images/1x1/sample-image-3.jpg",
+					"alt": "UCSF"
+				}
+			},
+			"headline" : {
+				"short" : "Surgery Journal Club"
+			},
+			"date" : {
+				"short" : "DEC 26"
+			}
+		},
+		{ 
+  		"img": {
+				"square": {
+					"src": "../../images/1x1/sample-image-4.jpg",
+					"alt": "UCSF"
+				}
+			},
+			"headline" : {
+				"short" : "Department of Psychiatry Faculty Meeting"
+			},
+			"date" : {
+				"short" : "DEC 27"
+			}
+		}
+	],
+  "homepage-latest-news-first" : [
+    {
+      "img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-2.jpg",
+    			"alt": "UCSF Students Graduating"
+    		}
+			},
+			"headline" : {
+				"short" : "Chancellor Sam Hawgood learns about how he found the magic at UCSF more than 30 years ago"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"node-link" : {
+				"name" : "Read More",
+				"class" : ""
+			}
+    }
+  ],
+	"related-posts" : [
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+				"short" : "Williams Recieves President's Research Catalyst Award to Address Prison Health Care Crisis"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		}
+	],
+	"explore-news" : [
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-5.jpg",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/4x3/sample-image-1.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-7.jpg",
+    			"alt": "16x9 Image"
+    		},
+    		"square": {
+					"src": "../../images/fpo_square.png",
+          "alt": "Square Thumbnail"
+				}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+				"short" : "Williams Recieves President's Research Catalyst Award to Address Prison Health Care Crisis"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/1x1/sample-image-2.jpg",
+    			"alt": "1x1 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Employees of the New Mission Bay Hospitals Treated to Celebratory Party"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		}
+	],
+	"inset-blocks" : [
+		{
+			"headline" : "This is the headline for the inset block"
+		}
+	],
+	"latest-block" : [
+		{
+			"headline" : "This is the headline for the latest block"
+		}
+	]
+}

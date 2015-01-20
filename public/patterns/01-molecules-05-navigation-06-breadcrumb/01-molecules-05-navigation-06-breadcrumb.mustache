@@ -1,0 +1,8 @@
+&lt;div id=&quot;breadcrumb&quot; class=&quot;breadcrumb&quot;&gt;
+  &lt;ul&gt;
+    {{# breadcrumb }}
+      {{# url }}&lt;li&gt;&lt;a class=&quot;{{ class }}&quot; href=&quot;{{ url }}&quot;&gt;{{ title }}&lt;/a&gt;&lt;/li&gt;{{/ url }}
+      {{^ url }}&lt;li&gt;&lt;span class=&quot;{{ class }}&quot;&gt;{{ title }}&lt;/span&gt;&lt;/li&gt;{{/ url }}
+    {{/ breadcrumb }}
+  &lt;/ul&gt;
+&lt;/div&gt;

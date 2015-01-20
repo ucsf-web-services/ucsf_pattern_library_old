@@ -1,0 +1,14 @@
+<div class="masonry--block-wrapper post-filter__wrapper">
+  <div id="masonry--explore-news" class="post-filter">
+    <h2 class="headline with--border">Explore Other UCSF News <a type="button" class="btn btn--more btn--transparent">See More</a></h2>
+    <div class="post-filter-results__wrapper">
+      <ul id="post-filter-results" class="masonry-results post-filter__results">
+        {{# explore-news }}
+        <li class="masonry-sizer">
+          <div class="post-filter__results__inner">{{> molecules-block-post }}</div>
+        </li>
+        {{/ explore-news }}
+      </ul>
+    </div>
+  </div>
+</div>

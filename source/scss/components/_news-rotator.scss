@@ -86,7 +86,8 @@
     padding: 0 40px;
     display: none;
     
-    @include breakpoint($bp--small-up) {
+    // the carousel seems clunky on smaller screens
+    @include breakpoint($bp--large-up) {
       display: block;  
     }
   }

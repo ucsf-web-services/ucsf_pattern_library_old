@@ -1,0 +1,62 @@
+// customizations for gallery rotator
+#gallery-rotator {
+  @extend .cf;
+  position: relative;
+  
+  padding-bottom: 45px;
+  border-bottom: 1px solid $color--gray--borders;
+  margin-bottom: 30px;
+  
+  // popup thing
+  .slideshow-popup {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    
+    height: 32px;
+    width: 32px;
+    background: url('../images/slideshow-popup.png') no-repeat center center;
+    
+    text-indent: -9999em;
+  }
+  
+  // adjustments to primary news rotator
+  ul.slides {
+    @extend .cf;
+    li {
+      @extend .cf;
+      background: $color--gray;
+      
+      .image {
+        @include breakpoint($bp--large-up) {
+          width: 75%;
+          float: left;  
+        }
+      }
+      
+      .data {
+        position: relative;
+        border-bottom: 0;
+        background: transparent;
+        font-size: 13px;
+        line-height: 18px;
+        color: $black;
+        
+        @include breakpoint($bp--large-up) {
+          width: 25%;
+          float: left;
+        }
+        
+        @extend %remove-margins;
+      }
+    }
+  }
+  // adjustments to carousel navigation
+  ul.thumbnail-carousel-navigation {
+    li {
+      max-height: 100px;
+      min-height: 100px;
+    }  
+  }
+}

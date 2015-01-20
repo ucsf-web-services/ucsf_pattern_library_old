@@ -11,6 +11,10 @@ textarea {
   font: 0.875em/1.71429 $default-font;
 }
 
+p {
+  margin: 1em 0;
+}
+
 .scroll {
   
   @include breakpoint($bp--medium-up) {

@@ -1,0 +1,37 @@
+&lt;div id=&quot;gallery-rotator&quot; class=&quot;rotator__wrapper custom-color-element&quot;&gt;
+  &lt;div class=&quot;rotator--inner&quot;&gt;
+    &lt;div class=&quot;flexslider__wrapper flexslider&quot;&gt;
+      &lt;ul class=&quot;slides&quot;&gt;  
+        {{# rotator-items }}
+        &lt;li class=&quot;&quot; data-thumb=&quot;{{ img.landscape-4x3.src }}&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;slideshow-popup&quot;&gt;Full Screen&lt;/a&gt;
+          &lt;div class=&quot;image&quot;&gt;
+            {{#img.landscape-4x3.src}}
+              {{&gt; atoms-landscape-4x3 }}
+            {{/img.landscape-4x3.src}}
+          &lt;/div&gt;
+          &lt;div class=&quot;data&quot;&gt;
+            &lt;div class=&quot;excerpt&quot;&gt;
+              {{# paragraphs }}
+              &lt;p&gt;{{ excerpt.short }}&lt;/p&gt;
+              {{/ paragraphs }}
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/li&gt;
+        {{/ rotator-items }}
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;flexslider-carousel&quot;&gt;
+      &lt;ul class=&quot;thumbnail-carousel-navigation&quot;&gt;
+        {{# rotator-items }}
+        &lt;li&gt;
+          {{#img.landscape-4x3.src}}
+            {{&gt; atoms-landscape-4x3 }}
+          {{/img.landscape-4x3.src}}
+        &lt;/li&gt;
+        {{/ rotator-items }}
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;

@@ -1,0 +1,62 @@
+{
+  "breadcrumb" : [
+		{
+			"title" : "Home",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Title of this Gallery page",
+			"url" : false,
+		  "class" : ""
+		}
+  ],
+  "node" : [
+    {
+      "title" : "This is a Gallery node page",
+      "author" : {
+        "full-name" : "node author"
+      },
+      "date" : {
+				"short" : "December 17, 2014"
+			}
+    }
+  ],
+  "logo-link" : {
+  	"title" : "Home",
+		"url" : "/patterns/03-templates-00-homepage/03-templates-00-homepage.html",
+	  "class" : ""
+	},
+	"navigation" : [
+		{
+			"title" : "About",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Patient Care",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Research",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Education",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "News Center",
+			"url" : "/patterns/03-templates-01-news-center/03-templates-01-news-center.html",
+		  "class" : ""
+		},
+		{
+			"title" : "Pulse of UCSF",
+			"url" : "#",
+		  "class" : ""
+		}
+  ]
+}

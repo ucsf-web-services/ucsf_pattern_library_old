@@ -1,0 +1,14 @@
+{
+	"breadcrumb" : [
+		{
+			"title" : "Home",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Title of the page you are on",
+			"url" : false,
+		  "class" : ""
+		}
+  ]
+}

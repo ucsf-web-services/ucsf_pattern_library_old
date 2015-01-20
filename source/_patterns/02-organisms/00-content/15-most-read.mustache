@@ -1,0 +1,12 @@
+<div id="most-read" class="popular__wrapper">
+  <div class="popular--inner">
+    <h2 class="headline">Most Read » <a class="title-icon" href="{{ url }}"><span class="element-invisible">Most Popular RSS Feed</span><i class="fa fa-rss-square"></i></a></h2>
+    <ul>
+      {{# most-read }}
+      <li>
+        {{> molecules-most-read-small }}
+      </li>
+      {{/ most-read }}
+    </ul>
+  </div>
+</div>

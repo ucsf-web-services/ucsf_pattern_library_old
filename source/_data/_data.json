@@ -41,8 +41,10 @@
 		"info" : "By Author on September 22, 2014"
 	},
 	"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
+	"caption" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
 	"url" : "#",
 	"remote-account" : "Joe Schmoe",
+	
 	"views" : "42",
 	"name" : {
 		"first": "Lacy",
@@ -82,8 +84,9 @@
 	},
 	"seconds" : "31",
 	"author" : {
-		"first-name": "Author",
-		"last-name": "Name"
+		"first-name": "Joe",
+		"last-name": "Schmoe",
+		"full-name" : "Joe Schmoe"
 	},
 	"hero": true,
 	"emergency" : false,
@@ -110,6 +113,17 @@
 		{ },
 		{ }
 	],
+	"related-posts" : [
+		{ },
+		{ },
+		{ }
+	],
+	"explore-news" : [
+		{ },
+		{ },
+		{ },
+		{ }
+	],
 	"videos" : [
 		{ },
 		{ }
@@ -129,6 +143,9 @@
 		{ },
 		{ }
 	],
+	"node" : [
+  	{ }
+	],
 	"media-coverage" : [
 		{ },
 		{ },
@@ -140,6 +157,12 @@
 	],
 	"popular" : [
 		{ },
+		{ },
+		{ },
+		{ },
+		{ }
+	],
+	"most-read" : [
 		{ },
 		{ },
 		{ },
@@ -176,7 +199,9 @@
 	"pillar-alumni-third" : [{}],
 	"pillar-alumni-fourth" : [{}],
 	"pillar-alumni-fifth" : [{}],
+	
 	"homepage-latest-news-first" : [{}],
+	"paragraphs" : [{}],
 	"term" : {
 		"name" : "Primary Term",
 		"class" : "btn--term"

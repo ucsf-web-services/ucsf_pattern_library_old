@@ -1,0 +1,37 @@
+<div id="gallery-rotator" class="rotator__wrapper custom-color-element">
+  <div class="rotator--inner">
+    <div class="flexslider__wrapper flexslider">
+      <ul class="slides">  
+        {{# rotator-items }}
+        <li class="" data-thumb="{{ img.landscape-4x3.src }}">
+          <a href="#" class="slideshow-popup">Full Screen</a>
+          <div class="image">
+            {{#img.landscape-4x3.src}}
+              {{> atoms-landscape-4x3 }}
+            {{/img.landscape-4x3.src}}
+          </div>
+          <div class="data">
+            <div class="excerpt">
+              {{# paragraphs }}
+              <p>{{ excerpt.short }}</p>
+              {{/ paragraphs }}
+            </div>
+          </div>
+        </li>
+        {{/ rotator-items }}
+      </ul>
+    </div>
+    <div class="flexslider-carousel">
+      <ul class="thumbnail-carousel-navigation">
+        {{# rotator-items }}
+        <li>
+          {{#img.landscape-4x3.src}}
+            {{> atoms-landscape-4x3 }}
+          {{/img.landscape-4x3.src}}
+        </li>
+        {{/ rotator-items }}
+      </ul>
+    </div>
+    
+  </div>
+</div>

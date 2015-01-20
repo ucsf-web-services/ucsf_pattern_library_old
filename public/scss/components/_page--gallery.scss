@@ -1,0 +1,23 @@
+// related articles and explore news blocks
+.masonry--block-wrapper {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  
+  .post-filter {
+    h2.headline {
+      
+    } 
+  }
+}
+
+@include breakpoint($bp--large-up) {
+  .content-main {
+    margin-bottom: 0;
+    padding-right: 15px;
+  }
+  .content-sidebar {
+    margin-top: 0;
+    padding-left: 15px;
+  }
+}

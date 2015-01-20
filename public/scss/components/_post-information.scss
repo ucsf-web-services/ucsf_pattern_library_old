@@ -1,0 +1,20 @@
+.post-information {
+  font-size: 12px;
+  line-height: 18px;
+  color: $color--gray--light;
+  margin-bottom: 20px;
+  
+  .submitted {
+    
+    a {
+      font-family: $font-body--bold;
+    }
+  }
+}
+
+.submitted-date {
+  font-size: 12px;
+  line-height: 18px;
+  color: $color--gray--light;
+  font-family: $font-body--bold;
+}

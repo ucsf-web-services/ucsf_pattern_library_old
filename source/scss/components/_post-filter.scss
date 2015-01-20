@@ -7,11 +7,13 @@
     margin: 0 auto;
   }
   
+  
+}
+#masonry--homepage {
   h2.headline {
     margin-bottom: 0;
   }
 }
-
 .post-filter__wrapper {
   @extend %component-footer;
   

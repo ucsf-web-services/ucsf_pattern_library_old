@@ -1,0 +1,26 @@
+<div class="page gallery-page" id="page">
+  {{> organisms-header }}
+  <div class="scroll">
+    <div class="wrapper--main" role="main">
+      <div class="wrapper--inner">
+        {{> molecules-breadcrumb }}
+      </div>
+      
+      <div class="wrapper--inner">
+        <div class="content-columns">
+          <div class="content-main content-column--quarter content-column--quarter-3col">
+            {{> molecules-node-post-information }}
+            {{> organisms-gallery-rotator }}
+          </div>
+          <div class="content-sidebar content-column--quarter content-column--quarter-1col">
+            {{> organisms-most-read }}
+          </div>
+        </div>
+      </div>
+      <div class="wrapper--inner">
+        {{> organisms-related-articles }}
+        {{> organisms-explore-news }}
+      </div>
+    {{> organisms-footer }}
+  </div>
+</div>

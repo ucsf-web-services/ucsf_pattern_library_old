@@ -29,7 +29,7 @@
       
     });
     
-    var $container = $('#masonry--homepage .masonry-results, #masonry--news-center .masonry-results');
+    var $container = $('#masonry--homepage .masonry-results, #masonry--news-center .masonry-results, #masonry--related .masonry-results, #masonry--explore-news .masonry-results');
     //var itemWidthMatch = $('#post-filter-results li.masonry-sizer');
     // initialize
     $container.masonry({

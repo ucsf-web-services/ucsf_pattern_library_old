@@ -99,6 +99,25 @@ h1, h2, h3, h4, h5, h6 {
       padding-bottom: 5px;
       margin-bottom: 18px;
     }
+    
+    &.page-title {
+      font-size: 24px;
+      
+      padding-bottom: 0;
+      margin-top: 5px;
+      margin-bottom: 8px;
+      
+      @include breakpoint($bp--large-up) {
+        font-size: 36px;
+        line-height: 32px;
+      }
+    }
+    
+    &.with--border {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid $color--gray--borders;
+    }
   }
 }
 
