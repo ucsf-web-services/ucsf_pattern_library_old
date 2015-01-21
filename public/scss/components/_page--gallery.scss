@@ -11,6 +11,10 @@
   }
 }
 
+.content-main {
+  margin-bottom: 40px;
+}
+
 @include breakpoint($bp--large-up) {
   .content-main {
     margin-bottom: 0;

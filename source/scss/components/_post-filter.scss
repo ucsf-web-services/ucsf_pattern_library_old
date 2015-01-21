@@ -143,8 +143,10 @@
 
 .post-filter-results__wrapper {
   
+  margin: 0 -15px;
+  
   @include breakpoint($bp--medium-up) {
-    margin: 0 -15px;
+    
   }
   
 }

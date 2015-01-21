@@ -1,29 +1,39 @@
-.preface-column--quarter,
-.media-column--quarter {
+.preface-column--quarter {
   @extend %preface-column-4;
 }
-
 .preface-column--quarter-1col {
   @extend %preface-column-4-1col;
 }
-
 .preface-column--quarter-2col {
   @extend %preface-column-4-2col;
 }
-
-
-.media-column--quarter-1col {
-  @extend %preface-column-4-1col;
-}
-
-.media-column--quarter-2col {
-  @extend %preface-column-4-2col;
-}
-
-
 .preface-column--quarter-3col {
   @extend %preface-column-4-3col;
 }
+
+.media-column--quarter {
+  @include breakpoint($bp--large-up) {
+    margin: 0;
+  }
+}
+.media-column--quarter-1col {
+  @include breakpoint($bp--medium-up) {
+    float: left;
+    width: 50%;
+  }
+  @include breakpoint($bp--large-up) {
+    width: 25%;
+  }
+}
+.media-column--quarter-2col {
+  @include breakpoint($bp--large-up) {
+    float: left;
+    width: 50%;
+  }
+}
+
+
+
 
 .preface-blocks {
   @extend %content-column-4-wrapper;
@@ -72,22 +82,37 @@
 .media-blocks {
   
   @extend %content-column-4-wrapper;
-  padding-bottom: $pad-double;
+  padding-bottom: 15px;
   border-bottom: 2px solid $color--gray--lighter;
   margin: 0;
-  margin-bottom: $pad-double;
+  margin-bottom: 30px;
 
   .media--coverage__wrapper {
-    @include breakpoint($bp--medium-up) {
+    margin-bottom: 30px;
+    
+    @include breakpoint($bp--large-up) {
+      margin-bottom: 0;
       padding-right: 30px;
       border-right: 2px dotted $color--gray--borders;  
     }
   }
-  
-  .youtube__wrapper,
+  .youtube__wrapper {
+    margin-bottom: 30px;
+    @include breakpoint($bp--medium-up) { 
+      img {
+        max-width: 75%;
+      }
+    }
+    @include breakpoint($bp--large-up) {
+      padding-left: 30px;
+      margin-bottom: 0;
+    }
+  }
   .twitter__wrapper {
+    margin-bottom: 30px;
     @include breakpoint($bp--medium-up) {
       padding-left: 30px;
+      margin-bottom: 0;
       
       img {
         max-width: 75%;

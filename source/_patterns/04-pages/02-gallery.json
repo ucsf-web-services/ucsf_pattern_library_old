@@ -10,7 +10,7 @@
 	"breadcrumb" : [
 		{
 			"title" : "Home",
-			"url" : "#",
+			"url" : "/patterns/04-pages-00-homepage/04-pages-00-homepage.html",
 		  "class" : ""
 		},
 		{

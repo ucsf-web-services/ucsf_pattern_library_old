@@ -2,7 +2,7 @@
   "breadcrumb" : [
 		{
 			"title" : "Home",
-			"url" : "#",
+			"url" : "/patterns/03-templates-00-homepage/03-templates-00-homepage.html",
 		  "class" : ""
 		},
 		{
