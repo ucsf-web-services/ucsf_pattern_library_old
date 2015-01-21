@@ -8610,13 +8610,17 @@ pre {
   * and should be kept tidy by applying a max width when they are being shown on 
   * the 'all' page
   */
-/* line 171, ../scss/patternlab/_styleguide-specific.scss */
+/* line 176, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-landscape-4x3 .sg-pattern-body,
 #atoms-landscape-4x3-with-caption .sg-pattern-body,
 #atoms-landscape-16x9 .sg-pattern-body,
 #atoms-landscape-16x9-with-caption .sg-pattern-body,
 #atoms-square .sg-pattern-body,
 #atoms-square-with-caption .sg-pattern-body,
+#atoms-form-fields .sg-pattern-body,
+#atoms-field-sizes .sg-pattern-body,
+#atoms-form-error-message .sg-pattern-body,
+#atoms-horizontal-form .sg-pattern-body,
 #molecules-block-content-quarter-2by2col .sg-pattern-body,
 #molecules-block-content-quarter-2col .sg-pattern-body,
 #molecules-block-content-quarter .sg-pattern-body,
@@ -8633,11 +8637,12 @@ pre {
 #organisms-media-coverage .sg-pattern-body,
 #organisms-twitter .sg-pattern-body,
 #organisms-youtube .sg-pattern-body,
-#organisms-most-popular .sg-pattern-body {
+#organisms-most-popular .sg-pattern-body,
+#organisms-most-read .sg-pattern-body {
   max-width: 500px;
 }
 
-/* line 178, ../scss/patternlab/_styleguide-specific.scss */
+/* line 183, ../scss/patternlab/_styleguide-specific.scss */
 #organisms-header .header {
   position: relative;
   top: 0;

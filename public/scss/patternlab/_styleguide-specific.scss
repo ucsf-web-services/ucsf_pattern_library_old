@@ -150,6 +150,10 @@ $styleguide-maxwidth: 500px;
 #atoms-landscape-16x9-with-caption,
 #atoms-square,
 #atoms-square-with-caption,
+#atoms-form-fields,
+#atoms-field-sizes,
+#atoms-form-error-message,
+#atoms-horizontal-form,
 #molecules-block-content-quarter-2by2col,
 #molecules-block-content-quarter-2col,
 #molecules-block-content-quarter,
@@ -166,7 +170,8 @@ $styleguide-maxwidth: 500px;
 #organisms-media-coverage,
 #organisms-twitter,
 #organisms-youtube,
-#organisms-most-popular
+#organisms-most-popular,
+#organisms-most-read
 {
   .sg-pattern-body {
     max-width: $styleguide-maxwidth;
