@@ -8372,8 +8372,9 @@ h2.resp-accordion {
   color: #58595b;
   font-size: 13px;
   line-height: 17px;
+  margin-top: 0;
 }
-/* line 47, ../scss/components/_twitter.scss */
+/* line 48, ../scss/components/_twitter.scss */
 .twitter__wrapper .submitted-date {
   color: #989898;
   font-size: 13px;
