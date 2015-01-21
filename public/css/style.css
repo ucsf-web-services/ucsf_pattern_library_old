@@ -6266,25 +6266,33 @@ em, i {
   /* line 44, ../scss/layout/component-layout/_header-layout.scss */
   .header .logo {
     padding-top: 32px;
-    width: auto;
+    width: 90px;
   }
 }
-/* line 59, ../scss/layout/component-layout/_header-layout.scss */
+@media (min-width: 1024px) {
+  /* line 44, ../scss/layout/component-layout/_header-layout.scss */
+  .header .logo {
+    padding-top: 32px;
+    width: 120px;
+  }
+}
+/* line 63, ../scss/layout/component-layout/_header-layout.scss */
 .header .nav-social {
   display: none;
 }
-@media (min-width: 768px) {
-  /* line 59, ../scss/layout/component-layout/_header-layout.scss */
+@media (min-width: 480px) {
+  /* line 63, ../scss/layout/component-layout/_header-layout.scss */
   .header .nav-social {
     display: block;
     position: absolute;
     top: 5px;
-    right: 12px;
+    right: 60px;
   }
 }
-@media (min-width: 1024px) {
-  /* line 59, ../scss/layout/component-layout/_header-layout.scss */
+@media (min-width: 768px) {
+  /* line 63, ../scss/layout/component-layout/_header-layout.scss */
   .header .nav-social {
+    display: block;
     position: relative;
     top: auto;
     right: auto;
@@ -6292,7 +6300,7 @@ em, i {
   }
 }
 @media (min-width: 768px) {
-  /* line 79, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 82, ../scss/layout/component-layout/_header-layout.scss */
   .header .mobile-menu-button {
     display: none;
   }
@@ -6849,25 +6857,27 @@ em, i {
   background-color: white;
   z-index: 999;
 }
-/* line 15, ../scss/components/_header.scss */
-.header.page-scrolling {
-  box-shadow: 1px 1px 8px rgba(102, 102, 102, 0.3);
-}
-/* line 17, ../scss/components/_header.scss */
-.header.page-scrolling .header-logo-bar {
-  height: auto;
-}
-/* line 20, ../scss/components/_header.scss */
-.header.page-scrolling .logo {
-  padding-top: 10px;
-}
-/* line 22, ../scss/components/_header.scss */
-.header.page-scrolling .logo img {
-  max-width: 80px;
-}
-/* line 26, ../scss/components/_header.scss */
-.header.page-scrolling .header-navs {
-  padding-top: 5px;
+@media (min-width: 768px) {
+  /* line 15, ../scss/components/_header.scss */
+  .header.page-scrolling {
+    box-shadow: 1px 1px 8px rgba(102, 102, 102, 0.3);
+  }
+  /* line 17, ../scss/components/_header.scss */
+  .header.page-scrolling .header-logo-bar {
+    height: auto;
+  }
+  /* line 20, ../scss/components/_header.scss */
+  .header.page-scrolling .logo {
+    padding-top: 10px;
+  }
+  /* line 23, ../scss/components/_header.scss */
+  .header.page-scrolling .logo img {
+    max-width: 80px;
+  }
+  /* line 27, ../scss/components/_header.scss */
+  .header.page-scrolling .header-navs {
+    padding-top: 5px;
+  }
 }
 
 /* line 36, ../scss/components/_header.scss */
