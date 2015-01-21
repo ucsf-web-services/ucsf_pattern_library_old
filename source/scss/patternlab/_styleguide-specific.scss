@@ -82,6 +82,50 @@
 // Style Guide color swatches
 #atoms-colors {
   overflow: hidden;
+  
+  .palette {
+    list-style: none;
+    margin-left: 0;
+    font-size: 0; 
+  }
+  .palette > li {
+    margin-right: 1%;
+    font-size: 13px;
+    font-size: 0.92857rem;
+    color: #fff;
+    text-align: center; 
+  }
+  @include breakpoint($bp--large-up) {
+    .palette > li {
+      display: inline-block;
+      width: 19%; 
+    } 
+  }
+  
+  .palette span {
+    display: block; 
+  }
+  
+  .palette .color {
+    //border-radius: 5px 5px 0 0;
+    height: 80px;
+    padding-top: 1.5em; 
+  }
+  
+  @include breakpoint($bp--large-up) {
+    .palette .color {
+      height: 120px; 
+    } 
+  }
+  .palette .color:last-child {
+    //border-radius: 0 0 5px 5px; 
+  }
+  .palette h3 {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600; 
+  }
+  
   >li {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -123,6 +167,21 @@
       text-align: left;
       font-size: 11px;
       font-family: $font-body--medium;
+    }
+    .color {
+      position: relative;
+    }
+    .hex {
+      font-family: $font-body--medium;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+    }
+    .variable {
+      font-family: $font-body--medium;
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
     }
   }
   .palette .color:last-child {
