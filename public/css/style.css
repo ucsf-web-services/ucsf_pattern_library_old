@@ -6847,8 +6847,39 @@ em, i {
 /* line 1, ../scss/components/_header.scss */
 .header {
   background-color: white;
-  border-bottom: 1px solid #f0f0f0;
   z-index: 999;
+}
+/* line 15, ../scss/components/_header.scss */
+.header.page-scrolling {
+  box-shadow: 1px 1px 8px rgba(102, 102, 102, 0.3);
+}
+/* line 17, ../scss/components/_header.scss */
+.header.page-scrolling .header-logo-bar {
+  height: auto;
+}
+/* line 20, ../scss/components/_header.scss */
+.header.page-scrolling .logo {
+  padding-top: 10px;
+}
+/* line 22, ../scss/components/_header.scss */
+.header.page-scrolling .logo img {
+  max-width: 80px;
+}
+/* line 26, ../scss/components/_header.scss */
+.header.page-scrolling .header-navs {
+  padding-top: 5px;
+}
+
+/* line 36, ../scss/components/_header.scss */
+.header, .header .logo,
+.header .logo img,
+.header .header-navs,
+.header .header-logo-bar {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 /* line 1, ../scss/components/_hero.scss */
@@ -8424,7 +8455,6 @@ h2.resp-accordion {
 /* line 27, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue p,
 #atoms-fonts-granjon p {
-  display: none;
   margin: 0;
   font-size: 12px;
 }

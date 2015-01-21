@@ -239,6 +239,36 @@
       removed: function(){}           //{NEW} Callback: function(slider) - Fires after a slide is removed
       
     });
+    
+    
+  var fixedNavigation = $('#header'); // Change to nav div
+  var toggleNavClass = 'page-scrolling'; // Change to class name
+  var threshold = 25; // Change to pixels scrolled
+  
+  $(window).scroll(function () {
+      //alert('wtf');
+      var distance = $(this).scrollTop();
+      console.log(distance);
+      if (distance > threshold) { // If scrolled past threshold
+          fixedNavigation.addClass(toggleNavClass); // Add class to nav
+      } else { // If user scrolls back to top
+          if (fixedNavigation.hasClass(toggleNavClass)) { // And if class has been added
+              fixedNavigation.removeClass(toggleNavClass); // Remove it
+          }
+      }
+  });
+    
+    
+    
+    
+    
   });  
+  
+  
+  
+  
+  
+  
+  
   
 })(jQuery);

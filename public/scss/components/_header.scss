@@ -1,5 +1,42 @@
 .header {
   background-color: $white;
-  border-bottom: 1px solid $color--gray--white;
   z-index: 999;
+  
+  @extend %transition-all;
+  
+  // elements we'll transition inside the header box
+  .logo,
+  .logo img,
+  .header-navs,
+  .header-logo-bar {
+    @extend %transition-all;    
+  }
+  
+  &.page-scrolling {
+    box-shadow: 1px 1px 8px rgba(102, 102, 102, 0.3);
+    .header-logo-bar {
+      height: auto;
+    }
+    .logo {
+      padding-top: 10px;
+      img {
+        max-width: 80px;
+      }
+    }
+    .header-navs {
+      padding-top: 5px;
+    }
+    
+  }
+  
+  
+}
+
+
+%transition-all {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
