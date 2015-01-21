@@ -27,19 +27,19 @@ img[width], img[height] {
  */
 .embedded-image {
   width: 100%;
-  margin-top: 20px;
-  
-  &.img--left,
-  &.img--right {
-    margin-bottom: 0;  
-  }
-  
-  
+  margin: 20px 0;
+
   img {
     display: block;
   }
   @include breakpoint($bp--medium-up) {
+    margin-top: 0.5em; // lines it up with any paragraph it floats inline with
     width: 40%;
+    
+    &.img--left,
+    &.img--right {
+      margin-bottom: 0;  
+    }
   }
 }
 
@@ -51,22 +51,28 @@ img[width], img[height] {
 .image {
   
 }
-.img--right {
-  float: right;
-  margin-bottom: 24px;
-  margin-left: 24px; }
-
-.img--left {
-  float: left;
-  margin-right: 24px;
-  margin-bottom: 24px; }
-
-.img--center {
-  display: block;
-  margin-right: auto;
-  margin-bottom: 24px;
-  margin-left: auto; }
-
+// adjusted to only float/margin on right breakpoints.
+// DON'T Float on Mobile!!
+@include breakpoint($bp--medium-up) {
+  .img--right {
+    float: right;
+    margin-bottom: 1.5em;
+    margin-left: 1.5em; 
+  }
+  
+  .img--left {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em; 
+  }
+  
+  .img--center {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    margin-left: auto; 
+  }
+}
 /**
  * Keep your images on your baseline.
  *

@@ -5559,20 +5559,21 @@ img[width], img[height] {
 /* line 28, ../scss/base/_images.scss */
 .embedded-image {
   width: 100%;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 /* line 32, ../scss/base/_images.scss */
-.embedded-image.img--left, .embedded-image.img--right {
-  margin-bottom: 0;
-}
-/* line 38, ../scss/base/_images.scss */
 .embedded-image img {
   display: block;
 }
 @media (min-width: 768px) {
   /* line 28, ../scss/base/_images.scss */
   .embedded-image {
+    margin-top: 0.5em;
     width: 40%;
+  }
+  /* line 39, ../scss/base/_images.scss */
+  .embedded-image.img--left, .embedded-image.img--right {
+    margin-bottom: 0;
   }
 }
 
@@ -5583,45 +5584,46 @@ img[width], img[height] {
   margin: 10px 0;
 }
 
-/* line 54, ../scss/base/_images.scss */
-.img--right {
-  float: right;
-  margin-bottom: 24px;
-  margin-left: 24px;
-}
+@media (min-width: 768px) {
+  /* line 57, ../scss/base/_images.scss */
+  .img--right {
+    float: right;
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+  }
 
-/* line 59, ../scss/base/_images.scss */
-.img--left {
-  float: left;
-  margin-right: 24px;
-  margin-bottom: 24px;
-}
+  /* line 63, ../scss/base/_images.scss */
+  .img--left {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+  }
 
-/* line 64, ../scss/base/_images.scss */
-.img--center {
-  display: block;
-  margin-right: auto;
-  margin-bottom: 24px;
-  margin-left: auto;
+  /* line 69, ../scss/base/_images.scss */
+  .img--center {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+  }
 }
-
 /**
  * Keep your images on your baseline.
  *
  * Please note, these will not work too nicely with fluid images and will
  * distort when resized below a certain width. Use with caution.
  */
-/* line 76, ../scss/base/_images.scss */
+/* line 82, ../scss/base/_images.scss */
 .img--short {
   height: 120px;
 }
 
-/* line 79, ../scss/base/_images.scss */
+/* line 85, ../scss/base/_images.scss */
 .img--medium {
   height: 240px;
 }
 
-/* line 82, ../scss/base/_images.scss */
+/* line 88, ../scss/base/_images.scss */
 .img--tall {
   height: 360px;
 }
@@ -5629,7 +5631,7 @@ img[width], img[height] {
 /**
  * Images in `figure` elements.
  */
-/* line 88, ../scss/base/_images.scss */
+/* line 94, ../scss/base/_images.scss */
 figure > img {
   display: block;
 }
