@@ -89,16 +89,28 @@
     font-size: 0; 
   }
   .palette > li {
-    margin-right: 1%;
+    padding: 5px;
     font-size: 13px;
     font-size: 0.92857rem;
     color: #fff;
     text-align: center; 
   }
+  @include breakpoint($bp--small-up) {
+    .palette > li {
+      display: inline-block;
+      width: 50%; 
+    } 
+  }
+  @include breakpoint($bp--medium-up) {
+    .palette > li {
+      display: inline-block;
+      width: 33.333%; 
+    } 
+  }
   @include breakpoint($bp--large-up) {
     .palette > li {
       display: inline-block;
-      width: 19%; 
+      width: 20%; 
     } 
   }
   

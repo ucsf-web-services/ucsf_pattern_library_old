@@ -8511,41 +8511,55 @@ h2.resp-accordion {
 }
 /* line 91, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette > li {
-  margin-right: 1%;
+  padding: 5px;
   font-size: 13px;
   font-size: 0.92857rem;
   color: #fff;
   text-align: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 480px) {
   /* line 99, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors .palette > li {
     display: inline-block;
-    width: 19%;
+    width: 50%;
   }
 }
-/* line 105, ../scss/patternlab/_styleguide-specific.scss */
+@media (min-width: 768px) {
+  /* line 105, ../scss/patternlab/_styleguide-specific.scss */
+  #atoms-colors .palette > li {
+    display: inline-block;
+    width: 33.333%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 111, ../scss/patternlab/_styleguide-specific.scss */
+  #atoms-colors .palette > li {
+    display: inline-block;
+    width: 20%;
+  }
+}
+/* line 117, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette span {
   display: block;
 }
-/* line 109, ../scss/patternlab/_styleguide-specific.scss */
+/* line 121, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette .color {
   height: 80px;
   padding-top: 1.5em;
 }
 @media (min-width: 1024px) {
-  /* line 116, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 128, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors .palette .color {
     height: 120px;
   }
 }
-/* line 123, ../scss/patternlab/_styleguide-specific.scss */
+/* line 135, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette h3 {
   color: #333;
   font-size: 14px;
   font-weight: 600;
 }
-/* line 129, ../scss/patternlab/_styleguide-specific.scss */
+/* line 141, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors > li {
   overflow: hidden;
   border: 1px solid #ccc;
@@ -8553,7 +8567,7 @@ h2.resp-accordion {
   margin: 0;
   box-sizing: border-box;
 }
-/* line 135, ../scss/patternlab/_styleguide-specific.scss */
+/* line 147, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors > li .sg-swatch {
   display: block;
   height: 50px;
@@ -8561,82 +8575,82 @@ h2.resp-accordion {
   width: 33%;
   outline: dotted 1px gray;
 }
-/* line 142, ../scss/patternlab/_styleguide-specific.scss */
+/* line 154, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors > li .sg-info {
   line-height: 1;
   float: right;
   width: 66%;
 }
 @media (min-width: 768px) {
-  /* line 129, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 141, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors > li {
     float: left;
     width: 49%;
     margin-right: 1%;
   }
-  /* line 151, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 163, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors > li .sg-swatch {
     height: 100px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 129, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 141, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors > li {
     width: 24%;
   }
 }
-/* line 159, ../scss/patternlab/_styleguide-specific.scss */
+/* line 171, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors h5.headline {
   margin-top: 10px;
   margin-bottom: 0;
 }
-/* line 165, ../scss/patternlab/_styleguide-specific.scss */
+/* line 177, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette h3 {
   text-transform: uppercase;
   text-align: left;
   font-size: 11px;
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 171, ../scss/patternlab/_styleguide-specific.scss */
+/* line 183, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette .color {
   position: relative;
 }
-/* line 174, ../scss/patternlab/_styleguide-specific.scss */
+/* line 186, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette .hex {
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   position: absolute;
   top: 5px;
   right: 10px;
 }
-/* line 180, ../scss/patternlab/_styleguide-specific.scss */
+/* line 192, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette .variable {
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   position: absolute;
   bottom: 5px;
   left: 10px;
 }
-/* line 187, ../scss/patternlab/_styleguide-specific.scss */
+/* line 199, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette .color:last-child {
   border-radius: 5px;
 }
 
-/* line 192, ../scss/patternlab/_styleguide-specific.scss */
+/* line 204, ../scss/patternlab/_styleguide-specific.scss */
 pre {
   margin-top: 0;
 }
 
-/* line 196, ../scss/patternlab/_styleguide-specific.scss */
+/* line 208, ../scss/patternlab/_styleguide-specific.scss */
 #sg-patterns {
   padding: 40px;
 }
 
-/* line 201, ../scss/patternlab/_styleguide-specific.scss */
+/* line 213, ../scss/patternlab/_styleguide-specific.scss */
 .button-demo h5 {
   margin-top: 10px;
   margin-bottom: 5px;
   padding-bottom: 0;
 }
-/* line 206, ../scss/patternlab/_styleguide-specific.scss */
+/* line 218, ../scss/patternlab/_styleguide-specific.scss */
 .button-demo .button-wrapper {
   margin-bottom: 10px;
 }
@@ -8646,7 +8660,7 @@ pre {
   * and should be kept tidy by applying a max width when they are being shown on 
   * the 'all' page
   */
-/* line 247, ../scss/patternlab/_styleguide-specific.scss */
+/* line 259, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-landscape-4x3 .sg-pattern-body,
 #atoms-landscape-4x3-with-caption .sg-pattern-body,
 #atoms-landscape-16x9 .sg-pattern-body,
@@ -8678,7 +8692,7 @@ pre {
   max-width: 500px;
 }
 
-/* line 254, ../scss/patternlab/_styleguide-specific.scss */
+/* line 266, ../scss/patternlab/_styleguide-specific.scss */
 #organisms-header .header {
   position: relative;
   top: 0;
