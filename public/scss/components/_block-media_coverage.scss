@@ -1,11 +1,4 @@
-.media--coverage {
-  
-  @extend .cf;
-  
-  h2.headline {
-    border-bottom: $border--headline--border;
-  }
-  
+.media--coverage__wrapper {
   ul {
     list-style-type: none;
     padding: 0;
@@ -16,7 +9,17 @@
   li {
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
+    display: block;
+    margin-bottom: 25px;
+  } 
+}
+
+.block-media {
+  
+  @extend .cf;
+  
+  h2.headline {
+    border-bottom: $border--headline--border;
   }
   
   

@@ -1,9 +1,4 @@
 .youtube__wrapper {
-  
-  h2.headline {
-    border-bottom: $border--headline--border;
-  }
-  
   ul {
     list-style-type: none;
     padding: 0;
@@ -16,6 +11,12 @@
     margin: 0;
     display: block;
     margin-bottom: 25px;
+  } 
+}
+.block-youtube {
+  
+  h2.headline {
+    border-bottom: $border--headline--border;
   }
   
   h4 {

@@ -5098,9 +5098,9 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .block-post .content:after, .featured-events:after, .featured-events__wrapper:after, #gallery-rotator:after, #gallery-rotator ul.slides:after, #gallery-rotator ul.slides li:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
+.cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .media--coverage__wrapper ul:after, .block-media:after, .block-post .content:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after, .featured-events:after, .featured-events__wrapper:after, #gallery-rotator:after, #gallery-rotator ul.slides:after, #gallery-rotator ul.slides li:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content-block .data:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
 .pillar-content .pillar-bottom-half:after, .pillar-content .pillar-2col:after,
-.pillar-content .pillar-3col:after, .pillar-content .data:after, .resp-tab-content:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after, #atoms-fonts-helvetica-neue .font-type:after,
+.pillar-content .pillar-3col:after, .resp-tab-content:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, #atoms-fonts-helvetica-neue .font-type:after,
 #atoms-fonts-granjon .font-type:after {
   content: "";
   display: table;
@@ -6276,9 +6276,18 @@ strong, b {
 }
 
 /**
+ * Italic styles
+ */
+/* line 13, ../scss/base/_text.scss */
+em, i {
+  font-weight: normal;
+  font-family: HelveticaNeue-italic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+/**
  * Body Copy
  */
-/* line 14, ../scss/base/_text.scss */
+/* line 21, ../scss/base/_text.scss */
 .section-body {
   font-size: 16px;
   font-size: 1.14286rem;
@@ -6287,7 +6296,7 @@ strong, b {
 /**
  * Leading text
  */
-/* line 21, ../scss/base/_text.scss */
+/* line 28, ../scss/base/_text.scss */
 .text--lead {
   font-size: 20px;
   font-size: 1.42857rem;
@@ -6296,7 +6305,7 @@ strong, b {
 }
 
 @media (min-width: 768px) {
-  /* line 27, ../scss/base/_text.scss */
+  /* line 34, ../scss/base/_text.scss */
   .text--lead {
     font-size: 30px;
     font-size: 2.14286rem;
@@ -6305,7 +6314,7 @@ strong, b {
 /**
  * Sub text
  */
-/* line 34, ../scss/base/_text.scss */
+/* line 41, ../scss/base/_text.scss */
 .text--sub {
   font-weight: 300;
   font-size: 18px;
@@ -6313,7 +6322,7 @@ strong, b {
 }
 
 @media (min-width: 768px) {
-  /* line 39, ../scss/base/_text.scss */
+  /* line 46, ../scss/base/_text.scss */
   .text--sub {
     font-size: 22px;
     font-size: 1.57143rem;
@@ -6322,14 +6331,14 @@ strong, b {
 /**
  * Summary text
  */
-/* line 46, ../scss/base/_text.scss */
+/* line 53, ../scss/base/_text.scss */
 .text--summary, blockquote {
   font-size: 16px;
   font-size: 1.14286rem;
 }
 
 @media (min-width: 768px) {
-  /* line 50, ../scss/base/_text.scss */
+  /* line 57, ../scss/base/_text.scss */
   .text--summary {
     font-size: 20px;
     font-size: 1.42857rem;
@@ -6338,14 +6347,14 @@ strong, b {
 /**
  * Summary text
  */
-/* line 57, ../scss/base/_text.scss */
+/* line 64, ../scss/base/_text.scss */
 .text--summary, blockquote {
   font-size: 16px;
   font-size: 1.14286rem;
 }
 
 @media (min-width: 768px) {
-  /* line 61, ../scss/base/_text.scss */
+  /* line 68, ../scss/base/_text.scss */
   .text--summary {
     font-size: 20px;
     font-size: 1.42857rem;
@@ -6354,7 +6363,7 @@ strong, b {
 /**
  * Secondary text
  */
-/* line 68, ../scss/base/_text.scss */
+/* line 75, ../scss/base/_text.scss */
 .text--secondary {
   font-size: 14px;
   font-size: 1rem;
@@ -6363,7 +6372,7 @@ strong, b {
 /**
  * Tertiary text
  */
-/* line 75, ../scss/base/_text.scss */
+/* line 82, ../scss/base/_text.scss */
 .text--tertiary {
   font-size: 12px;
   font-size: 0.85714rem;
@@ -6542,6 +6551,53 @@ strong, b {
   color: #4d4d4d;
 }
 
+/* line 2, ../scss/components/_block-media_coverage.scss */
+.media--coverage__wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 9, ../scss/components/_block-media_coverage.scss */
+.media--coverage__wrapper li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-bottom: 25px;
+}
+
+/* line 21, ../scss/components/_block-media_coverage.scss */
+.block-media h2.headline {
+  border-bottom: 2px solid rgba(180, 185, 191, 0.3);
+}
+/* line 26, ../scss/components/_block-media_coverage.scss */
+.block-media h3 {
+  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: #178CCB;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+/* line 33, ../scss/components/_block-media_coverage.scss */
+.block-media h3 a {
+  color: #178CCB;
+  text-decoration: none;
+}
+/* line 37, ../scss/components/_block-media_coverage.scss */
+.block-media h3 a:hover {
+  text-decoration: underline;
+}
+/* line 43, ../scss/components/_block-media_coverage.scss */
+.block-media .data {
+  color: #989898;
+  font-family: HelveticaNeue-bold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+/* line 48, ../scss/components/_block-media_coverage.scss */
+.block-media .data a {
+  color: #989898;
+}
+
 /* line 1, ../scss/components/_block-more.scss */
 .block-more {
   margin: 0;
@@ -6623,6 +6679,110 @@ strong, b {
 /* line 47, ../scss/components/_block-post.scss */
 .block-post h4 a {
   color: #333333;
+}
+
+/* line 2, ../scss/components/_block-twitter.scss */
+.twitter__wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 9, ../scss/components/_block-twitter.scss */
+.twitter__wrapper li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-bottom: 25px;
+}
+
+/* line 18, ../scss/components/_block-twitter.scss */
+.block-twitter h2.headline {
+  border-bottom: 2px solid rgba(180, 185, 191, 0.3);
+}
+/* line 22, ../scss/components/_block-twitter.scss */
+.block-twitter img {
+  display: block;
+  margin-top: 5px;
+}
+/* line 27, ../scss/components/_block-twitter.scss */
+.block-twitter h4 {
+  font-size: 13px;
+  line-height: 17px;
+  color: #052049;
+  font-family: HelveticaNeue-bold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+}
+/* line 34, ../scss/components/_block-twitter.scss */
+.block-twitter h4 a {
+  color: #052049;
+}
+/* line 37, ../scss/components/_block-twitter.scss */
+.block-twitter h4 a.handle {
+  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: #989898;
+}
+/* line 43, ../scss/components/_block-twitter.scss */
+.block-twitter .tweet {
+  color: #58595b;
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 0;
+}
+/* line 49, ../scss/components/_block-twitter.scss */
+.block-twitter .submitted-date {
+  color: #989898;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+/* line 2, ../scss/components/_block-youtube.scss */
+.youtube__wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 9, ../scss/components/_block-youtube.scss */
+.youtube__wrapper li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-bottom: 25px;
+}
+
+/* line 18, ../scss/components/_block-youtube.scss */
+.block-youtube h2.headline {
+  border-bottom: 2px solid rgba(180, 185, 191, 0.3);
+}
+/* line 22, ../scss/components/_block-youtube.scss */
+.block-youtube h4 {
+  font-size: 13px;
+  line-height: 17px;
+  color: black;
+  font-family: HelveticaNeue-bold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+}
+/* line 32, ../scss/components/_block-youtube.scss */
+.block-youtube h4 a {
+  color: black;
+}
+/* line 35, ../scss/components/_block-youtube.scss */
+.block-youtube h4 .submitted-by {
+  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: #58595b;
+}
+/* line 39, ../scss/components/_block-youtube.scss */
+.block-youtube h4 .submitted-by a {
+  color: #178CCB;
+}
+/* line 44, ../scss/components/_block-youtube.scss */
+.block-youtube .data {
+  color: #989898;
+  font-size: 13px;
+  line-height: 17px;
+}
+/* line 49, ../scss/components/_block-youtube.scss */
+.block-youtube .data a {
+  color: #989898;
 }
 
 /* line 4, ../scss/components/_custom_post_colors.scss */
@@ -7000,51 +7160,6 @@ strong, b {
     line-height: 22px;
     background: rgba(255, 255, 255, 0.9);
   }
-}
-
-/* line 5, ../scss/components/_media_coverage.scss */
-.media--coverage h2.headline {
-  border-bottom: 2px solid rgba(180, 185, 191, 0.3);
-}
-/* line 9, ../scss/components/_media_coverage.scss */
-.media--coverage ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-/* line 16, ../scss/components/_media_coverage.scss */
-.media--coverage li {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 20px;
-}
-/* line 23, ../scss/components/_media_coverage.scss */
-.media--coverage h3 {
-  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  color: #178CCB;
-  font-size: 18px;
-  line-height: 18px;
-  margin-bottom: 0;
-}
-/* line 30, ../scss/components/_media_coverage.scss */
-.media--coverage h3 a {
-  color: #178CCB;
-  text-decoration: none;
-}
-/* line 34, ../scss/components/_media_coverage.scss */
-.media--coverage h3 a:hover {
-  text-decoration: underline;
-}
-/* line 40, ../scss/components/_media_coverage.scss */
-.media--coverage .data {
-  color: #989898;
-  font-family: HelveticaNeue-bold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-}
-/* line 45, ../scss/components/_media_coverage.scss */
-.media--coverage .data a {
-  color: #989898;
 }
 
 /* line 1, ../scss/components/_nav-breadcrumb.scss */
@@ -7676,41 +7791,95 @@ strong, b {
   background: rgba(241, 241, 241, 0.75);
 }
 
-/* line 1, ../scss/components/_pillar-content.scss */
+/* line 2, ../scss/components/_pillar-content.scss */
+.pillar-content-block .data {
+  z-index: 2;
+  padding: 10px;
+  text-transform: none;
+  background: white;
+}
+@media (min-width: 768px) {
+  /* line 2, ../scss/components/_pillar-content.scss */
+  .pillar-content-block .data {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 4px solid #052049;
+  }
+}
+/* line 21, ../scss/components/_pillar-content.scss */
+.pillar-content-block .data h4 {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 0;
+  color: #58595b;
+}
+@media (min-width: 1190px) {
+  /* line 21, ../scss/components/_pillar-content.scss */
+  .pillar-content-block .data h4 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+/* line 34, ../scss/components/_pillar-content.scss */
+.pillar-content-block .data h4 a {
+  color: #58595b;
+}
+/* line 39, ../scss/components/_pillar-content.scss */
+.pillar-content-block .data .readmore {
+  font-size: 10px;
+  margin-top: 10px;
+  display: none;
+}
+@media (min-width: 1190px) {
+  /* line 39, ../scss/components/_pillar-content.scss */
+  .pillar-content-block .data .readmore {
+    display: block;
+  }
+}
+/* line 46, ../scss/components/_pillar-content.scss */
+.pillar-content-block .data .readmore a {
+  color: #333333;
+}
+
+/* line 54, ../scss/components/_pillar-content.scss */
 .pillar-content {
   margin: 0 -15px;
 }
-/* line 5, ../scss/components/_pillar-content.scss */
+/* line 58, ../scss/components/_pillar-content.scss */
 .pillar-content img, .pillar-content .btn--ctype {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 1, ../scss/components/_pillar-content.scss */
+  /* line 54, ../scss/components/_pillar-content.scss */
   .pillar-content {
     max-height: 462px;
   }
-  /* line 15, ../scss/components/_pillar-content.scss */
+  /* line 68, ../scss/components/_pillar-content.scss */
   .pillar-content img, .pillar-content .btn--ctype {
     display: block;
   }
-  /* line 18, ../scss/components/_pillar-content.scss */
+  /* line 71, ../scss/components/_pillar-content.scss */
   .pillar-content .block-content--quarter-2by2col,
   .pillar-content .block-content--quarter-1col,
   .pillar-content .block-content--quarter-2col {
     display: block;
   }
 }
-/* line 26, ../scss/components/_pillar-content.scss */
+/* line 79, ../scss/components/_pillar-content.scss */
 .pillar-content .block-content {
   padding: 15px;
 }
-/* line 30, ../scss/components/_pillar-content.scss */
+/* line 83, ../scss/components/_pillar-content.scss */
 .pillar-content .pillar-top-half,
 .pillar-content .pillar-bottom-half {
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 30, ../scss/components/_pillar-content.scss */
+  /* line 83, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-top-half,
   .pillar-content .pillar-bottom-half {
     height: 50%;
@@ -7718,14 +7887,14 @@ strong, b {
   }
 }
 @media (min-width: 768px) {
-  /* line 46, ../scss/components/_pillar-content.scss */
+  /* line 99, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-3col-quarter,
   .pillar-content .pillar-3col .pillar-3col-quarter {
     width: 25%;
     float: left;
   }
 }
-/* line 53, ../scss/components/_pillar-content.scss */
+/* line 106, ../scss/components/_pillar-content.scss */
 .pillar-content .pillar-2col .pillar-2col-half,
 .pillar-content .pillar-2col .pillar-3col-half,
 .pillar-content .pillar-3col .pillar-2col-half,
@@ -7733,7 +7902,7 @@ strong, b {
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 53, ../scss/components/_pillar-content.scss */
+  /* line 106, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half,
   .pillar-content .pillar-2col .pillar-3col-half,
   .pillar-content .pillar-3col .pillar-2col-half,
@@ -7741,7 +7910,7 @@ strong, b {
     width: 50%;
     float: left;
   }
-  /* line 63, ../scss/components/_pillar-content.scss */
+  /* line 116, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col,
   .pillar-content .pillar-2col .pillar-3col-half .block-content--quarter-1col,
   .pillar-content .pillar-3col .pillar-2col-half .block-content--quarter-1col,
@@ -7749,7 +7918,7 @@ strong, b {
     width: 50%;
     float: left;
   }
-  /* line 75, ../scss/components/_pillar-content.scss */
+  /* line 128, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col,
   .pillar-content .pillar-2col .pillar-3col-half .block-content--quarter-1col,
@@ -7762,7 +7931,7 @@ strong, b {
     max-height: 100%;
     position: relative;
   }
-  /* line 81, ../scss/components/_pillar-content.scss */
+  /* line 134, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col .block-content__inner,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col .block-content__inner,
   .pillar-content .pillar-2col .pillar-3col-half .block-content--quarter-1col .block-content__inner,
@@ -7775,7 +7944,7 @@ strong, b {
     max-height: 100%;
     position: relative;
   }
-  /* line 88, ../scss/components/_pillar-content.scss */
+  /* line 141, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col,
   .pillar-content .pillar-2col .pillar-3col-half .block-content--quarter-2by2col,
   .pillar-content .pillar-3col .pillar-2col-half .block-content--quarter-2by2col,
@@ -7784,7 +7953,7 @@ strong, b {
     max-height: 100%;
     position: relative;
   }
-  /* line 93, ../scss/components/_pillar-content.scss */
+  /* line 146, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col .block-content__inner,
   .pillar-content .pillar-2col .pillar-3col-half .block-content--quarter-2by2col .block-content__inner,
   .pillar-content .pillar-3col .pillar-2col-half .block-content--quarter-2by2col .block-content__inner,
@@ -7793,7 +7962,7 @@ strong, b {
     max-height: 100%;
     position: relative;
   }
-  /* line 100, ../scss/components/_pillar-content.scss */
+  /* line 153, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col,
@@ -7808,7 +7977,7 @@ strong, b {
   .pillar-content .pillar-3col .pillar-3col-half .block-content--quarter-2by2col {
     overflow: hidden;
   }
-  /* line 104, ../scss/components/_pillar-content.scss */
+  /* line 157, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col .block-content__inner,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col .block-content__inner,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col .block-content__inner,
@@ -7823,7 +7992,7 @@ strong, b {
   .pillar-content .pillar-3col .pillar-3col-half .block-content--quarter-2by2col .block-content__inner {
     overflow: hidden;
   }
-  /* line 107, ../scss/components/_pillar-content.scss */
+  /* line 160, ../scss/components/_pillar-content.scss */
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-1col img,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2col img,
   .pillar-content .pillar-2col .pillar-2col-half .block-content--quarter-2by2col img,
@@ -7839,59 +8008,6 @@ strong, b {
     min-height: 100%;
     width: auto;
   }
-}
-/* line 117, ../scss/components/_pillar-content.scss */
-.pillar-content .data {
-  z-index: 2;
-  padding: 10px;
-  text-transform: none;
-  background: white;
-}
-@media (min-width: 768px) {
-  /* line 117, ../scss/components/_pillar-content.scss */
-  .pillar-content .data {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 8px;
-    background: rgba(255, 255, 255, 0.9);
-    border-bottom: 4px solid #052049;
-  }
-}
-/* line 136, ../scss/components/_pillar-content.scss */
-.pillar-content .data h4 {
-  font-size: 16px;
-  line-height: 18px;
-  margin-bottom: 0;
-  color: #58595b;
-}
-@media (min-width: 1190px) {
-  /* line 136, ../scss/components/_pillar-content.scss */
-  .pillar-content .data h4 {
-    font-size: 20px;
-    line-height: 22px;
-  }
-}
-/* line 149, ../scss/components/_pillar-content.scss */
-.pillar-content .data h4 a {
-  color: #58595b;
-}
-/* line 154, ../scss/components/_pillar-content.scss */
-.pillar-content .data .readmore {
-  font-size: 10px;
-  margin-top: 10px;
-  display: none;
-}
-@media (min-width: 1190px) {
-  /* line 154, ../scss/components/_pillar-content.scss */
-  .pillar-content .data .readmore {
-    display: block;
-  }
-}
-/* line 161, ../scss/components/_pillar-content.scss */
-.pillar-content .data .readmore a {
-  color: #333333;
 }
 
 /* line 1, ../scss/components/_pillar-tabs.scss */
@@ -8431,59 +8547,6 @@ h2.resp-accordion {
   }
 }
 
-/* line 3, ../scss/components/_twitter.scss */
-.twitter__wrapper h2.headline {
-  border-bottom: 2px solid rgba(180, 185, 191, 0.3);
-}
-/* line 7, ../scss/components/_twitter.scss */
-.twitter__wrapper ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-/* line 14, ../scss/components/_twitter.scss */
-.twitter__wrapper li {
-  padding: 0;
-  margin: 0;
-  display: block;
-  margin-bottom: 25px;
-}
-/* line 21, ../scss/components/_twitter.scss */
-.twitter__wrapper img {
-  display: block;
-  margin-top: 5px;
-}
-/* line 26, ../scss/components/_twitter.scss */
-.twitter__wrapper h4 {
-  font-size: 13px;
-  line-height: 17px;
-  color: #052049;
-  font-family: HelveticaNeue-bold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  margin-bottom: 0;
-}
-/* line 33, ../scss/components/_twitter.scss */
-.twitter__wrapper h4 a {
-  color: #052049;
-}
-/* line 36, ../scss/components/_twitter.scss */
-.twitter__wrapper h4 a.handle {
-  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  color: #989898;
-}
-/* line 42, ../scss/components/_twitter.scss */
-.twitter__wrapper .tweet {
-  color: #58595b;
-  font-size: 13px;
-  line-height: 17px;
-  margin-top: 0;
-}
-/* line 48, ../scss/components/_twitter.scss */
-.twitter__wrapper .submitted-date {
-  color: #989898;
-  font-size: 13px;
-  line-height: 17px;
-}
-
 /**
  * This or That
  */
@@ -8503,55 +8566,6 @@ h2.resp-accordion {
   position: relative;
   bottom: -0.8em;
   color: #BFBFBF;
-}
-
-/* line 3, ../scss/components/_youtube.scss */
-.youtube__wrapper h2.headline {
-  border-bottom: 2px solid rgba(180, 185, 191, 0.3);
-}
-/* line 7, ../scss/components/_youtube.scss */
-.youtube__wrapper ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-/* line 14, ../scss/components/_youtube.scss */
-.youtube__wrapper li {
-  padding: 0;
-  margin: 0;
-  display: block;
-  margin-bottom: 25px;
-}
-/* line 21, ../scss/components/_youtube.scss */
-.youtube__wrapper h4 {
-  font-size: 13px;
-  line-height: 17px;
-  color: black;
-  font-family: HelveticaNeue-bold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  margin-bottom: 0;
-}
-/* line 31, ../scss/components/_youtube.scss */
-.youtube__wrapper h4 a {
-  color: black;
-}
-/* line 34, ../scss/components/_youtube.scss */
-.youtube__wrapper h4 .submitted-by {
-  font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  color: #58595b;
-}
-/* line 38, ../scss/components/_youtube.scss */
-.youtube__wrapper h4 .submitted-by a {
-  color: #178CCB;
-}
-/* line 43, ../scss/components/_youtube.scss */
-.youtube__wrapper .data {
-  color: #989898;
-  font-size: 13px;
-  line-height: 17px;
-}
-/* line 48, ../scss/components/_youtube.scss */
-.youtube__wrapper .data a {
-  color: #989898;
 }
 
 /*------------------------------------*\
@@ -8578,10 +8592,11 @@ h2.resp-accordion {
 /* line 26, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue p,
 #atoms-fonts-granjon p {
+  display: none;
   margin: 0;
   font-size: 12px;
 }
-/* line 30, ../scss/patternlab/_styleguide-specific.scss */
+/* line 31, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue p strong,
 #atoms-fonts-granjon p strong {
   text-transform: uppercase;
@@ -8589,75 +8604,75 @@ h2.resp-accordion {
   font-size: 11px;
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 40, ../scss/patternlab/_styleguide-specific.scss */
+/* line 41, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-sample,
 #atoms-fonts-granjon .font-sample {
   margin-bottom: 30px;
 }
 @media (min-width: 1024px) {
-  /* line 40, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 41, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-fonts-helvetica-neue .font-sample,
   #atoms-fonts-granjon .font-sample {
     float: left;
     width: 50%;
   }
 }
-/* line 49, ../scss/patternlab/_styleguide-specific.scss */
+/* line 50, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-headline,
 #atoms-fonts-granjon .font-headline {
   font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
 }
-/* line 52, ../scss/patternlab/_styleguide-specific.scss */
+/* line 53, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-headline--italic,
 #atoms-fonts-granjon .font-headline--italic {
   font-family: granjon-italic, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
 }
-/* line 55, ../scss/patternlab/_styleguide-specific.scss */
+/* line 56, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-headline--bold,
 #atoms-fonts-granjon .font-headline--bold {
   font-family: granjon-bold, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
 }
-/* line 58, ../scss/patternlab/_styleguide-specific.scss */
+/* line 59, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-body,
 #atoms-fonts-granjon .font-body {
   font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 61, ../scss/patternlab/_styleguide-specific.scss */
+/* line 62, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-body--italic,
 #atoms-fonts-granjon .font-body--italic {
   font-family: HelveticaNeue-italic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 64, ../scss/patternlab/_styleguide-specific.scss */
+/* line 65, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-body--bold,
 #atoms-fonts-granjon .font-body--bold {
   font-family: HelveticaNeue-bold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 67, ../scss/patternlab/_styleguide-specific.scss */
+/* line 68, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-body--light,
 #atoms-fonts-granjon .font-body--light {
   font-family: HelveticaNeue-light, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 70, ../scss/patternlab/_styleguide-specific.scss */
+/* line 71, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-body--light--italic,
 #atoms-fonts-granjon .font-body--light--italic {
   font-family: HelveticaNeue-light-italic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 73, ../scss/patternlab/_styleguide-specific.scss */
+/* line 74, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-body--medium,
 #atoms-fonts-granjon .font-body--medium {
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 76, ../scss/patternlab/_styleguide-specific.scss */
+/* line 77, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-fonts-helvetica-neue .font-body--medium--italic,
 #atoms-fonts-granjon .font-body--medium--italic {
   font-family: HelveticaNeue-medium-italic, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 82, ../scss/patternlab/_styleguide-specific.scss */
+/* line 83, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors {
   overflow: hidden;
 }
-/* line 84, ../scss/patternlab/_styleguide-specific.scss */
+/* line 85, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors > li {
   overflow: hidden;
   border: 1px solid #ccc;
@@ -8665,7 +8680,7 @@ h2.resp-accordion {
   margin: 0;
   box-sizing: border-box;
 }
-/* line 90, ../scss/patternlab/_styleguide-specific.scss */
+/* line 91, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors > li .sg-swatch {
   display: block;
   height: 50px;
@@ -8673,53 +8688,53 @@ h2.resp-accordion {
   width: 33%;
   outline: dotted 1px gray;
 }
-/* line 97, ../scss/patternlab/_styleguide-specific.scss */
+/* line 98, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors > li .sg-info {
   line-height: 1;
   float: right;
   width: 66%;
 }
 @media (min-width: 768px) {
-  /* line 84, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 85, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors > li {
     float: left;
     width: 49%;
     margin-right: 1%;
   }
-  /* line 106, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 107, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors > li .sg-swatch {
     height: 100px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 84, ../scss/patternlab/_styleguide-specific.scss */
+  /* line 85, ../scss/patternlab/_styleguide-specific.scss */
   #atoms-colors > li {
     width: 24%;
   }
 }
-/* line 114, ../scss/patternlab/_styleguide-specific.scss */
+/* line 115, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors h5.headline {
   margin-top: 10px;
   margin-bottom: 0;
 }
-/* line 120, ../scss/patternlab/_styleguide-specific.scss */
+/* line 121, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette h3 {
   text-transform: uppercase;
   text-align: left;
   font-size: 11px;
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 127, ../scss/patternlab/_styleguide-specific.scss */
+/* line 128, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-colors .palette .color:last-child {
   border-radius: 5px;
 }
 
-/* line 132, ../scss/patternlab/_styleguide-specific.scss */
+/* line 133, ../scss/patternlab/_styleguide-specific.scss */
 pre {
   margin-top: 0;
 }
 
-/* line 136, ../scss/patternlab/_styleguide-specific.scss */
+/* line 137, ../scss/patternlab/_styleguide-specific.scss */
 #sg-patterns {
   padding: 40px;
 }
@@ -8729,7 +8744,7 @@ pre {
   * and should be kept tidy by applying a max width when they are being shown on 
   * the 'all' page
   */
-/* line 177, ../scss/patternlab/_styleguide-specific.scss */
+/* line 178, ../scss/patternlab/_styleguide-specific.scss */
 #atoms-landscape-4x3 .sg-pattern-body,
 #atoms-landscape-4x3-with-caption .sg-pattern-body,
 #atoms-landscape-16x9 .sg-pattern-body,
@@ -8761,7 +8776,7 @@ pre {
   max-width: 500px;
 }
 
-/* line 184, ../scss/patternlab/_styleguide-specific.scss */
+/* line 185, ../scss/patternlab/_styleguide-specific.scss */
 #organisms-header .header {
   position: relative;
   top: 0;

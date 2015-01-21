@@ -1,3 +1,56 @@
+.pillar-content-block {
+  .data {
+        
+    z-index: 2;
+    @extend .cf;
+    padding: 10px;
+    
+    text-transform: none;
+    background: $white;
+    
+    @include breakpoint($bp--medium-up) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 8px;
+      background: rgba($white, 0.9);
+      border-bottom: 4px solid $color--oxford-blue;
+    }
+    
+    h4 {
+      
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 0;
+      
+      @include breakpoint($bp--xxlarge-up) {
+        font-size: 20px;
+        line-height: 22px;
+        
+      }
+      color: $color--gray-darker;
+      
+      a {
+        color: $color--gray-darker;
+      }
+    }
+    
+    .readmore {
+      font-size: 10px;
+      margin-top: 10px;
+      display: none;
+      @include breakpoint($bp--xxlarge-up) {
+        display: block;  
+      }
+      a {
+        
+        color: $color--gray--darker;
+      }
+    }
+  }
+}
+
 .pillar-content {
   @extend .cf;
   margin: 0 -15px;
@@ -109,58 +162,6 @@
             width: auto;
           }
         }
-      }
-    }
-  }
-  
-  
-  .data {
-        
-    z-index: 2;
-    @extend .cf;
-    padding: 10px;
-    
-    text-transform: none;
-    background: $white;
-    
-    @include breakpoint($bp--medium-up) {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 8px;
-      background: rgba($white, 0.9);
-      border-bottom: 4px solid $color--oxford-blue;
-    }
-    
-    h4 {
-      
-      font-size: 16px;
-      line-height: 18px;
-      margin-bottom: 0;
-      
-      @include breakpoint($bp--xxlarge-up) {
-        font-size: 20px;
-        line-height: 22px;
-        
-      }
-      color: $color--gray-darker;
-      
-      a {
-        color: $color--gray-darker;
-      }
-    }
-    
-    .readmore {
-      font-size: 10px;
-      margin-top: 10px;
-      display: none;
-      @include breakpoint($bp--xxlarge-up) {
-        display: block;  
-      }
-      a {
-        
-        color: $color--gray--darker;
       }
     }
   }

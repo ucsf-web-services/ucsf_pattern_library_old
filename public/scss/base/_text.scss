@@ -7,6 +7,13 @@ strong, b {
   font-weight: normal;
   font-family: $font-body--bold;
 }
+/**
+ * Italic styles
+ */
+em, i {
+  font-weight: normal;
+  font-family: $font-body--italic;
+}
 
 /**
  * Body Copy

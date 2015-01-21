@@ -1,9 +1,4 @@
 .twitter__wrapper {
-  
-  h2.headline {
-    border-bottom: $border--headline--border;
-  }
-  
   ul {
     list-style-type: none;
     padding: 0;
@@ -16,8 +11,14 @@
     margin: 0;
     display: block;
     margin-bottom: 25px;
-  }
+  } 
+}
+.block-twitter {
   
+  h2.headline {
+    border-bottom: $border--headline--border;
+  }
+
   img {
     display: block;
     margin-top: 5px;
