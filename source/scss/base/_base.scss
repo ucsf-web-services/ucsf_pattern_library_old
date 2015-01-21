@@ -100,22 +100,44 @@ q q:after {
   content: close-quote; }
 
 blockquote {
-  quotes: "\201C" "\201D"; }
+  quotes: "\201C" "\201D"; 
+}
 blockquote p:before {
+  font-size: $font-size-xxlarge;
+  line-height: 24px;
   content: "\201C";
-  content: open-quote; }
+  content: open-quote; 
+  position: relative;
+  
+  top: 5px;
+  @include breakpoint($bp--medium-up) {
+    top: 10px;  
+  }
+}
 blockquote p:after {
   content: "";
-  content: no-close-quote; }
+  content: no-close-quote; 
+}
 blockquote p:last-of-type:after {
+  font-size: $font-size-xxlarge;
+  line-height: 24px;
   content: "\201D";
-  content: close-quote; }
+  content: close-quote; 
+  position: relative;
+  
+  top: 5px;
+  @include breakpoint($bp--medium-up) {
+    top: 10px;  
+  }
+}
 blockquote q:before {
   content: "\2018";
-  content: open-quote; }
+  content: open-quote; 
+}
 blockquote q:after {
   content: "\2019";
-  content: close-quote; }
+  content: close-quote; 
+}
 
 /**
  *
@@ -127,12 +149,34 @@ blockquote q:after {
  *
  */
 blockquote {
+  margin: 15px 0;
+  color: $color--gray-darker;
+  background: $color--gray;
+  padding: 25px;
+  font-family: $font-headline--italic;
+  
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    
+    @include breakpoint($bp--medium-up) {
+      font-size: 26px;
+      line-height: 32px;  
+    }
+  }
+  
+  
+  
   /**
      * .4em is roughly equal to the width of the opening â€œ that we wish to hang.
      */
   text-indent: -0.41em; }
+blockquote p:first-of-type {
+  margin-top: 0; 
+}
 blockquote p:last-of-type {
-  margin-bottom: 0; }
+  margin-bottom: 0; 
+}
 
 .source {
   display: block;

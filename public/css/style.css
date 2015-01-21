@@ -3424,31 +3424,51 @@ blockquote {
   quotes: "\201C" "\201D";
 }
 
-/* line 104, ../scss/base/_base.scss */
+/* line 105, ../scss/base/_base.scss */
 blockquote p:before {
+  font-size: 2em;
+  line-height: 24px;
   content: "\201C";
   content: open-quote;
+  position: relative;
+  top: 5px;
+}
+@media (min-width: 768px) {
+  /* line 105, ../scss/base/_base.scss */
+  blockquote p:before {
+    top: 10px;
+  }
 }
 
-/* line 107, ../scss/base/_base.scss */
+/* line 117, ../scss/base/_base.scss */
 blockquote p:after {
   content: "";
   content: no-close-quote;
 }
 
-/* line 110, ../scss/base/_base.scss */
+/* line 121, ../scss/base/_base.scss */
 blockquote p:last-of-type:after {
+  font-size: 2em;
+  line-height: 24px;
   content: "\201D";
   content: close-quote;
+  position: relative;
+  top: 5px;
+}
+@media (min-width: 768px) {
+  /* line 121, ../scss/base/_base.scss */
+  blockquote p:last-of-type:after {
+    top: 10px;
+  }
 }
 
-/* line 113, ../scss/base/_base.scss */
+/* line 133, ../scss/base/_base.scss */
 blockquote q:before {
   content: "\2018";
   content: open-quote;
 }
 
-/* line 116, ../scss/base/_base.scss */
+/* line 137, ../scss/base/_base.scss */
 blockquote q:after {
   content: "\2019";
   content: close-quote;
@@ -3463,26 +3483,48 @@ blockquote q:after {
    </blockquote>
  *
  */
-/* line 129, ../scss/base/_base.scss */
+/* line 151, ../scss/base/_base.scss */
 blockquote {
+  margin: 15px 0;
+  color: #58595b;
+  background: #ececec;
+  padding: 25px;
+  font-family: granjon-italic, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
   /**
      * .4em is roughly equal to the width of the opening â€œ that we wish to hang.
      */
   text-indent: -0.41em;
 }
+/* line 158, ../scss/base/_base.scss */
+blockquote p {
+  font-size: 18px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  /* line 158, ../scss/base/_base.scss */
+  blockquote p {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
 
-/* line 134, ../scss/base/_base.scss */
+/* line 174, ../scss/base/_base.scss */
+blockquote p:first-of-type {
+  margin-top: 0;
+}
+
+/* line 177, ../scss/base/_base.scss */
 blockquote p:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 137, ../scss/base/_base.scss */
+/* line 181, ../scss/base/_base.scss */
 .source {
   display: block;
   text-indent: 0;
 }
 
-/* line 140, ../scss/base/_base.scss */
+/* line 184, ../scss/base/_base.scss */
 .source:before {
   content: "\2014";
 }
@@ -3493,12 +3535,12 @@ blockquote p:last-of-type {
 /**
  * Use an explicit font stack to ensure browsers render correct `line-height`.
  */
-/* line 149, ../scss/base/_base.scss */
+/* line 193, ../scss/base/_base.scss */
 pre {
   overflow: auto;
 }
 
-/* line 152, ../scss/base/_base.scss */
+/* line 196, ../scss/base/_base.scss */
 pre mark {
   background: none;
   border-bottom: 1px solid;
@@ -3511,7 +3553,7 @@ pre mark {
    <code>&lt;/div&gt;<span class=code-comment>&lt;!-- /wrapper --&gt;</span></code>
  *
  */
-/* line 163, ../scss/base/_base.scss */
+/* line 207, ../scss/base/_base.scss */
 .code-comment {
   /**
      * Override this setting in your theme stylesheet
@@ -3542,7 +3584,7 @@ pre mark {
  * 3. Make sure lines of code donâ€™t wrap.
  * 4. Give the code form by forcing the `code` to honour white-space.
  */
-/* line 192, ../scss/base/_base.scss */
+/* line 236, ../scss/base/_base.scss */
 .line-numbers {
   font-family: monospace, serif;
   /* [1] */
@@ -3555,7 +3597,7 @@ pre mark {
   margin-left: 0;
 }
 
-/* line 203, ../scss/base/_base.scss */
+/* line 247, ../scss/base/_base.scss */
 .line-numbers code {
   white-space: pre;
   /* [4] */
@@ -5691,14 +5733,14 @@ ul, ol {
  */
 /* line 26, ../scss/base/_lists.scss */
 li {
-  margin-bottom: 12px;
-  margin-bottom: 0.85714rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.4rem;
 }
 
 /**
  * Definition List
  */
-/* line 33, ../scss/base/_lists.scss */
+/* line 34, ../scss/base/_lists.scss */
 dd {
   margin-left: 0;
 }
@@ -5706,7 +5748,7 @@ dd {
 /**
  * Definition title
  */
-/* line 39, ../scss/base/_lists.scss */
+/* line 40, ../scss/base/_lists.scss */
 dt {
   font-weight: 600;
 }
@@ -5714,13 +5756,13 @@ dt {
 /**
  * Inline List
  */
-/* line 45, ../scss/base/_lists.scss */
+/* line 46, ../scss/base/_lists.scss */
 .list--inline {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 48, ../scss/base/_lists.scss */
+/* line 49, ../scss/base/_lists.scss */
 .list--inline > li {
   display: inline;
   margin-right: 12px;
@@ -5730,7 +5772,7 @@ dt {
 /**
  * Inline List
  */
-/* line 56, ../scss/base/_lists.scss */
+/* line 57, ../scss/base/_lists.scss */
 .list--unstyled {
   list-style: none;
   margin-left: 0;
@@ -5739,13 +5781,13 @@ dt {
 /**
  * Block list
  */
-/* line 63, ../scss/base/_lists.scss */
+/* line 64, ../scss/base/_lists.scss */
 .list--block {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 66, ../scss/base/_lists.scss */
+/* line 67, ../scss/base/_lists.scss */
 .list--block > li {
   border-bottom: 1px #BFBFBF solid;
   padding-bottom: 12px;
@@ -5755,14 +5797,14 @@ dt {
 /**
  * Grid list
  */
-/* line 74, ../scss/base/_lists.scss */
+/* line 75, ../scss/base/_lists.scss */
 .list--grid {
   list-style: none;
   margin-left: 0;
   font-size: 0;
 }
 
-/* line 78, ../scss/base/_lists.scss */
+/* line 79, ../scss/base/_lists.scss */
 .list--grid > li {
   font-size: 14px;
   font-size: 1rem;
@@ -5770,13 +5812,13 @@ dt {
 }
 
 @media (min-width: 768px) {
-  /* line 84, ../scss/base/_lists.scss */
+  /* line 85, ../scss/base/_lists.scss */
   .list--grid {
     margin-left: -15px;
     margin-right: -15px;
   }
 
-  /* line 87, ../scss/base/_lists.scss */
+  /* line 88, ../scss/base/_lists.scss */
   .list--grid > li {
     display: inline-block;
     vertical-align: top;
@@ -6229,13 +6271,14 @@ table caption {
  */
 /* line 6, ../scss/base/_text.scss */
 strong, b {
-  font-weight: 600;
+  font-weight: normal;
+  font-family: HelveticaNeue-bold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 /**
  * Body Copy
  */
-/* line 12, ../scss/base/_text.scss */
+/* line 14, ../scss/base/_text.scss */
 .section-body {
   font-size: 16px;
   font-size: 1.14286rem;
@@ -6244,7 +6287,7 @@ strong, b {
 /**
  * Leading text
  */
-/* line 19, ../scss/base/_text.scss */
+/* line 21, ../scss/base/_text.scss */
 .text--lead {
   font-size: 20px;
   font-size: 1.42857rem;
@@ -6253,7 +6296,7 @@ strong, b {
 }
 
 @media (min-width: 768px) {
-  /* line 25, ../scss/base/_text.scss */
+  /* line 27, ../scss/base/_text.scss */
   .text--lead {
     font-size: 30px;
     font-size: 2.14286rem;
@@ -6262,7 +6305,7 @@ strong, b {
 /**
  * Sub text
  */
-/* line 32, ../scss/base/_text.scss */
+/* line 34, ../scss/base/_text.scss */
 .text--sub {
   font-weight: 300;
   font-size: 18px;
@@ -6270,7 +6313,7 @@ strong, b {
 }
 
 @media (min-width: 768px) {
-  /* line 37, ../scss/base/_text.scss */
+  /* line 39, ../scss/base/_text.scss */
   .text--sub {
     font-size: 22px;
     font-size: 1.57143rem;
@@ -6279,14 +6322,14 @@ strong, b {
 /**
  * Summary text
  */
-/* line 44, ../scss/base/_text.scss */
+/* line 46, ../scss/base/_text.scss */
 .text--summary, blockquote {
   font-size: 16px;
   font-size: 1.14286rem;
 }
 
 @media (min-width: 768px) {
-  /* line 48, ../scss/base/_text.scss */
+  /* line 50, ../scss/base/_text.scss */
   .text--summary {
     font-size: 20px;
     font-size: 1.42857rem;
@@ -6295,14 +6338,14 @@ strong, b {
 /**
  * Summary text
  */
-/* line 55, ../scss/base/_text.scss */
+/* line 57, ../scss/base/_text.scss */
 .text--summary, blockquote {
   font-size: 16px;
   font-size: 1.14286rem;
 }
 
 @media (min-width: 768px) {
-  /* line 59, ../scss/base/_text.scss */
+  /* line 61, ../scss/base/_text.scss */
   .text--summary {
     font-size: 20px;
     font-size: 1.42857rem;
@@ -6311,7 +6354,7 @@ strong, b {
 /**
  * Secondary text
  */
-/* line 66, ../scss/base/_text.scss */
+/* line 68, ../scss/base/_text.scss */
 .text--secondary {
   font-size: 14px;
   font-size: 1rem;
@@ -6320,19 +6363,10 @@ strong, b {
 /**
  * Tertiary text
  */
-/* line 73, ../scss/base/_text.scss */
+/* line 75, ../scss/base/_text.scss */
 .text--tertiary {
   font-size: 12px;
   font-size: 0.85714rem;
-}
-
-/**
- * Blockquote
- */
-/* line 80, ../scss/base/_text.scss */
-blockquote {
-  font-style: italic;
-  padding: 1em;
 }
 
 /* line 5, ../scss/layout/component-layout/_footer-layout.scss */

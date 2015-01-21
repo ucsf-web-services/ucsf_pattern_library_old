@@ -4,7 +4,9 @@
  * Strong styles
  */
 strong, b {
-  font-weight: 600; }
+  font-weight: normal;
+  font-family: $font-body--bold;
+}
 
 /**
  * Body Copy
@@ -73,10 +75,3 @@ strong, b {
 .text--tertiary {
   font-size: 12px;
   font-size: 0.85714rem; }
-
-/**
- * Blockquote
- */
-blockquote {
-  font-style: italic;
-  padding: 1em; }
