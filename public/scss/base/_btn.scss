@@ -64,18 +64,23 @@
 .btn--small {
   padding-right: 0.5em;
   padding-left: 0.5em;
-  line-height: 2; 
+  font-size: 12px;
+  line-height: 24px;
 }
 
-.btn--large {
+.btn--normal {
   padding-right: 1.5em;
   padding-left: 1.5em;
-  line-height: 4; }
+  font-size: 14px;
+  line-height: 32px;
+ }
 
-.btn--huge {
+.btn--large {
   padding-right: 2em;
   padding-left: 2em;
-  line-height: 5; }
+  font-size: 16px;
+  line-height: 38px; 
+}
 
 /**
  * These buttons will fill the entirety of their container.
@@ -93,17 +98,6 @@
 /*------------------------------------*\
     $FONT-SIZES
 \*------------------------------------*/
-/**
- * Button font-size modifiers.
- */
-.btn--alpha {
-  font-size: 3rem; }
-
-.btn--beta {
-  font-size: 2rem; }
-
-.btn--gamma {
-  font-size: 1rem; }
 
 /**
  * Make the button inherit sizing from its parent.
@@ -312,98 +306,6 @@
   margin: 0; }
 
 /**
-* Button group
-*/
-.btn-group {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 12px;
-  margin-bottom: 0.85714rem;
-  vertical-align: middle;
-  *zoom: 1;
-  /**
-  * Primary button
-  */
-  /**
-  * Secondary button
-  */
-  /**
-  * Warning button
-  */
-  /**
-  * Warning button
-  */ }
-.btn-group:before, .btn-group:after {
-  content: " ";
-  display: table; }
-.btn-group:after {
-  clear: both; }
-.btn-group > .btn {
-  float: left;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: -1px; }
-.btn-group > .btn:not(:first-child):not(:last-child):not(.btn--dropdown) {
-  border-radius: 0; }
-.btn-group > .btn:first-child {
-  margin-left: 0; }
-.btn-group > .btn:first-child:not(:last-child):not(.btn--dropdown) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0; }
-.btn-group > .btn:last-child:not(:first-child), .btn-group > .btn--dropdown:not(:first-child) {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0; }
-.btn-group .btn--primary {
-  border-left-color: #127a7f; }
-.btn-group .btn--primary:first-child {
-  border-left-color: transparent; }
-.btn-group .btn--secondary {
-  border-left-color: #818c98; }
-.btn-group .btn--secondary:first-child {
-  border-left-color: transparent; }
-.btn-group .btn--warning {
-  border-left-color: #d62a1a; }
-.btn-group .btn--warning:first-child {
-  border-left-color: transparent; }
-.btn-group .btn--dark {
-  border-left-color: #1d2127; }
-.btn-group .btn--dark:first-child {
-  border-left-color: transparent; }
-
-/**
-* Dropdown button
-*/
-.btn--dropdown {
-  padding-left: 0.8em;
-  padding-right: 0.8em; }
-.btn--dropdown .caret {
-  margin: 0; }
-
-/**
-* Button Sizes
-*/
-/**
-* Alpha Button
-*/
-.btn--alpha {
-  font-size: 16px;
-  font-size: 1.14286rem; }
-
-/**
-* Beta Button
-*/
-.btn--beta {
-  font-size: 14px;
-  font-size: 1rem; }
-
-/**
-* Gamma Button
-*/
-.btn--gamma {
-  font-size: 12px;
-  font-size: 0.85714rem; }
-
-/**
 * Hard Button
 */
 .btn--hard {
@@ -418,10 +320,11 @@
 /**
 * Button round
 */
-.btn--round {
-  border-radius: 200px;
-  padding-left: 0.7em;
-  padding-right: 0.7em; }
+.btn--corners {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
 
 /**
 * Fixed width
@@ -429,12 +332,6 @@
 .btn--fix {
   min-width: 100px;
   text-align: center; }
-
-/**
-* Button large
-*/
-.btn--large {
-  padding: 0.8em 2em; }
 
 /**
 * Button with icons aligned to the left
@@ -522,15 +419,21 @@
   background: $color--yellow-green;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  .btn--more {
+    float: right;
+    margin-top: 5px;
+    
+    @include breakpoint($bp--xxlarge-up) {
+      margin-top: 15px;
+    }
+  }
+}
+
 .btn--more {
   font-family: $font-body--medium;
-  float: right;
   
-  margin-top: 5px;
   
-  @include breakpoint($bp--xxlarge-up) {
-    margin-top: 15px;
-  }
   
   margin-bottom: 0;
   font-size: 10px;
