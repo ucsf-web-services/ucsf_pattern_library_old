@@ -15,12 +15,18 @@
     }  
   }
   &.without-image {
+    padding-top: 25px;
+    
     .btn--term {
-      
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
     }  
   }
   .content {
     padding: 10px;
+    @extend .cf;
   }
   
   

@@ -4306,6 +4306,7 @@ pre mark {
 .btn--term {
   padding-right: 0.5em;
   padding-left: 0.5em;
+  margin-top: 0;
   line-height: 2;
   font-size: 10px;
   text-transform: uppercase;
@@ -4315,32 +4316,32 @@ pre mark {
   letter-spacing: 0.140em;
   border-radius: 0;
 }
-/* line 503, ../scss/base/_btn.scss */
+/* line 504, ../scss/base/_btn.scss */
 .btn--term:hover {
   color: white;
 }
 
-/* line 508, ../scss/base/_btn.scss */
+/* line 509, ../scss/base/_btn.scss */
 .btn--term--research {
   background: #18A3AC;
 }
 
-/* line 512, ../scss/base/_btn.scss */
+/* line 513, ../scss/base/_btn.scss */
 .btn--term--campus-news {
   background: #716FB2;
 }
 
-/* line 516, ../scss/base/_btn.scss */
+/* line 517, ../scss/base/_btn.scss */
 .btn--term--patient-care {
   background: #178CCB;
 }
 
-/* line 520, ../scss/base/_btn.scss */
+/* line 521, ../scss/base/_btn.scss */
 .btn--term--education {
   background: #90BD31;
 }
 
-/* line 524, ../scss/base/_btn.scss */
+/* line 525, ../scss/base/_btn.scss */
 .btn--more {
   font-family: HelveticaNeue-medium, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   float: right;
@@ -4354,12 +4355,12 @@ pre mark {
   text-transform: uppercase;
 }
 @media (min-width: 1190px) {
-  /* line 524, ../scss/base/_btn.scss */
+  /* line 525, ../scss/base/_btn.scss */
   .btn--more {
     margin-top: 15px;
   }
 }
-/* line 542, ../scss/base/_btn.scss */
+/* line 543, ../scss/base/_btn.scss */
 .btn--more:hover {
   border-color: #2ea6e7;
   color: #2ea6e7;
@@ -5057,7 +5058,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .featured-events:after, .featured-events__wrapper:after, #gallery-rotator:after, #gallery-rotator ul.slides:after, #gallery-rotator ul.slides li:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
+.cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .block-post .content:after, .featured-events:after, .featured-events__wrapper:after, #gallery-rotator:after, #gallery-rotator ul.slides:after, #gallery-rotator ul.slides li:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .media--coverage:after, .media--coverage ul:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
 .pillar-content .pillar-bottom-half:after, .pillar-content .pillar-2col:after,
 .pillar-content .pillar-3col:after, .pillar-content .data:after, .resp-tab-content:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after, #atoms-fonts-helvetica-neue .font-type:after,
 #atoms-fonts-granjon .font-type:after {
@@ -6555,18 +6556,29 @@ blockquote {
   left: 0;
   z-index: 2;
 }
-/* line 22, ../scss/components/_block-post.scss */
+/* line 17, ../scss/components/_block-post.scss */
+.block-post.without-image {
+  padding-top: 25px;
+}
+/* line 20, ../scss/components/_block-post.scss */
+.block-post.without-image .btn--term {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+/* line 27, ../scss/components/_block-post.scss */
 .block-post .content {
   padding: 10px;
 }
-/* line 27, ../scss/components/_block-post.scss */
+/* line 33, ../scss/components/_block-post.scss */
 .block-post .submitted-date {
   font-size: 12px;
   line-height: 18px;
   font-weight: bold;
   color: #989898;
 }
-/* line 34, ../scss/components/_block-post.scss */
+/* line 40, ../scss/components/_block-post.scss */
 .block-post h4 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -6574,7 +6586,7 @@ blockquote {
   font-weight: normal;
   color: #333333;
 }
-/* line 41, ../scss/components/_block-post.scss */
+/* line 47, ../scss/components/_block-post.scss */
 .block-post h4 a {
   color: #333333;
 }
