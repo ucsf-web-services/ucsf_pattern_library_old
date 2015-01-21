@@ -16,6 +16,7 @@
 #sg-patterns {
   max-width: $site-width;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 #atoms-fonts-helvetica-neue,
@@ -203,10 +204,6 @@
 
 pre {
   margin-top: 0;
-}
-
-#sg-patterns {
-  padding: 40px;
 }
 
 .button-demo {
