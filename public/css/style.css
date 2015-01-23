@@ -5661,9 +5661,11 @@ dt {
 html {
   overflow-y: scroll;
   min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent font scaling in landscape while allowing user zoom */
 }
 
-/* line 6, ../scss/base/_main.scss */
+/* line 7, ../scss/base/_main.scss */
 html,
 button,
 input,
@@ -5672,43 +5674,43 @@ textarea {
   font: 0.875em/1.71429 "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 14, ../scss/base/_main.scss */
+/* line 15, ../scss/base/_main.scss */
 p {
   margin: 1em 0;
 }
 
 @media (min-width: 768px) {
-  /* line 18, ../scss/base/_main.scss */
+  /* line 19, ../scss/base/_main.scss */
   .scroll {
     padding-top: 130px;
   }
 }
 
-/* line 26, ../scss/base/_main.scss */
+/* line 27, ../scss/base/_main.scss */
 .main {
   max-width: 1190px;
 }
 @media (min-width: 768px) {
-  /* line 26, ../scss/base/_main.scss */
+  /* line 27, ../scss/base/_main.scss */
   .main {
     padding: 0 1em 0 1em;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 39, ../scss/base/_main.scss */
+  /* line 40, ../scss/base/_main.scss */
   .wrapper--main {
     padding-top: 20px;
     padding-bottom: 0;
   }
 }
 
-/* line 46, ../scss/base/_main.scss */
+/* line 47, ../scss/base/_main.scss */
 .wrapper--outer {
   width: 100%;
 }
 
-/* line 52, ../scss/base/_main.scss */
+/* line 53, ../scss/base/_main.scss */
 .wrapper--inner {
   max-width: 1190px;
   padding-left: 10px;
@@ -6243,7 +6245,7 @@ em, i {
 @media (min-width: 768px) {
   /* line 21, ../scss/layout/component-layout/_header-layout.scss */
   .header .header-logo-bar {
-    height: 86px;
+    height: 120px;
   }
 }
 /* line 34, ../scss/layout/component-layout/_header-layout.scss */
@@ -6254,7 +6256,7 @@ em, i {
 @media (min-width: 768px) {
   /* line 34, ../scss/layout/component-layout/_header-layout.scss */
   .header .header-navs {
-    padding-top: 37px;
+    padding-top: 55px;
   }
 }
 /* line 44, ../scss/layout/component-layout/_header-layout.scss */

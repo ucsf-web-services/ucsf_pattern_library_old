@@ -27,7 +27,7 @@
     position: relative;
 
     @include breakpoint($bp--medium-up) {
-      height: 86px;
+      height: 120px;
     }
   }
 
@@ -37,7 +37,7 @@
     padding-top: $pad-double;
 
     @include breakpoint($bp--medium-up) {
-      padding-top: 37px;
+      padding-top: 55px;
     }
   }
 
