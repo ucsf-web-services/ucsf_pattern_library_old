@@ -17,7 +17,7 @@ p {
 }
 
 .scroll {
-  
+  padding-top: 90px;
   @include breakpoint($bp--medium-up) {
     padding-top: 130px;
   }

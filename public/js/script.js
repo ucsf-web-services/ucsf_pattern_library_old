@@ -243,7 +243,7 @@
     
   var fixedNavigation = $('#header'); // Change to nav div
   var toggleNavClass = 'page-scrolling'; // Change to class name
-  var threshold = 35; // Change to pixels scrolled
+  var threshold = 5; // Change to pixels scrolled
   
   $(window).scroll(function () {
       var distance = $(this).scrollTop();

@@ -11,12 +11,20 @@
   .header-logo-bar {
     @extend %transition-all;    
   }
+  
+  &.page-scrolling {
+    box-shadow: 1px 1px 8px rgba(102, 102, 102, 0.3);
+    
+    .header-logo-bar {
+      height: auto;
+    }
+    
+  }
+  
+  
   @include breakpoint($bp--medium-up) {
     &.page-scrolling {
-      box-shadow: 1px 1px 8px rgba(102, 102, 102, 0.3);
-      .header-logo-bar {
-        height: auto;
-      }
+      
       .logo {
         padding-top: 10px;
         

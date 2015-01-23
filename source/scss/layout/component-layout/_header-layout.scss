@@ -1,10 +1,10 @@
 .header {
 
-  @include breakpoint($bp--medium-up) {
+  //@include breakpoint($bp--small-up) {
     position: fixed;
     top: 1;
     width: 100%;
-  }
+  //}
 
   .nav-global {
     @extend .cf;
@@ -35,8 +35,11 @@
     @extend .float--right;
     clear: right;
     padding-top: $pad-double;
-
+    
     @include breakpoint($bp--medium-up) {
+      padding-top: 42px;
+    }
+    @include breakpoint($bp--large-up) {
       padding-top: 55px;
     }
   }
