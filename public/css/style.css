@@ -5681,40 +5681,46 @@ p {
 
 /* line 19, ../scss/base/_main.scss */
 .scroll {
-  padding-top: 90px;
+  padding-top: 75px;
 }
 @media (min-width: 768px) {
+  /* line 19, ../scss/base/_main.scss */
+  .scroll {
+    padding-top: 110px;
+  }
+}
+@media (min-width: 1024px) {
   /* line 19, ../scss/base/_main.scss */
   .scroll {
     padding-top: 130px;
   }
 }
 
-/* line 27, ../scss/base/_main.scss */
+/* line 31, ../scss/base/_main.scss */
 .main {
   max-width: 1190px;
 }
 @media (min-width: 768px) {
-  /* line 27, ../scss/base/_main.scss */
+  /* line 31, ../scss/base/_main.scss */
   .main {
     padding: 0 1em 0 1em;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 40, ../scss/base/_main.scss */
+  /* line 44, ../scss/base/_main.scss */
   .wrapper--main {
     padding-top: 20px;
     padding-bottom: 0;
   }
 }
 
-/* line 47, ../scss/base/_main.scss */
+/* line 51, ../scss/base/_main.scss */
 .wrapper--outer {
   width: 100%;
 }
 
-/* line 53, ../scss/base/_main.scss */
+/* line 57, ../scss/base/_main.scss */
 .wrapper--inner {
   max-width: 1190px;
   padding-left: 10px;
@@ -6247,51 +6253,57 @@ em, i {
 @media (min-width: 768px) {
   /* line 21, ../scss/layout/component-layout/_header-layout.scss */
   .header .header-logo-bar {
+    height: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 21, ../scss/layout/component-layout/_header-layout.scss */
+  .header .header-logo-bar {
     height: 120px;
   }
 }
-/* line 34, ../scss/layout/component-layout/_header-layout.scss */
+/* line 37, ../scss/layout/component-layout/_header-layout.scss */
 .header .header-navs {
   clear: right;
   padding-top: 2em;
 }
 @media (min-width: 768px) {
-  /* line 34, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 37, ../scss/layout/component-layout/_header-layout.scss */
   .header .header-navs {
     padding-top: 42px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 34, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 37, ../scss/layout/component-layout/_header-layout.scss */
   .header .header-navs {
     padding-top: 55px;
   }
 }
-/* line 47, ../scss/layout/component-layout/_header-layout.scss */
+/* line 50, ../scss/layout/component-layout/_header-layout.scss */
 .header .logo {
   padding-top: 7px;
   width: 60px;
 }
 @media (min-width: 768px) {
-  /* line 47, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 50, ../scss/layout/component-layout/_header-layout.scss */
   .header .logo {
     padding-top: 32px;
     width: 90px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 47, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 50, ../scss/layout/component-layout/_header-layout.scss */
   .header .logo {
     padding-top: 32px;
     width: 120px;
   }
 }
-/* line 66, ../scss/layout/component-layout/_header-layout.scss */
+/* line 69, ../scss/layout/component-layout/_header-layout.scss */
 .header .nav-social {
   display: none;
 }
 @media (min-width: 480px) {
-  /* line 66, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 69, ../scss/layout/component-layout/_header-layout.scss */
   .header .nav-social {
     display: block;
     position: absolute;
@@ -6300,7 +6312,7 @@ em, i {
   }
 }
 @media (min-width: 768px) {
-  /* line 66, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 69, ../scss/layout/component-layout/_header-layout.scss */
   .header .nav-social {
     display: block;
     position: relative;
@@ -6310,7 +6322,7 @@ em, i {
   }
 }
 @media (min-width: 768px) {
-  /* line 85, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 88, ../scss/layout/component-layout/_header-layout.scss */
   .header .mobile-menu-button {
     display: none;
   }
@@ -6871,26 +6883,8 @@ em, i {
 .header.page-scrolling {
   box-shadow: 1px 1px 8px rgba(102, 102, 102, 0.3);
 }
-/* line 18, ../scss/components/_header.scss */
-.header.page-scrolling .header-logo-bar {
-  height: auto;
-}
-@media (min-width: 768px) {
-  /* line 28, ../scss/components/_header.scss */
-  .header.page-scrolling .logo {
-    padding-top: 10px;
-  }
-  /* line 31, ../scss/components/_header.scss */
-  .header.page-scrolling .logo img {
-    max-width: 80px;
-  }
-  /* line 35, ../scss/components/_header.scss */
-  .header.page-scrolling .header-navs {
-    padding-top: 5px;
-  }
-}
 
-/* line 44, ../scss/components/_header.scss */
+/* line 43, ../scss/components/_header.scss */
 .header, .header .logo,
 .header .logo img,
 .header .header-navs,

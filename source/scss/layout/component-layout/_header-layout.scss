@@ -25,8 +25,11 @@
     padding: 0 10px;
     max-width: $site-width;
     position: relative;
-
+    
     @include breakpoint($bp--medium-up) {
+      height: 100px;
+    }
+    @include breakpoint($bp--large-up) {
       height: 120px;
     }
   }

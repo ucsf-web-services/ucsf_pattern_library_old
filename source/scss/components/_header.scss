@@ -16,7 +16,7 @@
     box-shadow: 1px 1px 8px rgba(102, 102, 102, 0.3);
     
     .header-logo-bar {
-      height: auto;
+      //height: auto;
     }
     
   }
@@ -26,16 +26,15 @@
     &.page-scrolling {
       
       .logo {
-        padding-top: 10px;
+        //padding-top: 10px;
         
         img {
-          max-width: 80px;
+          //max-width: 80px;
         }
       }
       .header-navs {
-        padding-top: 5px;
+        //padding-top: 5px;
       }
-      
     }
   }  
 }
