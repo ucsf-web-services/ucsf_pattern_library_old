@@ -39,8 +39,8 @@
     border-radius: 0;
     
     &.active {
-      background: #4d4d4d;
-      border-color: #4d4d4d;
+      background: $color--electric-blue;
+      border-color: $color--electric-blue;
     }
   }
 }

@@ -52,22 +52,22 @@
 		},
 		{
 			"title" : "Patient Care",
-			"url" : "#",
+			"url" : "/patterns/04-pages-03-news-center-patient-care/04-pages-03-news-center-patient-care.html",
 		  "class" : "btn btn--gamma btn--secondary"
 		},
 		{
 			"title" : "Education",
-			"url" : "#",
+			"url" : "/patterns/04-pages-04-news-center-education/04-pages-04-news-center-education.html",
 		  "class" : "btn btn--gamma btn--secondary"
 		},
 		{
 			"title" : "Research",
-			"url" : "#",
+			"url" : "/patterns/04-pages-05-news-center-research/04-pages-05-news-center-research.html",
 		  "class" : "btn btn--gamma btn--secondary"
 		},
 		{
 			"title" : "Campus News",
-			"url" : "#",
+			"url" : "/patterns/04-pages-06-news-center-campus-news/04-pages-06-news-center-campus-news.html",
 		  "class" : "btn btn--gamma btn--secondary"
 		}
   ],

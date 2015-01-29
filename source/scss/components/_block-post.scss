@@ -1,5 +1,6 @@
 .block-post {
   position: relative;
+  padding: 0;
   background: $color--gray--lighter;
   
   // when there is an image, render the primary term absolutely
@@ -48,5 +49,42 @@
       color: $color--gray--darker;
       //text-decoration: none;
     }
+  }
+}
+
+// on certain pages, show the border
+// sub pages hide the term button and instead show a border
+.news-page--sub-page {
+  
+  .block-post {
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    
+    a.btn--term {
+      display: none;
+    }
+    
+    &.without-image { 
+      padding-top: 5px;
+    }
+    
+    &.btn--term,
+    &.btn--term--research {
+      border-bottom-color: $color--blue-green;
+    }
+    
+    &.btn--term--campus-news {
+      border-bottom-color: $color--chetwode-blue;
+    }
+    
+    &.btn--term--patient-care {
+      border-bottom-color: $color--electric-blue;
+    }
+    
+    &.btn--term--education {
+      border-bottom-color: $color--yellow-green;
+    }
+    
+    
   }
 }

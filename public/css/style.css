@@ -6400,6 +6400,35 @@ em, i {
   line-height: 18px;
 }
 
+/* line 1, ../scss/components/_block-callout.scss */
+.block-callout {
+  background: #ececec;
+  border-bottom: 4px solid #F48024;
+  color: black;
+}
+/* line 6, ../scss/components/_block-callout.scss */
+.block-callout .content {
+  padding: 20px;
+  color: #4d4d4d;
+  font-size: 15px;
+  line-height: 20px;
+}
+/* line 12, ../scss/components/_block-callout.scss */
+.block-callout .content h4 {
+  font-family: HelveticaNeue-light, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+}
+/* line 17, ../scss/components/_block-callout.scss */
+.block-callout .content h4 a {
+  color: black;
+  text-decoration: none;
+}
+/* line 25, ../scss/components/_block-callout.scss */
+.block-callout .readmore {
+  text-align: center;
+}
+
 /* line 2, ../scss/components/_block-content.scss */
 .block-content img {
   display: block;
@@ -6530,42 +6559,43 @@ em, i {
 /* line 1, ../scss/components/_block-post.scss */
 .block-post {
   position: relative;
+  padding: 0;
   background: #f1f1f1;
 }
-/* line 6, ../scss/components/_block-post.scss */
+/* line 7, ../scss/components/_block-post.scss */
 .block-post .btn--term {
   margin-bottom: 0;
 }
-/* line 10, ../scss/components/_block-post.scss */
+/* line 11, ../scss/components/_block-post.scss */
 .block-post.with-image .btn--term {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
 }
-/* line 17, ../scss/components/_block-post.scss */
+/* line 18, ../scss/components/_block-post.scss */
 .block-post.without-image {
   padding-top: 25px;
 }
-/* line 20, ../scss/components/_block-post.scss */
+/* line 21, ../scss/components/_block-post.scss */
 .block-post.without-image .btn--term {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
 }
-/* line 27, ../scss/components/_block-post.scss */
+/* line 28, ../scss/components/_block-post.scss */
 .block-post .content {
   padding: 10px;
 }
-/* line 33, ../scss/components/_block-post.scss */
+/* line 34, ../scss/components/_block-post.scss */
 .block-post .submitted-date {
   font-size: 12px;
   line-height: 18px;
   font-weight: bold;
   color: #989898;
 }
-/* line 40, ../scss/components/_block-post.scss */
+/* line 41, ../scss/components/_block-post.scss */
 .block-post h4 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -6573,9 +6603,39 @@ em, i {
   font-weight: normal;
   color: #333333;
 }
-/* line 47, ../scss/components/_block-post.scss */
+/* line 48, ../scss/components/_block-post.scss */
 .block-post h4 a {
   color: #333333;
+}
+
+/* line 59, ../scss/components/_block-post.scss */
+.news-page--sub-page .block-post {
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+}
+/* line 63, ../scss/components/_block-post.scss */
+.news-page--sub-page .block-post a.btn--term {
+  display: none;
+}
+/* line 67, ../scss/components/_block-post.scss */
+.news-page--sub-page .block-post.without-image {
+  padding-top: 5px;
+}
+/* line 71, ../scss/components/_block-post.scss */
+.news-page--sub-page .block-post.btn--term, .news-page--sub-page .block-post.btn--term--research {
+  border-bottom-color: #18A3AC;
+}
+/* line 76, ../scss/components/_block-post.scss */
+.news-page--sub-page .block-post.btn--term--campus-news {
+  border-bottom-color: #716FB2;
+}
+/* line 80, ../scss/components/_block-post.scss */
+.news-page--sub-page .block-post.btn--term--patient-care {
+  border-bottom-color: #178CCB;
+}
+/* line 84, ../scss/components/_block-post.scss */
+.news-page--sub-page .block-post.btn--term--education {
+  border-bottom-color: #90BD31;
 }
 
 /* line 2, ../scss/components/_block-twitter.scss */
@@ -7307,8 +7367,8 @@ em, i {
 }
 /* line 41, ../scss/components/_nav-section.scss */
 .nav-section a.active {
-  background: #4d4d4d;
-  border-color: #4d4d4d;
+  background: #178CCB;
+  border-color: #178CCB;
 }
 
 /* line 4, ../scss/components/_nav-social.scss */

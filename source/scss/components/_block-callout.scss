@@ -1,0 +1,28 @@
+.block-callout {
+  background: $color--gray;
+  border-bottom: 4px solid $color--cadmium-orange;
+  color: $black;
+  
+  .content {
+    padding: 20px;
+    color: $color--gray--dark;
+    font-size: 15px;
+    line-height: 20px;
+    
+    h4 {
+      font-family: $font-body--light;
+      font-size: 22px;
+      line-height: 32px;
+      
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  
+  .readmore {
+    text-align: center;
+  }
+}

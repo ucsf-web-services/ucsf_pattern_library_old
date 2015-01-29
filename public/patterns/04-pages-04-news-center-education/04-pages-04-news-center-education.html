@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html class="pl">
+<head>
+  <title>News Center</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/selectize/dist/css/selectize.css" />
+  <link rel="stylesheet" href="/bower_components/Selecter/jquery.fs.selecter.css" />
+  <!-- endbower -->
+
+  <link rel="stylesheet" href="../../css/style.css?0" media="all"/>
+
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/jquery-bridget/jquery.bridget.js"></script>
+  <script src="/bower_components/sifter/sifter.js"></script>
+  <script src="/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="/bower_components/Selecter/jquery.fs.selecter.js"></script>
+  <script src="/bower_components/selectize/dist/js/selectize.js"></script>
+  <script src="/bower_components/eventEmitter/EventEmitter.js"></script>
+  <script src="/bower_components/eventie/eventie.js"></script>
+  <script src="/bower_components/imagesloaded/imagesloaded.js"></script>
+  <script src="/bower_components/get-style-property/get-style-property.js"></script>
+  <script src="/bower_components/get-size/get-size.js"></script>
+  <script src="/bower_components/doc-ready/doc-ready.js"></script>
+  <script src="/bower_components/matches-selector/matches-selector.js"></script>
+  <script src="/bower_components/outlayer/item.js"></script>
+  <script src="/bower_components/outlayer/outlayer.js"></script>
+  <script src="/bower_components/masonry/masonry.js"></script>
+  <script src="/bower_components/scrollReveal.js/dist/scrollReveal.js"></script>
+  <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
+
+  <script src="../../js/easyResponsiveTabs.js"></script>
+  <script src="../../js/breakpoints.js"></script>
+  <script src="../../js/matchHeight.js"></script>
+  <script src="../../js/flexslider/jquery.flexslider.js"></script>
+  <script src="../../js/script.js"></script>
+  <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+  		<!-- never cache patterns -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?0" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?0" media="all" />
+		
+
+  <!-- End Pattern Lab -->
+
+</head>
+<body class="news-center">
+<div class="page news-page news-page--sub-page news-page--education" id="page">
+  <!-- Begin .header -->
+  <header id="header" class="header cf" role="banner">
+    <div class="nav-global-wrapper">
+      <div class="nav-global">
+        <div class="nav-global__title">University of California San Francisco</div>
+        <ul class="nav-global__utility">
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Support UCSF</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>    <div class="header-logo-bar">
+      <div class="logo">
+        <a href="/patterns/04-pages-00-homepage/04-pages-00-homepage.html"><img src="../../images/logo.png" class="logo-img " alt="Logo Alt Text" /></a>
+      </div>      <div class="header-navs">
+        <nav class="nav-primary">
+          <ul class="nav-primary__list">    
+            <li><a class="" href="#">About</a></li>
+            <li><a class="navigation-popup patient-care" href="#patient-care">Patient Care</a></li>
+            <li><a class="" href="#">Research</a></li>
+            <li><a class="" href="#">Education</a></li>
+            <li><a class="active" href="/patterns/04-pages-01-news-center/04-pages-01-news-center.html">News Center</a></li>
+            <li><a class="" href="#">Pulse of UCSF</a></li>
+          </ul>
+        </nav><!--end .nav-->
+        <ul class="nav-social">
+          <li><a href="#"><span class="element-invisible">Facebook</span><i class="fa fa-facebook-square"></i></a></li>
+          <li><a href="#"><span class="element-invisible">Twitter</span><i class="fa fa-twitter-square"></i></a></li>
+          <li><a href="#"><span class="element-invisible">YouTube</span><i class="fa fa-youtube-square"></i></a></li>
+        </ul>      </div>
+    <button class="mobile-menu-button btn btn--unstyled btn--toggle"><em class="fa fa-bars"></em>
+    </button>    </div>
+  </header>
+  <!-- End .header -->  
+  <div class="scroll">
+    <div class="wrapper--main" role="main">
+    
+      <div class="wrapper--inner">
+        <div class="nav nav-section">
+        <h2 class="headline">News Center</h2>
+        <nav>
+          <ul>
+            <li><a class="btn btn--gamma btn--secondary" href="/patterns/04-pages-01-news-center/04-pages-01-news-center.html">Overview</a></li>
+            <li><a class="btn btn--gamma btn--secondary" href="/patterns/04-pages-02-news-center-latest/04-pages-02-news-center-latest.html">Latest</a></li>
+            <li><a class="btn btn--gamma btn--secondary" href="/patterns/04-pages-03-news-center-patient-care/04-pages-03-news-center-patient-care.html">Patient Care</a></li>
+            <li><a class="active btn btn--gamma btn--secondary" href="/patterns/04-pages-04-news-center-education/04-pages-04-news-center-education.html">Education</a></li>
+            <li><a class="btn btn--gamma btn--secondary" href="/patterns/04-pages-05-news-center-research/04-pages-05-news-center-research.html">Research</a></li>
+            <li><a class="btn btn--gamma btn--secondary" href="/patterns/04-pages-06-news-center-campus-news/04-pages-06-news-center-campus-news.html">Campus News</a></li>
+          </ul>
+        </nav>
+        </div>      </div>
+      <div class="wrapper--inner">
+        
+        <div class="preface-blocks">
+          <div class="preface-block-main content-column--quarter content-column--quarter-3col">
+            <div id="news-rotator" class="rotator__wrapper custom-color-element">
+              <div class="rotator--inner">
+                
+                <div class="flexslider__wrapper flexslider">
+                  <ul class="slides">
+                    
+                    <li class="btn--term--education" data-thumb="../../images/16x9/sample-image-1.jpg">
+            <div class="image">
+              <a href="#"><img src="../../images/16x9/sample-image-1.jpg" alt="16x9 Image" /></a>
+            </div>                      <a href="#" class="btn btn--term btn--term--education">Education</a>
+                      <div class="data">
+                        <h4><a href="#">Blood Work: Scientists Uncover Surprising New Tools to Rejuvenate the Brain</a></h4>
+                        <div class="readmore"><a href="#">Read More</a></div>
+                      </div>
+                    </li>
+                    <li class="btn--term--education" data-thumb="../../images/16x9/sample-image-2.jpg">
+            <div class="image">
+              <a href="#"><img src="../../images/16x9/sample-image-2.jpg" alt="16x9 Image" /></a>
+            </div>                      <a href="#" class="btn btn--term btn--term--education">Education</a>
+                      <div class="data">
+                        <h4><a href="#">Sugared Soda Consumption, Cell Aging Associated in New Study</a></h4>
+                        <div class="readmore"><a href="#">Read More</a></div>
+                      </div>
+                    </li>
+                    <li class="btn--term--education" data-thumb="../../images/16x9/sample-image-3.jpg">
+            <div class="image">
+              <a href="#"><img src="../../images/16x9/sample-image-3.jpg" alt="16x9 Image" /></a>
+            </div>                      <a href="#" class="btn btn--term btn--term--education">Education</a>
+                      <div class="data">
+                        <h4><a href="#">Biological Basis Found for Sensory Processing Disorders in Kids</a></h4>
+                        <div class="readmore"><a href="#">Read More</a></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flexslider-carousel">
+                  <ul class="thumbnail-carousel-navigation">
+                    <li>
+            <div class="image">
+              <a href="#"><img src="../../images/16x9/sample-image-1.jpg" alt="16x9 Image" /></a>
+            </div>                    </li>
+                    <li>
+            <div class="image">
+              <a href="#"><img src="../../images/16x9/sample-image-2.jpg" alt="16x9 Image" /></a>
+            </div>                    </li>
+                    <li>
+            <div class="image">
+              <a href="#"><img src="../../images/16x9/sample-image-3.jpg" alt="16x9 Image" /></a>
+            </div>                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>          </div>
+          <div class="preface-block-popular content-column--quarter content-column--quarter-1col">
+            
+          </div>
+        </div>
+      </div>   
+      
+      <div class="wrapper--outer wrapper--blog">
+        <div class="wrapper--inner">
+          <div class="blog--science__wrapper">
+            <div class="blog--science">
+              <h2 class="headline">Science Blog <a type="button" class="btn btn--more btn--transparent">See More</a></h2>
+              <ul>
+                <li>
+        <div class="block-blog block-blog--small">
+          <div class="block-blog__inner">
+            <div class="block-blog__img">
+        <div class="image">
+          <a href="#"><img src="../../images/1x1/sample-image-2.jpg" alt="Square Thumbnail" /></a>
+        </div>            </div>
+            <div class="block-blog__body">
+              <h3><a href="#">UCSF Partner a Finalist in Google’s Bay Area Impact Challenge</a></h3>
+              <div class="submitted-by">By Scott Maier on September 22, 2014</div>
+            </div>
+          </div>
+        </div>                </li>
+                <li>
+        <div class="block-blog block-blog--small">
+          <div class="block-blog__inner">
+            <div class="block-blog__img">
+        <div class="image">
+          <a href="#"><img src="../../images/1x1/sample-image-4.jpg" alt="Square Thumbnail" /></a>
+        </div>            </div>
+            <div class="block-blog__body">
+              <h3><a href="#">Online Project Aims to Speed Up Cures for Brain Disorders</a></h3>
+              <div class="submitted-by">By Michael W. Weiner, MD on June 16, 2014</div>
+            </div>
+          </div>
+        </div>                </li>
+                <li>
+        <div class="block-blog block-blog--small">
+          <div class="block-blog__inner">
+            <div class="block-blog__img">
+        <div class="image">
+          <a href="#"><img src="../../images/1x1/sample-image-6.jpg" alt="Square Thumbnail" /></a>
+        </div>            </div>
+            <div class="block-blog__body">
+              <h3><a href="#">UCSF Hosts Capitol Hill Briefing on Kidney Research Innovations</a></h3>
+              <div class="submitted-by">By Jennifer Wickre on May 2, 2014</div>
+            </div>
+          </div>
+        </div>                </li>
+              </ul>
+            </div>
+          </div>        </div>
+      </div>
+         
+      <div class="wrapper--inner">
+        <div class="news-center-main">
+          <div class="news-center-masonry">
+            <div class="post-filter__wrapper">
+              <div id="masonry--news-center" class="post-filter">
+                <h2 class="headline">Latest News from UCSF</h2>
+                <div class="post-filter-results__wrapper">
+                  <ul id="post-filter-results" class="masonry-results post-filter__results">
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/16x9/sample-image-5.jpg" alt="16x9 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 16, 2014</div>
+    <h4><a href="#">UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/4x3/sample-image-1.jpg" alt="4x3 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 12, 2014</div>
+    <h4><a href="#">Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/16x9/sample-image-7.jpg" alt="16x9 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 12, 2014</div>
+    <h4><a href="#">Williams Recieves President's Research Catalyst Award to Address Prison Health Care Crisis</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/1x1/sample-image-2.jpg" alt="1x1 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 11, 2014</div>
+    <h4><a href="#">Employees of the New Mission Bay Hospitals Treated to Celebratory Party</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/4x3/sample-image-3.jpg" alt="4x3 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 11, 2014</div>
+    <h4><a href="#">American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/16x9/sample-image-6.jpg" alt="16x9 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 11, 2014</div>
+    <h4><a href="#">UCSF Commends Student Leaders for Organizing Peaceful Demonstration, Reinforces Commitment to Diversity</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/1x1/sample-image-1.jpg" alt="1x1 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 11, 2014</div>
+    <h4><a href="#">Pantilat Receives Award for Work in Palliative Care</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/16x9/sample-image-2.jpg" alt="16x9 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 8, 2014</div>
+    <h4><a href="#">Major Complication Rate After Abortion Is Extremely Low, Study Shows</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education  without-image">
+  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 8, 2014</div>
+    <h4><a href="#">Williams Receives President’s Research Catalyst Award to Address Prison Health Care Crisis</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/4x3/sample-image-7.jpg" alt="4x3 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 11, 2014</div>
+    <h4><a href="#">Employees of the New Mission Bay Hospitals Treated to Celebratory Party</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education  without-image">
+  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 12, 2014</div>
+    <h4><a href="#">Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/1x1/sample-image-5.jpg" alt="1x1 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 16, 2014</div>
+    <h4><a href="#">UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/16x9/sample-image-3.jpg" alt="16x9 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 11, 2014</div>
+    <h4><a href="#">Pantilat Receives Award for Work in Palliative Care</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education  without-image">
+  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 11, 2014</div>
+    <h4><a href="#">American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    <li class="masonry-sizer">
+                      <div class="post-filter__results__inner"><div class="block-post btn--term--education with-image ">
+    <div class="image">
+      <a href="#"><img src="../../images/4x3/sample-image-4.jpg" alt="4x3 Image" /></a>
+    </div>  <a href="#" class="btn btn--term btn--term--education">Education</a>
+  <div class="content">
+    <div class="submitted-date">December 16, 2014</div>
+    <h4><a href="#">UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care</a></h4>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>-->
+  </div>
+</div></div>
+                    </li>
+                    
+                    <li class="more masonry-sizer">
+                      <div class="post-filter__results__inner">
+                        <div class="block-more">
+                          <a href="#">More Stories » </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>          </div>
+          <ol class="pager">
+            <li class="pager-first">
+              <a href="#"><span class="element-invisible">First Page</span><i class="fa fa-backward"></i></a>
+            </li>
+            <li class="pager-prev">
+              <a href="#"><span class="element-invisible">Previous Page</span><i class="fa fa-play"></i></a>
+            </li>
+          	<li class="current"><a href="#">1</a></li>
+          	<li><a class="active" href="#">2</a></li>
+          	<li><a href="#">3</a></li>
+          	<li><a href="#">4</a></li>
+          	<li><a href="#">5</a></li>
+          	<li><a href="#">6</a></li>
+          	<li><a href="#">7</a></li>
+          	<li><a href="#">8</a></li>
+          	<li><a href="#">9</a></li>
+          	<li class="pager-next">
+          	  <a href="#"><span class="element-invisible">Next Page</span><i class="fa fa-play"></i></a>
+          	</li>
+            <li class="pager-last">
+              <a href="#"><span class="element-invisible">Last Page</span><i class="fa fa-forward"></i></a>
+            </li>
+          </ol>          </div>
+          <div class="news-center-sidebar">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End role=main-->
+      <!-- Begin Footer -->
+      <footer class="footer" role="contentinfo">
+      	<div class="footer-content">
+      		
+      		<div class="footer-blocks">
+            <div class="footer-block-main content-column--quarter content-column--quarter-3col">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#"><a href="#">A to Z Website List</a></li>
+                <li><a href="#">Chancellor</a></li>
+                <li><a href="#">Director</a></li>
+                <li><a href="#">Diversity</a></li>
+                <li><a href="#">Emergency Management</a></li>
+                <li><a href="#">Employment</a></li>
+                <li><a href="#">Ethics & Compliance</a></li>
+                <li><a href="#">Human Resources</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Locations/Map</a></li>
+                <li><a href="#">Police</a></li>
+                <li><a href="#">Shuttle Schedule</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">UCSF Brand Guidelines</a></li>
+                <li><a href="#">UCSF Policies</a></li>
+              </ul>
+            </div>
+            <div class="footer-block-right content-column--quarter content-column--quarter-1col">
+              <h3>Search</h3>
+              <form class="footer-search-form">
+                <input class="text-input" type="text" value="" placeholder="by last name">
+                <label class="label-radio">
+                  <input value="ucsf" name="footer-search" type="radio" />UCSF
+                </label>
+                <label class="label-radio">
+                  <input value="ppl" name="footer-search" type="radio" />People
+                </label>
+              </form>
+            </div>
+          </div>
+      		
+      		
+      		<p class="copyright">&copy; 2014 The Regents of the University of California</p>
+      	</div>
+      </footer>
+      <!-- End Footer -->  </div>
+</div>
+	<!--DO NOT REMOVE-->
+		
+	<script>
+		// handle injection of items from PHP
+		var patternPartial = "pages-news-center-education";
+		var lineage        = [{"lineagePattern":"templates-news-center-education","lineagePath":"..\/..\/patterns\/03-templates-04-news-center-education\/03-templates-04-news-center-education.html"}];
+		var lineageR       = [];
+		var patternState   = "";
+		var cssEnabled     = false;
+	</script>
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
+		
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-0">
+		(function() {
+			if (self != top) {
+				var cb = '0';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-0">
+		(function() {
+			if (self != top) {
+				var cb = '0';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
+	
+
+
+	</body>
+</html>

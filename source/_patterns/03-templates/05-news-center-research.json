@@ -1,0 +1,71 @@
+{
+  "logo-link" : {
+  	"title" : "Home",
+		"url" : "/patterns/03-templates-00-homepage/03-templates-00-homepage.html",
+	  "class" : ""
+	},
+	"navigation" : [
+		{
+			"title" : "About",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Patient Care",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Research",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Education",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "News Center",
+			"url" : "/patterns/03-templates-01-news-center/03-templates-01-news-center.html",
+		  "class" : "active"
+		},
+		{
+			"title" : "Pulse of UCSF",
+			"url" : "#",
+		  "class" : ""
+		}
+  ],
+	"page-sub-navigation" : [
+		{
+			"title" : "Overview",
+			"url" : "/patterns/03-templates-01-news-center/03-templates-01-news-center.html",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Latest",
+			"url" : "/patterns/03-templates-02-news-center-latest/03-templates-02-news-center-latest.html",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Patient Care",
+			"url" : "/patterns/03-templates-03-news-center-patient-care/03-templates-03-news-center-patient-care.html",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Education",
+			"url" : "/patterns/03-templates-04-news-center-education/03-templates-04-news-center-education.html",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Research",
+			"url" : "/patterns/03-templates-05-news-center-research/03-templates-05-news-center-research.html",
+		  "class" : "active btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Campus News",
+			"url" : "/patterns/03-templates-06-news-center-campus-news/03-templates-06-news-center-campus-news.html",
+		  "class" : "btn btn--gamma btn--secondary"
+		}
+  ]
+}

@@ -1,0 +1,514 @@
+{
+	"title" : "News Center",
+	"bodyClass": "news-center",
+	"emergency" : false,
+	"logo-link" : {
+  	"title" : "Home",
+		"url" : "/patterns/04-pages-00-homepage/04-pages-00-homepage.html",
+	  "class" : ""
+	},
+	"navigation" : [
+		{
+			"title" : "About",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Patient Care",
+			"url" : "#patient-care",
+		  "class" : "navigation-popup patient-care"
+		},
+		{
+			"title" : "Research",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "Education",
+			"url" : "#",
+		  "class" : ""
+		},
+		{
+			"title" : "News Center",
+			"url" : "/patterns/04-pages-01-news-center/04-pages-01-news-center.html",
+		  "class" : "active"
+		},
+		{
+			"title" : "Pulse of UCSF",
+			"url" : "#",
+		  "class" : ""
+		}
+  ],
+	"page-sub-navigation" : [
+		{
+			"title" : "Overview",
+			"url" : "/patterns/04-pages-01-news-center/04-pages-01-news-center.html",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Latest",
+			"url" : "/patterns/04-pages-02-news-center-latest/04-pages-02-news-center-latest.html",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Patient Care",
+			"url" : "/patterns/04-pages-03-news-center-patient-care/04-pages-03-news-center-patient-care.html",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Education",
+			"url" : "/patterns/04-pages-04-news-center-education/04-pages-04-news-center-education.html",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Research",
+			"url" : "/patterns/04-pages-05-news-center-research/04-pages-05-news-center-research.html",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Campus News",
+			"url" : "/patterns/04-pages-06-news-center-campus-news/04-pages-06-news-center-campus-news.html",
+		  "class" : "active btn btn--gamma btn--secondary"
+		}
+  ],
+	"rotator-items" : [
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-1.jpg",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"headline" : {
+				"short" : "Blood Work: Scientists Uncover Surprising New Tools to Rejuvenate the Brain"
+			}
+		},
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-2.jpg",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"headline" : {
+				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
+			}
+		},
+		{
+  		"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-3.jpg",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"headline" : {
+				"short" : "Biological Basis Found for Sensory Processing Disorders in Kids"
+			}
+		}
+  ],
+  "popular" : [
+		{
+			"headline" : {
+				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Biological Basis Found for Sensory Processing Disorders in Kids"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "E-Cigarettes Expose People to More Than ‘Harmless’ Water Vapor"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Lifestyle Changes May Lengthen Telomeres, A Measure of Cell Aging"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "A San Francisco Jobs Program Gives People a 'Reason to Live'"
+			}
+		}
+  ],
+  "science-blog" : [
+		{
+			"img": {
+    		"square": {
+					"src": "../../images/1x1/sample-image-2.jpg",
+          "alt": "Square Thumbnail"
+				}
+			},
+			"submitted" : {
+				"info" : "By Scott Maier on September 22, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Partner a Finalist in Google’s Bay Area Impact Challenge"
+			}
+		},
+		{
+			"img": {
+    		"square": {
+					"src": "../../images/1x1/sample-image-4.jpg",
+          "alt": "Square Thumbnail"
+				}
+			},
+			"submitted" : {
+				"info" : "By Michael W. Weiner, MD on June 16, 2014"
+			},
+			"headline" : {
+				"short" : "Online Project Aims to Speed Up Cures for Brain Disorders"
+			}
+		},
+		{
+			"img": {
+    		"square": {
+					"src": "../../images/1x1/sample-image-6.jpg",
+          "alt": "Square Thumbnail"
+				}
+			},
+			"submitted" : {
+				"info" : "By Jennifer Wickre on May 2, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Hosts Capitol Hill Briefing on Kidney Research Innovations"
+			}
+		}
+  ],
+	"latest-posts" : [
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-5.jpg",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/4x3/sample-image-1.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-7.jpg",
+    			"alt": "16x9 Image"
+    		},
+    		"square": {
+					"src": "../../images/fpo_square.png",
+          "alt": "Square Thumbnail"
+				}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+				"short" : "Williams Recieves President's Research Catalyst Award to Address Prison Health Care Crisis"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/1x1/sample-image-2.jpg",
+    			"alt": "1x1 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Employees of the New Mission Bay Hospitals Treated to Celebratory Party"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/4x3/sample-image-3.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-6.jpg",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Commends Student Leaders for Organizing Peaceful Demonstration, Reinforces Commitment to Diversity"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/1x1/sample-image-1.jpg",
+    			"alt": "1x1 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Pantilat Receives Award for Work in Palliative Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-2.jpg",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 8, 2014"
+			},
+			"headline" : {
+        "short" : "Major Complication Rate After Abortion Is Extremely Low, Study Shows"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 8, 2014"
+			},
+			"headline" : {
+        "short" : "Williams Receives President’s Research Catalyst Award to Address Prison Health Care Crisis"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/4x3/sample-image-7.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Employees of the New Mission Bay Hospitals Treated to Celebratory Party"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/1x1/sample-image-5.jpg",
+    			"alt": "1x1 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-3.jpg",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Pantilat Receives Award for Work in Palliative Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/4x3/sample-image-4.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		}
+	],
+	"inset-blocks" : [
+		{
+			"headline" : "This is the headline for the inset block"
+		}
+	],
+	"latest-block" : [
+		{
+			"headline" : "This is the headline for the latest block"
+		}
+	]
+}

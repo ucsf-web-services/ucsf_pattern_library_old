@@ -136,11 +136,6 @@
 	"rotator-items" : [
 		{ },
 		{ },
-		{ },
-		{ },
-		{ },
-		{ },
-		{ },
 		{ }
 	],
 	"node" : [
@@ -212,6 +207,10 @@
 	},
 	"node-link" : {
 		"name" : "Read More",
+		"class" : ""
+	},
+	"callout-link" : {
+		"name" : "See More",
 		"class" : ""
 	},
 	"date" : {
