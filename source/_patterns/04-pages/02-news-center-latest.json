@@ -1,6 +1,6 @@
 {
 	"title" : "News Center",
-	"bodyClass": "news-center",
+	"bodyClass": "news-center-latest",
 	"emergency" : false,
 	"logo-link" : {
   	"title" : "Home",
@@ -43,12 +43,12 @@
 		{
 			"title" : "Overview",
 			"url" : "/patterns/04-pages-01-news-center/04-pages-01-news-center.html",
-		  "class" : "active btn btn--gamma btn--secondary"
+		  "class" : "btn btn--gamma btn--secondary"
 		},
 		{
 			"title" : "Latest",
 			"url" : "/patterns/04-pages-02-news-center-latest/04-pages-02-news-center-latest.html",
-		  "class" : "btn btn--gamma btn--secondary"
+		  "class" : "active btn btn--gamma btn--secondary"
 		},
 		{
 			"title" : "Patient Care",
@@ -71,24 +71,160 @@
 		  "class" : "btn btn--gamma btn--secondary"
 		}
   ],
-	"rotator-items" : [
+	"latest-posts" : [
 		{
-  		"img": {
+			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/16x9/sample-image-1.jpg",
+    			"src": "../../images/16x9/sample-image-5.jpg",
     			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/4x3/sample-image-1.jpg",
+    			"alt": "4x3 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-7.jpg",
+    			"alt": "16x9 Image"
+    		},
+    		"square": {
+					"src": "../../images/fpo_square.png",
+          "alt": "Square Thumbnail"
+				}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
+			"headline" : {
+				"short" : "Williams Recieves President's Research Catalyst Award to Address Prison Health Care Crisis"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/1x1/sample-image-2.jpg",
+    			"alt": "1x1 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Employees of the New Mission Bay Hospitals Treated to Celebratory Party"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/4x3/sample-image-3.jpg",
+    			"alt": "4x3 Image"
     		}
 			},
 			"term" : {
 				"name" : "Research",
 				"class" : "btn--term--research"
 			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
 			"headline" : {
-				"short" : "Blood Work: Scientists Uncover Surprising New Tools to Rejuvenate the Brain"
+				"short" : "American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF"
+			},
+			"exerpt" : {
+				"medium" : ""
 			}
 		},
 		{
-  		"img": {
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-6.jpg",
+    			"alt": "16x9 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Commends Student Leaders for Organizing Peaceful Demonstration, Reinforces Commitment to Diversity"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/1x1/sample-image-1.jpg",
+    			"alt": "1x1 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Research",
+				"class" : "btn--term--research"
+			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
+			"headline" : {
+				"short" : "Pantilat Receives Award for Work in Palliative Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
 				"landscape-16x9": {
     			"src": "../../images/16x9/sample-image-2.jpg",
     			"alt": "16x9 Image"
@@ -98,59 +234,98 @@
 				"name" : "Patient Care",
 				"class" : "btn--term--patient-care"
 			},
+			"date" : {
+				"short" : "December 8, 2014"
+			},
 			"headline" : {
-				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
+        "short" : "Major Complication Rate After Abortion Is Extremely Low, Study Shows"
+      },
+			"exerpt" : {
+				"medium" : ""
 			}
 		},
 		{
-  		"img": {
+			"img": {
+				
+			},
+			"term" : {
+				"name" : "Patient Care",
+				"class" : "btn--term--patient-care"
+			},
+			"date" : {
+				"short" : "December 8, 2014"
+			},
+			"headline" : {
+        "short" : "Williams Receives President’s Research Catalyst Award to Address Prison Health Care Crisis"
+      },
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/16x9/sample-image-3.jpg",
-    			"alt": "16x9 Image"
+    			"src": "../../images/4x3/sample-image-7.jpg",
+    			"alt": "4x3 Image"
     		}
 			},
 			"term" : {
 				"name" : "Campus News",
 				"class" : "btn--term--campus-news"
 			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
 			"headline" : {
-				"short" : "Biological Basis Found for Sensory Processing Disorders in Kids"
+				"short" : "Employees of the New Mission Bay Hospitals Treated to Celebratory Party"
+			},
+			"exerpt" : {
+				"medium" : ""
 			}
 		},
 		{
-  		"img": {
-				"landscape-16x9": {
-    			"src": "../../images/16x9/sample-image-4.jpg",
-    			"alt": "16x9 Image"
-    		}
-			},
-			"term" : {
-				"name" : "Education",
-				"class" : "btn--term--education"
-			},
-			"headline" : {
-				"short" : "Lifestyle Changes May Lengthen Telomeres, A Measure of Cell Aging"
-			}
-		},
-		{
-  		"img": {
-				"landscape-16x9": {
-    			"src": "../../images/16x9/sample-image-5.jpg",
-    			"alt": "16x9 Image"
-    		}
+			"img": {
+				
 			},
 			"term" : {
 				"name" : "Patient Care",
 				"class" : "btn--term--patient-care"
 			},
+			"date" : {
+				"short" : "December 12, 2014"
+			},
 			"headline" : {
-				"short" : "E-Cigarettes Expose People to More Than ‘Harmless’ Water Vapor"
+        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
+      },
+			"exerpt" : {
+				"medium" : ""
 			}
 		},
 		{
-  		"img": {
+			"img": {
 				"landscape-16x9": {
-    			"src": "../../images/16x9/sample-image-6.jpg",
+    			"src": "../../images/1x1/sample-image-5.jpg",
+    			"alt": "1x1 Image"
+    		}
+			},
+			"term" : {
+				"name" : "Campus News",
+				"class" : "btn--term--campus-news"
+			},
+			"date" : {
+				"short" : "December 16, 2014"
+			},
+			"headline" : {
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
+			}
+		},
+		{
+			"img": {
+				"landscape-16x9": {
+    			"src": "../../images/16x9/sample-image-3.jpg",
     			"alt": "16x9 Image"
     		}
 			},
@@ -158,261 +333,56 @@
 				"name" : "Education",
 				"class" : "btn--term--education"
 			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
 			"headline" : {
-				"short" : "Lifestyle Changes May Lengthen Telomeres, A Measure of Cell Aging"
+				"short" : "Pantilat Receives Award for Work in Palliative Care"
+			},
+			"exerpt" : {
+				"medium" : ""
 			}
 		},
 		{
-  		"img": {
-				"landscape-16x9": {
-    			"src": "../../images/16x9/sample-image-7.jpg",
-    			"alt": "16x9 Image"
-    		}
+			"img": {
+				
 			},
 			"term" : {
 				"name" : "Research",
 				"class" : "btn--term--research"
 			},
+			"date" : {
+				"short" : "December 11, 2014"
+			},
 			"headline" : {
-				"short" : "E-Cigarettes Expose People to More Than ‘Harmless’ Water Vapor"
-			}
-		}
-  ],
-  "popular" : [
-		{
-			"headline" : {
-				"short" : "Sugared Soda Consumption, Cell Aging Associated in New Study"
-			}
-		},
-		{
-			"headline" : {
-				"short" : "Biological Basis Found for Sensory Processing Disorders in Kids"
+				"short" : "American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF"
+			},
+			"exerpt" : {
+				"medium" : ""
 			}
 		},
-		{
-			"headline" : {
-				"short" : "E-Cigarettes Expose People to More Than ‘Harmless’ Water Vapor"
-			}
-		},
-		{
-			"headline" : {
-				"short" : "Lifestyle Changes May Lengthen Telomeres, A Measure of Cell Aging"
-			}
-		},
-		{
-			"headline" : {
-				"short" : "A San Francisco Jobs Program Gives People a 'Reason to Live'"
-			}
-		}
-  ],
-	"tweets" : [
 		{
 			"img": {
-    		"landscape-16x9": {
-    			"src": "../../images/16x9/sample-image-5.jpg",
-    			"alt": "16x9 Image"
+				"landscape-16x9": {
+    			"src": "../../images/4x3/sample-image-4.jpg",
+    			"alt": "4x3 Image"
     		}
 			},
-      "account" : {
-				"name" : "UC San Francisco (UCSF)",
-				"handle" : "@UCSF"
-			},
-			"date" : {
-				"ago" : "2 hours ago"
-			},
-			"excerpt" : {
-				"short" : "Year in photos: A student #DieIn, Ebola volunteers, #SugarScience & more amazing images that capture UCSF in 2014."
-			}
-		},
-		{
-			"img": {
-    		
-			},
-      "account" : {
-				"name" : "UC San Francisco (UCSF)",
-				"handle" : "@UCSF"
-			},
-			"date" : {
-				"ago" : "10 hours ago"
-			},
-			"excerpt" : {
-				"short" : "What will health & medical landscape look like in 2015? UCSFers talk brains, teamwork & more: http://bit.ly/1yYXM2l"
-			}
-		},
-		{
-			"img": {
-    		
-			},
-      "account" : {
-				"name" : "UC San Francisco (UCSF)",
-				"handle" : "@UCSF"
-			},
-			"date" : {
-				"ago" : "10 hours ago"
-			},
-			"excerpt" : {
-				"short" : "2014 was an amazing year for UCSF science. These are some of the most-read stories: #goodreads  http://on.fb.me/1DPsdzP"
-			}
-		}
-  ],
-	"videos" : [
-		{
-			"img": {
-    		"landscape-16x9": {
-    			"src": "../../images/16x9/sample-image-3.jpg",
-    			"alt": "16x9 Image"
-    		}
-			},
-			"remote-account" : "UCSFMedicalCenter",
-			"views" : "2106",
-			"date" : {
-				"ago" : "8 Months ago"
-			},
-			"headline" : {
-				"short" : "Introducing UCSF Benioff Children's Hospitals"
-			}
-		},
-		{
-			"img": {
-    		"landscape-16x9": {
-    			"src": "../../images/16x9/sample-image-6.jpg",
-    			"alt": "16x9 Image"
-    		}
-			},
-			"remote-account" : "UCSF",
-			"views" : "8643",
-			"date" : {
-				"ago" : "10 Months ago"
-			},
-			"headline" : {
-				"short" : "Winner Funding Basic Science to Revolutionize Medicine, 2013 FASEB Stand Up for Science"
-			}
-		}
-  ],
-	"science-blog" : [
-		{
-			"img": {
-    		"square": {
-					"src": "../../images/1x1/sample-image-2.jpg",
-          "alt": "Square Thumbnail"
-				}
-			},
-			"submitted" : {
-				"info" : "By Scott Maier on September 22, 2014"
-			},
-			"headline" : {
-				"short" : "UCSF Partner a Finalist in Google’s Bay Area Impact Challenge"
-			}
-		},
-		{
-			"img": {
-    		"square": {
-					"src": "../../images/1x1/sample-image-4.jpg",
-          "alt": "Square Thumbnail"
-				}
-			},
-			"submitted" : {
-				"info" : "By Michael W. Weiner, MD on June 16, 2014"
-			},
-			"headline" : {
-				"short" : "Online Project Aims to Speed Up Cures for Brain Disorders"
-			}
-		},
-		{
-			"img": {
-    		"square": {
-					"src": "../../images/1x1/sample-image-6.jpg",
-          "alt": "Square Thumbnail"
-				}
-			},
-			"submitted" : {
-				"info" : "By Jennifer Wickre on May 2, 2014"
-			},
-			"headline" : {
-				"short" : "UCSF Hosts Capitol Hill Briefing on Kidney Research Innovations"
-			}
-		}
-  ],
-  "media-coverage" : [
-		{ 
-  		"term" : {
-				"name" : "Contra Costa Times"
-			},
-			"date" : {
-				"short" : "December 17, 2014"
-			},
-			"headline" : {
-				"short" : "Guest commentary: It is imperative that everyone be tested for HIV"
-			}
-		},
-		{ 
-  		"term" : {
-				"name" : "Forbes"
+			"term" : {
+				"name" : "Education",
+				"class" : "btn--term--education"
 			},
 			"date" : {
 				"short" : "December 16, 2014"
 			},
 			"headline" : {
-				"short" : "Brain Training To Improve Cognition As We Age"
+				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
+			},
+			"exerpt" : {
+				"medium" : ""
 			}
 		},
-		{ 
-  		"term" : {
-				"name" : "New York Times"
-			},
-			"date" : {
-				"short" : "December 15, 2014"
-			},
-			"headline" : {
-				"short" : "A Lesser Warning? Maybe"
-			}
-		},
-		{ 
-  		"term" : {
-				"name" : "Reuters"
-			},
-			"date" : {
-				"short" : "December 15, 2014"
-			},
-			"headline" : {
-				"short" : "Heavy drinking raises women's injury risk more than men's"
-			}
-		},
-		{ 
-  		"term" : {
-				"name" : "Los Angeles Times"
-			},
-			"date" : {
-				"short" : "December 14, 2014"
-			},
-			"headline" : {
-				"short" : "Google offers high-tech spoon that stays steady in shaky hands"
-			}
-		},
-		{ 
-  		"term" : {
-				"name" : "San Fransisco Business Times"
-			},
-			"date" : {
-				"short" : "December 12, 2014"
-			},
-			"headline" : {
-				"short" : "UC says its five medical centers are ready to take Ebola patients"
-			}
-		},
-		{ 
-  		"term" : {
-				"name" : "San Jose Mercury News, Contra Costa Times, Marin Independent Journal"
-			},
-			"date" : {
-				"short" : "December 12, 2014"
-			},
-			"headline" : {
-				"short" : "UC medical centers 'positioned' to treat Ebola victims"
-			}
-		}
-	],
-	"latest-posts" : [
+		
 		{
 			"img": {
 				"landscape-16x9": {

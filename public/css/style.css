@@ -4237,12 +4237,6 @@ h1 .btn--more, h2 .btn--more, h3 .btn--more, h4 .btn--more, h5 .btn--more, h6 .b
   color: #2ea6e7;
 }
 
-/** Add some margin to the icons */
-/* line 2, ../scss/base/_fa-extra.scss */
-.fa {
-  margin-right: 0.3em;
-}
-
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
@@ -7707,6 +7701,79 @@ em, i {
 /* line 138, ../scss/components/_page--news-center.scss */
 .news-center-masonry .block-more a:hover {
   background: rgba(241, 241, 241, 0.75);
+}
+
+/* line 1, ../scss/components/_pager.scss */
+ol.pager,
+ul.pager {
+  margin: 10px 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+}
+/* line 9, ../scss/components/_pager.scss */
+ol.pager li,
+ul.pager li {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+@media (min-width: 480px) {
+  /* line 9, ../scss/components/_pager.scss */
+  ol.pager li,
+  ul.pager li {
+    display: inline-block;
+  }
+}
+/* line 18, ../scss/components/_pager.scss */
+ol.pager li a,
+ul.pager li a {
+  padding: 6px 10px;
+  border: 1px solid #178CCB;
+  color: #178CCB;
+  font-size: 11px;
+  line-height: 11px;
+  text-decoration: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 27, ../scss/components/_pager.scss */
+ol.pager li a:hover,
+ul.pager li a:hover {
+  background: rgba(236, 236, 236, 0.5);
+}
+/* line 31, ../scss/components/_pager.scss */
+ol.pager li a.active, ol.pager li a:active,
+ul.pager li a.active,
+ul.pager li a:active {
+  background: #ececec;
+}
+/* line 39, ../scss/components/_pager.scss */
+ol.pager li.pager-first,
+ol.pager li.pager-prev,
+ol.pager li.pager-next,
+ol.pager li.pager-last,
+ul.pager li.pager-first,
+ul.pager li.pager-prev,
+ul.pager li.pager-next,
+ul.pager li.pager-last {
+  display: inline-block;
+}
+/* line 48, ../scss/components/_pager.scss */
+ol.pager li.pager-prev .fa,
+ul.pager li.pager-prev .fa {
+  /* Safari */
+  -webkit-transform: rotate(-180deg);
+  /* Firefox */
+  -moz-transform: rotate(-180deg);
+  /* IE */
+  -ms-transform: rotate(-180deg);
+  /* Opera */
+  -o-transform: rotate(-180deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 /* line 2, ../scss/components/_pillar-content.scss */

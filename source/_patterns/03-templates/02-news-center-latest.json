@@ -40,12 +40,12 @@
 		{
 			"title" : "Overview",
 			"url" : "/patterns/03-templates-01-news-center/03-templates-01-news-center.html",
-		  "class" : "active btn btn--gamma btn--secondary"
+		  "class" : "btn btn--gamma btn--secondary"
 		},
 		{
 			"title" : "Latest",
 			"url" : "/patterns/03-templates-02-news-center-latest/03-templates-02-news-center-latest.html",
-		  "class" : "btn btn--gamma btn--secondary"
+		  "class" : "active btn btn--gamma btn--secondary"
 		},
 		{
 			"title" : "Patient Care",

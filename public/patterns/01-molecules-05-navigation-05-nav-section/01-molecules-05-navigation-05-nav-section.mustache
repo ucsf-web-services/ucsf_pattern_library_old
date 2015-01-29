@@ -2,12 +2,9 @@
 &lt;h2 class=&quot;headline&quot;&gt;{{ title }}&lt;/h2&gt;
 &lt;nav&gt;
   &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;active btn btn--gamma btn--secondary&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--gamma btn--secondary&quot;&gt;Latest&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--gamma btn--secondary&quot;&gt;Patient Care&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--gamma btn--secondary&quot;&gt;Education&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--gamma btn--secondary&quot;&gt;Research&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--gamma btn--secondary&quot;&gt;Campus News&lt;/a&gt;&lt;/li&gt;
+    {{# page-sub-navigation }}
+    &lt;li&gt;&lt;a class=&quot;{{ class }}&quot; href=&quot;{{ url }}&quot;&gt;{{ title }}&lt;/a&gt;&lt;/li&gt;
+    {{/ page-sub-navigation }}
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;

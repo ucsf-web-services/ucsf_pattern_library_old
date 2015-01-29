@@ -54,21 +54,36 @@
 
 </head>
 <body class="body">
-<div id="breadcrumb" class="breadcrumb">
-  <ul>
-      <li><a class="" href="#">Home</a></li>
-      
-      
-      <li><span class="">Title of the page you are on</span></li>
-  </ul>
-</div>
+<ol class="pager">
+  <li class="pager-first">
+    <a href="#"><span class="element-invisible">First Page</span><i class="fa fa-backward"></i></a>
+  </li>
+  <li class="pager-prev">
+    <a href="#"><span class="element-invisible">Previous Page</span><i class="fa fa-play"></i></a>
+  </li>
+	<li class="current"><a href="#">1</a></li>
+	<li><a class="active" href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li><a href="#">5</a></li>
+	<li><a href="#">6</a></li>
+	<li><a href="#">7</a></li>
+	<li><a href="#">8</a></li>
+	<li><a href="#">9</a></li>
+	<li class="pager-next">
+	  <a href="#"><span class="element-invisible">Next Page</span><i class="fa fa-play"></i></a>
+	</li>
+  <li class="pager-last">
+    <a href="#"><span class="element-invisible">Last Page</span><i class="fa fa-forward"></i></a>
+  </li>
+</ol>
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-breadcrumb";
+		var patternPartial = "molecules-pagination";
 		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"templates-gallery","lineagePath":"..\/..\/patterns\/03-templates-06-gallery\/03-templates-06-gallery.html"}];
+		var lineageR       = [{"lineagePattern":"templates-news-center-latest","lineagePath":"..\/..\/patterns\/03-templates-02-news-center-latest\/03-templates-02-news-center-latest.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

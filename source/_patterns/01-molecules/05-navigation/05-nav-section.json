@@ -1,0 +1,34 @@
+{
+	"page-sub-navigation" : [
+		{
+			"title" : "Overview",
+			"url" : "#",
+		  "class" : "active btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Link 1",
+			"url" : "#",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Link 2",
+			"url" : "#",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Link 3",
+			"url" : "#",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Link 4",
+			"url" : "#",
+		  "class" : "btn btn--gamma btn--secondary"
+		},
+		{
+			"title" : "Link 5",
+			"url" : "#",
+		  "class" : "btn btn--gamma btn--secondary"
+		}
+  ]
+}
