@@ -6233,17 +6233,17 @@ em, i {
   top: 1;
   width: 100%;
 }
-/* line 13, ../scss/layout/component-layout/_header-layout.scss */
+/* line 10, ../scss/layout/component-layout/_header-layout.scss */
 .header .nav-global__utility {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 13, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 10, ../scss/layout/component-layout/_header-layout.scss */
   .header .nav-global__utility {
     display: block;
   }
 }
-/* line 21, ../scss/layout/component-layout/_header-layout.scss */
+/* line 17, ../scss/layout/component-layout/_header-layout.scss */
 .header .header-logo-bar {
   height: 40px;
   padding: 0 10px;
@@ -6251,59 +6251,59 @@ em, i {
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 21, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 17, ../scss/layout/component-layout/_header-layout.scss */
   .header .header-logo-bar {
     height: 100px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 21, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 17, ../scss/layout/component-layout/_header-layout.scss */
   .header .header-logo-bar {
     height: 120px;
   }
 }
-/* line 37, ../scss/layout/component-layout/_header-layout.scss */
+/* line 34, ../scss/layout/component-layout/_header-layout.scss */
 .header .header-navs {
   clear: right;
   padding-top: 2em;
 }
 @media (min-width: 768px) {
-  /* line 37, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 34, ../scss/layout/component-layout/_header-layout.scss */
   .header .header-navs {
     padding-top: 42px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 37, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 34, ../scss/layout/component-layout/_header-layout.scss */
   .header .header-navs {
     padding-top: 55px;
   }
 }
-/* line 50, ../scss/layout/component-layout/_header-layout.scss */
+/* line 47, ../scss/layout/component-layout/_header-layout.scss */
 .header .logo {
   padding-top: 7px;
   width: 60px;
 }
 @media (min-width: 768px) {
-  /* line 50, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 47, ../scss/layout/component-layout/_header-layout.scss */
   .header .logo {
     padding-top: 32px;
     width: 90px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 50, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 47, ../scss/layout/component-layout/_header-layout.scss */
   .header .logo {
     padding-top: 32px;
     width: 120px;
   }
 }
-/* line 69, ../scss/layout/component-layout/_header-layout.scss */
+/* line 62, ../scss/layout/component-layout/_header-layout.scss */
 .header .nav-social {
   display: none;
 }
 @media (min-width: 480px) {
-  /* line 69, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 62, ../scss/layout/component-layout/_header-layout.scss */
   .header .nav-social {
     display: block;
     position: absolute;
@@ -6312,7 +6312,7 @@ em, i {
   }
 }
 @media (min-width: 768px) {
-  /* line 69, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 62, ../scss/layout/component-layout/_header-layout.scss */
   .header .nav-social {
     display: block;
     position: relative;
@@ -6322,9 +6322,49 @@ em, i {
   }
 }
 @media (min-width: 768px) {
-  /* line 88, ../scss/layout/component-layout/_header-layout.scss */
+  /* line 81, ../scss/layout/component-layout/_header-layout.scss */
   .header .mobile-menu-button {
     display: none;
+  }
+}
+/* line 90, ../scss/layout/component-layout/_header-layout.scss */
+.header.page-scrolling .header-logo-bar {
+  height: 40px;
+}
+@media (min-width: 1190px) {
+  /* line 90, ../scss/layout/component-layout/_header-layout.scss */
+  .header.page-scrolling .header-logo-bar {
+    height: 120px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 107, ../scss/layout/component-layout/_header-layout.scss */
+  .header.page-scrolling .header-navs {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 107, ../scss/layout/component-layout/_header-layout.scss */
+  .header.page-scrolling .header-navs {
+    padding-top: 55px;
+  }
+}
+/* line 120, ../scss/layout/component-layout/_header-layout.scss */
+.header.page-scrolling .logo {
+  width: 60px;
+  padding-top: 7px;
+}
+@media (min-width: 768px) {
+  /* line 120, ../scss/layout/component-layout/_header-layout.scss */
+  .header.page-scrolling .logo {
+    padding-top: 10px;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 120, ../scss/layout/component-layout/_header-layout.scss */
+  .header.page-scrolling .logo {
+    padding-top: 32px;
+    width: 120px;
   }
 }
 

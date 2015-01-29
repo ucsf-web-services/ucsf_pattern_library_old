@@ -1,10 +1,7 @@
 .header {
-
-  //@include breakpoint($bp--small-up) {
-    position: fixed;
-    top: 1;
-    width: 100%;
-  //}
+  position: fixed;
+  top: 1;
+  width: 100%;
 
   .nav-global {
     @extend .cf;
@@ -12,7 +9,6 @@
 
   .nav-global__utility {
     display: none;
-
     @include breakpoint($bp--medium-up) {
       display: block;
     }
@@ -25,6 +21,7 @@
     padding: 0 10px;
     max-width: $site-width;
     position: relative;
+    
     
     @include breakpoint($bp--medium-up) {
       height: 100px;
@@ -62,10 +59,6 @@
     }
   }
 
-  .nav-primary {
-    //@extend .float--right;
-  }
-
   .nav-social {
     display: none;
 
@@ -88,6 +81,53 @@
   .mobile-menu-button {
     @include breakpoint($bp--medium-up) {
       display: none;
+    }
+  }
+  
+  // applying the shrinking logo/header bar after the page has scrolled
+  &.page-scrolling {
+    
+    .header-logo-bar {
+      height: 40px;
+      
+      // 768 up
+      @include breakpoint($bp--medium-up) {
+        //height: 60px;
+      }
+      
+      @include breakpoint($bp--large-up) {
+        //height: 90px;
+      }
+      // back to normal height at full width (1190 up)
+      // so 'shrinking' is ignored
+      @include breakpoint($bp--xxlarge-up) {
+        height: 120px;
+      }
+    }
+    .header-navs {
+
+      @include breakpoint($bp--medium-up) {
+        padding-top: 0;
+      }
+      @include breakpoint($bp--large-up) {
+        //padding-top: 20px;
+      }
+      @include breakpoint($bp--xxlarge-up) {
+        padding-top: 55px;
+      }
+    }
+  
+    .logo {
+      width: 60px;
+      padding-top: 7px;
+      
+      @include breakpoint($bp--medium-up) {
+        padding-top: 10px;
+      }
+      @include breakpoint($bp--xxlarge-up) {
+        padding-top: 32px;
+        width: 120px;
+      }
     }
   }
 }

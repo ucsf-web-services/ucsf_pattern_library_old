@@ -27,8 +27,8 @@
 		},
 		{
 			"title" : "Patient Care",
-			"url" : "#",
-		  "class" : ""
+			"url" : "#patient-care",
+		  "class" : "navigation-popup patient-care"
 		},
 		{
 			"title" : "Research",

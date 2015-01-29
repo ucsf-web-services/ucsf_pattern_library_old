@@ -245,7 +245,7 @@
   // The amazing scrolling header  
   var fixedNavigation = $('#header'); // Change to nav div
   var toggleNavClass = 'page-scrolling'; // Change to class name
-  var threshold = 5; // Change to pixels scrolled
+  var threshold = 10; // Change to pixels scrolled
   
   $(window).scroll(function () {
       var distance = $(this).scrollTop();
@@ -257,10 +257,5 @@
           }
       }
   });
-    
-    
-    
-    
-    
   });
 })(jQuery);
