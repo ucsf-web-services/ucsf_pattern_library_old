@@ -5661,11 +5661,13 @@ dt {
 html {
   overflow-y: scroll;
   min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   /* Prevent font scaling in landscape while allowing user zoom */
 }
 
-/* line 7, ../scss/base/_main.scss */
+/* line 9, ../scss/base/_main.scss */
 html,
 button,
 input,
@@ -5674,53 +5676,53 @@ textarea {
   font: 0.875em/1.71429 "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 15, ../scss/base/_main.scss */
+/* line 17, ../scss/base/_main.scss */
 p {
   margin: 1em 0;
 }
 
-/* line 19, ../scss/base/_main.scss */
+/* line 21, ../scss/base/_main.scss */
 .scroll {
   padding-top: 75px;
 }
 @media (min-width: 768px) {
-  /* line 19, ../scss/base/_main.scss */
+  /* line 21, ../scss/base/_main.scss */
   .scroll {
     padding-top: 110px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 19, ../scss/base/_main.scss */
+  /* line 21, ../scss/base/_main.scss */
   .scroll {
     padding-top: 130px;
   }
 }
 
-/* line 31, ../scss/base/_main.scss */
+/* line 33, ../scss/base/_main.scss */
 .main {
   max-width: 1190px;
 }
 @media (min-width: 768px) {
-  /* line 31, ../scss/base/_main.scss */
+  /* line 33, ../scss/base/_main.scss */
   .main {
     padding: 0 1em 0 1em;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 44, ../scss/base/_main.scss */
+  /* line 46, ../scss/base/_main.scss */
   .wrapper--main {
     padding-top: 20px;
     padding-bottom: 0;
   }
 }
 
-/* line 51, ../scss/base/_main.scss */
+/* line 53, ../scss/base/_main.scss */
 .wrapper--outer {
   width: 100%;
 }
 
-/* line 57, ../scss/base/_main.scss */
+/* line 59, ../scss/base/_main.scss */
 .wrapper--inner {
   max-width: 1190px;
   padding-left: 10px;
