@@ -6536,6 +6536,7 @@ em, i {
   font-size: 22px;
   line-height: 26px;
   width: 100%;
+  font-family: HelveticaNeue-light, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #052049;
   background-color: #f0f0f0;
 }
@@ -6551,7 +6552,7 @@ em, i {
     min-height: 120px;
   }
 }
-/* line 23, ../scss/components/_block-more.scss */
+/* line 24, ../scss/components/_block-more.scss */
 .block-more a:hover {
   text-decoration: none;
   background-color: rgba(240, 240, 240, 0.75);
