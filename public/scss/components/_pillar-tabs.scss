@@ -4,6 +4,7 @@
   
   h3 {
     color: $color--oxford-blue;
+    font-family: $font-body--light;
   }
 }
 
@@ -81,8 +82,8 @@
   
   
   color: lighten($color--gray-pillar, 20);
-  font-size: $font-size-large;
-  line-height: $font-size-large;
+  font-size: 16px;
+  line-height: 24px;
   cursor: pointer;
   padding: 3px 0 0 12px;
 
@@ -97,15 +98,18 @@
   }
 
   @include breakpoint($bp--large-up) {
-    font-size: $font-size-xlarge;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @include breakpoint($bp--xlarge-up) {
-    font-size: $font-size-xxlarge;
+    font-size: 22px;
+    line-height: 36px;
   }
 
   @include breakpoint($bp--xxlarge-up) {
-    font-size: 32px;
+    font-size: 26px;
+    line-height: 45px;
   }
 
   &:hover {

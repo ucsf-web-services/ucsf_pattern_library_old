@@ -49,12 +49,12 @@
 		  "class" : ""
 		},
 		{
-			"title" : "News Center",
+			"title" : "News & Media",
 			"url" : "/patterns/03-templates-01-news-center/03-templates-01-news-center.html",
 		  "class" : ""
 		},
 		{
-			"title" : "Pulse of UCSF",
+			"title" : "Support UCSF",
 			"url" : "#",
 		  "class" : ""
 		}

@@ -2,7 +2,12 @@
   position: relative;
   padding: 0;
   background: $color--gray--lighter;
+  // the wrapper can get the same class as the button to transfer the color changes
+  // but a few things need reset
   
+  &.btn-term {
+    text-transform: none;  
+  }
   // when there is an image, render the primary term absolutely
   .btn--term {
     margin-bottom: 0;

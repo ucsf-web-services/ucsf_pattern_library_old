@@ -39,8 +39,43 @@
     border-radius: 0;
     
     &.active {
-      background: $color--electric-blue;
-      border-color: $color--electric-blue;
+      background: $color--gray--dark;
+      border-color: $color--gray--dark;
+    }
+    
+    &.btn--nav--research {
+      &.active {
+        background: $color--blue-green;
+        border-color: $color--blue-green;
+      }
+    }
+    
+    &.btn--nav--campus-news {
+      &.active {
+        background: $color--chetwode-blue;
+        border-color: $color--chetwode-blue;  
+      }
+    }
+    
+    &.btn--nav--patient-care {
+      &.active {
+        background: $color--electric-blue;
+        border-color: $color--electric-blue;
+      }
+    }
+    
+    &.btn--nav--education {
+      &.active {
+        background: $color--yellow-green;
+        border-color: $color--yellow-green;
+      }
+    }
+    
+    &.btn--nav--latest {
+      &.active {
+        background: $color--oxford-blue;
+        border-collapse: $color--oxford-blue;
+      }
     }
   }
 }
