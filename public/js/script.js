@@ -91,8 +91,8 @@
     });
     
     // create the hero background
-    var heroImage = $('.hero-image').attr('data-img');
-    $(".hero-image").css('background-image', 'url(' + heroImage + ')');
+    //var heroImage = $('.hero-image').attr('data-img');
+    //$(".hero-image").css('background-image', 'url(' + heroImage + ')');
       
     // provide some equal heights for various elements
     $('.blog--science ul > li').matchHeight(true);

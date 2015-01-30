@@ -43,11 +43,11 @@
 		{
 			"img": {
 				"landscape-16x9": {
-					"src": "../../images/panorama-mobile.jpg",
+					"src": "../../images/home-hero-1.png",
 					"alt": "UCSF"
 				},
 				"hero-image-bg": {
-					"src": "/images/panorama.jpg",
+					"src": "../../images/home-hero-1.png",
 					"alt": "UCSF"
 				}
 			},
@@ -666,150 +666,6 @@
 			},
 			"headline" : {
 				"short" : "Pantilat Receives Award for Work in Palliative Care"
-			},
-			"exerpt" : {
-				"medium" : ""
-			}
-		},
-		{
-			"img": {
-				
-			},
-			"term" : {
-				"name" : "Patient Care",
-				"class" : "btn--term--patient-care"
-			},
-			"date" : {
-				"short" : "December 8, 2014"
-			},
-			"headline" : {
-        "short" : "Major Complication Rate After Abortion Is Extremely Low, Study Shows"
-      },
-			"exerpt" : {
-				"medium" : ""
-			}
-		},
-		{
-			"img": {
-				
-			},
-			"term" : {
-				"name" : "Patient Care",
-				"class" : "btn--term--patient-care"
-			},
-			"date" : {
-				"short" : "December 8, 2014"
-			},
-			"headline" : {
-        "short" : "Williams Receives President’s Research Catalyst Award to Address Prison Health Care Crisis"
-      },
-			"exerpt" : {
-				"medium" : ""
-			}
-		},
-		{
-			"img": {
-				
-			},
-			"term" : {
-				"name" : "Campus News",
-				"class" : "btn--term--campus-news"
-			},
-			"date" : {
-				"short" : "December 11, 2014"
-			},
-			"headline" : {
-				"short" : "Employees of the New Mission Bay Hospitals Treated to Celebratory Party"
-			},
-			"exerpt" : {
-				"medium" : ""
-			}
-		},
-		{
-			"img": {
-				
-			},
-			"term" : {
-				"name" : "Patient Care",
-				"class" : "btn--term--patient-care"
-			},
-			"date" : {
-				"short" : "December 12, 2014"
-			},
-			"headline" : {
-        "short" : "Immune Cells in Brain Respond to Fat in Diet, Causing Mice to Eat"
-      },
-			"exerpt" : {
-				"medium" : ""
-			}
-		},
-		{
-			"img": {
-				
-			},
-			"term" : {
-				"name" : "Campus News",
-				"class" : "btn--term--campus-news"
-			},
-			"date" : {
-				"short" : "December 16, 2014"
-			},
-			"headline" : {
-				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
-			},
-			"exerpt" : {
-				"medium" : ""
-			}
-		},
-		{
-			"img": {
-				
-			},
-			"term" : {
-				"name" : "Education",
-				"class" : "btn--term--education"
-			},
-			"date" : {
-				"short" : "December 11, 2014"
-			},
-			"headline" : {
-				"short" : "Pantilat Receives Award for Work in Palliative Care"
-			},
-			"exerpt" : {
-				"medium" : ""
-			}
-		},
-		{
-			"img": {
-				
-			},
-			"term" : {
-				"name" : "Research",
-				"class" : "btn--term--research"
-			},
-			"date" : {
-				"short" : "December 11, 2014"
-			},
-			"headline" : {
-				"short" : "American Doctor Who Narrowly Escaped Ebola Death Shares Experience at UCSF"
-			},
-			"exerpt" : {
-				"medium" : ""
-			}
-		},
-		{
-			"img": {
-				
-			},
-			"term" : {
-				"name" : "Education",
-				"class" : "btn--term--education"
-			},
-			"date" : {
-				"short" : "December 16, 2014"
-			},
-			"headline" : {
-				"short" : "UCSF Students Lead National Movement Bringing Attention to Impact of Racial Disparities in Health Care"
 			},
 			"exerpt" : {
 				"medium" : ""

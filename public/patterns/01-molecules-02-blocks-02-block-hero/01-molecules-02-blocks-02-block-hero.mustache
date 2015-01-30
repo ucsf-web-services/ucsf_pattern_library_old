@@ -1,11 +1,14 @@
 &lt;div class=&quot;hero-wrapper&quot;&gt;
-  {{#img.landscape-16x9.src}}
-    {{&gt; atoms-landscape-16x9 }}
-  {{/img.landscape-16x9.src}}
+  
 
-  &lt;div class=&quot;hero-image&quot; data-img=&quot;{{img.hero-image-bg.src}}&quot;&gt;&lt;/div&gt;
+  &lt;!--&lt;div class=&quot;hero-image&quot; data-img=&quot;{{img.hero-image-bg.src}}&quot;&gt;&lt;/div&gt;--&gt;
   
   &lt;div class=&quot;block block-hero&quot;&gt;
+    {{#img.landscape-16x9.src}}
+      {{&gt; atoms-landscape-16x9 }}
+    {{/img.landscape-16x9.src}}
+    
+    &lt;!-- REMOVE for original 'fixed' background image version
     &lt;div class=&quot;hero-header&quot;&gt;
       &lt;h4 class=&quot;headline&quot;&gt;&lt;a href=&quot;#&quot;&gt;{{ headline.short }}&lt;/a&gt;&lt;/h4&gt;
     &lt;/div&gt;
@@ -13,5 +16,6 @@
     &lt;div class=&quot;hero-excerpt&quot;&gt;
       &lt;p&gt;{{ excerpt.short }}&lt;/p&gt;
     &lt;/div&gt;
+    --&gt;
   &lt;/div&gt;
 &lt;/div&gt;
