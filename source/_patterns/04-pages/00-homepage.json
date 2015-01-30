@@ -150,8 +150,7 @@
 				"short" : "UCSF Medical Center"
 			},
 			"node-link" : {
-				"name" : "Visit Website",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -167,8 +166,7 @@
 				"short" : "UCSF Benioff Childrens Hospital"
 			},
 			"node-link" : {
-				"name" : "Visit Website",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -184,8 +182,7 @@
 				"short" : "UCSF Dental Center"
 			},
 			"node-link" : {
-				"name" : "Visit Website",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -212,8 +209,7 @@
 				"short" : "Committed to the City"
 			},
 			"node-link" : {
-				"name" : "Read More",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -229,8 +225,7 @@
 				"short" : "Community and Government Relations"
 			},
 			"node-link" : {
-				"name" : "Visit Website",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -246,8 +241,7 @@
 				"short" : "150th Anniversary"
 			},
 			"node-link" : {
-				"name" : "Read More",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -263,8 +257,7 @@
 				"short" : "Projects"
 			},
 			"node-link" : {
-				"name" : "Read More",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -323,8 +316,7 @@
 				"short" : "Registrar"
 			},
 			"node-link" : {
-				"name" : "Visit Website",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -361,8 +353,7 @@
 				"short" : "Student Inside Guide"
 			},
 			"node-link" : {
-				"name" : "Visit Website",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -389,8 +380,7 @@
 				"short" : "150th Anniversary"
 			},
 			"node-link" : {
-				"name" : "Read More",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -470,8 +460,7 @@
 				"short" : "150th Anniversary"
 			},
 			"node-link" : {
-				"name" : "Read More",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -487,8 +476,7 @@
 				"short" : "UCSF Alumni"
 			},
 			"node-link" : {
-				"name" : "Visit Website",
-				"class" : ""
+				
 			}
 		}
   ],
@@ -515,8 +503,7 @@
 				"short" : "Alumni Weekend"
 			},
 			"node-link" : {
-				"name" : "Read More",
-				"class" : ""
+				
 			}
 		}
   ],

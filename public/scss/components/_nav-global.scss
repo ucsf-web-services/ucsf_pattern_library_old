@@ -20,17 +20,44 @@
   display: none;
   @extend .float--right;
   @extend %links-list;
-
+  width: auto;
+  height: 30px;
+  
   @include breakpoint($bp--medium-up) {
     display: block;
   }
 
   a {
     color: $white;
-
+    float: left;
     &:hover {
       color: $white;
       text-decoration: underline;
+    }
+  }
+  
+  li {
+    margin-bottom: 0;
+  }
+  
+  .text-input {
+    border: none;
+    background: rgba($white, 0.1);
+    border: 1px solid rgba($white, 0.45);
+    color: rgba($white, 0.3);
+    margin-left: 20px;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 15px;
+    display: none;
+    float: left;
+    width: 150px;
+    height: 20px;
+    
+    @include corners(2px);
+    
+    @include breakpoint($bp--medium-up) {
+      display: block;
     }
   }
 }
