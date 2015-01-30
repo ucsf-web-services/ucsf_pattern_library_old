@@ -45,27 +45,27 @@
 		{
 			"title" : "Latest",
 			"url" : "/patterns/03-templates-02-news-center-latest/03-templates-02-news-center-latest.html",
-		  "class" : "active btn btn--gamma btn--secondary"
+		  "class" : "active btn btn--gamma btn--secondary btn--nav--latest"
 		},
 		{
 			"title" : "Patient Care",
 			"url" : "/patterns/03-templates-03-news-center-patient-care/03-templates-03-news-center-patient-care.html",
-		  "class" : "btn btn--gamma btn--secondary"
+		  "class" : "btn btn--gamma btn--secondary btn--nav--patient-care"
 		},
 		{
 			"title" : "Education",
-			"url" : "#",
-		  "class" : "btn btn--gamma btn--secondary"
+			"url" : "/patterns/03-templates-04-news-center-education/03-templates-04-news-center-education.html",
+		  "class" : "btn btn--gamma btn--secondary btn--nav--education"
 		},
 		{
 			"title" : "Research",
-			"url" : "#",
-		  "class" : "btn btn--gamma btn--secondary"
+			"url" : "/patterns/03-templates-05-news-center-research/03-templates-05-news-center-research.html",
+		  "class" : "btn btn--gamma btn--secondary btn--nav--research"
 		},
 		{
 			"title" : "Campus News",
-			"url" : "#",
-		  "class" : "btn btn--gamma btn--secondary"
+			"url" : "/patterns/03-templates-06-news-center-campus-news/03-templates-06-news-center-campus-news.html",
+		  "class" : "btn btn--gamma btn--secondary btn--nav--campus-news"
 		}
   ]
 }

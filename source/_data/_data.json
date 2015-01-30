@@ -195,7 +195,7 @@
 	"paragraphs" : [{}],
 	"term" : {
 		"name" : "Primary Term",
-		"class" : "btn--term"
+		"class" : ""
 	},
 	"ctype" : {
 		"name" : "Content Type",

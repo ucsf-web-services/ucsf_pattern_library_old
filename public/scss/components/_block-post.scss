@@ -44,7 +44,7 @@
   }
   
   h4 {
-    font-family: $default-font;
+    font-family: $font-body--light;
     font-size: 20px;
     line-height: 22px;
     font-weight: normal;
@@ -52,7 +52,11 @@
     
     a {
       color: $color--gray--darker;
-      //text-decoration: none;
+      text-decoration: none;
+      
+      &:hover {
+        color: $color--oxford-blue;
+      }
     }
   }
 }

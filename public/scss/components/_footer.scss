@@ -25,6 +25,7 @@
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
+    letter-spacing: 0.100em;
     color: $white;
     padding-bottom: 15px;
     border-bottom: 1px solid $color--gray--footer-links;
@@ -82,6 +83,7 @@
     input {
       //background: rgba($white, 0.3);
       opacity: 0.3;
+      margin-top: 2px;
     }
   }
 }

@@ -432,11 +432,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn--more {
   font-family: $font-body--medium;
-  
-  
-  
   margin-bottom: 0;
   font-size: 10px;
+  letter-spacing: 0.100em;
   line-height: 18px;
   white-space: nowrap;
   border-color: $color--electric-blue;
