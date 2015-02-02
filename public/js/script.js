@@ -276,6 +276,11 @@
   // add an active class to the news pages
   $('.news-page .nav-primary a.news').addClass('active');
   
+  // close any overlays when we use the close icon
+  $('.meganav-overlay a.close-icon').click(function(){
+    $(".meganav-overlay").fadeOut('fast');
+    $('html').removeClass('overlay-opened');
+  });
   
   });
 })(jQuery);

@@ -232,7 +232,7 @@
 		{
 			"title" : "Patient Care",
 			"url" : "#patient-care",
-			"rel" : "about-meganav",
+			"rel" : "patients-meganav",
 		  "class" : "navigation-overlay patient-care"
 		},
 		{
@@ -324,7 +324,7 @@
 	  "class" : "",
 	  "img": {
 			"landscape-16x9": {
-  			"src": "../../images/16x9/sample-image-4.jpg",
+  			"src": "../../images/16x9/sample-image-2.jpg",
   			"alt": "16x9 Image"
   		}
 		},
@@ -360,6 +360,64 @@
   		},
   		{
   			"title" : "Faculty Resources for Media",
+  			"url" : "#",
+  		  "class" : ""
+  		}
+		]
+	},
+	"patients-overlay" : {
+		"overlay-title" : "Patient Care",
+		"url" : "#",
+	  "class" : "",
+	  "img": {
+			"landscape-16x9": {
+  			"src": "../../images/16x9/sample-image-1.jpg",
+  			"alt": "16x9 Image"
+  		}
+		},
+		"headline" : {
+			"short" : "From Bench to Bedside"
+		},
+		"excerpt" : {
+  		"short" : "UCSF Mission Bay began as a fortuitous convergence of several forces — from UCSF’s need to expand from its cramped campuses at Parnassus Heights and Mount Zion, to then-Mayor Willie Brown’s desire to develop the biotech industry that could provide jobs in San Francisco for generations to come, to Catellus Development Corp.’s willingness to work with multiple parties to create something special on the 303-acre canvas that is now known as the Mission Bay neighborhood."
+  	},
+  	"node-link" : {
+			"name" : "Read More",
+			"class" : ""
+		},
+		"subnavigation" : [
+  		{
+  			"title" : "Patient Care",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Find a Doctor",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Request an Appointment",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "UCSF Benioff Children's Hospital",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "UCSF Dental Care",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "UCSF Medical Center",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Conditions and Treatments",
   			"url" : "#",
   		  "class" : ""
   		}

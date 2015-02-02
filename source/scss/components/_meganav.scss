@@ -42,13 +42,29 @@
     font-size: 24px;
     line-height: 28px;
     
-    @include breakpoint($bp--xlarge-up) {
+    @include breakpoint($bp--medium-up) {
       font-size: 34px;
       line-height: 38px;
     }
     @include breakpoint($bp--xlarge-up) {
       font-size: 44px;
       line-height: 48px;
+    }
+    
+    .close-icon {
+      display: block;
+      float: right;
+      font-size: 36px;
+      line-height: 28px;
+      text-decoration: none;
+      
+      @include breakpoint($bp--medium-up) {
+        line-height: 38px;
+      }
+      @include breakpoint($bp--xlarge-up) {
+        line-height: 48px;
+      }
+      
     }
   }
   h4 {
