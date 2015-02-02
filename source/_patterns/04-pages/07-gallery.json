@@ -19,38 +19,6 @@
 		  "class" : ""
 		}
   ],
-	"navigation" : [
-		{
-			"title" : "About",
-			"url" : "#",
-		  "class" : ""
-		},
-		{
-			"title" : "Patient Care",
-			"url" : "#patient-care",
-		  "class" : "navigation-popup patient-care"
-		},
-		{
-			"title" : "Research",
-			"url" : "#",
-		  "class" : ""
-		},
-		{
-			"title" : "Education",
-			"url" : "#",
-		  "class" : ""
-		},
-		{
-			"title" : "News & Media",
-			"url" : "/patterns/04-pages-01-news-center/04-pages-01-news-center.html",
-		  "class" : ""
-		},
-		{
-			"title" : "Support UCSF",
-			"url" : "#",
-		  "class" : ""
-		}
-  ],
   "node" : [
     {
       "title" : "UCSF Art & Architecture at Mission Bay: Changing the Landscape",

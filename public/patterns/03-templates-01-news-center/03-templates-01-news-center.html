@@ -71,12 +71,12 @@
       </div>      <div class="header-navs">
         <nav class="nav-primary">
           <ul class="nav-primary__list">    
-            <li><a class="" rel="" href="#">About</a></li>
-            <li><a class="" rel="" href="#">Patient Care</a></li>
-            <li><a class="" rel="" href="#">Research</a></li>
-            <li><a class="" rel="" href="#">Education</a></li>
-            <li><a class="active" rel="" href="/patterns/03-templates-01-news-center/03-templates-01-news-center.html">News &amp; Media</a></li>
-            <li><a class="" rel="" href="#">Support UCSF</a></li>
+            <li><a class="navigation-overlay about" rel="about-meganav" href="#about">About</a></li>
+            <li><a class="navigation-overlay patient-care" rel="about-meganav" href="#patient-care">Patient Care</a></li>
+            <li><a class="navigation-overlay research" rel="about-meganav" href="#research">Research</a></li>
+            <li><a class="navigation-overlay education" rel="about-meganav" href="#education">Education</a></li>
+            <li><a class="navigation-overlay news" rel="news-meganav" href="#news">News &amp; Media</a></li>
+            <li><a class="navigation-overlay support" rel="about-meganav" href="#support">Support UCSF</a></li>
           </ul>
         </nav><!--end .nav-->
         <ul class="nav-social">
@@ -87,8 +87,60 @@
     <button class="mobile-menu-button btn btn--unstyled btn--toggle"><em class="fa fa-bars"></em>
     </button>    </div>
   </header>
-  <!-- End .header -->  
-  <div class="scroll">
+  <!-- End .header -->  <div class="overlay-navigation-wrapper">
+  <div id="about-meganav" class="meganav-overlay">
+    <div class="wrapper--inner">
+    <div class="meganav-overlay-post">
+      <h3 class="headline">About</h3>
+      
+      <div class="image">
+        <a href="#"><img src="../../images/16x9/sample-image-4.jpg" alt="16x9 Image" /></a>
+      </div>      
+      <div class="content">
+        <h4><a href="#">Leading the Way</a></h4>
+        <p>The leading university exclusively focused on health, UC San Francisco is driven by the idea that when the best research, the best education and the best patient care converge, great breakthroughs are achieved.</p>
+        <div class="readmore"><a href="#">Learn More</a></div>
+      </div>
+    </div>
+    
+    <div class="meganav-overlay-menu">
+      <ul class="subnavigation">
+        <li><a href="#" class="">About UCSF</a></li>
+        <li><a href="#" class="">Achievements</a></li>
+        <li><a href="#" class="">Areas of Excellence</a></li>
+        <li><a href="#" class="">Chancellor</a></li>
+        <li><a href="#" class="">History</a></li>
+        <li><a href="#" class="">UCSF in the Community</a></li>
+        <li><a href="#" class="">Locations</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>  <div id="news-meganav" class="meganav-overlay">
+    <div class="wrapper--inner">
+    <div class="meganav-overlay-post">
+      <h3 class="headline">News &amp; Media</h3>
+      
+      <div class="image">
+        <a href="#"><img src="../../images/16x9/sample-image-4.jpg" alt="16x9 Image" /></a>
+      </div>      
+      <div class="content">
+        <h4><a href="#">UCSF News Office</a></h4>
+        <p>The News Office oversees media relations for all University programs and patient services.  Each member of our team of public information professionals specializes in a wide array of beats in patient care, research discoveries and education -- and connects reporters with top experts. Explore the resources below and sign up to receive our news first via RSS.</p>
+        
+      </div>
+    </div>
+    
+    <div class="meganav-overlay-menu">
+      <ul class="subnavigation">
+        <li><a href="/patterns/04-pages-01-news-center/04-pages-01-news-center.html" class="">News Center</a></li>
+        <li><a href="#" class="">Pulse of UCSF (Faculty &amp; Staff Hub)</a></li>
+        <li><a href="#" class="">UCSF in the News</a></li>
+        <li><a href="#" class="">Journalist Resources</a></li>
+        <li><a href="#" class="">Faculty Resources for Media</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>  </div>  <div class="scroll">
     <div class="wrapper--main" role="main">
     
       <div class="wrapper--inner">
@@ -551,7 +603,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "templates-news-center";
-		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"molecules-nav-section","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-nav-section\/01-molecules-05-navigation-05-nav-section.html"},{"lineagePattern":"organisms-news-rotator","lineagePath":"..\/..\/patterns\/02-organisms-02-rotators-00-news-rotator\/02-organisms-02-rotators-00-news-rotator.html"},{"lineagePattern":"organisms-most-popular","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-10-most-popular\/02-organisms-05-content-blocks-10-most-popular.html"},{"lineagePattern":"organisms-science-blog","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-05-science-blog\/02-organisms-05-content-blocks-05-science-blog.html"},{"lineagePattern":"organisms-media-coverage","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-06-media-coverage\/02-organisms-05-content-blocks-06-media-coverage.html"},{"lineagePattern":"organisms-youtube","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-07-youtube\/02-organisms-05-content-blocks-07-youtube.html"},{"lineagePattern":"organisms-twitter","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-08-twitter\/02-organisms-05-content-blocks-08-twitter.html"},{"lineagePattern":"organisms-news-center-latest-news","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-04-news-center-latest-news\/02-organisms-05-content-blocks-04-news-center-latest-news.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
+		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"organisms-overlay-navigation","lineagePath":"..\/..\/patterns\/02-organisms-00-global-02-overlay-navigation\/02-organisms-00-global-02-overlay-navigation.html"},{"lineagePattern":"molecules-nav-section","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-nav-section\/01-molecules-05-navigation-05-nav-section.html"},{"lineagePattern":"organisms-news-rotator","lineagePath":"..\/..\/patterns\/02-organisms-02-rotators-00-news-rotator\/02-organisms-02-rotators-00-news-rotator.html"},{"lineagePattern":"organisms-most-popular","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-10-most-popular\/02-organisms-05-content-blocks-10-most-popular.html"},{"lineagePattern":"organisms-science-blog","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-05-science-blog\/02-organisms-05-content-blocks-05-science-blog.html"},{"lineagePattern":"organisms-media-coverage","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-06-media-coverage\/02-organisms-05-content-blocks-06-media-coverage.html"},{"lineagePattern":"organisms-youtube","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-07-youtube\/02-organisms-05-content-blocks-07-youtube.html"},{"lineagePattern":"organisms-twitter","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-08-twitter\/02-organisms-05-content-blocks-08-twitter.html"},{"lineagePattern":"organisms-news-center-latest-news","lineagePath":"..\/..\/patterns\/02-organisms-05-content-blocks-04-news-center-latest-news\/02-organisms-05-content-blocks-04-news-center-latest-news.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
 		var lineageR       = [{"lineagePattern":"pages-news-center","lineagePath":"..\/..\/patterns\/04-pages-01-news-center\/04-pages-01-news-center.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;

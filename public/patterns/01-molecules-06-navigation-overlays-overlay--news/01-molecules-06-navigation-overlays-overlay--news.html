@@ -53,47 +53,39 @@
   <!-- End Pattern Lab -->
 
 </head>
-<body class="body"><!-- Begin .header -->
-<header id="header" class="header cf" role="banner">
-    <div class="nav-global-wrapper">
-      <div class="nav-global">
-        <div class="nav-global__title">University of California San Francisco</div>
-        <ul class="nav-global__utility">
-          <li>
-            <a href="#">Search</a><input class="text-input" type="text" value="" placeholder="...">
-          </li>
-        </ul>
-      </div>
-    </div>  <div class="header-logo-bar">
-      <div class="logo">
-        <a href="#"><img src="../../images/logo.png" class="logo-img " alt="Logo Alt Text" /></a>
-      </div>    <div class="header-navs">
-        <nav class="nav-primary">
-          <ul class="nav-primary__list">    
-            <li><a class="navigation-overlay about" rel="about-meganav" href="#about">About</a></li>
-            <li><a class="navigation-overlay patient-care" rel="about-meganav" href="#patient-care">Patient Care</a></li>
-            <li><a class="navigation-overlay research" rel="about-meganav" href="#research">Research</a></li>
-            <li><a class="navigation-overlay education" rel="about-meganav" href="#education">Education</a></li>
-            <li><a class="navigation-overlay news" rel="news-meganav" href="#news">News &amp; Media</a></li>
-            <li><a class="navigation-overlay support" rel="about-meganav" href="#support">Support UCSF</a></li>
-          </ul>
-        </nav><!--end .nav-->
-        <ul class="nav-social">
-          <li><a href="#"><span class="element-invisible">Facebook</span><i class="fa fa-facebook-square"></i></a></li>
-          <li><a href="#"><span class="element-invisible">Twitter</span><i class="fa fa-twitter-square"></i></a></li>
-          <li><a href="#"><span class="element-invisible">YouTube</span><i class="fa fa-youtube-square"></i></a></li>
-        </ul>    </div>
-    <button class="mobile-menu-button btn btn--unstyled btn--toggle"><em class="fa fa-bars"></em>
-    </button>  </div>
-</header>
-<!-- End .header -->
+<body class="body"><div id="news-meganav" class="meganav-overlay">
+  <div class="wrapper--inner">
+  <div class="meganav-overlay-post">
+    <h3 class="headline">News &amp; Media</h3>
+    
+      <div class="image">
+        <a href="#"><img src="../../images/16x9/sample-image-4.jpg" alt="16x9 Image" /></a>
+      </div>    
+    <div class="content">
+      <h4><a href="#">UCSF News Office</a></h4>
+      <p>The News Office oversees media relations for all University programs and patient services.  Each member of our team of public information professionals specializes in a wide array of beats in patient care, research discoveries and education -- and connects reporters with top experts. Explore the resources below and sign up to receive our news first via RSS.</p>
+      
+    </div>
+  </div>
+  
+  <div class="meganav-overlay-menu">
+    <ul class="subnavigation">
+      <li><a href="/patterns/04-pages-01-news-center/04-pages-01-news-center.html" class="">News Center</a></li>
+      <li><a href="#" class="">Pulse of UCSF (Faculty &amp; Staff Hub)</a></li>
+      <li><a href="#" class="">UCSF in the News</a></li>
+      <li><a href="#" class="">Journalist Resources</a></li>
+      <li><a href="#" class="">Faculty Resources for Media</a></li>
+    </ul>
+  </div>
+  </div>
+</div>
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "organisms-header";
-		var lineage        = [{"lineagePattern":"molecules-nav-global","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-00-nav-global\/01-molecules-05-navigation-00-nav-global.html"},{"lineagePattern":"atoms-logo","lineagePath":"..\/..\/patterns\/00-atoms-04-images-00-logo\/00-atoms-04-images-00-logo.html"},{"lineagePattern":"molecules-nav-primary","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-01-nav-primary\/01-molecules-05-navigation-01-nav-primary.html"},{"lineagePattern":"molecules-nav-social","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-02-nav-social\/01-molecules-05-navigation-02-nav-social.html"},{"lineagePattern":"atoms-mobile-menu-button","lineagePath":"..\/..\/patterns\/00-atoms-06-buttons-01-mobile-menu-button\/00-atoms-06-buttons-01-mobile-menu-button.html"}];
-		var lineageR       = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-00-homepage\/03-templates-00-homepage.html"},{"lineagePattern":"templates-news-center","lineagePath":"..\/..\/patterns\/03-templates-01-news-center\/03-templates-01-news-center.html"},{"lineagePattern":"templates-news-center-latest","lineagePath":"..\/..\/patterns\/03-templates-02-news-center-latest\/03-templates-02-news-center-latest.html"},{"lineagePattern":"templates-news-center-patient-care","lineagePath":"..\/..\/patterns\/03-templates-03-news-center-patient-care\/03-templates-03-news-center-patient-care.html"},{"lineagePattern":"templates-news-center-education","lineagePath":"..\/..\/patterns\/03-templates-04-news-center-education\/03-templates-04-news-center-education.html"},{"lineagePattern":"templates-news-center-research","lineagePath":"..\/..\/patterns\/03-templates-05-news-center-research\/03-templates-05-news-center-research.html"},{"lineagePattern":"templates-news-center-campus-news","lineagePath":"..\/..\/patterns\/03-templates-06-news-center-campus-news\/03-templates-06-news-center-campus-news.html"},{"lineagePattern":"templates-gallery","lineagePath":"..\/..\/patterns\/03-templates-07-gallery\/03-templates-07-gallery.html"}];
+		var patternPartial = "molecules-overlay--news";
+		var lineage        = [{"lineagePattern":"atoms-landscape-16x9","lineagePath":"..\/..\/patterns\/00-atoms-04-images-02-landscape-16x9\/00-atoms-04-images-02-landscape-16x9.html"}];
+		var lineageR       = [{"lineagePattern":"organisms-overlay-navigation","lineagePath":"..\/..\/patterns\/02-organisms-00-global-02-overlay-navigation\/02-organisms-00-global-02-overlay-navigation.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

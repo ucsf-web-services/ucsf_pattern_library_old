@@ -222,6 +222,44 @@
 		"name" : "Twitter Name",
 		"handle" : "@handle"
 	},
+	"navigation" : [
+		{
+			"title" : "About",
+			"url" : "#about",
+			"rel" : "about-meganav",
+		  "class" : "navigation-overlay about"
+		},
+		{
+			"title" : "Patient Care",
+			"url" : "#patient-care",
+			"rel" : "about-meganav",
+		  "class" : "navigation-overlay patient-care"
+		},
+		{
+			"title" : "Research",
+			"url" : "#research",
+			"rel" : "about-meganav",
+		  "class" : "navigation-overlay research"
+		},
+		{
+			"title" : "Education",
+			"url" : "#education",
+			"rel" : "about-meganav",
+		  "class" : "navigation-overlay education"
+		},
+		{
+			"title" : "News & Media",
+			"url" : "#news",
+			"rel" : "news-meganav",
+		  "class" : "navigation-overlay news"
+		},
+		{
+			"title" : "Support UCSF",
+			"url" : "#support",
+			"rel" : "about-meganav",
+		  "class" : "navigation-overlay support"
+		}
+  ],
 	"about-overlay" : {
 		"overlay-title" : "About",
 		"url" : "#",
@@ -275,6 +313,53 @@
   		},
   		{
   			"title" : "Locations",
+  			"url" : "#",
+  		  "class" : ""
+  		}
+		]
+	},
+	"news-overlay" : {
+		"overlay-title" : "News & Media",
+		"url" : "#",
+	  "class" : "",
+	  "img": {
+			"landscape-16x9": {
+  			"src": "../../images/16x9/sample-image-4.jpg",
+  			"alt": "16x9 Image"
+  		}
+		},
+		"headline" : {
+			"short" : "UCSF News Office"
+		},
+		"excerpt" : {
+  		"short" : "The News Office oversees media relations for all University programs and patient services.  Each member of our team of public information professionals specializes in a wide array of beats in patient care, research discoveries and education -- and connects reporters with top experts. Explore the resources below and sign up to receive our news first via RSS."
+  	},
+  	"node-link" : {
+			
+		},
+		"subnavigation" : [
+  		{
+  			"title" : "News Center",
+  			"url" : "/patterns/04-pages-01-news-center/04-pages-01-news-center.html",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Pulse of UCSF (Faculty & Staff Hub)",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "UCSF in the News",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Journalist Resources",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Faculty Resources for Media",
   			"url" : "#",
   		  "class" : ""
   		}

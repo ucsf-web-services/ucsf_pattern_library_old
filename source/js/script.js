@@ -261,6 +261,7 @@
   $('a.navigation-overlay').click(function(){
     var meganavId = $(this).attr('rel');
     
+    $('html').addClass('overlay-opened');
     $('#' + meganavId).fadeIn('fast');
   });
   
@@ -268,8 +269,13 @@
     if(e.keyCode === 27) {
       // escape key will close ANY open meganav items
       $(".meganav-overlay").fadeOut('fast');
+      $('html').removeClass('overlay-opened');
     }
   });
+  
+  // add an active class to the news pages
+  $('.news-page .nav-primary a.news').addClass('active');
+  
   
   });
 })(jQuery);

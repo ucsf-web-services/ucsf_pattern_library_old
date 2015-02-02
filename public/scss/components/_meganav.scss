@@ -2,6 +2,7 @@
   background: rgba($color--oxford-blue, 0.95);
   color: $white;
   padding: 10px;
+  overflow-y: auto;
   
   @include breakpoint($bp--medium-up) {
     padding: 15px 0;

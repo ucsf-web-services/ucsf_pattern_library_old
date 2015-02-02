@@ -7,38 +7,6 @@
 		"url" : "/patterns/04-pages-00-homepage/04-pages-00-homepage.html",
 	  "class" : ""
 	},
-	"navigation" : [
-		{
-			"title" : "About",
-			"url" : "#",
-		  "class" : ""
-		},
-		{
-			"title" : "Patient Care",
-			"url" : "#patient-care",
-		  "class" : "navigation-popup patient-care"
-		},
-		{
-			"title" : "Research",
-			"url" : "#",
-		  "class" : ""
-		},
-		{
-			"title" : "Education",
-			"url" : "#",
-		  "class" : ""
-		},
-		{
-			"title" : "News & Media",
-			"url" : "/patterns/04-pages-01-news-center/04-pages-01-news-center.html",
-		  "class" : "active"
-		},
-		{
-			"title" : "Support UCSF",
-			"url" : "#",
-		  "class" : ""
-		}
-  ],
 	"page-sub-navigation" : [
 		{
 			"title" : "Overview",

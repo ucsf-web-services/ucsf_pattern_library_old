@@ -1,0 +1,27 @@
+&lt;div id=&quot;news-meganav&quot; class=&quot;meganav-overlay&quot;&gt;
+  &lt;div class=&quot;wrapper--inner&quot;&gt;
+  {{#news-overlay}}
+  &lt;div class=&quot;meganav-overlay-post&quot;&gt;
+    &lt;h3 class=&quot;headline&quot;&gt;{{overlay-title}}&lt;/h3&gt;
+    
+    {{#img.landscape-16x9.src}}
+      {{&gt; atoms-landscape-16x9 }}
+    {{/img.landscape-16x9.src}}
+    
+    &lt;div class=&quot;content&quot;&gt;
+      &lt;h4&gt;&lt;a href=&quot;#&quot;&gt;{{ headline.short }}&lt;/a&gt;&lt;/h4&gt;
+      &lt;p&gt;{{ excerpt.short }}&lt;/p&gt;
+      {{#node-link.name}}&lt;div class=&quot;readmore&quot;&gt;&lt;a href=&quot;#&quot;&gt;{{ node-link.name }}&lt;/a&gt;&lt;/div&gt;{{/node-link.name}}
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;meganav-overlay-menu&quot;&gt;
+    &lt;ul class=&quot;subnavigation&quot;&gt;
+    {{#subnavigation}}
+      &lt;li&gt;&lt;a href=&quot;{{url}}&quot; class=&quot;{{class}}&quot;&gt;{{title}}&lt;/a&gt;&lt;/li&gt;
+    {{/subnavigation}}
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  {{/news-overlay}}
+  &lt;/div&gt;
+&lt;/div&gt;
