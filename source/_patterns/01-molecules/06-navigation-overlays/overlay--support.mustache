@@ -1,0 +1,27 @@
+<div id="support-meganav" class="meganav-overlay">
+  <div class="wrapper--inner">
+  {{#support-overlay}}
+  <div class="meganav-overlay-post">
+    <h3 class="headline">{{overlay-title}}<a href="#" class="close-icon fa fa-remove"></a></h3>
+    
+    {{#img.landscape-16x9.src}}
+      {{> atoms-landscape-16x9 }}
+    {{/img.landscape-16x9.src}}
+    
+    <div class="content">
+      <h4><a href="#">{{ headline.short }}</a></h4>
+      <p>{{ excerpt.short }}</p>
+      {{#node-link.name}}<div class="readmore"><a href="#">{{ node-link.name }}</a></div>{{/node-link.name}}
+    </div>
+  </div>
+  
+  <div class="meganav-overlay-menu">
+    <ul class="subnavigation">
+    {{#subnavigation}}
+      <li><a href="{{url}}" class="{{class}}">{{title}}</a></li>
+    {{/subnavigation}}
+    </ul>
+  </div>
+  {{/support-overlay}}
+  </div>
+</div>

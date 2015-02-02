@@ -262,14 +262,65 @@
     var meganavId = $(this).attr('rel');
     
     $('html').addClass('overlay-opened');
-    $('#' + meganavId).fadeIn('fast');
+    $('#' + meganavId).fadeIn('fast').addClass('opened-overlay-item');
   });
   
   $(document).keyup(function(e){
     if(e.keyCode === 27) {
       // escape key will close ANY open meganav items
-      $(".meganav-overlay").fadeOut('fast');
+      $(".meganav-overlay").fadeOut('fast').removeClass('opened-overlay-item');
       $('html').removeClass('overlay-opened');
+    }
+  });
+  
+  $(document).keydown(function(e) {
+    
+    
+    
+    if ($('html').hasClass('overlay-opened')) {
+      // get the current one that is visible
+      var overlayIndex = $('.opened-overlay-item').index('.meganav-overlay');
+      var numOverlays = $('.meganav-overlay').size();
+      var lastOverlay = numOverlays - 1;
+      var nextOverlay = overlayIndex + 1;
+      var prevOverlay = overlayIndex - 1;
+      if(e.keyCode === 37) { // left
+        // now we'll navigate to the previous 'main menu' overlay
+        //console.debug("Item #: " + overlayIndex);
+        //console.debug("Number of Overlays: " + numOverlays);
+        //console.debug("Previous Overlay: " + prevOverlay);
+
+        // we are at the first one, so going left/previous should go to the last?
+        if (overlayIndex === 0) {
+          prevOverlay = numOverlays - 1;
+          //console.debug("First Overlay, go to last: " + prevOverlay);
+        }
+        
+        $(".meganav-overlay:eq(" + overlayIndex + ")").fadeOut('fast').removeClass('opened-overlay-item');
+        $(".meganav-overlay:eq(" + prevOverlay + ")").fadeIn('slow').addClass('opened-overlay-item');
+        
+        
+        return false;
+      }
+      else if(e.keyCode === 39) { // right
+        // now we'll navigate to the next 'main menu' overlay
+        //console.debug("Item #: " + overlayIndex);
+        //console.debug("Number of Overlays: " + numOverlays);
+        //console.debug("Next Overlay: " + nextOverlay);
+        
+        // we are at the first one, so going left/previous should go to the last?
+        if (overlayIndex === lastOverlay) {
+          nextOverlay = 0;
+          //console.debug("Last Overlay, go to first: " + nextOverlay);
+        }
+        $(".meganav-overlay:eq(" + overlayIndex + ")").fadeOut('fast').removeClass('opened-overlay-item');
+        $(".meganav-overlay:eq(" + nextOverlay + ")").fadeIn('slow').addClass('opened-overlay-item');
+
+        return false;
+      }
+    }
+    else {
+      return false;
     }
   });
   

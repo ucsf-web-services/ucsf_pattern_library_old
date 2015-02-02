@@ -238,13 +238,13 @@
 		{
 			"title" : "Research",
 			"url" : "#research",
-			"rel" : "about-meganav",
+			"rel" : "research-meganav",
 		  "class" : "navigation-overlay research"
 		},
 		{
 			"title" : "Education",
 			"url" : "#education",
-			"rel" : "about-meganav",
+			"rel" : "education-meganav",
 		  "class" : "navigation-overlay education"
 		},
 		{
@@ -256,7 +256,7 @@
 		{
 			"title" : "Support UCSF",
 			"url" : "#support",
-			"rel" : "about-meganav",
+			"rel" : "support-meganav",
 		  "class" : "navigation-overlay support"
 		}
   ],
@@ -418,6 +418,140 @@
   		},
   		{
   			"title" : "Conditions and Treatments",
+  			"url" : "#",
+  		  "class" : ""
+  		}
+		]
+	},
+	"research-overlay" : {
+		"overlay-title" : "Research",
+		"url" : "#",
+	  "class" : "",
+	  "img": {
+			"landscape-16x9": {
+  			"src": "../../images/16x9/sample-image-7.jpg",
+  			"alt": "16x9 Image"
+  		}
+		},
+		"headline" : {
+			"short" : "Collaboration and Innovation"
+		},
+		"excerpt" : {
+  		"short" : "UC San Francisco is recognized internationally as one of the world's great research universities with a trademark culture of collaboration. Basic scientists and clinical researchers from all disciplines work together to find solutions for preventing and treating disease."
+  	},
+  	"node-link" : {
+			"name" : "Learn More",
+			"class" : ""
+		},
+		"subnavigation" : [
+  		{
+  			"title" : "About Research",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Major Research Initiatives",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Clinical Trials",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Research Partnerships",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Postdoctoral Scholars",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Research Resources",
+  			"url" : "#",
+  		  "class" : ""
+  		}
+		]
+	},
+	"education-overlay" : {
+		"overlay-title" : "Education",
+		"url" : "#",
+	  "class" : "",
+	  "img": {
+			"landscape-16x9": {
+  			"src": "../../images/16x9/sample-image-1.jpg",
+  			"alt": "16x9 Image"
+  		}
+		},
+		"headline" : {
+			"short" : "Educating Health Sciences Professionals"
+		},
+		"excerpt" : {
+  		"short" : "UC San Francisco is among the nation's premier academic health centers at the forefront of educating health professionals in dentistry, medicine, nursing and pharmacy and the Graduate Division. It consistently ranks among the top programs nationwide and attracts the world's finest students."
+  	},
+  	"node-link" : {
+			"name" : "Learn More",
+			"class" : ""
+		},
+		"subnavigation" : [
+  		{
+  			"title" : "About Education",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Schools",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Academic Resources",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Student Life Resources",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Alumni",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Continuing & Professional Education",
+  			"url" : "#",
+  		  "class" : ""
+  		}
+		]
+	},
+	"support-overlay" : {
+		"overlay-title" : "Support UCSF",
+		"url" : "#",
+	  "class" : "",
+	  "img": {
+			"landscape-16x9": {
+  			"src": "../../images/16x9/sample-image-1.jpg",
+  			"alt": "16x9 Image"
+  		}
+		},
+		"headline" : {
+			"short" : "Headline for Support UCSF Section"
+		},
+		"excerpt" : {
+  		"short" : "Not sure if this menu item opened a popup or not, but I created an empty one anyway. It will be easy enough to make it a direct link to the Pulse of UCSF page that I think was mentioned previously!"
+  	},
+  	"node-link" : {
+			"name" : "Read More",
+			"class" : ""
+		},
+		"subnavigation" : [
+  		{
+  			"title" : "Link 1",
   			"url" : "#",
   		  "class" : ""
   		}
