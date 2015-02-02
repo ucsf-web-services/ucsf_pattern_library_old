@@ -89,11 +89,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-header;
   font-weight: normal;
   line-height: 1.25;
+  letter-spacing: 0.02em;
   color: $color--oxford-blue;
   
   &.headline {
     font-family: $font-headline;
     font-weight: normal;
+    letter-spacing: normal;
     
     @include breakpoint($bp--large-up) {
       padding-bottom: 5px;

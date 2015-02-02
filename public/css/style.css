@@ -4803,21 +4803,23 @@ h1, h2, h3, h4, h5, h6 {
   font-family: HelveticaNeue-roman, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.25;
+  letter-spacing: 0.02em;
   color: #052049;
 }
-/* line 94, ../scss/base/_headings.scss */
+/* line 95, ../scss/base/_headings.scss */
 h1.headline, h2.headline, h3.headline, h4.headline, h5.headline, h6.headline {
   font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
   font-weight: normal;
+  letter-spacing: normal;
 }
 @media (min-width: 1024px) {
-  /* line 94, ../scss/base/_headings.scss */
+  /* line 95, ../scss/base/_headings.scss */
   h1.headline, h2.headline, h3.headline, h4.headline, h5.headline, h6.headline {
     padding-bottom: 5px;
     margin-bottom: 18px;
   }
 }
-/* line 103, ../scss/base/_headings.scss */
+/* line 105, ../scss/base/_headings.scss */
 h1.headline.page-title, h2.headline.page-title, h3.headline.page-title, h4.headline.page-title, h5.headline.page-title, h6.headline.page-title {
   font-size: 24px;
   padding-bottom: 0;
@@ -4825,20 +4827,20 @@ h1.headline.page-title, h2.headline.page-title, h3.headline.page-title, h4.headl
   margin-bottom: 8px;
 }
 @media (min-width: 1024px) {
-  /* line 103, ../scss/base/_headings.scss */
+  /* line 105, ../scss/base/_headings.scss */
   h1.headline.page-title, h2.headline.page-title, h3.headline.page-title, h4.headline.page-title, h5.headline.page-title, h6.headline.page-title {
     font-size: 36px;
     line-height: 32px;
   }
 }
-/* line 116, ../scss/base/_headings.scss */
+/* line 118, ../scss/base/_headings.scss */
 h1.headline.with--border, h2.headline.with--border, h3.headline.with--border, h4.headline.with--border, h5.headline.with--border, h6.headline.with--border {
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 2px solid #b4b9bf;
 }
 
-/* line 124, ../scss/base/_headings.scss */
+/* line 126, ../scss/base/_headings.scss */
 h3 {
   font-weight: normal;
 }
@@ -4846,67 +4848,67 @@ h3 {
 /**
  * Font sizes
  */
-/* line 132, ../scss/base/_headings.scss */
+/* line 134, ../scss/base/_headings.scss */
 h1, .alpha {
   font-size: 30px;
 }
 @media (min-width: 1024px) {
-  /* line 132, ../scss/base/_headings.scss */
+  /* line 134, ../scss/base/_headings.scss */
   h1, .alpha {
     font-size: 48px;
   }
 }
 
-/* line 140, ../scss/base/_headings.scss */
+/* line 142, ../scss/base/_headings.scss */
 h2, .beta {
   font-size: 24px;
 }
 @media (min-width: 1190px) {
-  /* line 140, ../scss/base/_headings.scss */
+  /* line 142, ../scss/base/_headings.scss */
   h2, .beta {
     font-size: 36px;
   }
 }
 
-/* line 147, ../scss/base/_headings.scss */
+/* line 149, ../scss/base/_headings.scss */
 h3, .gamma {
   font-size: 20px;
 }
 @media (min-width: 1024px) {
-  /* line 147, ../scss/base/_headings.scss */
+  /* line 149, ../scss/base/_headings.scss */
   h3, .gamma {
     font-size: 24px;
   }
 }
 
-/* line 155, ../scss/base/_headings.scss */
+/* line 157, ../scss/base/_headings.scss */
 h4, .delta {
   font-size: 18px;
 }
 @media (min-width: 1024px) {
-  /* line 155, ../scss/base/_headings.scss */
+  /* line 157, ../scss/base/_headings.scss */
   h4, .delta {
     font-size: 20px;
   }
 }
 
-/* line 163, ../scss/base/_headings.scss */
+/* line 165, ../scss/base/_headings.scss */
 h5, .epsilon {
   font-size: 16px;
 }
 @media (min-width: 1024px) {
-  /* line 163, ../scss/base/_headings.scss */
+  /* line 165, ../scss/base/_headings.scss */
   h5, .epsilon {
     font-size: 18px;
   }
 }
 
-/* line 171, ../scss/base/_headings.scss */
+/* line 173, ../scss/base/_headings.scss */
 h6, .zeta {
   font-size: 14px;
 }
 @media (min-width: 1024px) {
-  /* line 171, ../scss/base/_headings.scss */
+  /* line 173, ../scss/base/_headings.scss */
   h6, .zeta {
     font-size: 16px;
   }
@@ -7202,7 +7204,7 @@ position: absolute;
   border: none;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.45);
-  color: rgba(255, 255, 255, 0.3);
+  color: white;
   margin-left: 20px;
   margin-top: 4px;
   font-size: 12px;
