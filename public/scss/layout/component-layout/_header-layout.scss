@@ -107,7 +107,7 @@
     .header-navs {
 
       @include breakpoint($bp--medium-up) {
-        padding-top: 0;
+        padding-top: 5px;
       }
       @include breakpoint($bp--large-up) {
         //padding-top: 20px;

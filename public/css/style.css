@@ -6339,7 +6339,7 @@ em, i {
 @media (min-width: 768px) {
   /* line 107, ../scss/layout/component-layout/_header-layout.scss */
   .header.page-scrolling .header-navs {
-    padding-top: 0;
+    padding-top: 5px;
   }
 }
 @media (min-width: 1190px) {
