@@ -1,0 +1,131 @@
+.meganav-overlay {
+  background: rgba($color--oxford-blue, 0.95);
+  color: $white;
+  padding: 10px;
+  
+  @include breakpoint($bp--medium-up) {
+    padding: 15px 0;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    padding: 30px 0;
+  }
+}
+
+.page {
+  .meganav-overlay {
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+// Includes main title (h3), 'post' title (h4), image, excerpt and link
+.meganav-overlay-post {
+  @extend .cf;
+  margin-bottom: 30px;
+  
+  h3 {
+    
+    
+    padding-bottom: 20px;
+    border-bottom: 1px solid $white;
+    margin-bottom: 40px;
+    
+    font-family: $font-headline;
+    color: $white;
+    
+    font-size: 24px;
+    line-height: 28px;
+    
+    @include breakpoint($bp--xlarge-up) {
+      font-size: 34px;
+      line-height: 38px;
+    }
+    @include breakpoint($bp--xlarge-up) {
+      font-size: 44px;
+      line-height: 48px;
+    }
+  }
+  h4 {
+    font-family: $font-headline;
+    color: $color--electric-blue;
+    
+    font-size: 16px;
+    line-height: 22px;
+    
+    @include breakpoint($bp--medium-up) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    
+    @include breakpoint($bp--xlarge-up) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  .image {
+    @include breakpoint($bp--medium-up) {
+      float: left;
+      margin-right: 30px;
+      max-width: 220px;
+    }
+    @include breakpoint($bp--xlarge-up) {
+      margin-right: 30px;
+      max-width: 370px;
+    }
+  }
+}
+
+// nested ul/li of subnavigation items.
+.meganav-overlay-menu {
+  @extend .cf;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: $font-body--light;
+    font-size: 16px;
+    line-height: 20px;
+    
+    
+    @include breakpoint($bp--medium-up) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    @include breakpoint($bp--xlarge-up) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    
+    
+    li {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+      
+      a {
+        text-decoration: none;
+        color: rgba($white, 0.35);
+        @extend %transition-all;
+        
+        &:hover {
+          color: rgba($white, 0.75);
+        }
+        
+        &.active {
+          
+        }
+      }
+    }
+  }
+}

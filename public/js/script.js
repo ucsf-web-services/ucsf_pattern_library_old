@@ -257,5 +257,19 @@
           }
       }
   });
+  
+  $('a.navigation-overlay').click(function(){
+    var meganavId = $(this).attr('rel');
+    
+    $('#' + meganavId).fadeIn('fast');
+  });
+  
+  $(document).keyup(function(e){
+    if(e.keyCode === 27) {
+      // escape key will close ANY open meganav items
+      $(".meganav-overlay").fadeOut('fast');
+    }
+  });
+  
   });
 })(jQuery);

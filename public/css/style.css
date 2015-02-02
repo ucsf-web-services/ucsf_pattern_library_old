@@ -4926,7 +4926,7 @@ h6, .zeta {
  * and over in your markup.
  */
 /* line 16, ../scss/base/_helper-classes.scss */
-.cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .media--coverage__wrapper ul:after, .block-media:after, .block-post .content:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after, .featured-events:after, .featured-events__wrapper:after, #gallery-rotator:after, #gallery-rotator ul.slides:after, #gallery-rotator ul.slides li:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content-block .data:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
+.cf:after, .pillar-tabs-list:after, .footer-blocks:after, .preface-blocks:after, .media-blocks:after, .wrapper--outer:after, .wrapper--inner:after, .header .nav-global:after, .header .header-logo-bar:after, .block-blog:after, .block-blog__inner:after, .block-event:after, .block-event__inner:after, .media--coverage__wrapper ul:after, .block-media:after, .block-post .content:after, .twitter__wrapper ul:after, .youtube__wrapper ul:after, .featured-events:after, .featured-events__wrapper:after, #gallery-rotator:after, #gallery-rotator ul.slides:after, #gallery-rotator ul.slides li:after, .hero-wrapper:after, .block-hero .hero-excerpt:after, .meganav-overlay-post:after, .meganav-overlay-menu:after, .nav-section ul:after, .rotator__wrapper ul.slides:after, .rotator__wrapper ul.slides li .data:after, .rotator__wrapper ul.thumbnail-carousel-navigation:after, .pillar-content-block .data:after, .pillar-content:after, .pillar-content .pillar-top-half:after,
 .pillar-content .pillar-bottom-half:after, .pillar-content .pillar-2col:after,
 .pillar-content .pillar-3col:after, .resp-tab-content:after, .popular__wrapper ul:after, .wrapper--blog:after, .blog--science ul:after, .blog--science .block-blog__inner:after, .blog--science__wrapper:after, #atoms-fonts-helvetica-neue .font-type:after,
 #atoms-fonts-granjon .font-type:after {
@@ -6999,7 +6999,7 @@ em, i {
 .header, .header .logo,
 .header .logo img,
 .header .header-navs,
-.header .header-logo-bar {
+.header .header-logo-bar, .meganav-overlay-menu ul li a {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -7125,6 +7125,144 @@ position: absolute;
     line-height: 22px;
     background: rgba(255, 255, 255, 0.9);
   }
+}
+
+/* line 1, ../scss/components/_meganav.scss */
+.meganav-overlay {
+  background: rgba(5, 32, 73, 0.95);
+  color: white;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  /* line 1, ../scss/components/_meganav.scss */
+  .meganav-overlay {
+    padding: 15px 0;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 1, ../scss/components/_meganav.scss */
+  .meganav-overlay {
+    padding: 30px 0;
+  }
+}
+
+/* line 15, ../scss/components/_meganav.scss */
+.page .meganav-overlay {
+  z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 27, ../scss/components/_meganav.scss */
+.meganav-overlay-post {
+  margin-bottom: 30px;
+}
+/* line 31, ../scss/components/_meganav.scss */
+.meganav-overlay-post h3 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+  margin-bottom: 40px;
+  font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 24px;
+  line-height: 28px;
+}
+@media (min-width: 1024px) {
+  /* line 31, ../scss/components/_meganav.scss */
+  .meganav-overlay-post h3 {
+    font-size: 34px;
+    line-height: 38px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 31, ../scss/components/_meganav.scss */
+  .meganav-overlay-post h3 {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+/* line 53, ../scss/components/_meganav.scss */
+.meganav-overlay-post h4 {
+  font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+  color: #178CCB;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  /* line 53, ../scss/components/_meganav.scss */
+  .meganav-overlay-post h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 53, ../scss/components/_meganav.scss */
+  .meganav-overlay-post h4 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+/* line 70, ../scss/components/_meganav.scss */
+.meganav-overlay-post h4 a {
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  /* line 75, ../scss/components/_meganav.scss */
+  .meganav-overlay-post .image {
+    float: left;
+    margin-right: 30px;
+    max-width: 220px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 75, ../scss/components/_meganav.scss */
+  .meganav-overlay-post .image {
+    margin-right: 30px;
+    max-width: 370px;
+  }
+}
+
+/* line 92, ../scss/components/_meganav.scss */
+.meganav-overlay-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: HelveticaNeue-light, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (min-width: 768px) {
+  /* line 92, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu ul {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 92, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu ul {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+/* line 111, ../scss/components/_meganav.scss */
+.meganav-overlay-menu ul li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+/* line 116, ../scss/components/_meganav.scss */
+.meganav-overlay-menu ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.35);
+}
+/* line 121, ../scss/components/_meganav.scss */
+.meganav-overlay-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 /* line 1, ../scss/components/_nav-breadcrumb.scss */

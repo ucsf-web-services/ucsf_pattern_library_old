@@ -53,23 +53,43 @@
   <!-- End Pattern Lab -->
 
 </head>
-<body class="body">
-<div id="post-information" class="post-information">
-  <h1 class="headline page-title">Pattern Lab</h1>
-  <div class="submitted">
-    <p>By <span class="author"><a href="#">Joe Schmoe</a></span> on December 11, 2014</p>
-  </div>
+<body class="body">		
+		<!-- View All Patterns in a Pattern Sub-Type -->
+		<div class="sg-main" role="main">
+			
+			<!-- Patterns -->
+			<div id="sg-patterns">
+					<div id="molecules-alert" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-08-messaging-00-alert/01-molecules-08-messaging-00-alert.html" class="patternLink" data-patternpartial="molecules-alert">Alert</a></h2>
+						<div class="sg-pattern-body">
+							<div class="alert alert-">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
 </div>
-	<!--DO NOT REMOVE-->
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;alert alert-&quot;&gt;
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+&lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+			</div> <!--end #sg-patterns-->
+	
+		</div><!--end .sg-main-->
 		
-	<script>
-		// handle injection of items from PHP
-		var patternPartial = "molecules-node-post-information";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"templates-gallery","lineagePath":"..\/..\/patterns\/03-templates-07-gallery\/03-templates-07-gallery.html"}];
-		var patternState   = "";
-		var cssEnabled     = false;
-	</script>
+		<!-- JS to hook everything together and do annotations -->
+		<script>
+			// handle injection of items from PHP
+			var patternPartial = "viewall-molecules-messaging";
+			var lineage = "";
+		</script>
+		
+
+	<!--DO NOT REMOVE-->
 		<script>
 		/*!
 		 * scriptLoader - v0.1

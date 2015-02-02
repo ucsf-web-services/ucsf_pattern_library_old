@@ -221,5 +221,63 @@
 	"account" : {
 		"name" : "Twitter Name",
 		"handle" : "@handle"
+	},
+	"about-overlay" : {
+		"overlay-title" : "About",
+		"url" : "#",
+	  "class" : "",
+	  "img": {
+			"landscape-16x9": {
+  			"src": "../../images/16x9/sample-image-4.jpg",
+  			"alt": "16x9 Image"
+  		}
+		},
+		"headline" : {
+			"short" : "Leading the Way"
+		},
+		"excerpt" : {
+  		"short" : "The leading university exclusively focused on health, UC San Francisco is driven by the idea that when the best research, the best education and the best patient care converge, great breakthroughs are achieved."
+  	},
+  	"node-link" : {
+			"name" : "Learn More",
+			"class" : ""
+		},
+		"subnavigation" : [
+  		{
+  			"title" : "About UCSF",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Achievements",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Areas of Excellence",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Chancellor",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "History",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "UCSF in the Community",
+  			"url" : "#",
+  		  "class" : ""
+  		},
+  		{
+  			"title" : "Locations",
+  			"url" : "#",
+  		  "class" : ""
+  		}
+		]
 	}
 }
