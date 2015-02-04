@@ -193,7 +193,7 @@
       
       a {
         text-decoration: none;
-        //color: rgba($white, 0.35);
+        display: block;
         color: rgba($white, 0.95);
         
         @include transition(all, 0.25s, ease-in-out);
@@ -316,14 +316,26 @@
   }
 }
 
+
+
+.meganav-overlay-post {
+  
+  .content {
+    @include breakpoint($bp--xlarge-up) {
+      padding-right: 200px;
+    }
+  }
+}
 .meganav-overlay-menu {
   
   @include breakpoint($bp--medium-up) {
-  
+    padding-right: 200px;
+     
     .subnavigation {
       width: 100%;
       position: relative;  
       overflow: visible;
+      
       
       > li {
         width: 100%;
@@ -336,9 +348,11 @@
       margin-left: 0;
       position: absolute;
       top: 0;
-      left: 33%;
+      left: 220px; // lines up with image above
       right: 0;
       overflow: visible;
+      padding-left: 30px;
+      
       
       li {
         // resetting the leading and trailing space
@@ -364,7 +378,16 @@
       left: 50%;
       right: 0;
       overflow: visible;
+      padding-left: 30px;
     }
   
+  }
+  @include breakpoint($bp--xlarge-up) {
+    .subnavigation--second {
+      left: 370px;
+    }
+    .subnavigation--second {
+      
+    }
   }
 }

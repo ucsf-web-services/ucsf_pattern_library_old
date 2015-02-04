@@ -7349,6 +7349,7 @@ position: absolute;
 /* line 194, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul li a {
   text-decoration: none;
+  display: block;
   color: rgba(255, 255, 255, 0.95);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -7479,40 +7480,52 @@ position: absolute;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   /* line 323, ../scss/components/_meganav.scss */
+  .meganav-overlay-post .content {
+    padding-right: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 329, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu {
+    padding-right: 200px;
+  }
+  /* line 334, ../scss/components/_meganav.scss */
   .meganav-overlay-menu .subnavigation {
     width: 100%;
     position: relative;
     overflow: visible;
   }
-  /* line 328, ../scss/components/_meganav.scss */
+  /* line 340, ../scss/components/_meganav.scss */
   .meganav-overlay-menu .subnavigation > li {
     width: 100%;
     overflow: visible;
   }
-  /* line 335, ../scss/components/_meganav.scss */
+  /* line 347, ../scss/components/_meganav.scss */
   .meganav-overlay-menu .subnavigation--second {
     margin-left: 0;
     position: absolute;
     top: 0;
-    left: 33%;
+    left: 220px;
     right: 0;
     overflow: visible;
+    padding-left: 30px;
   }
-  /* line 346, ../scss/components/_meganav.scss */
+  /* line 360, ../scss/components/_meganav.scss */
   .meganav-overlay-menu .subnavigation--second li:first-child {
     margin-top: 0;
   }
-  /* line 349, ../scss/components/_meganav.scss */
+  /* line 363, ../scss/components/_meganav.scss */
   .meganav-overlay-menu .subnavigation--second li:last-child {
     margin-bottom: 0;
   }
-  /* line 353, ../scss/components/_meganav.scss */
+  /* line 367, ../scss/components/_meganav.scss */
   .meganav-overlay-menu .subnavigation--second li a {
     color: rgba(255, 255, 255, 0.75);
   }
-  /* line 360, ../scss/components/_meganav.scss */
+  /* line 374, ../scss/components/_meganav.scss */
   .meganav-overlay-menu .subnavigation--third {
     margin-left: 0;
     position: absolute;
@@ -7520,6 +7533,13 @@ position: absolute;
     left: 50%;
     right: 0;
     overflow: visible;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 386, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu .subnavigation--second {
+    left: 370px;
   }
 }
 
