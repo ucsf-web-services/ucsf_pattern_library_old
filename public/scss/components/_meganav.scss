@@ -70,6 +70,10 @@
       line-height: 48px;
       padding-bottom: 20px;
       margin-bottom: 40px;
+      
+      &.shorter {
+        margin-bottom: 0;
+      }
     }
     
     .close-icon,
@@ -189,19 +193,41 @@
       
       a {
         text-decoration: none;
-        color: rgba($white, 0.35);
+        //color: rgba($white, 0.35);
+        color: rgba($white, 0.95);
         
         @include transition(all, 0.25s, ease-in-out);
         
         &:hover,
-        &:focus,
-        &:active {
+        &:focus {
           color: rgba($white, 0.75);
           outline: none;
         }
         
-        &.active {
+        &.active,
+        &:active {
           color: rgba($white, 0.95);
+        }
+      }
+      
+      &.active-nav-item {
+        a {
+          
+          &:hover,
+          &:focus {
+            color: rgba($white, 0.95);  
+          }
+        }
+      }
+      &.inactive-nav-item {
+        a {
+          color: rgba($white, 0.35);
+          
+          &:hover,
+          &:focus {
+            color: rgba($white, 0.75);
+            outline: none;
+          }
         }
       }
     }
@@ -266,5 +292,79 @@
         }
       }
     }
+  }
+  ul.top-level-navigation {
+    a {
+      
+      font-family: $font-headline;
+      color: $white;
+      font-size: 24px;
+      line-height: 28px;
+      color: $white;
+      margin: 0;
+      padding: 0;
+      
+      @include breakpoint($bp--medium-up) {
+        font-size: 34px;
+        line-height: 38px;
+      }
+      @include breakpoint($bp--xlarge-up) {
+        font-size: 44px;
+        line-height: 72px;
+      }
+    }
+  }
+}
+
+.meganav-overlay-menu {
+  
+  @include breakpoint($bp--medium-up) {
+  
+    .subnavigation {
+      width: 100%;
+      position: relative;  
+      overflow: visible;
+      
+      > li {
+        width: 100%;
+        //position: relative;
+        overflow: visible;
+      }
+    }
+    
+    .subnavigation--second {
+      margin-left: 0;
+      position: absolute;
+      top: 0;
+      left: 33%;
+      right: 0;
+      overflow: visible;
+      
+      li {
+        // resetting the leading and trailing space
+        // used when in 'accordion' mode for mobile
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        a {
+          // mobile second level items are brighter by default
+          color: rgba($white, 0.75);
+        }
+      }
+    }
+    
+    .subnavigation--third {
+      margin-left: 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 0;
+      overflow: visible;
+    }
+  
   }
 }

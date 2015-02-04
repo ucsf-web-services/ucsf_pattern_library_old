@@ -54,7 +54,25 @@
 
 </head>
 <body class="body"><div class="overlay-navigation-wrapper">
-  <div id="about-meganav" class="meganav-overlay">
+  <div id="main-menu-meganav" class="meganav-overlay">
+    <div class="wrapper--inner">
+
+      <div class="meganav-overlay-post">
+        <h3 class="headline shorter">All Topics<a href="#" class="close-icon fa fa-remove"></a></h3>
+      </div>  
+      
+      <div class="meganav-overlay-menu">
+        <ul class="top-level-navigation" role="menubar">    
+          <li role="menuitem"><a class="navigation-overlay about" rel="about-meganav" href="#about">About</a></li>
+          <li role="menuitem"><a class="navigation-overlay patient-care" rel="patients-meganav" href="#patient-care">Patient Care</a></li>
+          <li role="menuitem"><a class="navigation-overlay research" rel="research-meganav" href="#research">Research</a></li>
+          <li role="menuitem"><a class="navigation-overlay education" rel="education-meganav" href="#education">Education</a></li>
+          <li role="menuitem"><a class="navigation-overlay news" rel="news-meganav" href="#news">News &amp; Media</a></li>
+          <li role="menuitem"><a class="navigation-overlay support" rel="support-meganav" href="#support">Support UCSF</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>  <div id="about-meganav" class="meganav-overlay">
     <div class="wrapper--inner">
     <div class="meganav-overlay-post">
       <h3 class="headline">About<a href="#" class="close-icon fa fa-remove"></a><a href="#" class="main-menu-icon fa fa-reorder"></a></h3>
@@ -422,31 +440,13 @@
       </ul>
     </div>
     </div>
-  </div>  <div id="main-menu-meganav" class="meganav-overlay">
-    <div class="wrapper--inner">
-
-      <div class="meganav-overlay-post">
-        <h3 class="headline">All Topics<a href="#" class="close-icon fa fa-remove"></a></h3>
-      </div>  
-      
-      <div class="meganav-overlay-menu">
-        <ul class="top-level-navigation" role="menubar">    
-          <li role="menuitem"><a class="navigation-overlay about" rel="about-meganav" href="#about">About</a></li>
-          <li role="menuitem"><a class="navigation-overlay patient-care" rel="patients-meganav" href="#patient-care">Patient Care</a></li>
-          <li role="menuitem"><a class="navigation-overlay research" rel="research-meganav" href="#research">Research</a></li>
-          <li role="menuitem"><a class="navigation-overlay education" rel="education-meganav" href="#education">Education</a></li>
-          <li role="menuitem"><a class="navigation-overlay news" rel="news-meganav" href="#news">News &amp; Media</a></li>
-          <li role="menuitem"><a class="navigation-overlay support" rel="support-meganav" href="#support">Support UCSF</a></li>
-        </ul>
-      </div>
-    </div>
   </div></div>
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "organisms-overlay-navigation";
-		var lineage        = [{"lineagePattern":"molecules-overlay--about","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--about\/01-molecules-06-navigation-overlays-overlay--about.html"},{"lineagePattern":"molecules-overlay--patients","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--patients\/01-molecules-06-navigation-overlays-overlay--patients.html"},{"lineagePattern":"molecules-overlay--research","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--research\/01-molecules-06-navigation-overlays-overlay--research.html"},{"lineagePattern":"molecules-overlay--education","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--education\/01-molecules-06-navigation-overlays-overlay--education.html"},{"lineagePattern":"molecules-overlay--news","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--news\/01-molecules-06-navigation-overlays-overlay--news.html"},{"lineagePattern":"molecules-overlay--support","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--support\/01-molecules-06-navigation-overlays-overlay--support.html"},{"lineagePattern":"molecules-overlay--main-menu","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--main-menu\/01-molecules-06-navigation-overlays-overlay--main-menu.html"}];
+		var lineage        = [{"lineagePattern":"molecules-overlay--main-menu","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--main-menu\/01-molecules-06-navigation-overlays-overlay--main-menu.html"},{"lineagePattern":"molecules-overlay--about","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--about\/01-molecules-06-navigation-overlays-overlay--about.html"},{"lineagePattern":"molecules-overlay--patients","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--patients\/01-molecules-06-navigation-overlays-overlay--patients.html"},{"lineagePattern":"molecules-overlay--research","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--research\/01-molecules-06-navigation-overlays-overlay--research.html"},{"lineagePattern":"molecules-overlay--education","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--education\/01-molecules-06-navigation-overlays-overlay--education.html"},{"lineagePattern":"molecules-overlay--news","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--news\/01-molecules-06-navigation-overlays-overlay--news.html"},{"lineagePattern":"molecules-overlay--support","lineagePath":"..\/..\/patterns\/01-molecules-06-navigation-overlays-overlay--support\/01-molecules-06-navigation-overlays-overlay--support.html"}];
 		var lineageR       = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-00-homepage\/03-templates-00-homepage.html"},{"lineagePattern":"templates-news-center","lineagePath":"..\/..\/patterns\/03-templates-01-news-center\/03-templates-01-news-center.html"},{"lineagePattern":"templates-news-center-latest","lineagePath":"..\/..\/patterns\/03-templates-02-news-center-latest\/03-templates-02-news-center-latest.html"},{"lineagePattern":"templates-news-center-patient-care","lineagePath":"..\/..\/patterns\/03-templates-03-news-center-patient-care\/03-templates-03-news-center-patient-care.html"},{"lineagePattern":"templates-news-center-education","lineagePath":"..\/..\/patterns\/03-templates-04-news-center-education\/03-templates-04-news-center-education.html"},{"lineagePattern":"templates-news-center-research","lineagePath":"..\/..\/patterns\/03-templates-05-news-center-research\/03-templates-05-news-center-research.html"},{"lineagePattern":"templates-news-center-campus-news","lineagePath":"..\/..\/patterns\/03-templates-06-news-center-campus-news\/03-templates-06-news-center-campus-news.html"},{"lineagePattern":"templates-gallery","lineagePath":"..\/..\/patterns\/03-templates-07-gallery\/03-templates-07-gallery.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;

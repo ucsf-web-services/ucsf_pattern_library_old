@@ -346,20 +346,44 @@
   
   
   
-  var nextMenu;
   // toggle subnavs on meganav
   $('.meganav-overlay-menu a.toggle-submenu').on('click', function(){
-    nextMenu = $(this).siblings('ul');
+    
 
     // add active class to the link
     $(this).toggleClass('active');
+    // find the child sub-menu
+    var childMenu = $(this).siblings('ul');
     
-    if (nextMenu.hasClass('closed')) {
-      nextMenu.removeClass('closed').addClass('open');
+    // get the active list item
+    var activeListItem = $(this).parent('li');
+    
+    // get the inactive list item(s)
+    var inactiveSiblings = activeListItem.siblings();
+    
+    if (childMenu.hasClass('closed')) {
+      
+      // open the menu
+      childMenu.removeClass('closed').addClass('open');
+      //$().not(childMenu)
+      
+      // apply clases to li parent & it's sliblings
+      activeListItem.removeClass('inactive-nav-item').addClass('active-nav-item');
+      inactiveSiblings.addClass('inactive-nav-item').removeClass('active-nav-item');
+      
+      inactiveSiblings.find('ul.open').removeClass('open').addClass('closed');
+      
       return false;  
     } 
-    else {
-      nextMenu.removeClass('open').addClass('closed');
+    else {      
+      
+      // close the menu
+      childMenu.removeClass('open').addClass('closed');
+      
+      // apply clases to li parent & it's sliblings
+      activeListItem.removeClass('inactive-nav-item').removeClass('active-nav-item');
+      inactiveSiblings.removeClass('inactive-nav-item').removeClass('active-nav-item');
+      
       return false;
     }
     

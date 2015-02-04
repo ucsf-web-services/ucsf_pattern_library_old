@@ -7209,8 +7209,12 @@ position: absolute;
     padding-bottom: 20px;
     margin-bottom: 40px;
   }
+  /* line 74, ../scss/components/_meganav.scss */
+  .meganav-overlay-post h3.shorter {
+    margin-bottom: 0;
+  }
 }
-/* line 75, ../scss/components/_meganav.scss */
+/* line 79, ../scss/components/_meganav.scss */
 .meganav-overlay-post h3 .close-icon,
 .meganav-overlay-post h3 .main-menu-icon {
   display: block;
@@ -7221,7 +7225,7 @@ position: absolute;
   margin-left: 10px;
 }
 @media (min-width: 768px) {
-  /* line 75, ../scss/components/_meganav.scss */
+  /* line 79, ../scss/components/_meganav.scss */
   .meganav-overlay-post h3 .close-icon,
   .meganav-overlay-post h3 .main-menu-icon {
     font-size: 30px;
@@ -7230,7 +7234,7 @@ position: absolute;
   }
 }
 @media (min-width: 1024px) {
-  /* line 75, ../scss/components/_meganav.scss */
+  /* line 79, ../scss/components/_meganav.scss */
   .meganav-overlay-post h3 .close-icon,
   .meganav-overlay-post h3 .main-menu-icon {
     font-size: 36px;
@@ -7238,24 +7242,24 @@ position: absolute;
     margin-left: 30px;
   }
 }
-/* line 96, ../scss/components/_meganav.scss */
+/* line 100, ../scss/components/_meganav.scss */
 .meganav-overlay-post h3 .main-menu-icon {
   font-size: 0.75em;
   margin-top: 1px;
 }
 @media (min-width: 768px) {
-  /* line 96, ../scss/components/_meganav.scss */
+  /* line 100, ../scss/components/_meganav.scss */
   .meganav-overlay-post h3 .main-menu-icon {
     margin-top: 2px;
   }
 }
-/* line 106, ../scss/components/_meganav.scss */
+/* line 110, ../scss/components/_meganav.scss */
 .meganav-overlay-post .image {
   margin-bottom: 10px;
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 106, ../scss/components/_meganav.scss */
+  /* line 110, ../scss/components/_meganav.scss */
   .meganav-overlay-post .image {
     display: block;
     float: left;
@@ -7264,36 +7268,36 @@ position: absolute;
   }
 }
 @media (min-width: 1024px) {
-  /* line 106, ../scss/components/_meganav.scss */
+  /* line 110, ../scss/components/_meganav.scss */
   .meganav-overlay-post .image {
     margin-right: 30px;
     max-width: 370px;
   }
 }
-/* line 122, ../scss/components/_meganav.scss */
+/* line 126, ../scss/components/_meganav.scss */
 .meganav-overlay-post .content {
   font-size: 13px;
   line-height: 20px;
   color: #b4b9bf;
 }
 @media (min-width: 768px) {
-  /* line 122, ../scss/components/_meganav.scss */
+  /* line 126, ../scss/components/_meganav.scss */
   .meganav-overlay-post .content {
     font-size: 15px;
     line-height: 22px;
   }
 }
-/* line 132, ../scss/components/_meganav.scss */
+/* line 136, ../scss/components/_meganav.scss */
 .meganav-overlay-post .content p {
   margin: 0 0 0.5em 0;
 }
 @media (min-width: 768px) {
-  /* line 132, ../scss/components/_meganav.scss */
+  /* line 136, ../scss/components/_meganav.scss */
   .meganav-overlay-post .content p {
     margin: 10px 0;
   }
 }
-/* line 141, ../scss/components/_meganav.scss */
+/* line 145, ../scss/components/_meganav.scss */
 .meganav-overlay-post h4 {
   font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
   color: #178CCB;
@@ -7302,18 +7306,18 @@ position: absolute;
   margin-bottom: 0;
 }
 @media (min-width: 1024px) {
-  /* line 141, ../scss/components/_meganav.scss */
+  /* line 145, ../scss/components/_meganav.scss */
   .meganav-overlay-post h4 {
     font-size: 32px;
     line-height: 38px;
   }
 }
-/* line 158, ../scss/components/_meganav.scss */
+/* line 162, ../scss/components/_meganav.scss */
 .meganav-overlay-post h4 a {
   text-decoration: none;
 }
 
-/* line 168, ../scss/components/_meganav.scss */
+/* line 172, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul {
   margin: 0;
   padding: 0;
@@ -7323,45 +7327,58 @@ position: absolute;
   line-height: 20px;
 }
 @media (min-width: 768px) {
-  /* line 168, ../scss/components/_meganav.scss */
+  /* line 172, ../scss/components/_meganav.scss */
   .meganav-overlay-menu ul {
     font-size: 20px;
     line-height: 24px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 168, ../scss/components/_meganav.scss */
+  /* line 172, ../scss/components/_meganav.scss */
   .meganav-overlay-menu ul {
     font-size: 24px;
     line-height: 28px;
   }
 }
-/* line 185, ../scss/components/_meganav.scss */
+/* line 189, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul li {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
 }
-/* line 190, ../scss/components/_meganav.scss */
+/* line 194, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul li a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.95);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-/* line 196, ../scss/components/_meganav.scss */
-.meganav-overlay-menu ul li a:hover, .meganav-overlay-menu ul li a:focus, .meganav-overlay-menu ul li a:active {
+/* line 201, ../scss/components/_meganav.scss */
+.meganav-overlay-menu ul li a:hover, .meganav-overlay-menu ul li a:focus {
   color: rgba(255, 255, 255, 0.75);
   outline: none;
 }
-/* line 203, ../scss/components/_meganav.scss */
-.meganav-overlay-menu ul li a.active {
+/* line 207, ../scss/components/_meganav.scss */
+.meganav-overlay-menu ul li a.active, .meganav-overlay-menu ul li a:active {
   color: rgba(255, 255, 255, 0.95);
 }
-/* line 210, ../scss/components/_meganav.scss */
+/* line 216, ../scss/components/_meganav.scss */
+.meganav-overlay-menu ul li.active-nav-item a:hover, .meganav-overlay-menu ul li.active-nav-item a:focus {
+  color: rgba(255, 255, 255, 0.95);
+}
+/* line 223, ../scss/components/_meganav.scss */
+.meganav-overlay-menu ul li.inactive-nav-item a {
+  color: rgba(255, 255, 255, 0.35);
+}
+/* line 226, ../scss/components/_meganav.scss */
+.meganav-overlay-menu ul li.inactive-nav-item a:hover, .meganav-overlay-menu ul li.inactive-nav-item a:focus {
+  color: rgba(255, 255, 255, 0.75);
+  outline: none;
+}
+/* line 236, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul ul {
   -webkit-transition: max-height 0.15s ease-out;
   -moz-transition: max-height 0.15s ease-out;
@@ -7374,12 +7391,12 @@ position: absolute;
   font-size: 14px;
   line-height: 20px;
 }
-/* line 217, ../scss/components/_meganav.scss */
+/* line 243, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul ul.closed {
   max-height: 0;
   overflow: hidden;
 }
-/* line 221, ../scss/components/_meganav.scss */
+/* line 247, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul ul.open {
   max-height: 100%;
   -webkit-transition: max-height 0.25s ease-in;
@@ -7389,52 +7406,120 @@ position: absolute;
   transition: max-height 0.25s ease-in;
 }
 @media (min-width: 768px) {
-  /* line 210, ../scss/components/_meganav.scss */
+  /* line 236, ../scss/components/_meganav.scss */
   .meganav-overlay-menu ul ul {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 210, ../scss/components/_meganav.scss */
+  /* line 236, ../scss/components/_meganav.scss */
   .meganav-overlay-menu ul ul {
     font-size: 18px;
     line-height: 28px;
   }
 }
-/* line 238, ../scss/components/_meganav.scss */
+/* line 264, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul ul li {
   margin-bottom: 2px;
 }
-/* line 241, ../scss/components/_meganav.scss */
+/* line 267, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul ul li:first-child {
   margin-top: 5px;
 }
-/* line 244, ../scss/components/_meganav.scss */
+/* line 270, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul ul li:last-child {
   margin-bottom: 5px;
 }
-/* line 248, ../scss/components/_meganav.scss */
+/* line 274, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul ul li a {
   color: rgba(255, 255, 255, 0.75);
 }
-/* line 255, ../scss/components/_meganav.scss */
+/* line 281, ../scss/components/_meganav.scss */
 .meganav-overlay-menu ul ul ul {
   font-size: 12px;
   line-height: 20px;
 }
 @media (min-width: 768px) {
-  /* line 255, ../scss/components/_meganav.scss */
+  /* line 281, ../scss/components/_meganav.scss */
   .meganav-overlay-menu ul ul ul {
     font-size: 14px;
     line-height: 24px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 255, ../scss/components/_meganav.scss */
+  /* line 281, ../scss/components/_meganav.scss */
   .meganav-overlay-menu ul ul ul {
     font-size: 16px;
     line-height: 28px;
+  }
+}
+/* line 297, ../scss/components/_meganav.scss */
+.meganav-overlay-menu ul.top-level-navigation a {
+  font-family: granjon, Georgia, TimesNewRoman, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  /* line 297, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu ul.top-level-navigation a {
+    font-size: 34px;
+    line-height: 38px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 297, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu ul.top-level-navigation a {
+    font-size: 44px;
+    line-height: 72px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 323, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu .subnavigation {
+    width: 100%;
+    position: relative;
+    overflow: visible;
+  }
+  /* line 328, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu .subnavigation > li {
+    width: 100%;
+    overflow: visible;
+  }
+  /* line 335, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu .subnavigation--second {
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: 33%;
+    right: 0;
+    overflow: visible;
+  }
+  /* line 346, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu .subnavigation--second li:first-child {
+    margin-top: 0;
+  }
+  /* line 349, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu .subnavigation--second li:last-child {
+    margin-bottom: 0;
+  }
+  /* line 353, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu .subnavigation--second li a {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  /* line 360, ../scss/components/_meganav.scss */
+  .meganav-overlay-menu .subnavigation--third {
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    overflow: visible;
   }
 }
 
