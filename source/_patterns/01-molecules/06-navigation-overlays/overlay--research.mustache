@@ -2,7 +2,7 @@
   <div class="wrapper--inner">
   {{#research-overlay}}
   <div class="meganav-overlay-post">
-    <h3 class="headline">{{overlay-title}}<a href="#" class="close-icon fa fa-remove"></a></h3>
+    <h3 class="headline">{{overlay-title}}<a href="#" class="close-icon fa fa-remove"></a><a href="#" class="main-menu-icon fa fa-reorder"></a></h3>
     
     {{#img.landscape-16x9.src}}
       {{> atoms-landscape-16x9 }}
@@ -18,7 +18,25 @@
   <div class="meganav-overlay-menu">
     <ul class="subnavigation">
     {{#subnavigation}}
-      <li><a href="{{url}}" class="{{class}}">{{title}}</a></li>
+      <li class="menu-item {{#children}}with-children{{/children}}">
+        <a href="{{url}}" class="{{class}} {{#children}}toggle-submenu{{/children}}">{{title}}</a>
+        {{#children}}
+          <ul class="subnavigation--second closed">
+            {{#below}}
+              <li class="menu-item {{#sub-children}}with-children{{/sub-children}}">
+                <a href="{{url}}" class="{{class}} {{#sub-children}}toggle-submenu{{/sub-children}}">{{title}}</a>
+                {{#sub-children}}
+                  <ul class="subnavigation--third closed">
+                    {{#sub-below}}
+                      <li class="menu-item"><a href="{{url}}" class="{{class}}">{{title}}</a></li>
+                    {{/sub-below}}
+                  </ul>
+                {{/sub-children}}
+              </li>
+            {{/below}}
+          </ul>
+        {{/children}}
+      </li>
     {{/subnavigation}}
     </ul>
   </div>

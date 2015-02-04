@@ -1,22 +1,41 @@
+
+.page {
+  
+  .overlay-navigation-wrapper {
+    
+    background: rgba($color--oxford-blue, 0.98);
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.overlay-opened .page .overlay-navigation-wrapper {
+  display: block;
+}
+
 .meganav-overlay {
-  background: rgba($color--oxford-blue, 0.95);
+  
   color: $white;
   padding: 10px;
   overflow-y: auto;
   
   @include breakpoint($bp--medium-up) {
-    padding: 15px 0;
+    padding: 15px;
   }
-  @include breakpoint($bp--xlarge-up) {
+  @include breakpoint($bp--xxlarge-up) {
     padding: 30px 0;
   }
 }
 
 .page {
   .meganav-overlay {
-    z-index: 9999;
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -30,53 +49,105 @@
   margin-bottom: 30px;
   
   h3 {
-    
-    
-    padding-bottom: 20px;
-    border-bottom: 1px solid $white;
-    margin-bottom: 40px;
-    
     font-family: $font-headline;
     color: $white;
     
     font-size: 24px;
     line-height: 28px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $white;
+    margin-bottom: 10px;
+    
     
     @include breakpoint($bp--medium-up) {
       font-size: 34px;
       line-height: 38px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
     }
     @include breakpoint($bp--xlarge-up) {
       font-size: 44px;
       line-height: 48px;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
     }
     
-    .close-icon {
+    .close-icon,
+    .main-menu-icon {
       display: block;
       float: right;
-      font-size: 36px;
-      line-height: 28px;
       text-decoration: none;
+      font-size: 24px;
+      line-height: 28px;
+      margin-left: 10px;
       
       @include breakpoint($bp--medium-up) {
+        font-size: 30px;
         line-height: 38px;
+        margin-left: 20px;
       }
       @include breakpoint($bp--xlarge-up) {
+        font-size: 36px;
         line-height: 48px;
+        margin-left: 30px;
       }
-      
+    }
+    
+    .main-menu-icon {
+      font-size: 0.75em;
+      margin-top: 1px;
+        
+      @include breakpoint($bp--medium-up) {
+        margin-top: 2px;  
+      }
     }
   }
+  
+  .image {
+    margin-bottom: 10px;
+    display: none;
+    
+    @include breakpoint($bp--medium-up) {
+      display: block;
+      float: left;
+      margin-right: 30px;
+      max-width: 220px;
+    }
+    @include breakpoint($bp--xlarge-up) {
+      margin-right: 30px;
+      max-width: 370px;
+    }
+  }
+  
+  .content {
+    font-size: 13px;
+    line-height: 20px;
+    color: $color--gray--lightest;
+    
+    @include breakpoint($bp--medium-up) {
+      font-size: 15px;
+      line-height: 22px;
+    }
+    
+    p {
+      margin: 0 0 0.5em 0;
+      
+      @include breakpoint($bp--medium-up) {
+        margin: 10px 0;
+      }
+    }
+  }
+  
   h4 {
     font-family: $font-headline;
     color: $color--electric-blue;
     
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 0;
     
     @include breakpoint($bp--medium-up) {
-      font-size: 24px;
-      line-height: 30px;
+      
     }
     
     @include breakpoint($bp--xlarge-up) {
@@ -86,18 +157,6 @@
     
     a {
       text-decoration: none;
-    }
-  }
-  
-  .image {
-    @include breakpoint($bp--medium-up) {
-      float: left;
-      margin-right: 30px;
-      max-width: 220px;
-    }
-    @include breakpoint($bp--xlarge-up) {
-      margin-right: 30px;
-      max-width: 370px;
     }
   }
 }
@@ -114,7 +173,6 @@
     font-size: 16px;
     line-height: 20px;
     
-    
     @include breakpoint($bp--medium-up) {
       font-size: 20px;
       line-height: 24px;
@@ -124,7 +182,6 @@
       line-height: 28px;
     }
     
-    
     li {
       margin: 0;
       padding: 0;
@@ -133,14 +190,79 @@
       a {
         text-decoration: none;
         color: rgba($white, 0.35);
-        @extend %transition-all;
         
-        &:hover {
+        @include transition(all, 0.25s, ease-in-out);
+        
+        &:hover,
+        &:focus,
+        &:active {
           color: rgba($white, 0.75);
+          outline: none;
         }
         
         &.active {
-          
+          color: rgba($white, 0.95);
+        }
+      }
+    }
+    
+    // second level menu
+    ul {
+      @include transition(max-height, 0.15s, ease-out);
+      max-height: 0;
+      overflow: hidden;
+      
+      margin-left: 10px; // indent
+      
+      &.closed {
+        max-height: 0; // by default all sub menus are hidden;
+        overflow: hidden;
+      }
+      &.open {
+        max-height: 100%;
+        @include transition(max-height, 0.25s, ease-in);
+      }
+      
+      font-size: 14px;
+      line-height: 20px;
+      
+      @include breakpoint($bp--medium-up) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      @include breakpoint($bp--xlarge-up) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+      
+      li {
+        margin-bottom: 2px;
+        
+        &:first-child {
+          margin-top: 5px;
+        }
+        &:last-child {
+          margin-bottom: 5px;
+        }
+        
+        a {
+          // mobile second level items are brighter by default
+          color: rgba($white, 0.75);
+        }
+      }
+      
+      // third level menu
+      ul {
+        font-size: 12px;
+        line-height: 20px;
+        
+        @include breakpoint($bp--medium-up) {
+          font-size: 14px;
+          line-height: 24px;
+        }
+        @include breakpoint($bp--xlarge-up) {
+          font-size: 16px;
+          line-height: 28px;
         }
       }
     }

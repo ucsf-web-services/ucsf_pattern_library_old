@@ -69,14 +69,14 @@
       <div class="logo">
         <a href="/patterns/04-pages-00-homepage/04-pages-00-homepage.html"><img src="../../images/logo.png" class="logo-img " alt="Logo Alt Text" /></a>
       </div>      <div class="header-navs">
-        <nav class="nav-primary">
-          <ul class="nav-primary__list">    
-            <li><a class="navigation-overlay about" rel="about-meganav" href="#about">About</a></li>
-            <li><a class="navigation-overlay patient-care" rel="patients-meganav" href="#patient-care">Patient Care</a></li>
-            <li><a class="navigation-overlay research" rel="research-meganav" href="#research">Research</a></li>
-            <li><a class="navigation-overlay education" rel="education-meganav" href="#education">Education</a></li>
-            <li><a class="navigation-overlay news" rel="news-meganav" href="#news">News &amp; Media</a></li>
-            <li><a class="navigation-overlay support" rel="support-meganav" href="#support">Support UCSF</a></li>
+        <nav class="nav-primary" role="navigation" aria-label="Primary Navigation" tabindex="2">
+          <ul class="nav-primary__list" role="menubar">    
+            <li role="menuitem" aria-haspopup="true"><a class="navigation-overlay about" rel="about-meganav" href="#about">About</a></li>
+            <li role="menuitem" aria-haspopup="true"><a class="navigation-overlay patient-care" rel="patients-meganav" href="#patient-care">Patient Care</a></li>
+            <li role="menuitem" aria-haspopup="true"><a class="navigation-overlay research" rel="research-meganav" href="#research">Research</a></li>
+            <li role="menuitem" aria-haspopup="true"><a class="navigation-overlay education" rel="education-meganav" href="#education">Education</a></li>
+            <li role="menuitem" aria-haspopup="true"><a class="navigation-overlay news" rel="news-meganav" href="#news">News &amp; Media</a></li>
+            <li role="menuitem" aria-haspopup="true"><a class="navigation-overlay support" rel="support-meganav" href="#support">Support UCSF</a></li>
           </ul>
         </nav><!--end .nav-->
         <ul class="nav-social">
@@ -91,7 +91,7 @@
   <div id="about-meganav" class="meganav-overlay">
     <div class="wrapper--inner">
     <div class="meganav-overlay-post">
-      <h3 class="headline">About<a href="#" class="close-icon fa fa-remove"></a></h3>
+      <h3 class="headline">About<a href="#" class="close-icon fa fa-remove"></a><a href="#" class="main-menu-icon fa fa-reorder"></a></h3>
       
       <div class="image">
         <a href="#"><img src="../../images/16x9/sample-image-4.jpg" alt="16x9 Image" /></a>
@@ -105,20 +105,90 @@
     
     <div class="meganav-overlay-menu">
       <ul class="subnavigation">
-        <li><a href="#" class="">About UCSF</a></li>
-        <li><a href="#" class="">Achievements</a></li>
-        <li><a href="#" class="">Areas of Excellence</a></li>
-        <li><a href="#" class="">Chancellor</a></li>
-        <li><a href="#" class="">History</a></li>
-        <li><a href="#" class="">UCSF in the Community</a></li>
-        <li><a href="#" class="">Locations</a></li>
+        <li class="menu-item with-children">
+          <a href="#" class=" toggle-submenu">About UCSF</a>
+            <ul class="subnavigation--second closed">
+                <li class="menu-item with-children">
+                  <a href="#" class=" toggle-submenu">Sub Link 1</a>
+                    <ul class="subnavigation--third closed">
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 1</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 2</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 3</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 4</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 5</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 2</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 3</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 4</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 5</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Achievements</a>
+        </li>
+        <li class="menu-item with-children">
+          <a href="#" class=" toggle-submenu">Areas of Excellence</a>
+            <ul class="subnavigation--second closed">
+                <li class="menu-item ">
+                  <a href="#" class=" ">Cancer</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Children's Health</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Diabetes</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Heart &amp; Vascular</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Immunology &amp; Infectious Diseases</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Neurology &amp; Neurosurgery</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Stem Cells</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Transplant Services</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Translational Medicine</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Women's Health</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Chancellor</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">History</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">UCSF in the Community</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Locations</a>
+        </li>
       </ul>
     </div>
     </div>
   </div>  <div id="patients-meganav" class="meganav-overlay">
     <div class="wrapper--inner">
     <div class="meganav-overlay-post">
-      <h3 class="headline">Patient Care<a href="#" class="close-icon fa fa-remove"></a></h3>
+      <h3 class="headline">Patient Care<a href="#" class="close-icon fa fa-remove"></a><a href="#" class="main-menu-icon fa fa-reorder"></a></h3>
       
       <div class="image">
         <a href="#"><img src="../../images/16x9/sample-image-1.jpg" alt="16x9 Image" /></a>
@@ -132,20 +202,58 @@
     
     <div class="meganav-overlay-menu">
       <ul class="subnavigation">
-        <li><a href="#" class="">Patient Care</a></li>
-        <li><a href="#" class="">Find a Doctor</a></li>
-        <li><a href="#" class="">Request an Appointment</a></li>
-        <li><a href="#" class="">UCSF Benioff Children's Hospital</a></li>
-        <li><a href="#" class="">UCSF Dental Care</a></li>
-        <li><a href="#" class="">UCSF Medical Center</a></li>
-        <li><a href="#" class="">Conditions and Treatments</a></li>
+        <li class="menu-item with-children">
+          <a href="#" class=" toggle-submenu">Patient Care</a>
+            <ul class="subnavigation--second closed">
+                <li class="menu-item with-children">
+                  <a href="#" class=" toggle-submenu">Sub Link 1</a>
+                    <ul class="subnavigation--third closed">
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 1</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 2</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 3</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 4</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 5</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 2</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 3</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 4</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 5</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Find a Doctor</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Request an Appointment</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">UCSF Benioff Children's Hospital</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">UCSF Dental Care</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">UCSF Medical Center</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Conditions and Treatments</a>
+        </li>
       </ul>
     </div>
     </div>
   </div>  <div id="research-meganav" class="meganav-overlay">
     <div class="wrapper--inner">
     <div class="meganav-overlay-post">
-      <h3 class="headline">Research<a href="#" class="close-icon fa fa-remove"></a></h3>
+      <h3 class="headline">Research<a href="#" class="close-icon fa fa-remove"></a><a href="#" class="main-menu-icon fa fa-reorder"></a></h3>
       
       <div class="image">
         <a href="#"><img src="../../images/16x9/sample-image-7.jpg" alt="16x9 Image" /></a>
@@ -159,19 +267,55 @@
     
     <div class="meganav-overlay-menu">
       <ul class="subnavigation">
-        <li><a href="#" class="">About Research</a></li>
-        <li><a href="#" class="">Major Research Initiatives</a></li>
-        <li><a href="#" class="">Clinical Trials</a></li>
-        <li><a href="#" class="">Research Partnerships</a></li>
-        <li><a href="#" class="">Postdoctoral Scholars</a></li>
-        <li><a href="#" class="">Research Resources</a></li>
+        <li class="menu-item with-children">
+          <a href="#" class=" toggle-submenu">About Research</a>
+            <ul class="subnavigation--second closed">
+                <li class="menu-item with-children">
+                  <a href="#" class=" toggle-submenu">Sub Link 1</a>
+                    <ul class="subnavigation--third closed">
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 1</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 2</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 3</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 4</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 5</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 2</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 3</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 4</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 5</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Major Research Initiatives</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Clinical Trials</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Research Partnerships</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Postdoctoral Scholars</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Research Resources</a>
+        </li>
       </ul>
     </div>
     </div>
   </div>  <div id="education-meganav" class="meganav-overlay">
     <div class="wrapper--inner">
     <div class="meganav-overlay-post">
-      <h3 class="headline">Education<a href="#" class="close-icon fa fa-remove"></a></h3>
+      <h3 class="headline">Education<a href="#" class="close-icon fa fa-remove"></a><a href="#" class="main-menu-icon fa fa-reorder"></a></h3>
       
       <div class="image">
         <a href="#"><img src="../../images/16x9/sample-image-1.jpg" alt="16x9 Image" /></a>
@@ -185,19 +329,55 @@
     
     <div class="meganav-overlay-menu">
       <ul class="subnavigation">
-        <li><a href="#" class="">About Education</a></li>
-        <li><a href="#" class="">Schools</a></li>
-        <li><a href="#" class="">Academic Resources</a></li>
-        <li><a href="#" class="">Student Life Resources</a></li>
-        <li><a href="#" class="">Alumni</a></li>
-        <li><a href="#" class="">Continuing &amp; Professional Education</a></li>
+        <li class="menu-item with-children">
+          <a href="#" class=" toggle-submenu">About Education</a>
+            <ul class="subnavigation--second closed">
+                <li class="menu-item with-children">
+                  <a href="#" class=" toggle-submenu">Sub Link 1</a>
+                    <ul class="subnavigation--third closed">
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 1</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 2</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 3</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 4</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 5</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 2</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 3</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 4</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 5</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Schools</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Academic Resources</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Student Life Resources</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Alumni</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Continuing &amp; Professional Education</a>
+        </li>
       </ul>
     </div>
     </div>
   </div>  <div id="news-meganav" class="meganav-overlay">
     <div class="wrapper--inner">
     <div class="meganav-overlay-post">
-      <h3 class="headline">News &amp; Media<a href="#" class="close-icon fa fa-remove"></a></h3>
+      <h3 class="headline">News &amp; Media<a href="#" class="close-icon fa fa-remove"></a><a href="#" class="main-menu-icon fa fa-reorder"></a></h3>
       
       <div class="image">
         <a href="#"><img src="../../images/16x9/sample-image-2.jpg" alt="16x9 Image" /></a>
@@ -211,18 +391,52 @@
     
     <div class="meganav-overlay-menu">
       <ul class="subnavigation">
-        <li><a href="/patterns/04-pages-01-news-center/04-pages-01-news-center.html" class="">News Center</a></li>
-        <li><a href="#" class="">Pulse of UCSF (Faculty &amp; Staff Hub)</a></li>
-        <li><a href="#" class="">UCSF in the News</a></li>
-        <li><a href="#" class="">Journalist Resources</a></li>
-        <li><a href="#" class="">Faculty Resources for Media</a></li>
+        <li class="menu-item ">
+          <a href="/patterns/04-pages-01-news-center/04-pages-01-news-center.html" class=" ">News Center</a>
+        </li>
+        <li class="menu-item with-children">
+          <a href="#" class=" toggle-submenu">Pulse of UCSF (Faculty &amp; Staff Hub)</a>
+            <ul class="subnavigation--second closed">
+                <li class="menu-item with-children">
+                  <a href="#" class=" toggle-submenu">Sub Link 1</a>
+                    <ul class="subnavigation--third closed">
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 1</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 2</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 3</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 4</a></li>
+                        <li class="menu-item"><a href="#" class="">Sub-Sub Link 5</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 2</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 3</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 4</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="#" class=" ">Sub Link 5</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">UCSF in the News</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Journalist Resources</a>
+        </li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Faculty Resources for Media</a>
+        </li>
       </ul>
     </div>
     </div>
   </div>  <div id="support-meganav" class="meganav-overlay">
     <div class="wrapper--inner">
     <div class="meganav-overlay-post">
-      <h3 class="headline">Support UCSF<a href="#" class="close-icon fa fa-remove"></a></h3>
+      <h3 class="headline">Support UCSF<a href="#" class="close-icon fa fa-remove"></a><a href="#" class="main-menu-icon fa fa-reorder"></a></h3>
       
       <div class="image">
         <a href="#"><img src="../../images/16x9/sample-image-1.jpg" alt="16x9 Image" /></a>
@@ -236,9 +450,29 @@
     
     <div class="meganav-overlay-menu">
       <ul class="subnavigation">
-        <li><a href="#" class="">Link 1</a></li>
+        <li class="menu-item ">
+          <a href="#" class=" ">Link 1</a>
+        </li>
       </ul>
     </div>
+    </div>
+  </div>  <div id="main-menu-meganav" class="meganav-overlay">
+    <div class="wrapper--inner">
+
+      <div class="meganav-overlay-post">
+        <h3 class="headline">All Topics<a href="#" class="close-icon fa fa-remove"></a></h3>
+      </div>  
+      
+      <div class="meganav-overlay-menu">
+        <ul class="top-level-navigation" role="menubar">    
+          <li role="menuitem"><a class="navigation-overlay about" rel="about-meganav" href="#about">About</a></li>
+          <li role="menuitem"><a class="navigation-overlay patient-care" rel="patients-meganav" href="#patient-care">Patient Care</a></li>
+          <li role="menuitem"><a class="navigation-overlay research" rel="research-meganav" href="#research">Research</a></li>
+          <li role="menuitem"><a class="navigation-overlay education" rel="education-meganav" href="#education">Education</a></li>
+          <li role="menuitem"><a class="navigation-overlay news" rel="news-meganav" href="#news">News &amp; Media</a></li>
+          <li role="menuitem"><a class="navigation-overlay support" rel="support-meganav" href="#support">Support UCSF</a></li>
+        </ul>
+      </div>
     </div>
   </div>  </div>  <div class="scroll">
        <div class="wrapper--inner">

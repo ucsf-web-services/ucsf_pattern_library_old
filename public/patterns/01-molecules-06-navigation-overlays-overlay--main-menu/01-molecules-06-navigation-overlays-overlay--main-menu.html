@@ -53,75 +53,31 @@
   <!-- End Pattern Lab -->
 
 </head>
-<body class="body"><div id="research-meganav" class="meganav-overlay">
+<body class="body"><div id="main-menu-meganav" class="meganav-overlay">
   <div class="wrapper--inner">
-  <div class="meganav-overlay-post">
-    <h3 class="headline">Research<a href="#" class="close-icon fa fa-remove"></a><a href="#" class="main-menu-icon fa fa-reorder"></a></h3>
+
+    <div class="meganav-overlay-post">
+      <h3 class="headline">All Topics<a href="#" class="close-icon fa fa-remove"></a></h3>
+    </div>  
     
-      <div class="image">
-        <a href="#"><img src="../../images/16x9/sample-image-7.jpg" alt="16x9 Image" /></a>
-      </div>    
-    <div class="content">
-      <h4><a href="#">Collaboration and Innovation</a></h4>
-      <p>UC San Francisco is recognized internationally as one of the world's great research universities with a trademark culture of collaboration. Basic scientists and clinical researchers from all disciplines work together to find solutions for preventing and treating disease.</p>
-      <div class="readmore"><a href="#">Learn More</a></div>
+    <div class="meganav-overlay-menu">
+      <ul class="top-level-navigation" role="menubar">    
+        <li role="menuitem"><a class="navigation-overlay about" rel="about-meganav" href="#about">About</a></li>
+        <li role="menuitem"><a class="navigation-overlay patient-care" rel="patients-meganav" href="#patient-care">Patient Care</a></li>
+        <li role="menuitem"><a class="navigation-overlay research" rel="research-meganav" href="#research">Research</a></li>
+        <li role="menuitem"><a class="navigation-overlay education" rel="education-meganav" href="#education">Education</a></li>
+        <li role="menuitem"><a class="navigation-overlay news" rel="news-meganav" href="#news">News &amp; Media</a></li>
+        <li role="menuitem"><a class="navigation-overlay support" rel="support-meganav" href="#support">Support UCSF</a></li>
+      </ul>
     </div>
-  </div>
-  
-  <div class="meganav-overlay-menu">
-    <ul class="subnavigation">
-      <li class="menu-item with-children">
-        <a href="#" class=" toggle-submenu">About Research</a>
-          <ul class="subnavigation--second closed">
-              <li class="menu-item with-children">
-                <a href="#" class=" toggle-submenu">Sub Link 1</a>
-                  <ul class="subnavigation--third closed">
-                      <li class="menu-item"><a href="#" class="">Sub-Sub Link 1</a></li>
-                      <li class="menu-item"><a href="#" class="">Sub-Sub Link 2</a></li>
-                      <li class="menu-item"><a href="#" class="">Sub-Sub Link 3</a></li>
-                      <li class="menu-item"><a href="#" class="">Sub-Sub Link 4</a></li>
-                      <li class="menu-item"><a href="#" class="">Sub-Sub Link 5</a></li>
-                  </ul>
-              </li>
-              <li class="menu-item ">
-                <a href="#" class=" ">Sub Link 2</a>
-              </li>
-              <li class="menu-item ">
-                <a href="#" class=" ">Sub Link 3</a>
-              </li>
-              <li class="menu-item ">
-                <a href="#" class=" ">Sub Link 4</a>
-              </li>
-              <li class="menu-item ">
-                <a href="#" class=" ">Sub Link 5</a>
-              </li>
-          </ul>
-      </li>
-      <li class="menu-item ">
-        <a href="#" class=" ">Major Research Initiatives</a>
-      </li>
-      <li class="menu-item ">
-        <a href="#" class=" ">Clinical Trials</a>
-      </li>
-      <li class="menu-item ">
-        <a href="#" class=" ">Research Partnerships</a>
-      </li>
-      <li class="menu-item ">
-        <a href="#" class=" ">Postdoctoral Scholars</a>
-      </li>
-      <li class="menu-item ">
-        <a href="#" class=" ">Research Resources</a>
-      </li>
-    </ul>
-  </div>
   </div>
 </div>
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-overlay--research";
-		var lineage        = [{"lineagePattern":"atoms-landscape-16x9","lineagePath":"..\/..\/patterns\/00-atoms-04-images-02-landscape-16x9\/00-atoms-04-images-02-landscape-16x9.html"}];
+		var patternPartial = "molecules-overlay--main-menu";
+		var lineage        = [];
 		var lineageR       = [{"lineagePattern":"organisms-overlay-navigation","lineagePath":"..\/..\/patterns\/02-organisms-00-global-02-overlay-navigation\/02-organisms-00-global-02-overlay-navigation.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;

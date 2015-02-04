@@ -1,7 +1,7 @@
-<nav class="nav-primary">
-  <ul class="nav-primary__list">    
+<nav class="nav-primary" role="navigation" aria-label="Primary Navigation" tabindex="2">
+  <ul class="nav-primary__list" role="menubar">    
     {{# navigation }}
-    <li><a class="{{ class }}" rel="{{ rel }}" href="{{ url }}">{{ title }}</a></li>
+    <li role="menuitem" aria-haspopup="true"><a class="{{ class }}" rel="{{ rel }}" href="{{ url }}">{{ title }}</a></li>
     {{/ navigation }}
   </ul>
 </nav><!--end .nav-->

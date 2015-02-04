@@ -1,7 +1,7 @@
-&lt;nav class=&quot;nav-primary&quot;&gt;
-  &lt;ul class=&quot;nav-primary__list&quot;&gt;    
+&lt;nav class=&quot;nav-primary&quot; role=&quot;navigation&quot; aria-label=&quot;Primary Navigation&quot; tabindex=&quot;2&quot;&gt;
+  &lt;ul class=&quot;nav-primary__list&quot; role=&quot;menubar&quot;&gt;    
     {{# navigation }}
-    &lt;li&gt;&lt;a class=&quot;{{ class }}&quot; rel=&quot;{{ rel }}&quot; href=&quot;{{ url }}&quot;&gt;{{ title }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot;&gt;&lt;a class=&quot;{{ class }}&quot; rel=&quot;{{ rel }}&quot; href=&quot;{{ url }}&quot;&gt;{{ title }}&lt;/a&gt;&lt;/li&gt;
     {{/ navigation }}
   &lt;/ul&gt;
 &lt;/nav&gt;&lt;!--end .nav--&gt;

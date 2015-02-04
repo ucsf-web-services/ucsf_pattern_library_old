@@ -2,7 +2,7 @@
   &lt;div class=&quot;wrapper--inner&quot;&gt;
   {{#education-overlay}}
   &lt;div class=&quot;meganav-overlay-post&quot;&gt;
-    &lt;h3 class=&quot;headline&quot;&gt;{{overlay-title}}&lt;a href=&quot;#&quot; class=&quot;close-icon fa fa-remove&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+    &lt;h3 class=&quot;headline&quot;&gt;{{overlay-title}}&lt;a href=&quot;#&quot; class=&quot;close-icon fa fa-remove&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;main-menu-icon fa fa-reorder&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
     
     {{#img.landscape-16x9.src}}
       {{&gt; atoms-landscape-16x9 }}
@@ -18,7 +18,25 @@
   &lt;div class=&quot;meganav-overlay-menu&quot;&gt;
     &lt;ul class=&quot;subnavigation&quot;&gt;
     {{#subnavigation}}
-      &lt;li&gt;&lt;a href=&quot;{{url}}&quot; class=&quot;{{class}}&quot;&gt;{{title}}&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;menu-item {{#children}}with-children{{/children}}&quot;&gt;
+        &lt;a href=&quot;{{url}}&quot; class=&quot;{{class}} {{#children}}toggle-submenu{{/children}}&quot;&gt;{{title}}&lt;/a&gt;
+        {{#children}}
+          &lt;ul class=&quot;subnavigation--second closed&quot;&gt;
+            {{#below}}
+              &lt;li class=&quot;menu-item {{#sub-children}}with-children{{/sub-children}}&quot;&gt;
+                &lt;a href=&quot;{{url}}&quot; class=&quot;{{class}} {{#sub-children}}toggle-submenu{{/sub-children}}&quot;&gt;{{title}}&lt;/a&gt;
+                {{#sub-children}}
+                  &lt;ul class=&quot;subnavigation--third closed&quot;&gt;
+                    {{#sub-below}}
+                      &lt;li class=&quot;menu-item&quot;&gt;&lt;a href=&quot;{{url}}&quot; class=&quot;{{class}}&quot;&gt;{{title}}&lt;/a&gt;&lt;/li&gt;
+                    {{/sub-below}}
+                  &lt;/ul&gt;
+                {{/sub-children}}
+              &lt;/li&gt;
+            {{/below}}
+          &lt;/ul&gt;
+        {{/children}}
+      &lt;/li&gt;
     {{/subnavigation}}
     &lt;/ul&gt;
   &lt;/div&gt;
