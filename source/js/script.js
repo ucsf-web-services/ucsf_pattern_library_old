@@ -258,7 +258,7 @@
       }
   });
   
-  $('a.navigation-overlay').on('click focus', function(){
+  $('a.navigation-overlay').on('focus', function(){
     var meganavId = $(this).attr('rel');
     
     $(".meganav-overlay:not(#" + meganavId + ")").fadeOut('fast');
@@ -347,7 +347,7 @@
   
   
   // toggle subnavs on meganav
-  $('.meganav-overlay-menu a.toggle-submenu').on('click', function(){
+  $('.meganav-overlay-menu a.toggle-submenu').on('focus', function(){
     
 
     // add active class to the link

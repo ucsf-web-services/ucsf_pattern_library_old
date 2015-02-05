@@ -84,6 +84,16 @@
       font-size: 24px;
       line-height: 28px;
       margin-left: 10px;
+      color: $color--electric-blue;
+      @include transition(all, 0.25s, ease-in-out);
+      
+      &:hover,
+      &:focus,
+      &:active {
+        //color: rgba($color--electric-blue, 0.75);
+        color: $white;
+        outline: none;
+      }
       
       @include breakpoint($bp--medium-up) {
         font-size: 30px;
