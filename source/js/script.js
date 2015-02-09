@@ -1,8 +1,100 @@
 (function ($) {
   "use strict";
   
-  $(function() {
+  $.fn.extend({
+    closeMegaNav: function () {
+      $(".meganav-overlay").fadeOut('fast').removeClass('opened-overlay-item');
+      $('html').removeClass('overlay-opened');    
+    },
+    openSlideShow: function (fullscreenLink) {
+      // give it a class that guides our new styling for the fullscreen rotator
+      $(fullscreenLink).parents('#gallery-rotator').addClass('fullscreen-slideshow');
 
+      // @todone - add in the title of the page to this rotator popup. 
+      var slideshowTitle = $('#post-information > h1').clone().addClass('cloned-title').append('<a href="#" class="close-icon fa fa-remove"></a>');
+      $('#gallery-rotator .flexslider').before(slideshowTitle);
+      // @todo - add in the close icon/functionality
+      // close gallery overlay when we use the close icon
+      $('#gallery-rotator a.close-icon').click(function(){
+        $.fn.closeSlideShow();
+      });
+      // this helps flexslider resize appropriately to the new container size/position
+      $(window).trigger('resize');
+      
+    },
+    closeSlideShow: function () {
+      // remove the extra title
+      $('#gallery-rotator .cloned-title').remove();
+      // remove the extra styles for fullscreen display
+      $('#gallery-rotator').removeClass('fullscreen-slideshow');
+      // this helps flexslider resize appropriately to the new container size/position
+      $(window).trigger('resize');
+    }
+  });
+  
+
+	
+  $(function() {
+    
+    
+  // close any overlays when we use the close icon
+  $('.meganav-overlay a.close-icon').click(function(){
+    $.fn.closeMegaNav();
+  });
+  
+  
+  
+  
+  // toggle subnavs on meganav
+  $('.meganav-overlay-menu a.toggle-submenu').on('focus', function(){
+    
+
+    // add active class to the link
+    $(this).toggleClass('active');
+    // find the child sub-menu
+    var childMenu = $(this).siblings('ul');
+    
+    // get the active list item
+    var activeListItem = $(this).parent('li');
+    
+    // get the inactive list item(s)
+    var inactiveSiblings = activeListItem.siblings();
+    
+    if (childMenu.hasClass('closed')) {
+      
+      // open the menu
+      childMenu.removeClass('closed').addClass('open');
+      //$().not(childMenu)
+      
+      // apply clases to li parent & it's sliblings
+      activeListItem.removeClass('inactive-nav-item').addClass('active-nav-item');
+      inactiveSiblings.addClass('inactive-nav-item').removeClass('active-nav-item');
+      
+      inactiveSiblings.find('ul.open').removeClass('open').addClass('closed');
+      
+      return false;  
+    } 
+    else {      
+      
+      // close the menu
+      childMenu.removeClass('open').addClass('closed');
+      
+      // apply clases to li parent & it's sliblings
+      activeListItem.removeClass('inactive-nav-item').removeClass('active-nav-item');
+      inactiveSiblings.removeClass('inactive-nav-item').removeClass('active-nav-item');
+      
+      return false;
+    }
+  });
+  
+  // make the slideshow fullscreen
+  $('.slideshow-popup').click(function(){
+    $.fn.openSlideShow(this);
+  });
+    
+    
+    
+    
     $(window).setBreakpoints({
       // use only largest available vs use all available
       distinct: true,
@@ -16,7 +108,7 @@
         1190
       ]
     });
-
+    
     /**
      * Initialize tabs/accordian for pillars
      */
@@ -123,7 +215,7 @@
       
       // Usability features
       pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
-      pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+      pauseOnHover: true,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
       useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
       touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
       video: false,                   //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
@@ -242,45 +334,46 @@
     
   
   
-  // The amazing scrolling header  
-  var fixedNavigation = $('#header'); // Change to nav div
-  var toggleNavClass = 'page-scrolling'; // Change to class name
-  var threshold = 10; // Change to pixels scrolled
-  
-  $(window).scroll(function () {
-      var distance = $(this).scrollTop();
-      if (distance > threshold) { // If scrolled past threshold
-          fixedNavigation.addClass(toggleNavClass); // Add class to nav
-      } else { // If user scrolls back to top
-          if (fixedNavigation.hasClass(toggleNavClass)) { // And if class has been added
-              fixedNavigation.removeClass(toggleNavClass); // Remove it
-          }
-      }
-  });
-  
-  $('a.navigation-overlay').on('focus', function(){
-    var meganavId = $(this).attr('rel');
+    // The amazing scrolling header  
+    var fixedNavigation = $('#header'); // Change to nav div
+    var toggleNavClass = 'page-scrolling'; // Change to class name
+    var threshold = 10; // Change to pixels scrolled
     
-    $(".meganav-overlay:not(#" + meganavId + ")").fadeOut('fast');
-    $('html').addClass('overlay-opened');
-    $('#' + meganavId).fadeIn('fast').addClass('opened-overlay-item');
-  });
-  
-  // in the overlay, when hitting the menu, close other overlays, open the 'menu overlay'
-  $('.meganav-overlay a.main-menu-icon, .mobile-menu-button').click(function(){
-    var meganavId = 'main-menu-meganav';
-    $(".meganav-overlay").fadeOut('fast');
-    $('html').addClass('overlay-opened');
-    $('#' + meganavId).fadeIn('fast').addClass('opened-overlay-item');
-  });
-  
-  $(document).keyup(function(e){
-    if(e.keyCode === 27) {
-      // escape key will close ANY open meganav items
-      $(".meganav-overlay").fadeOut('fast').removeClass('opened-overlay-item');
-      $('html').removeClass('overlay-opened');
-    }
-  });
+    $(window).scroll(function () {
+        var distance = $(this).scrollTop();
+        if (distance > threshold) { // If scrolled past threshold
+            fixedNavigation.addClass(toggleNavClass); // Add class to nav
+        } else { // If user scrolls back to top
+            if (fixedNavigation.hasClass(toggleNavClass)) { // And if class has been added
+                fixedNavigation.removeClass(toggleNavClass); // Remove it
+            }
+        }
+    });
+    
+    $('a.navigation-overlay').on('focus', function(){
+      var meganavId = $(this).attr('rel');
+      
+      $(".meganav-overlay:not(#" + meganavId + ")").fadeOut('fast');
+      $('html').addClass('overlay-opened');
+      $('#' + meganavId).fadeIn('fast').addClass('opened-overlay-item');
+    });
+    
+    // in the overlay, when hitting the menu, close other overlays, open the 'menu overlay'
+    $('.meganav-overlay a.main-menu-icon, .mobile-menu-button').click(function(){
+      var meganavId = 'main-menu-meganav';
+      $(".meganav-overlay").fadeOut('fast');
+      $('html').addClass('overlay-opened');
+      $('#' + meganavId).fadeIn('fast').addClass('opened-overlay-item');
+    });
+    
+    $(document).keyup(function(e){
+      if(e.keyCode === 27) {
+        // escape key will close ANY open meganav items
+        $.fn.closeMegaNav();
+        // escape key will also close any open fullscreen slideshows
+        $.fn.closeSlideShow();
+      }
+    });
   
   $(document).keydown(function(e) {
     
@@ -336,59 +429,8 @@
   // add an active class to the news pages
   $('.news-page .nav-primary a.news').addClass('active');
   
-  // close any overlays when we use the close icon
-  $('.meganav-overlay a.close-icon').click(function(){
-    $(".meganav-overlay").fadeOut('fast');
-    $('html').removeClass('overlay-opened');
-  });
   
   
-  
-  
-  
-  // toggle subnavs on meganav
-  $('.meganav-overlay-menu a.toggle-submenu').on('focus', function(){
-    
-
-    // add active class to the link
-    $(this).toggleClass('active');
-    // find the child sub-menu
-    var childMenu = $(this).siblings('ul');
-    
-    // get the active list item
-    var activeListItem = $(this).parent('li');
-    
-    // get the inactive list item(s)
-    var inactiveSiblings = activeListItem.siblings();
-    
-    if (childMenu.hasClass('closed')) {
-      
-      // open the menu
-      childMenu.removeClass('closed').addClass('open');
-      //$().not(childMenu)
-      
-      // apply clases to li parent & it's sliblings
-      activeListItem.removeClass('inactive-nav-item').addClass('active-nav-item');
-      inactiveSiblings.addClass('inactive-nav-item').removeClass('active-nav-item');
-      
-      inactiveSiblings.find('ul.open').removeClass('open').addClass('closed');
-      
-      return false;  
-    } 
-    else {      
-      
-      // close the menu
-      childMenu.removeClass('open').addClass('closed');
-      
-      // apply clases to li parent & it's sliblings
-      activeListItem.removeClass('inactive-nav-item').removeClass('active-nav-item');
-      inactiveSiblings.removeClass('inactive-nav-item').removeClass('active-nav-item');
-      
-      return false;
-    }
-    
-    
-  });
   
   });
 })(jQuery);

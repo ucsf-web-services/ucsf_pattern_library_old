@@ -14,9 +14,9 @@
     left: 10px;
     z-index: 10;
     
-    height: 32px;
-    width: 32px;
-    background: url('../images/slideshow-popup.png') no-repeat center center;
+    height: 36px;
+    width: 36px;
+    background: rgba($black, 0.50) url('../images/slideshow-popup.png') no-repeat center center;
     
     text-indent: -9999em;
   }
@@ -58,5 +58,104 @@
       max-height: 100px;
       min-height: 100px;
     }  
+  }
+}
+
+
+// fullscreen slideshow 
+$fullScreen-maxheight: 540px;
+
+#gallery-rotator {
+  
+  &.fullscreen-slideshow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+    background: rgba($black, 0.92);
+    
+    .rotator--inner {
+      max-width: $site-width;
+      margin: 0 auto;
+    }
+    
+    .headline {
+      color: $white;
+      margin-top: 0.75em;
+      margin-bottom: 0.5em;
+      padding: 0 10px;
+      
+      @include breakpoint($bp--large-up) {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        padding: 0;
+      }
+    }
+    
+    .close-icon {
+      display: block;
+      float: right;
+      text-decoration: none;
+      font-size: 24px;
+      //line-height: 28px;
+      margin-left: 10px;
+      color: $color--electric-blue;
+      @include transition(all, 0.25s, ease-in-out);
+      
+      &:hover,
+      &:focus,
+      &:active {
+        //color: rgba($color--electric-blue, 0.75);
+        color: $white;
+        outline: none;
+      }
+      
+      @include breakpoint($bp--medium-up) {
+        font-size: 30px;
+        //line-height: 38px;
+        margin-left: 20px;
+      }
+      @include breakpoint($bp--xlarge-up) {
+        font-size: 36px;
+        //line-height: 48px;
+        margin-left: 30px;
+      }
+    }
+    
+    .flexslider-carousel,
+    .slideshow-popup {
+      display: none;
+    }
+    
+    ul.slides {
+      //max-height: $fullScreen-maxheight;
+      
+      li {
+        background: transparent;
+        //max-height: $fullScreen-maxheight;
+        
+        .image {
+          //max-height: $fullScreen-maxheight;
+          
+          
+          
+          img {
+            @include breakpoint($bp--large-up) {
+              max-height: $fullScreen-maxheight;
+              width: auto;
+            }
+          }
+        }
+        .data {
+          color: $white;
+        }
+      }
+    }
   }
 }
