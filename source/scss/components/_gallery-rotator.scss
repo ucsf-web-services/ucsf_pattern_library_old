@@ -13,12 +13,16 @@
     top: 10px;
     left: 10px;
     z-index: 10;
-    
+    text-indent: -9999em;
     height: 36px;
     width: 36px;
-    background: rgba($black, 0.50) url('../images/slideshow-popup.png') no-repeat center center;
+    background: rgba($black, 0.10) url('../images/slideshow-popup.png') no-repeat center center;
     
-    text-indent: -9999em;
+    @include transition(background-color, 0.15s, ease-in-out);
+    
+    &:hover {
+      background: rgba($black, 0.50) url('../images/slideshow-popup.png') no-repeat center center;
+    }
   }
   
   // adjustments to primary news rotator
